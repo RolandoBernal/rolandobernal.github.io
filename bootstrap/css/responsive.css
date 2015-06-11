@@ -1,0 +1,51 @@
+@media screen and (min-width: 480px) {
+  
+  
+  /**************************************
+    TWO COLUMN LAYOUT - CONTACT
+  **************************************/
+
+  #primary {
+    width: 50%;
+    float: left;
+  }
+  
+  #secondary {
+    width: 40%;
+    float: right;  
+  }
+
+
+
+  /**************************************
+    PAGE: ABOUT
+  **************************************/
+  
+  .profile-photo {
+    float: left;
+    margin: 10px 30px 30px 10px;
+  }  
+}
+
+@media screen and (min-width: 660px) {
+  
+  /**************************************
+    PAGE: ABOUT
+  **************************************/
+  
+  
+  h1 {
+    font-size: 2.5em;
+  }
+  
+  h2 {
+    font-size: 0.825em;
+    margin-bottom: 20px;
+  }
+  
+  h4 {
+    font-size: 0.75em;
+    margin-bottom: 20px;
+  }
+  
+}
