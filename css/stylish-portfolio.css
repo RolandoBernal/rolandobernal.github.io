@@ -4,6 +4,9 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+ /* --- Fonts selection ---*/
+@import url(https://fonts.googleapis.com/css?family=Reenie+Beanie|Architects+Daughter|Rock+Salt|Special+Elite|Nunito|Inconsolata);
+
 /* Global Styles */
 
 html,
@@ -41,8 +44,19 @@ body {
 }
 
 .welcome {
-    color: #223333;
+    color: #fff;
     text-shadow: 2px 2px #BBCCCC;
+}
+
+.thanks {
+    color: rgba(255,255,255,.95);
+    text-align: right;
+}
+
+.rolando {
+    font-family: 'Reenie Beanie', Helvetica;
+    font-size: 3em;
+    color: rgba(255,255,255,.95);
 }
 
 .my-experience {
@@ -56,14 +70,14 @@ body {
 }
 
 a {
-    color: rgba(0,0,0,.5);
+    color: rgba(255,255,255,.65);
     text-decoration: none;
 }
 
 a:hover,
 a:focus,
 a:active {
-    color: red;
+    color: #55acee;
     text-decoration: none;
 }
 
@@ -222,6 +236,23 @@ hr.small {
     padding: 65px 0;
 }
 
+.about {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /*background: url(../img/CodeAbout.png) no-repeat center center scroll;*/
+    background: url(../img/CodeBackgroundBlue.jpg) no-repeat center center scroll;
+    /*background: url(../img/MyGolfBackground.jpg) no-repeat center center scroll;*/
+    /*opacity: 0.5;*/
+    /*background: url(../img/profilepics/RB-main.JPG) no-repeat center center scroll;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    filter: Alpha(Opacity=0);
+}
+
 .profile-photo {
     border-radius: 100%;
     width: 300px;
@@ -300,8 +331,9 @@ hr.small {
     /*background: url(../img/Macbook-Keyboard-Wallpaper.jpg) no-repeat center center scroll;*/
     /*background: url(../img/code-fullhd.jpg) no-repeat center center scroll;*/
     /*background: url(../img/morebackgrounds/mySkillsCode.jpg) no-repeat center center scroll;*/
-    /*background: url(../img/morebackgrounds/MacBookKeyboardCode02.jpg) no-repeat center center scroll;*/
-    background: url(../img/morebackgrounds/MacBookKeyboard16.jpg) no-repeat center center scroll;
+    background: url(../img/morebackgrounds/MacBookKeyboardCode02.jpg) no-repeat center center scroll;
+    /*background: url(../img/morebackgrounds/MacBookKeyboard16.jpg) no-repeat center center scroll;*/
+    /*background: url(../img/CodeAbout.png) no-repeat center center scroll;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -316,6 +348,7 @@ hr.small {
 /* PARALLAX effect: setting base styles to image containers for the callout section */
 
 .bg_rolando_bernal,
+.bg_about,
 .bg_callout {
   /* fix background */
   background-attachment: fixed;
@@ -388,4 +421,41 @@ hr.small-line {
 
 footer {
     padding: 100px 0;
+}
+
+.social a,
+.phone-email a {
+    color: #333;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: #55acee;
+    text-decoration: none;
+}
+
+
+.fa-linkedin:hover,
+.fa-linkedin:focus,
+.fa-linkedin:active {
+    color: #FFF;
+    background-color: #007bb6;
+    border-radius: 5px;
+}
+
+.fa-twitter:hover,
+.fa-twitter:focus,
+.fa-twitter:active {
+    color: #FFF;
+    background-color: #55acee;
+    border-radius: 5px;
+}
+
+.fa-google-plus:hover,
+.fa-google-plus:focus,
+.fa-google-plus:active {
+    color: #FFF;
+    background-color: #dd4b39;
+    border-radius: 5px;
 }
