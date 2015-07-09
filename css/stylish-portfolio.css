@@ -217,6 +217,7 @@ hr.small {
 /* Header */
 
 .header {
+    background-color: #337ab7;
     display: table;
     position: relative;
     width: 100%;
