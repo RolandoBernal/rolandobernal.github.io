@@ -21,7 +21,6 @@ body {
 }
 
 .text-vertical-center h1 {
-    /*color: #fff;*/
     margin: 0;
     padding: 0;
     font-size: 4.5em;
@@ -29,13 +28,13 @@ body {
 }
 
 .rolando-bernal {
-    color: #fafafa;
-    text-shadow: 2px 2px #337ab7;
+    color: #337ab7;
+    text-shadow: 2px 2px #fff;
 }
 
 .software-developer {
-    color: #fafafa;
-    text-shadow: 1px 1px #337ab7;
+    color: #337ab7;
+    text-shadow: 1px 1px #fafafa;
 }
 
 .welcome {
@@ -87,7 +86,7 @@ a:active {
 
 .btn-dark {
   border-radius: 0;
-  color: #fff;
+  color: #337ab7;
   background-color: rgba(255,255,255,.5);
 }
 
@@ -217,13 +216,12 @@ hr.small {
 /* Header */
 
 .header {
-    background-color: #337ab7;
+    background-color: #F8F8F8;
     display: table;
     position: relative;
     width: 100%;
     height: 100%;
     /*background: url(../img/Soldier.JPG) no-repeat center center scroll;*/
-    /*background: url(../img/Garza.jpg) no-repeat center center scroll;*/
     background: url(../img/MyGolfBackground1.JPG) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -244,7 +242,6 @@ hr.small {
     width: 100%;
     height: 100%;
     background: url(../img/MyGolfBackground4.jpg) no-repeat center center scroll;
-    /*background: url(../img/TitansStadium.JPG) no-repeat center center scroll;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -300,7 +297,6 @@ hr.small {
 .download:focus,
 .download:active {
     color: #337ab7;
-    /*background-color: rgba(51,122,181,0.95);*/
     background-color: rgba(255,255,255,0.85);
     border-radius: 10px;
 }
@@ -332,7 +328,6 @@ hr.small {
     height: 80%;
     color: #fff;
     background-color: #337ab7;
-    /*background: url(../img/TitansStadium.JPG) no-repeat center center scroll;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -343,7 +338,6 @@ hr.small {
 #resume {
     color: #fff;
     text-shadow: 1px 1px #337ab7;
-    /*background-color: rgba(17,34,51,.6);*/
 }
 
 /* PARALLAX effect: setting base styles to image containers for the callout section */
@@ -371,7 +365,6 @@ hr.small-line {
 
 .portfolio {
     padding: 50px 0;
-    /*background: url(../img/bg-mywork.jpg) no-repeat center center scroll;*/
     background-color: #fff;
     -webkit-background-size: cover;
     -moz-background-size: cover;
