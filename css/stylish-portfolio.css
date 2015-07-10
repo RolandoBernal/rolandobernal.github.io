@@ -105,7 +105,7 @@ a:active {
 
 .btn-light {
     border-radius: 0;
-    color: #333;
+    color: #337ab7;
     background-color: rgb(255,255,255);
     border-radius: 4px;
 }
@@ -169,12 +169,13 @@ hr.small {
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
-    color: #112233;
+    /*color: #112233;*/
 }
 
 .sidebar-nav li a:hover {
     text-decoration: none;
     color: #fff;
+    font-weight: bold;
     background: rgba(255,255,255,0.2);
 }
 
@@ -190,7 +191,7 @@ hr.small {
 }
 
 .sidebar-nav > .sidebar-brand a {
-    color: #112233;
+    /*color: #112233;*/
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
