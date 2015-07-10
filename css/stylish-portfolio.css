@@ -11,7 +11,7 @@ body {
 }
 
 body {
-    font-family: "Nunito","Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Source Sans Pro","Nunito","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .text-vertical-center {
@@ -64,6 +64,11 @@ body {
     background-color: #fafafa;
 }
 
+.my-resume {
+    color: #fff;
+    background-color: #337ab7;
+}
+
 .honest {
     color: #fff;
     text-shadow: 1px 1px #556666;
@@ -88,19 +93,21 @@ a:active {
   border-radius: 0;
   color: #337ab7;
   background-color: rgba(255,255,255,.5);
+  border-radius: 4px;
 }
 
 .btn-dark:hover,
 .btn-dark:focus,
 .btn-dark:active {
     color: #fff;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(51,122,181,0.75);
 }
 
 .btn-light {
     border-radius: 0;
     color: #333;
     background-color: rgb(255,255,255);
+    border-radius: 4px;
 }
 
 .btn-light:hover,
@@ -197,6 +204,14 @@ hr.small {
     position: fixed;
     top: 0;
     right: 0;
+    border-radius: 4px;
+}
+
+#menu-toggle:hover,
+#menu-toggle:focus,
+#menu-toggle:active {
+    color: #fff;
+    background-color: rgba(51,122,181,0.85);
 }
 
 #sidebar-wrapper.active {
@@ -322,7 +337,17 @@ hr.small {
     background-color: rgba(0,0,0,0.85);
 }
 
+aside.tools img {
+  margin: 50px auto;
+}
 
+#jq-logo {
+  padding-top: 40px;
+}
+
+#sql-logo {
+  padding-top: 40px;
+}
 
 
 /* Callout */
@@ -341,7 +366,11 @@ hr.small {
 }
 
 #resume {
-    color: #337ab7;
+    color: #FFF;
+}
+
+.resume-background-color {
+    background-color: #337ab7;
 }
 
 /* PARALLAX effect: setting base styles to image containers for the callout section */
