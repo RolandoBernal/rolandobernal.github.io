@@ -60,8 +60,8 @@ body {
 }
 
 .my-experience {
-    color: #fff;
-    text-shadow: 1px 1px #556666;
+    color: #337ab7;
+    background-color: #fafafa;
 }
 
 .honest {
@@ -263,6 +263,11 @@ hr.small {
     padding: 50px 0;
 }
 
+#skills {
+    color: #337ab7;
+    background-color: #fafafa;
+}
+
 .fa-trophy {
     padding: 50px 50px;
 }
@@ -336,8 +341,7 @@ hr.small {
 }
 
 #resume {
-    color: #fff;
-    text-shadow: 1px 1px #337ab7;
+    color: #337ab7;
 }
 
 /* PARALLAX effect: setting base styles to image containers for the callout section */
