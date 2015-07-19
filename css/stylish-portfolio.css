@@ -23,13 +23,14 @@ body {
 .text-vertical-center h1 {
     margin: 0;
     padding: 0;
-    font-size: 4.5em;
+    font-size: 7em;
     font-weight: 700;
 }
 
 .rolando-bernal {
     color: #337ab7;
     text-shadow: 2px 2px #fff;
+    /*font-size: 5em;*/
 }
 
 .software-developer {
@@ -45,6 +46,20 @@ body {
 .my-work {
     color: #337ab7;
     text-shadow: 2px 2px #ddd;
+}
+
+.work-process {
+    color: #fff;
+    text-shadow: 1px 1px #777;
+}
+
+.work-process li {
+    text-shadow: none;
+    display: inline-block;
+    text-decoration: none;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-shadow: none;
 }
 
 .thanks {
@@ -248,6 +263,10 @@ hr.small {
 
 /* About */
 
+#about {
+    height: 10%;
+}
+
 .about {
     padding: 65px 0;
 }
@@ -263,6 +282,23 @@ hr.small {
     background-size: cover;
     -o-background-size: cover;
     filter: Alpha(Opacity=50);
+}
+
+
+/* Work process */
+#work-process {
+    background-color: #F8F8F8;
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 20%;
+    background: url(../img/MyGolfBackground4.JPG) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    filter: Alpha(Opacity=90);
+
 }
 
 .profile-photo {
@@ -370,6 +406,10 @@ aside.tools img {
     color: #FFF;
 }
 
+.resume-link {
+    text-align: center;
+}
+
 .resume-background-color {
     background-color: #337ab7;
 }
@@ -378,7 +418,8 @@ aside.tools img {
 
 .bg_rolando_bernal,
 .bg_about,
-.bg_callout {
+.bg_callout,
+.bg_work-process {
   /* fix background */
   background-attachment: fixed;
   /* center it */
