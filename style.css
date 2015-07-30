@@ -463,6 +463,10 @@ section#home {
 	background-size: cover;
 }
 
+.skill-img {
+  margin: 0 auto;
+}
+
 /*-----------------------
 	Easy Pie Chart
 ------------------------*/
@@ -510,42 +514,7 @@ section#home {
 .template-desc h2, .template-desc h3{
 	margin-top:0
 }
-/*-----------------------
-	Testimony
-------------------------*/
-#testimony{
-	padding: 100px 0px;
-	height: auto;
-    margin: 0 auto;
-    width: 100%;
-    position: relative;
-}
-.testimony {
-	display: inline-block;
-	padding: 20px 20px;
-}
-.testimony .wording {
-	font-size:17px;
-	z-index:-1;
-}
-.testimony img {
-	border-radius:5px;
-	height: 60px;
-	display: inline-block;
-}
-.testimony .author {
-	margin-left: 10px;
-}
-.testimony span{
-	text-align:left;
-}
-.testimony i.fa {
-	position: absolute;
-	top: -13px;
-	left: 2px;
-	z-index: -1;
-	font-size: 50px!important;
-}
+
 /*-----------------------
 	Experience
 ------------------------*/
@@ -901,6 +870,7 @@ div.group-left:hover  .group-middle, div.group-right:hover  .group-middle{
 .award-container:hover h3 {
 	color:#09F;
 }
+
 /*-----------------------
 	Quotes
 ------------------------*/
@@ -918,8 +888,11 @@ div.group-left:hover  .group-middle, div.group-right:hover  .group-middle{
 	padding: 10px;
 }
 .quo-person {
-	border-right: 2px solid #09F;
+	/*border-right: 2px solid #09F;*/
 	padding: 20px 15px;
+}
+.fa-quote-left {
+	color: #09F;
 }
 .quo-person h3 {
 	margin-top: 0;
