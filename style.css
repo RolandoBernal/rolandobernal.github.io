@@ -511,6 +511,42 @@ section#home {
 	margin-top:0
 }
 /*-----------------------
+	Testimony
+------------------------*/
+#testimony{
+	padding: 100px 0px;
+	height: auto;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+.testimony {
+	display: inline-block;
+	padding: 20px 20px;
+}
+.testimony .wording {
+	font-size:17px;
+	z-index:-1;
+}
+.testimony img {
+	border-radius:5px;
+	height: 60px;
+	display: inline-block;
+}
+.testimony .author {
+	margin-left: 10px;
+}
+.testimony span{
+	text-align:left;
+}
+.testimony i.fa {
+	position: absolute;
+	top: -13px;
+	left: 2px;
+	z-index: -1;
+	font-size: 50px!important;
+}
+/*-----------------------
 	Experience
 ------------------------*/
 .card-container {
@@ -865,6 +901,55 @@ div.group-left:hover  .group-middle, div.group-right:hover  .group-middle{
 .award-container:hover h3 {
 	color:#09F;
 }
+/*-----------------------
+	Quotes
+------------------------*/
+#quotes {
+	background: url(img/awards-bg.jpg) 50% 0 repeat-y fixed;
+	color: #fff;
+	background-size: cover;
+}
+.owl-wrapper-outer {
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 10px;
+}
+.quo-container {}
+.quote {
+	padding: 10px;
+}
+.quo-person {
+	border-right: 2px solid #09F;
+	padding: 20px 15px;
+}
+.quo-person h3 {
+	margin-top: 0;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+.quo-person p {
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 100;
+	margin: 0;
+}
+p.quo-text {
+	line-height: 2;
+	font-weight: 100;
+	font-size: 18px;
+}
+@media (max-width: 767px) {}
+@media (max-width: 991px) {}
+@media (max-width: 1199px) {
+	.quo-person {
+		text-align: center;
+		border-bottom:2px solid #09F;
+		border-right:0;
+		margin-bottom: 20px;
+	}
+	p.quo-text {
+		text-align: center;
+	}
+}
 
 /*-----------------------
 	References
@@ -1056,7 +1141,7 @@ label.error{
 }
 
 /*-----------------------
-	Owl Caousel
+	Owl Carousel
 ------------------------*/
 .owl-theme .owl-controls .owl-page span {
 	border-radius:0!important;
