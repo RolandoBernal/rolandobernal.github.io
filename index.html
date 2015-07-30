@@ -1,440 +1,871 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">
 <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Rolando Bernal - Personal Resume Website">
+	<meta name="keywords" content="keywords">
+	<meta name="author" content="Lando B | Web Solutions">
+	<title>Rolando Bernal | Software Developer</title>
 
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="">
-		<meta name="author" content="">
-
-		<title>Rolando Bernal | Software Developer</title>
-
-		<!-- Bootstrap Core CSS -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-
-		<!-- Custom Fonts -->
-		<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-		<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
-
-		<!-- Css3 Animations Styles -->
-		<link rel="stylesheet" type="text/css" href="css/animate.css" media="screen" />
-
-		<!-- Custom CSS -->
-		<!-- <link rel="stylesheet" href="css/style.css"> -->
-		<link href="css/stylish-portfolio.css" rel="stylesheet">
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
 
 
-		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!--[if lt IE 9]>
-				<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-				<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-		<![endif]-->
+	<!-- Progress Bar Style -->
+	<link href="css/progress.css" rel="stylesheet">
 
+	<!--Website Skin-->
+	<!--link  id="theme-style" href="css/skin/default.css" rel="stylesheet"-->
+
+	<!--Custom CSS-->
+	<link href="custom.css" rel="stylesheet">
+
+	<!-- General Style -->
+	<link href="style.css" rel="stylesheet">
+
+	<!-- Animations -->
+	<link href="css/animate.css" rel="stylesheet">
+
+	<!-- Owl Carousel -->
+	<link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="css/owl.theme.css" rel="stylesheet">
+	<link href="css/owl.transitions.css" rel="stylesheet">
+
+	<!--Fonts-->
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+	<link href="css/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
 </head>
-
 <body>
-
-		<!-- Navigation -->
-		<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-		<nav id="sidebar-wrapper">
-				<ul class="sidebar-nav">
-						<a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-						<li class="sidebar-brand">
-								<a href="#top"  onclick = $("#menu-close").click(); >Rolando Bernal</a>
-						</li>
-						<li>
-								<a href="#top" onclick = $("#menu-close").click(); >Home</a>
-						</li>
-						<li>
-								<a href="#about1" onclick = $("#menu-close").click(); >About</a>
-						</li>
-						<li>
-								<a href="#skills" onclick = $("#menu-close").click(); >Skills</a>
-						</li>
-						<li>
-								<a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
-						</li>
-						<li>
-								<a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
-						</li>
+	<!-- Navigation start -->
+	<div id="main-navigation" class="navbar navbar-fixed-top">
+		<div class="">
+			<!-- Mobile Navigation start -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-navigation">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand logo visible-xs smooth" href="#home"><img src="img/LandoB-WebSolutions_logo.png" alt="Logo"></a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div id="site-navigation" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="#about" class="smooth">About</a>
+					</li>
+					<li>
+						<a href="#resume" class="smooth">Resume</a>
+					</li>
+					<li>
+						<a href="#work" class="smooth">My Work</a>
+					</li>
+					<li>
+						<a href="#contact" class="smooth">Contact</a>
+					</li>
 				</ul>
-		</nav>
+			</div>
+		</div>
+	</div>
+	<!-- Navigation end -->
+<header>
+<!-- Website loader start -->
+<div class="preloader" style="">
+	<div class="status" style="">&nbsp;</div>
+</div>
+<!-- Website loader end -->
+<!-- Main landing start -->
+	<section id="home" class="landing">
+		<a href="#home" class="smooth">
+			<img src="img/LandoB-WebSolutions_logo.png" class="logo" alt="Logo">
+		</a>
+		<div class="row landing-message">
+			<h1><span>I’m</span> Rolando Bernal</h1>
+			<h3>
+			I am a passionate <span>Software Developer</span> that creates innovative <span>UX</span><br/>
+			driven <span>websites</span> that are <span>responsive</span> with a clean and modern style. <br/>
+			I also love creating <span>apps</span> that help make life easier. <br/>
+			<br/>
+			<span>Find out more about me below.</span>
+			</h3>
+		</div>
+		<div class="scrollto">
+			<a href="#about" class="smooth">
+				<span class="mouse">
+					<span></span>
+				</span>
+			</a>
+		</div>
+		<div class="landing-bg"></div>
+		<!-- Social container start -->
+		<div class="social">
+		<ul>
+			<li><a href="http://twitter.com/jrolandobernal"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="https://plus.google.com/+RolandoBernal"><i class="fa fa-google-plus"></i></a></li>
+			<li><a href="https://www.linkedin.com/in/jrolandobernal"><i class="fa fa-linkedin"></i></a></li>
+			<li><a href="https://github.com/LandoB/landob.github.io"><i class="fa fa-github"></i></a></li>
+		</ul>
 
-		<!-- Header -->
-		<header id="top" class="header bg_rolando_bernal">
-				<div class="text-vertical-center"><br><br><br><br><br>
-						<h1 class="header-color rolando-bernal">Rolando Bernal</h1>
-						<h2 class="header-color software-developer">Software Developer</h2>
-						<br>
-						<a href="#about1"><h2><i class="btn btn-dark btn-lg fa fa-angle-double-down"></i></h2></a>
+		</div>
+		<!-- Social container end -->
+	</section>
+</header>
+<!-- Main landing end -->
+<!-- About start -->
+<section id="about" class="sec-pattern">
+	<div class="container">
+		<div class="row margin-lg">
+			<h1 class="main-title text-center wow fadeIn">About</h1>
+			<div class="col-sm-3">
+				<div class="about-left text-right wow fadeInLeft">
+					<ul>
+						<li>
+							<span>Date of birth</span>
+							November 9th, 1978
+							<i class="fa fa-calendar"></i>
+
+						</li>
+						<li>
+							<span>Place Of Birth</span>
+							Nayarit, Mexico
+							<i class="fa fa-map-marker"></i>
+
+						</li>
+						<li>
+							<span>Profession</span>
+
+							Web, Design & Development
+							<i class="fa fa-user-md"></i>
+						</li>
+						<li>
+							<span>Interests</span>
+							Family, Golf, Football, Movies
+							<i class="fa fa-heart"></i>
+
+						</li>
+					</ul>
 				</div>
-		</header>
+			</div>
+			<div class="col-sm-6 wow fadeIn">
+				<img src="img/bg-about-head.PNG" class="img-responsive img-circle img-about" alt="about-portrait">
+			</div>
+			<div class="col-sm-3">
+				<div class="about-right text-left wow fadeInRight">
+					<ul>
+						<li>
+							<span>Place of residence</span>
+							<i class="fa fa-map-marker"></i>
+							Nashville, TN
 
-		<!-- About -->
-		<section id="about1" class="about bg_about">
-				<div class="container">
-						<div class="row">
-								<div class="col-lg-12 text-center inner-about">
-										<!-- <img src="img/RolandoBernal-SWDev.jpg" alt="Rolando Bernal" class="profile-photo"> -->
-										<br><br><br><br><br><br><br><br>
-										<h2 class="welcome">WELCOME!</h2> <br>
-										<h3 class="thanks"><p>Thank you for taking the time to visit my site.</p> I'm a programmer that likes using the right tools for the job.</p>
-										<p> I also enjoy spending time with my family, as well as playing Golf, and watching Football and <a href="https://en.wikipedia.org/wiki/Association_football">F&uacute;tbol</a>. <p>
-										<p></p>
-										<p>I would love an opportunity to chat over a cup of coffee about <a href="#skills">software development</a>, golf, football, soccer or the topic that most interests you.</p>
-										<p>Feel free to <a href="#portfolio">look around</a>, and <a href="#contact">contact me.</a></p></h3>
-										<p><h3 class="rolando">
-												~ Rolando
-										</h3></p><br><br><br><br><br>
-										<a href="#skills"><h2><i class="btn btn-dark btn-lg fa fa-angle-double-down"></i></h2></a><br><br><br>
-								</div>
-						</div>
-						<!-- /.row -->
+						</li>
+						<li>
+							<span>Phone</span>
+							<i class="fa fa-phone"></i>
+							(615) 290-3050
+
+						</li>
+						<li>
+							<span>Email</span>
+							<i class="fa fa-envelope"></i>
+							landob.websolutions@gmail.com
+
+						</li>
+						<li>
+							<span>Website</span>
+							<i class="fa fa-globe"></i>
+							www.rolandobernal.com
+
+						</li>
+					</ul>
 				</div>
-				<!-- /.container -->
-		</section>
+			</div>
+			<div class="row">
+				<div class="col-xs-offset-3 col-xs-6 col-sm-offset-3 col-sm-6 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6 wow fadeInUp">
+					<h2 class="sub-title text-center">Rolando Bernal</h2>
+					<p class="text-center bio">
+					I am Rolando, I’m a passionate Software Developer. I would love an opportunity to chat over a cup of coffee about software development, golf, football, soccer or the topic that most interests you.
+					</p>
+					<p class="text-center margin-md">
+						<a href="#contact" class="btn btn-about smooth">Hire Me</a>
+					</p>
 
-		<!-- Skills -->
-		<!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-		<section id="skills" class="skills bg-primary">
-				<div class="container">
-						<div class="row text-center">
-								<div class="col-lg-10 col-lg-offset-1">
-										<h2 class="my-experience">My Skills and Expertise</h2>
-										<hr class="small">
-								</div>
-								<!-- /.col-lg-10 -->
-						</div>
-						<!-- /.row -->
 				</div>
-				<!-- /.container -->
-		</section>
-
-		<!-- Callout -->
-		<div id="skills" class="skills-section callout bg_callout">
-
-				 <!-- Skills Section -->
-				<section id="skills">
-					<div class="container">
-						<div class="row text-center">
-							<div class="col-md-4">
-								<span class="fa-stack fa-4x">
-									<i class="fa fa-circle fa-stack-2x text-primary"></i>
-									<i class="fa fa-code fa-stack-1x fa-inverse"></i>
-								</span>
-								<h4 class="skill-heading">Front End</h4>
-								<p class="text-muted">HTML, CSS, SASS, Jade, JavaScript, jQuery, AngularJS, AJAX, Bootstrap, Firebase</p>
-							</div>
-							<div class="col-md-4">
-								<span class="fa-stack fa-4x">
-									<i class="fa fa-circle fa-stack-2x text-primary"></i>
-									<i class="fa fa-database fa-stack-1x fa-inverse"></i>
-								</span>
-								<h4 class="skill-heading">Back End</h4>
-								<p class="text-muted">C#, .NET, SQL Databases, WPF, XAML, ASP.NET, Entity Framework, TestStack White, Code First Database Patterns</p>
-							</div>
-							<div class="col-md-4">
-								<span class="fa-stack fa-4x">
-									<i class="fa fa-circle fa-stack-2x text-primary"></i>
-									<i class="fa fa-heart-o fa-stack-1x fa-inverse"></i>
-								</span>
-								<h4 class="skill-heading">Other</h4>
-								<p class="text-muted">Grunt, Gulp, VIM, Git, GitHub, Visual Studio, Command Line, RESTful API, MVC, SPAs, AWS Deployment, Bower, NPM</p>
-							</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- About end -->
+<!-- Resume start -->
+<div id="resume">
+	<!-- Skills start -->
+	<section id="skill" data-speed="10" data-type="background">
+		<div class="container">
+			<div class="row margin-lg">
+				<h1 class="main-title text-center wow fadeIn">Skills</h1>
+				<div class="col-lg-3 col-sm-3 col-xs-6 wow fadeInUp">
+					<div class="piechart">
+						<div class="chart" data-percent="95">
+						<span>95%</span>
 						</div>
+						<span class="skill">HTML5/CSS3</span>
 					</div>
-				</section><br><br><br><br>
-
-					<!-- Tools Aside -->
-				<aside class="tools">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-2 col-sm-6">
-								<a href="#">
-									<img src="img/javascript.jpg" class="img-responsive img-centered" alt="">
-								</a>
-							</div>
-							<div class="col-md-2 col-sm-6">
-								<a href="#">
-									<img src="img/200px-JQuery_logo.svg.png" id="jq-logo" class="img-responsive img-centered" alt="">
-								</a>
-							</div>
-							<div class="col-md-2 col-sm-6">
-								<a href="#">
-									<img src="img/angular.png" class="img-responsive img-centered" alt="">
-								</a>
-							</div>
-							<div class="col-md-2 col-sm-6">
-								<a href="#">
-									<img src="img/csharp.svg" class="img-responsive img-centered" alt="">
-								</a>
-							</div>
-							<div class="col-md-2 col-sm-6">
-								<a href="#">
-									<img src="img/dotnet.jpg" class="img-responsive img-centered" alt="">
-								</a>
-							</div>
-							<div class="col-md-2 col-sm-6">
-								<a href="#">
-									<img src="img/sql.png" id="sql-logo" class="img-responsive img-centered" alt="">
-								</a>
-							</div>
+				</div>
+				<div class="col-lg-3 col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay="0.2s">
+					<div class="piechart">
+						<div class="chart" data-percent="90">
+						<span>90%</span>
 						</div>
-						<div class="row resume-link">
-								<a href="#resume"><h2><i class="btn btn-dark btn-lg fa fa-angle-double-down"></i></h2></a>
-						</div>
+						<span class="skill">JS</span>
 					</div>
-				</aside>
-
-		</div> <!-- callout -->
-
-<!-- RESUME -->
-		<section class="resume-background-color">
-								<div class="container">
-
-										<!-- /.row -->
-										<div class="row text-center">
-												<div class="col-lg-10 col-lg-offset-1">
-														<h2 class="my-experience"></h2>
-														<div class="row">
-				<!--  -->
-
-														<div class="row">
-																	<section class="col-md-12" id="resume">
-																		<br><br><h2 class="my-resume">Resume</h2>
-																		<hr class="small"><br><br>
-																		<div>
-																			<h3><i class="fa fa-building-o"></i> &nbsp Work.Experience() {</h3>
-																			<h4>Code Enthusiast</h4>
-																			<p>Created websites and web apps just for the chance to learn new techniques and refine my existing skills: Front and back end. HTML, CSS, Javascript, jQuery, Git, JSON, Ajax, node.js, angular, etc.</p>
-																			<h4>Lando B | Web Solutions<br>
-																			Web Debeloper</h4>
-																			<p>January 2015 - Present <br>
-																			We believe that technology does not create healthy community but healthy community creates technology. We believe that the people that say the least are the people that we want to hear the most from. We love space, simplicity and silence. We love chaos, complexity and noise. We love analog and digital, night and day, success and failure. We dream. We design. We develop. We are "Lando B | Web Solutions".</p>
-																			<h4>BenefitMall<br>
-																			Sr. Applications Support Analyst</h4>
-																			<p>April 2015 - Present <br>
-																			Maintains and supports existing web application using the .NET Framework. Deploys new code to existing websites in all enviroments: DEV, QA, STG, DEMO, PROD (C#, MVC, SQL, and JavaScript/jQuery).</p>
-																			<h3>}</h3><br>
-																			<h3><i class="fa fa-graduation-cap"></i> &nbsp Education() {</h3>
-																			<p><h4>Software Developer</h4>
-																				Nashville Software School (NSS), January - December 2015</p><br>
-																			<p><h4>Bachelor of Computer Science</h4>
-																				Tepic Institute of Technology (Instituto Tecnologico de Tepic), Mexico 1996-2001</p>
-																			<h3>}</h3>
-																		</div>
-																	</section>
-																</div>
-
-
-				<!--  -->
-														</div><br>
-														<!-- /.row (nested) -->
-															<section>
-																<br>
-																<a href="./docs/RolandoBernalResume.pdf" class="btn btn-dark fa fa-download download"> Download Resume</a>
-															</section><br><br>
-												</div> <!-- /.col-lg-10 -->
-										</div> <!-- /.row -->
-										<div class="row resume-link">
-												<a href="#portfolio"><h2><i class="btn btn-dark btn-lg fa fa-angle-double-down"></i></h2></a>
+				</div>
+				<div class="col-lg-3 col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay="0.4s">
+					<div class="piechart">
+						<div class="chart" data-percent="80">
+						<span>80%</span>
+						</div>
+						<span class="skill">jQuery</span>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay="0.6s">
+					<div class="piechart">
+						<div class="chart" data-percent="80">
+						<span>80%</span>
+						</div>
+						<span class="skill">AngularJS</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Skills end -->
+	<!-- Experience start -->
+	<section id="experience">
+		<div class="container">
+			<div class="row margin-lg">
+				<h1 class="main-title text-center wow fadeIn">Experience</h1>
+					<div class="col-lg-12">
+						<div id="experience-carousel" class="owl-carousel">
+							<div class="card-experience">
+								<div class="card-container wow fadeInUp" data-wow-delay="0.2s">
+									<div class="card-image">
+										<h4>Jan 2014 - Present</h4>
+										<img src="img/elephant.jpg" class="img-responsive" alt="experience">
+									</div>
+									<div class="card-content">
+										<a class="expander" href="#card-1">
+											<i class="fa fa-chevron-up"></i>
+											<span>Freelancer | Main developer</span>
+										</a>
+										<p>Lando B | Web Solutions</p>
+									</div>
+									<div class="card-expand" id="card-1">
+										<div class="expand-title">
+										<i class="fa fa-close"></i>
+										<span>Freelancer | Main developer</span>
+										<p>Lando B | Web Solutions</p>
 										</div>
-								</div>
-		</section>
-
-
-		<!-- Work Process -->
-		<section id="about" class="about bg_about">
-				<div class="container">
-						<div class="row">
-								<div class="col-lg-12 text-center inner-about">
-
-									<div class="my-work"><br><br><br>
-											<ul class="work-process">
-												<li><h4 class="text-center"><i class="fa fa-lg fa-lightbulb-o"></i>&nbsp Idea</h4></li>
-												<li><h4 class="text-center"><i class="fa fa-long-arrow-right"></i></h4></li>
-												<li><h4 class="text-center"><i class="fa fa-lg fa-pencil"></i>&nbsp Sketch</h4></li>
-												<li><h4 class="text-center"><i class="fa fa-long-arrow-right"></i></h4></li>
-												<li><h4 class="text-center"><i class="fa fa-lg fa-desktop"></i>&nbsp Design</h4></li>
-												<li><h4 class="text-center"><i class="fa fa-long-arrow-right"></i></h4></li>
-												<li><h4 class="text-center"><i class="fa fa-lg fa-code"></i>&nbsp Develop</h4></li>
-												<li><h4 class="text-center"><i class="fa fa-long-arrow-right"></i></h4></li>
-												<li><h4 class="text-center"><i class="fa fa-lg fa-tachometer"></i>&nbsp Test</h4></li>
-												<li><h4 class="text-center"><i class="fa fa-long-arrow-right"></i></h4></li>
-												<li><h4 class="text-center"><i class="fa fa-lg fa-rocket"></i>&nbsp Launch</h4></li>
-											</ul>
-											<br><br><br>
+										<div class="expand-content">
+											<p>
+											Own startup. Main software developer: web desing, web development, and support.
+											</p>
+										</div>
 									</div>
 								</div>
-						</div>
-						<!-- /.row -->
-				</div>
-				<!-- /.container -->
-		</section>
-
-		<!-- Portfolio -->
-		<section id="portfolio">
-				<br><br><br>
-				<div class="my-work">
-						<h2 class="my-work">My Work</h2>
-						<hr class="small-line">
-				</div>
-				<div class="container">
-						<div class="row">
-								<div class="col-lg-10 col-lg-offset-1 text-center">
-										<div class="row">
-												<div class="col-md-6">
-														<div class="portfolio-item">
-																<a href="https://hidden-hamlet-9751.herokuapp.com/">
-																		<img class="img-portfolio img-responsive" src="img/RE-Grocery-App.jpg">
-																</a>
-														</div>
-												</div>
-												<div class="col-md-6">
-														<div class="portfolio-item">
-																<a href="https://book-that-lesson.firebaseapp.com/#/">
-																		<img class="img-portfolio img-responsive" src="img/Book-That-Lesson.png">
-																</a>
-														</div>
-												</div>
-												<div class="col-md-6">
-														<div class="portfolio-item">
-																<a href="#contact">
-																		<img class="img-portfolio img-responsive" src="img/LandoBWebSolutionsLogo.png">
-																</a>
-														</div>
-												</div>
-												<div class="col-md-6">
-														<div class="portfolio-item">
-																<a href="#top">
-																		<img class="img-portfolio img-responsive" src="img/ComingSoon.jpg">
-																</a>
-														</div>
-												</div>
+							</div>
+							<div class="card-experience">
+								<div class="card-container wow fadeInUp" data-wow-delay="0.4s">
+									<div class="card-image">
+										<h4>Apr 2015 - Present</h4>
+										<img src="img/foxy.jpg" class="img-responsive" alt="experience">
+									</div>
+									<div class="card-content">
+										<a class="expander" href="#card-2">
+											<i class="fa fa-chevron-up"></i>
+											<span>Sr. Applications Support Analyst</span>
+										</a>
+										<p>BenefitMall</p>
+									</div>
+									<div class="card-expand" id="card-2">
+										<div class="expand-title">
+										<i class="fa fa-close"></i>
+										<span>Sr. Applications Support Analyst</span>
+										<p>BenefitMall</p>
 										</div>
-										<!-- /.row (nested) -->
-										<a href="#contact"><h2><i class="btn btn-dark btn-lg fa fa-angle-double-down"></i></h2></a>
+										<div class="expand-content">
+											<p>
+												<ul class="apps-support">
+													<li>Performing software testing, requirements gathering, bug investigation, training material development, and training.</li>
+													<li>Testing, deploying, and diagnosing desktop applications, websites using HTML, CSS, JavaScript, ASP, ASP.NET, and web services.</li>
+													<li>Maintaining servers and software, installing and configuring applications on Windows Server 2008 & 2012, IIS 6.0, 7.0 and 8.0, Windows 7, and 8, SQL Server 2005, 2008 & 2014; and Citrix Metaframe 4.5, 5.0, 6.0.</li>
+													<li>Working in SQL with developers and DBA to test code changes to applications before pushed to production level servers.</li>
+													<li>Writing SQL scripts as needed to update/modify data or views to correct issues with client data or database issues.</li>
+													<li>Performing software upgrades.</li>
+													<li>Administration of Citrix servers, including the set-up and the maintenance of new and existing clients.</li>
+												</ul>
+											</p>
+										</div>
+									</div>
 								</div>
-								<!-- /.col-lg-10 -->
+							</div>
+							<div class="card-experience">
+								<div class="card-container wow fadeInUp" data-wow-delay="0.6s">
+									<div class="card-image">
+										<h4>Jan 2012 - Jan 2013</h4>
+										<img src="img/kitty.jpg" class="img-responsive" alt="experience">
+									</div>
+									<div class="card-content">
+										<a class="expander" href="#card-3">
+											<i class="fa fa-chevron-up"></i>
+											<span>Developer</span>
+										</a>
+										<p>Epic Lines, Ltd.</p>
+									</div>
+									<div class="card-expand" id="card-3">
+										<div class="expand-title">
+										<i class="fa fa-close"></i>
+										<span>Developer</span>
+										<p>Epic Lines, Ltd.</p>
+										</div>
+										<div class="expand-content">
+											<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut nunc lacinia, luctus massa sollicitudin, luctus lorem. Quisque pellentesque mi turpis, sit amet sollicitudin metus placerat vitae.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-experience">
+								<div class="card-container">
+									<div class="card-image">
+										<h4>Jan 2011 - Jan 2012</h4>
+										<img src="img/octo.jpg" class="img-responsive" alt="experience">
+									</div>
+									<div class="card-content">
+										<a class="expander" href="#card-4">
+											<i class="fa fa-chevron-up"></i>
+											<span>Designer</span>
+										</a>
+										<p>Design Worthy, Ltd.</p>
+									</div>
+									<div class="card-expand" id="card-4">
+										<div class="expand-title">
+										<i class="fa fa-close"></i>
+										<span>Designer</span>
+										<p>Design Worthy, Ltd.</p>
+										</div>
+										<div class="expand-content">
+											<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut nunc lacinia, luctus massa sollicitudin, luctus lorem. Quisque pellentesque mi turpis, sit amet sollicitudin metus placerat vitae.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-						<!-- /.row -->
+					</div>
+			</div>
+		</div>
+	</section>
+	<!-- Experience end -->
+	<!-- Awards start -->
+	<section id="awards" data-speed="10" data-type="background">
+		<div class="container">
+			<div class="row margin-lg">
+				<h1 class="main-title text-center wow fadeIn">Awards</h1>
+				<div class="col-lg-3 col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay="0.2s">
+					<!-- Award item start -->
+					<div class="award-container">
+						<div class="award">
+							<i class="fa fa-trophy"></i>
+						</div>
+						<h3>Award Of Awesomnesss</h3>
+						<div class="award-meta">
+							<i class="fa fa-calendar"></i>
+							<span class="award-date"> January 01 2015</span>
+						</div>
+						<span class="award-desc">Received the award on account of being awesome, and notable excellence in daily activities</span>
+					</div>
+					<!-- Award item end -->
 				</div>
-				<!-- /.container -->
-		</section>
-
-		<!-- Call to Action -->
-		<aside id="contact" class="call-to-action bg-primary">
-				<div class="container">
+				<div class="col-lg-3 col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay="0.4s">
+					<div class="award-container">
+						<div class="award">
+							<i class="fa fa-lightbulb-o"></i>
+						</div>
+						<h3>Award Of Amazement</h3>
+						<div class="award-meta">
+							<i class="fa fa-calendar"></i>
+							<span class="award-date"> January 01 2014</span>
+						</div>
+						<span class="award-desc">Received the award on account of being awesome, and notable excellence in daily activities</span>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay="0.6s">
+					<div class="award-container">
+						<div class="award">
+							<i class="fa fa-heart"></i>
+						</div>
+						<h3>Award Of Astonishment</h3>
+						<div class="award-meta">
+							<i class="fa fa-calendar"></i>
+							<span class="award-date"> January 01 2013</span>
+						</div>
+						<span class="award-desc">Received the award on account of being awesome, and notable excellence in daily activities</span>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-3 col-xs-6 wow fadeInUp" data-wow-delay="0.8s">
+					<div class="award-container">
+						<div class="award">
+							<i class="fa fa-photo"></i>
+						</div>
+						<h3>Award Of Astoundment</h3>
+						<div class="award-meta">
+							<i class="fa fa-calendar"></i>
+							<span class="award-date"> January 01 2012</span>
+						</div>
+						<span class="award-desc">Received the award on account of being awesome, and notable excellence in daily activities</span>
+					</div>
+				</div>
+			</div>
+		</div>
+<!-- 		<div class="container">
+			<div class="row margin-lg">
+				<h1 class="main-title text-center wow fadeIn">Wisdom words</h1>
+				<div class="col-lg-12">
+					<div class="ref-container">
 						<div class="row">
-								<div class="col-lg-12 text-center">
-										<section class="container-fluid" id="section7">
-												<h1 class="text-center honest">Honest. Flexible. Creative. Reliable. Pasionate.</h1>
-										</section>
+							<div id="references-carousel" class="owl-carousel">
+								<div class="reference wow fadeInLeft">
+									<div class="row">
+										<div class="col-lg-3 text-right">
+											<div class="ref-person">
+												<h3>Steve Jobs</h3>
+												<p>Apple</p>
+											</div>
+										</div>
+										<div class="col-lg-9">
+											<p class="ref-text">
+											Design is not just what it looks like and feels like. Design is how it works.
+											</p>
+										</div>
+									</div>
 								</div>
+								<div class="reference">
+									<div class="row">
+										<div class="col-lg-3 text-right">
+											<div class="ref-person">
+												<h3>Bill Gates</h3>
+												<p>Microsoft</p>
+											</div>
+										</div>
+										<div class="col-lg-9">
+											<p class="ref-text">
+											Information technology and business are becoming inextricably interwoven. I don't think anybody can talk meaningfully about one without the talking about the other.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="reference">
+									<div class="row">
+										<div class="col-lg-3 text-right">
+											<div class="ref-person">
+												<h3>Steve Jobs</h3>
+												<p>Apple</p>
+											</div>
+										</div>
+										<div class="col-lg-9">
+											<p class="ref-text">
+											Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do. If you haven’t found it yet, keep looking. Don’t settle. As with all matters of the heart, you’ll know when you find it. And, like any great relationship, it just gets better and better as the years roll on. So keep looking until you find it. Don’t settle.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="reference">
+									<div class="row">
+										<div class="col-lg-3 text-right">
+											<div class="ref-person">
+												<h3>Elon Musk</h3>
+												<p>Tesla. SpaceX. PayPal</p>
+											</div>
+										</div>
+										<div class="col-lg-9">
+											<p class="ref-text">
+											[My biggest mistake is probably] weighing too much on someone's talent and not someone's personality. I think it matters whether someone has a good heart.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="reference">
+									<div class="row">
+										<div class="col-lg-3 text-right">
+											<div class="ref-person">
+												<h3>Steve Jobs</h3>
+												<p>Apple</p>
+											</div>
+										</div>
+										<div class="col-lg-9">
+											<p class="ref-text">
+											That’s been one of my mantras — focus and simplicity. Simple can be harder than complex: You have to work hard to get your thinking clean to make it simple. But it’s worth it in the end because once you get there, you can move mountains.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+	</section>
+	<!-- Awards end -->
+	<!-- Education start -->
+	<section id="education">
+		<div class="container">
+			<div class="row margin-lg">
+				<h1 class="main-title text-center wow fadeIn">Education</h1>
+				<div class="col-lg-12">
+					<!--Timeline start-->
+					<div class="timeline-container clearfix wow fadeIn">
+						<div class="latest">
+							<span>Latest</span>
+						</div>
+						<!--Right Group start-->
+						<div class="group-item group-right clearfix wow fadeInLeft" data-wow-delay="0.2s">
+							<span class="group-date">Present</span>
+							<span class="group-middle"></span>
+							<div class="group-desc">
+								<h3 class="group-title">Software Developer</h3>
+								<span class="group-sub-title">Nashville Software School</span>
+								<p>Fully immersive, intense, fast paced boot camp to learn the craft of software development. The Web Developer Bootcamp is a six-month, full-time program. The curriculum teaches the skills and technologies required to become a full-stack software developer. The core technologies that students use in this course are the three standard languages of the web: HTML, CSS and JavaScript. This course prepares students to work and build the code associated with websites, web apps and hybrid mobile applications. Intensive coding training: front and back end. HTML, CSS, JavaScript, jQuery, Git, GitHub, JSON, Ajax, node.js, .NET, C#, etc.</p>
+							</div>
+						</div>
+						<!--Right Group end-->
+						<!--Left Group start-->
+						<div class="group-item group-left clearfix wow fadeInRight" data-wow-delay="0.4s">
+							<span class="group-date">1994 - 2001</span>
+							<span class="group-middle"></span>
+							<div class="group-desc">
+								<h3 class="group-title">Bachelor of Science in Information Technology</h3>
+								<span class="group-sub-title">Tepic Institute of Technology</span>
+								<p>Bachelor's degree awarded for an undergraduate course or program in the Information Technology field. The degree is normally required in order to work in the Information Technology industry. A Bachelor of Science in Information Technology degree program is primarily focused on subjects such as software, databases, and networking. This degree is awarded for completing a program of study in the field of software development, software testing, software engineering, web design, databases, programming, computer networking and computer systems. Graduates with an information technology background are able to perform technology tasks relating to the processing, storing, and communication of information between computers, mobile phones, and other electronic devices.</p>
+							</div>
+						</div>
+						<!--Left Group end-->
+<!-- 						<div class="group-item group-right clearfix wow fadeInLeft" data-wow-delay="0.6s">
+							<span class="group-date">2013 - 2014</span>
+							<span class="group-middle"></span>
+							<div class="group-desc">
+								<h3 class="group-title">O Level</h3>
+								<span class="group-sub-title">School of Amusement</span>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut nunc lacinia, luctus massa sollicitudin, luctus lorem. Quisque pellentesque mi turpis, sit amet sollicitudin metus placerat vitae.</p>
+							</div>
+						</div> -->
+					</div>
+					<div class="oldest wow fadeIn">
+							<span>Oldest</span>
 						</div>
 				</div>
-		</aside>
-
-		<!-- Map -->
-		<section class="map bg_map">
-				<div></div>
-<!--         <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-				<br />
-				<small>
-						<a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
-				</small>
-				</iframe> -->
-		</section>
-
-		<!-- Footer -->
-		<footer>
-				<div class="container">
+			</div>
+		</div>
+	</section>
+	<!-- Education end -->
+	<!-- References start -->
+	<section id="references" data-speed="10" data-type="background">
+		<div class="container">
+			<div class="row margin-lg">
+				<h1 class="main-title text-center wow fadeIn">References</h1>
+				<div class="col-lg-12">
+					<div class="ref-container">
 						<div class="row">
-								<div class="col-lg-10 col-lg-offset-1 text-center">
-										<h4><strong>Lando B | Web Solutions</strong>
-										</h4>
-										<p>Nashville, TN</p>
-										<ul class="list-unstyled phone-email">
-												<li><i class="fa fa-phone fa-fw"></i> <a href="tel:615-290-3050" class="telephone">(615) 290-3050</a></li>
-												<li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:landob.websolutions@gmail.com">landob.websolutions@gmail.com</a>
-												</li>
-										</ul>
-										<br>
-										<ul class="list-inline social">
-												<li>
-														<a href="https://www.linkedin.com/in/jrolandobernal"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
-												</li>
-												<li>
-														<a href="http://twitter.com/jrolandobernal"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-												</li>
-												<li>
-														<a href="https://plus.google.com/+RolandoBernal"><i class="fa fa-google-plus fa-fw fa-3x"></i></a>
-												</li>
-										</ul>
-										<hr class="small">
-										<p class="text-muted">Copyright &copy; Lando B | Web Soliutions 2015</p>
-										<a href="#top"><h2><i class="btn btn-dark btn-lg fa fa-home"></i></h2></a>
+							<div id="references-carousel" class="owl-carousel">
+								<div class="reference wow fadeInLeft">
+									<div class="row">
+										<div class="col-lg-3 text-right">
+											<div class="ref-person">
+												<h3>Jose Salazar</h3>
+												<p>Head Coach</p>
+											</div>
+										</div>
+										<div class="col-lg-9">
+											<p class="ref-text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui nibh, dignissim lobortis augue sed, placerat lobortis nisl. Phasellus tempor ex sit amet est condimentum, at sodales odio luctus. Phasellus vitae turpis hendrerit, faucibus magna sit amet, lobortis enim.
+											</p>
+										</div>
+									</div>
 								</div>
+								<div class="reference">
+									<div class="row">
+										<div class="col-lg-3 text-right">
+											<div class="ref-person">
+												<h3>Thomas Bangs</h3>
+												<p>Software Developer</p>
+											</div>
+										</div>
+										<div class="col-lg-9">
+											<p class="ref-text">
+											Rolando is hard working and committed to creating quality work. Working together with Rolando as a team member, he was always positive and very helpful, while helping the team to achieve it's goals. He is a fast learner and picks up on new technologies quickly.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="reference">
+									<div class="row">
+										<div class="col-lg-3 text-right">
+											<div class="ref-person">
+												<h3>Hannah Smithmier</h3>
+												<p>Software Developer</p>
+											</div>
+										</div>
+										<div class="col-lg-9">
+											<p class="ref-text">
+											Rolando is one of the hardest workers in our class. He is always the first person I reach out to when I have a questions with anything I'm working on. He is very knowledgable when it comes to development and is always willing to share his knowledge and skills to assist anyone with questions.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
+					</div>
 				</div>
-		</footer>
+			</div>
+		</div>
+	</section>
+	<!-- References end -->
+	<!-- Work start -->
+	<section id="work">
+		<div class="container">
+			<div class="row margin-lg">
+				<h1 class="main-title text-center wow fadeIn">My Work</h1>
+				<div class="col-lg-12">
+					<!-- Work Controls -->
+					<div id="filters" class="controls work-controls wow fadeIn">
+						<button class="is-checked btn btn-work" data-filter="*">ALL</button>
+						<button class="btn btn-work" data-filter=".webdesign">Web Design</button>
+						<button class="btn btn-work" data-filter=".webdevelopment">Web Development</button>
+						<button class="btn btn-work" data-filter=".branddesign">App Development</button>
+					</div>
+					<!--Work Items-->
+					<div class="work-items isotope wow fadeInUp">
+						<div class="item webdesign work-item col-xs-6 col-sm-6 col-md-3 col-lg-3">
+							<a href="#" class="view-work-item" data-toggle="modal" data-id="Work Item 1" data-target="#lightbox">
+								<img src="img/p1.png" class="img-responsive" alt="work-item">
+								<div class="overlay">
+									<div class="work-category">
+										<h5>web design</h5>
+									</div>
+									<div class="work-name">
+										<h3>Books</h3>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="item branddesign work-item col-xs-6 col-sm-6 col-md-3 col-lg-3">
+							<a href="#" class="view-work-item" data-id="Work Item 2" data-toggle="modal" data-target="#lightbox">
+								<img src="img/p2.png" class="img-responsive" alt="work-item">
+								<div class="overlay">
+									<div class="work-category">
+										<h5>app development</h5>
+									</div>
+									<div class="work-name">
+										<h3>desktop items</h3>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="item webdesign work-item col-xs-6 col-sm-6 col-md-3 col-lg-3">
+							<a href="#" class="view-work-item" data-id="Work Item 3" data-toggle="modal" data-target="#lightbox">
+								<img src="img/p3.png" class="img-responsive" alt="work-item">
+								<div class="overlay">
+									<div class="work-category">
+										<h5>web design</h5>
+									</div>
+									<div class="work-name">
+										<h3>Technology</h3>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="item webdevelopment work-item col-xs-6 col-sm-6 col-md-3 col-lg-3">
+							<a href="#" class="view-work-item" data-id="Work Item 4" data-toggle="modal" data-target="#lightbox">
+								<img src="img/p4.png" class="img-responsive" alt="work-item">
+								<div class="overlay">
+									<div class="work-category">
+										<h5>web development</h5>
+									</div>
+									<div class="work-name">
+										<h3>Camera</h3>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Work end -->
+	<!-- Contact start -->
+	<section id="contact">
+		<div class="container">
+			<div class="row margin-lg">
+				<h1 class="main-title text-center wow fadeIn">Contact</h1>
+				<div class="row">
+					<div class="col-lg-12">
+						<!--Validation messages start-->
+						<div class="alert alert-success hidden" id="contactSuccess">
+							<strong>Success!</strong> Your message has been sent to us.
+						</div>
+						<div class="alert alert-danger hidden" id="contactError">
+							<strong>Error!</strong> There was an error sending your message.
+						</div>
+						<!--Validation messages end-->
+						<!-- Contact form start -->
+						<form class="wow fadeInUp" id="contactForm" action="php/contact.php" method="POST">
+							<div class="row">
+								<div class="form-group">
+									<div class="col-md-6">
+										<label>Your name *</label>
+										<input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" id="name" required>
+									</div>
+									<div class="col-md-6">
+										<label>Your email address *</label>
+										<input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" id="email" required>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="form-group">
+									<div class="col-md-12">
+										<label>Subject</label>
+										<input type="text" value="" data-msg-required="Please enter the subject." maxlength="100" class="form-control" name="subject" id="subject" required>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="form-group">
+									<div class="col-md-12">
+										<label>Message *</label>
+										<textarea maxlength="5000" data-msg-required="Please enter your message." rows="10" class="form-control" name="message" id="message" required></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<input type="submit" value="Send Message" class="btn btn-contact" data-loading-text="Loading...">
+								</div>
+							</div>
+						</form>
+						<!-- Contact form end -->
+					</div>
+				</div>
+				<!--Social start-->
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-delay="0.2s">
+						<div class="social-box-container text-center">
+							<a href="#">
+								<div class="icon-box">
+									<i class="fa fa-envelope"></i>
+								</div>
+								<div class="social-text">
+									landob.websolutions@gmail.com
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-delay="0.4s">
+						<div class="social-box-container text-center">
+							<a href="#">
+								<div class="icon-box">
+									<i class="fa fa-phone"></i>
+								</div>
+								<div class="social-text">
+									(615) 290-3050
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-delay="0.6s">
+						<div class="social-box-container text-center">
+							<a href="#">
+								<div class="icon-box">
+									<i class="fa fa-map-marker"></i>
+								</div>
+								<div class="social-text">
+									Earth, TN
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!--Social end-->
+				<!--Footer start-->
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="copyright text-center">
+							© 2015, Lando B | Web Solutions. All Rights Reserved.
+						</div>
+					</div>
+				</div>
+				<!--Footer end-->
+			</div>
+		</div>
+	</section>
+	<!-- Contact end -->
+</div>
+<!-- Resume end -->
+<!-- Lightbox start -->
+<div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body">
+				<img src="#" alt="work-item"/>
+			</div>
+			<div class="modal-caption">
+				<div id="caption"></div>
+				<button type="button" class="close hidden" data-dismiss="modal" aria-hidden="true"><i class="fa fa-close"></i></button>
+			</div>
+        </div>
+    </div>
+</div>
+<!-- Lightbox end -->
+<!-- Footer start -->
+<footer>
+</footer>
+<!-- Footer end -->
+<!-- Back To Top Button start -->
+<a href="#" class="scrollToTop"><i class="fa fa-chevron-up"></i></a>
+<!-- Back To Top Button end -->
 
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/jquery.js"></script>
 
-
-
-		<!-- JavaScript -->
-		<!-- <script src="js/main.js"></script> -->
-
-		<!-- jQuery -->
-		<script src="js/jquery.js"></script>
-
-		<!-- Bootstrap Core JavaScript -->
-		<script src="js/bootstrap.min.js"></script>
-
-		<!-- Custom Theme JavaScript -->
-		<script>
-		// Closes the sidebar menu
-		$("#menu-close").click(function(e) {
-				e.preventDefault();
-				$("#sidebar-wrapper").toggleClass("active");
-		});
-
-		// Opens the sidebar menu
-		$("#menu-toggle").click(function(e) {
-				e.preventDefault();
-				$("#sidebar-wrapper").toggleClass("active");
-		});
-
-		// Scrolls to the selected menu item on the page
-		$(function() {
-				$('a[href*=#]:not([href=#])').click(function() {
-						if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-								var target = $(this.hash);
-								target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-								if (target.length) {
-										$('html,body').animate({
-												scrollTop: target.offset().top
-										}, 1000);
-										return false;
-								}
-						}
-				});
-		});
-		</script>
-		<!-- Plugin JavaScript -->
-		<script src="js/jquery.easing.min.js"></script>
-
-		<!-- Contact Form JavaScript -->
-		<script src="js/jqBootstrapValidation.js"></script>
-		<script src="js/contact_me.js"></script>
-
-		<!-- Custom Theme JavaScript -->
-		<script src="js/my.js"></script>
+<!-- Compiled JS/Scripts -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/discover-isotope.js"></script>
+<script src="js/discovery.js"></script>
+<script src="js/jquery.easypiechart.js"></script>
+<script src="js/skills.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/owl-custom.js"></script>
+<script src="js/parallax/parallax.js"></script>
+<script src="js/modernizr.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.validation.js"></script>
+<script src="js/contact.js"></script>
 
 </body>
-
 </html>
