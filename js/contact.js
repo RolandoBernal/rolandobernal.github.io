@@ -1,9 +1,5 @@
 /*------------------------------------------------------
  Name: 		Discovery
- Version: 	1.0
- Updated:	24/04/2015
- Website:	http://audaindesigns.com
- Author:	Audain Designs
  Type:		JS - Contact Form
 -------------------------------------------------------*/
 
@@ -36,7 +32,7 @@
 				},
 				dataType: 'json',
 				complete: function(data) {
-				
+
 					if (typeof data.responseJSON === 'object') {
 						if (data.responseJSON.response == 'success') {
 
@@ -60,7 +56,7 @@
 							}
 
 							$submitButton.button('reset');
-							
+
 							return;
 
 						}
@@ -77,7 +73,7 @@
 
 					$form.find('.has-success')
 						.removeClass('has-success');
-						
+
 					$submitButton.button('reset');
 
 				}
