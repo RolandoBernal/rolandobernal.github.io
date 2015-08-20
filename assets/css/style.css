@@ -53,7 +53,8 @@ p {
 
 
 a {
-    color: #ACBAC1;
+    color: #FFF;
+    /*#ACBAC1;*/
     word-wrap: break-word;
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
     -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -122,7 +123,7 @@ a:after {
 }
 form.signup input  {
 	height: 42px;
-	width: 200px;
+	width: 300px;
 	border-radius: 0;
 	border: none;
 }
@@ -160,8 +161,8 @@ form.signup input.form-control:focus {
 
 
 #wrapper h1 {
-	margin-top: 60px;
-	margin-bottom: 40px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	color: #fff;
 	font-size: 45px;
 	font-weight: 900;
@@ -171,6 +172,7 @@ form.signup input.form-control:focus {
 h2.subtitle {
 	color: #fff;
 	font-size: 24px;
+  margin-top: 60px
 }
 
 /*-----------------------
@@ -239,8 +241,8 @@ h2.subtitle {
 .fa-github:hover,
 .fa-github:focus,
 .fa-github:active {
-    color: #000;
-    background-color: #FFF;
+    color: #fff;
+    background-color: #000;
     border-radius: 4px;
 }
 
