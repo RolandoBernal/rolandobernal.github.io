@@ -10,22 +10,22 @@
  */
 var Boxlayout = (function() {
 
-	var $el = $( '#bl-main' ),
+	var $el = $( '#rb-main' ),
 		$sections = $el.children( 'section' ),
 		// works section
-		$sectionWork = $( '#bl-work-section' ),
+		$sectionWork = $( '#rb-work-section' ),
 		// work items
-		$workItems = $( '#bl-work-items > li' ),
+		$workItems = $( '#rb-work-items > li' ),
 		// work panels
-		$workPanelsContainer = $( '#bl-panel-work-items' ),
+		$workPanelsContainer = $( '#rb-panel-work-items' ),
 		$workPanels = $workPanelsContainer.children( 'div' ),
 		totalWorkPanels = $workPanels.length,
 		// navigating the work panels
-		$nextWorkItem = $workPanelsContainer.find( 'nav > span.bl-next-work' ),
+		$nextWorkItem = $workPanelsContainer.find( 'nav > span.rb-next-work' ),
 		// if currently navigating the work items
 		isAnimating = false,
 		// close work panel trigger
-		$closeWorkItem = $workPanelsContainer.find( 'nav > span.bl-icon-close' ),
+		$closeWorkItem = $workPanelsContainer.find( 'nav > span.rb-icon-close' ),
 		transEndEventNames = {
 			'WebkitTransition' : 'webkitTransitionEnd',
 			'MozTransition' : 'transitionend',
@@ -52,23 +52,23 @@ var Boxlayout = (function() {
 			$section.on( 'click', function() {
 
 				if( !$section.data( 'open' ) ) {
-					$section.data( 'open', true ).addClass( 'bl-expand bl-expand-top' );
-					$el.addClass( 'bl-expand-item' );	
+					$section.data( 'open', true ).addClass( 'rb-expand rb-expand-top' );
+					$el.addClass( 'rb-expand-item' );	
 				}
 
-			} ).find( 'span.bl-icon-close' ).on( 'click', function() {
+			} ).find( 'span.rb-icon-close' ).on( 'click', function() {
 				
 				// close the expanded section and scale up the others
-				$section.data( 'open', false ).removeClass( 'bl-expand' ).on( transEndEventName, function( event ) {
+				$section.data( 'open', false ).removeClass( 'rb-expand' ).on( transEndEventName, function( event ) {
 					if( !$( event.target ).is( 'section' ) ) return false;
-					$( this ).off( transEndEventName ).removeClass( 'bl-expand-top' );
+					$( this ).off( transEndEventName ).removeClass( 'rb-expand-top' );
 				} );
 
 				if( !supportTransitions ) {
-					$section.removeClass( 'bl-expand-top' );
+					$section.removeClass( 'rb-expand-top' );
 				}
 
-				$el.removeClass( 'bl-expand-item' );
+				$el.removeClass( 'rb-expand-item' );
 				
 				return false;
 
@@ -80,14 +80,14 @@ var Boxlayout = (function() {
 		$workItems.on( 'click', function( event ) {
 
 			// scale down main section
-			$sectionWork.addClass( 'bl-scale-down' );
+			$sectionWork.addClass( 'rb-scale-down' );
 
 			// show panel for this work item
-			$workPanelsContainer.addClass( 'bl-panel-items-show' );
+			$workPanelsContainer.addClass( 'rb-panel-items-show' );
 
 			var $panel = $workPanelsContainer.find("[data-panel='" + $( this ).data( 'panel' ) + "']");
 			currentWorkPanel = $panel.index();
-			$panel.addClass( 'bl-show-work' );
+			$panel.addClass( 'rb-show-work' );
 
 			return false;
 
@@ -105,18 +105,18 @@ var Boxlayout = (function() {
 			currentWorkPanel = currentWorkPanel < totalWorkPanels - 1 ? currentWorkPanel + 1 : 0;
 			var $nextPanel = $workPanels.eq( currentWorkPanel );
 
-			$currentPanel.removeClass( 'bl-show-work' ).addClass( 'bl-hide-current-work' ).on( transEndEventName, function( event ) {
+			$currentPanel.removeClass( 'rb-show-work' ).addClass( 'rb-hide-current-work' ).on( transEndEventName, function( event ) {
 				if( !$( event.target ).is( 'div' ) ) return false;
-				$( this ).off( transEndEventName ).removeClass( 'bl-hide-current-work' );
+				$( this ).off( transEndEventName ).removeClass( 'rb-hide-current-work' );
 				isAnimating = false;
 			} );
 
 			if( !supportTransitions ) {
-				$currentPanel.removeClass( 'bl-hide-current-work' );
+				$currentPanel.removeClass( 'rb-hide-current-work' );
 				isAnimating = false;
 			}
 			
-			$nextPanel.addClass( 'bl-show-work' );
+			$nextPanel.addClass( 'rb-show-work' );
 
 			return false;
 
@@ -126,9 +126,9 @@ var Boxlayout = (function() {
 		$closeWorkItem.on( 'click', function( event ) {
 
 			// scale up main section
-			$sectionWork.removeClass( 'bl-scale-down' );
-			$workPanelsContainer.removeClass( 'bl-panel-items-show' );
-			$workPanels.eq( currentWorkPanel ).removeClass( 'bl-show-work' );
+			$sectionWork.removeClass( 'rb-scale-down' );
+			$workPanelsContainer.removeClass( 'rb-panel-items-show' );
+			$workPanels.eq( currentWorkPanel ).removeClass( 'rb-show-work' );
 			
 			return false;
 
