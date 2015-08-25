@@ -166,7 +166,7 @@ a:hover {
 
 .black-shadow {
 	color:#fff;
-	text-shadow: 0 0 10px #09F, 0 0 8px #0000FF;
+	text-shadow: 0 0 8px #09F, 0 0 5px #0000FF;
     /*text-shadow: -3px -3px 8px #337ab7;*/
 }
 
