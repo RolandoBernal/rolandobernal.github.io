@@ -28,7 +28,6 @@ body {
 
 a {
     color: #FFF;
-    /*#ACBAC1;*/
     word-wrap: break-word;
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
     -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -59,7 +58,7 @@ a {
 	font-weight: 700;
 	letter-spacing: 2px;
 	padding: 0 5px;
-	/*text-transform: uppercase;*/
+	text-transform: uppercase;
 	font-size: 80%;
 }
 
@@ -107,7 +106,7 @@ a:hover {
 .rb-main > section:nth-child(3) {
 	top: 50%;
 	left: 0;
-	background: url('../img/resume.jpg') no-repeat;
+	background: url('../img/web-development.png') no-repeat;
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
@@ -167,7 +166,8 @@ a:hover {
 
 .black-shadow {
 	color:#fff;
-	text-shadow: 0 0 5px #09F, 0 0 5px #0000FF;
+	text-shadow: 0 0 10px #09F, 0 0 8px #0000FF;
+    /*text-shadow: -3px -3px 8px #337ab7;*/
 }
 
 .rb-icon {
