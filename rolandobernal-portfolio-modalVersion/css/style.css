@@ -1,8 +1,8 @@
 /*
- * Copyright 2015 
+ * Copyright 2015
  * Created by: Rolando Bernal
  * URL: http://www.rolandobernal.com
- * Designed and built using Bootstrap. 
+ * Designed and built using Bootstrap.
  */
 
 
@@ -58,7 +58,7 @@ a:hover {
 .rb-main > section:first-child {
 	top: 0;
 	left: 0;
-	background: url('../images/back2.jpg') no-repeat; 
+	background: url('../img/anotherMe.JPG') no-repeat;
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
@@ -68,7 +68,7 @@ a:hover {
 .rb-main > section:nth-child(2) {
 	top: 0;
 	left: 50%;
-	background: url('../images/back3.jpg') no-repeat; 
+	background: url('../img/RolandoBernal-SWDev.jpg') no-repeat;
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
@@ -78,7 +78,7 @@ a:hover {
 .rb-main > section:nth-child(3) {
 	top: 50%;
 	left: 0;
-	background: url('../images/back4.jpg') no-repeat; 
+	background: url('../img/TitansStadium.JPG') no-repeat;
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
@@ -88,7 +88,7 @@ a:hover {
 .rb-main > section:nth-child(4) {
 	top: 50%;
 	left: 50%;
-	background: url('../images/back5.jpg') no-repeat; 
+	background: url('../img/MyGolfBackground2.JPG') no-repeat;
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
@@ -168,7 +168,7 @@ a:hover {
 	content: "\e005";
 }
 
-.rb-content, 
+.rb-content,
 div.rb-panel-items > div > div {
 	opacity: 0;
 	pointer-events: none;
@@ -218,7 +218,7 @@ div.rb-panel-items > div > div {
 	list-style: none;
 	padding: 0;
 	margin: 0;
-} 
+}
 
 .rb-content > ul li {
 	display: inline-rbock;
@@ -245,7 +245,7 @@ div.rb-panel-items > div > div {
 	list-style: none;
 	padding: 0;
 	margin: 0;
-} 
+}
 
 
 /* --------------------------------------------------------	*/
@@ -264,7 +264,7 @@ div.rb-panel-items > div > div {
   height:35px;
   font-size:14px !important;
   line-height:40px;
-  background: #c9ab8b !important;   
+  background: #c9ab8b !important;
   border:0px;
   -webkit-box-shadow:rgba(0, 0, 0, 0) 0 0 0 inset;
   text-shadow: none !important;
@@ -490,14 +490,14 @@ section.rb-expand .rb-icon-close {
 /* --------------------------------------------------------	*/
 /*	Social Networks Icons */
 /* --------------------------------------------------------	*/
-       
-.social-network { 
-	display:inline-rbock; 
-	background: url(../img/social-networks.png) no-repeat top left; 
-	width: 40px; 
-	height: 40px; 
+
+.social-network {
+	display:inline-rbock;
+	background: url(../img/social-networks.png) no-repeat top left;
+	width: 40px;
+	height: 40px;
   margin: 0px 4px 0px 0px;
-	background-position-y: -40px; 
+	background-position-y: -40px;
 	-webkit-transition:all 0.2s ease;
 	-moz-transition:all 0.2s ease;
 	-o-transition:all 0.2s ease;
@@ -519,5 +519,5 @@ section.rb-expand .rb-icon-close {
 	.rb-content > ul li {
 		width: 40%;
 	}
-	
+
 }
