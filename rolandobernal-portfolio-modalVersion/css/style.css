@@ -27,12 +27,39 @@ body {
 }
 
 a {
+    color: #FFF;
+    /*#ACBAC1;*/
+    word-wrap: break-word;
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #4F92AF;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a {
 	color: #f0f0f0;
 	text-decoration: none;
 	font-weight: 700;
 	letter-spacing: 2px;
 	padding: 0 5px;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	font-size: 80%;
 }
 
@@ -47,6 +74,7 @@ a:hover {
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
+
 }
 
 .rb-main > section {
@@ -59,6 +87,7 @@ a:hover {
 	top: 0;
 	left: 0;
 	background: url('../img/RolandoBernal.jpeg') no-repeat;
+	/*background-color: rgba(0, 0, 0, 0.2);*/
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
@@ -68,7 +97,7 @@ a:hover {
 .rb-main > section:nth-child(2) {
 	top: 0;
 	left: 50%;
-	background: url('../img/SweepingCurrent.jpg') no-repeat;
+	background: url('../img/projects.jpg') no-repeat;
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
@@ -78,7 +107,7 @@ a:hover {
 .rb-main > section:nth-child(3) {
 	top: 50%;
 	left: 0;
-	background: url('../img/EveningReflections.jpg') no-repeat;
+	background: url('../img/resume.jpg') no-repeat;
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
@@ -88,7 +117,7 @@ a:hover {
 .rb-main > section:nth-child(4) {
 	top: 50%;
 	left: 50%;
-	background: url('../img/TilesWarmGrey.jpg') no-repeat;
+	background: url('../img/NashvilleMapContactMe.png') no-repeat;
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
@@ -130,10 +159,15 @@ a:hover {
 	margin: 0;
 	padding: 20px;
 	width: 100%;
-	font-size: 1.8em;
+	font-size: 2em;
 	letter-spacing: 2px;
 	font-weight: 700;
 	text-transform: uppercase;
+}
+
+.black-shadow {
+	color:#fff;
+	text-shadow: 0 0 5px #09F, 0 0 5px #0000FF;
 }
 
 .rb-icon {
@@ -245,6 +279,10 @@ div.rb-panel-items > div > div {
 	list-style: none;
 	padding: 0;
 	margin: 0;
+}
+
+.span12 {
+	padding-right: 3%;
 }
 
 
@@ -490,6 +528,74 @@ section.rb-expand .rb-icon-close {
 /* --------------------------------------------------------	*/
 /*	Social Networks Icons */
 /* --------------------------------------------------------	*/
+
+.social {
+  margin-top: 50px;
+  width: 100%;
+  height: 70px;
+  display: block;
+  z-index: 2;
+}
+.social ul {
+  margin: 20px 20px;
+  
+}
+
+.social ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 5px 5px;
+    margin: 20px;
+}
+
+.social ul li a i.fa {
+  font-size: 30px;
+}
+
+#linkedin:hover,
+#linkedin:focus,
+#linkedin:active,
+.fa-linkedin:hover,
+.fa-linkedin:focus,
+.fa-linkedin:active {
+    color: #FFF;
+    background-color: #007bb6;
+    border-radius: 4px;
+}
+
+#twitter:hover,
+#twitter:focus,
+#twitter:active,
+.fa-twitter:hover,
+.fa-twitter:focus,
+.fa-twitter:active {
+    color: #FFF;
+    background-color: #55acee;
+    border-radius: 4px;
+}
+
+
+#google-plus:hover,
+#google-plus:focus,
+#google-plus:active,
+.fa-google-plus:hover,
+.fa-google-plus:focus,
+.fa-google-plus:active {
+    color: #FFF;
+    background-color: #dd4b39;
+    border-radius: 4px;
+}
+
+#github:hover,
+#github:focus,
+#github:active,
+.fa-github:hover,
+.fa-github:focus,
+.fa-github:active {
+    color: #fff;
+    background-color: #000;
+    border-radius: 4px;
+}
 
 .social-network {
 	display:inline-rbock;
