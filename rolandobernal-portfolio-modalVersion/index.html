@@ -3,10 +3,13 @@
  * Created by: Rolando Bernal
  * URL: http://www.rolandobernal.com
  * Designed and built using Bootstrap.
+ * Bootstrap: modal.js v3.3.5
+ * http://getbootstrap.com/javascript/#modals
+ * Explodes the advantage of CSS Transitions and a beautiful Script created by Codrops: boxlayout.js
 -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="js no-touch cssanimations csstransitions">
 	<head>
 		<meta charset="utf-8">
 		<title>Rolando Bernal | Software Developer</title>
@@ -21,10 +24,11 @@
 
 		<!--Fonts-->
 		<link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
-		<link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
-		<link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="bower_components/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+		<link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 		<!-- Simple Style -->
+		<link href="bower_components/icomoon-bower/dist/css/style.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 
 		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -63,19 +67,22 @@
 									<h2>My Skills</h2>
 											<!-- Progress Bar -->
 										<div class="progress">
-										<div class="bar" style="width: 93%;">HTML/CSS/JavaScript 93%</div>
+										<div class="bar" style="width: 93%;">HTML/CSS/JavaScript <b>93%</b></div>
 										</div>
 										<div class="progress">
-										<div class="bar" style="width: 99%;">Web Development 99%</div>
+										<div class="bar" style="width: 80%;">Angular.js/jQuery <b>80%</b></div>
 										</div>
 										<div class="progress">
-										<div class="bar" style="width: 78%;">Web Design 78%</div>
+										<div class="bar" style="width: 68%;">Node.js/Express.js <b>68%</b></div>
 										</div>
 										<div class="progress">
-										<div class="bar" style="width: 80%;">Golf 80%</div>
+										<div class="bar" style="width: 90%;">C#/.Net/SQL <b>90%</b></div>
 										</div>
 										<div class="progress">
-										<div class="bar" style="width: 63%;">Party 63%</div>
+										<div class="bar" style="width: 85%;">Grunt/Gulp/VIM/Git/GitHub/RESTful API/MVC/Bower/NPM. <b>85%</b></div>
+										</div>
+										<div class="progress">
+										<div class="bar" style="width: 84%;">Golf <b>84%</b></div>
 										</div>
 										<!-- Progress Bar End -->
 									</div><!-- /span6 -->
@@ -87,19 +94,19 @@
 									<div class="span12">
 										<div class="row about-us">
 											<div class="span3">
-											<h3><i class="icon-user icon-white"></i> More About Me?</h3>
+											<h3><i class="icon-user icon-white"></i>&nbsp &nbsp More About Me?</h3>
 											Originally from Mexico, I moved to the US in 2008. I've lived in Nashville, TN since then and I'm proud to call it "home". I'm a husband, married to a beautiful woman with whom I'm also a dad, we have two beautiful children: Violet (7) and Levi (1). My family is the biggest joy I have found in my life.
 											</div>
 											<div class="span3">
-											<h3><i class="icon-heart icon-white"></i> What I Love</h3>
+											<h3><i class="icon-heart icon-white"></i>&nbsp &nbsp What I Love</h3>
 											I love golf. My best score is 84 and I hope to break 80 at some point one of these days. I love Football, big Tennessee Titans fan. I love soccer, have played it since I was a kid. I love going to the movies, either with my wife to see a fun movie, with my kids to see a Disney or any cartoon movie, or with my friends, to see the latest action/super-hero movie. And sometimes I cook.
 											</div>
 											<div class="span3">
-											<h3><i class="icon-fire icon-white"></i> Work Hard</h3>
+											<h3><i class="icon-fire icon-white"></i>&nbsp &nbsp Work Hard</h3>
 											I am an avid follower of technology. I offer you a complete web solution. I can guide you through the early stages of project planning and research, help you with information architecture and user experience, design your website, and finally build the site for you.<br/> My approach? Simple and Functional. It is too easy for us to complicate our lives, why do so with our software?
 											</div>
 											<div class="span3">
-											<h3><i class="icon-plane icon-white"></i> Ready To Go</h3>
+											<h3><i class="icon-rocket icon-white"></i>&nbsp &nbsp Ready To Go</h3>
 											I just finished a 6 month software bootcamp in Nashville.<br/> I learned Frontend Development: HTML, CSS, Javascript, jQuery, AngularJS.<br/>And Backend Development: C#, .Net, SQL, SQL Server, SQLite, Postgres.<br/> And Other Stuff: Grunt, Gulp, VIM, Git, GitHub, Sublime Text, Visual Studio, Command Line, RESTful API, MVC, Bower, NPM.<br/> In my previous experiences, I have found satisfaction in discovering and implementing solutions. Now I am very excited to be doing just that through code.
 											</div>
 										</div><!-- /row-about-us -->
@@ -109,7 +116,7 @@
 						</div><!-- /row-fluid -->
 
 					</div><!-- /rb-content -->
-					<span class="rb-icon rb-icon-close"></span>
+					<span class="rb-icon rb-icon-close"></i></span>
 				</section>
 
 
@@ -122,31 +129,29 @@
 					<div class="rb-content">
 						<h2>Recent Work</h2>
 						<p class="quo-text">
-						<h3>Design is not just what it looks like and feels like. Design is how it works.</h3>
+						<h4 class="quo-text"><span class="rb-icon rb-icon-quotes-left"></span>&nbsp Design is not just what it looks like and feels like. Design is how it works.</h4>
+						<h5 class="quo-text">-Steve Jobs</h5>
 						</p>
-						<h4>Steve Jobs</h4>
 						<p></p>
-						<p class="quo-text">
-						<h3>Simple can be harder than complex: You have to work hard to get your thinking clean to make it simple. But it’s worth it in the end because once you get there, you can move mountains.</h3>
-						</p>
-						<h4>Steve Jobs</h4>
+						<h4 class="quo-text"><span class="rb-icon rb-icon-quotes-left"></span>&nbsp Simple can be harder than complex: You have to work hard to get your thinking clean to make it simple. But it’s worth it in the end because once you get there, you can move mountains.</h4>
+						<h5 class="quo-text">-Steve Jobs</h5>
 						<br><br>
 						<div class="row-fluid">
 							<div class="span4">
 								<ul id="rb-work-items" style="list-style: none;">
-									<li data-panel="panel-1"><a href="#"><img src="images/project1.jpg" /></a></li>
+									<li data-panel="panel-1"><a href="#"><img src="img/RE-Grocery-App.jpg" /></a></li>
 								</ul>
 								<p>RE Grocery App</p>
 							</div><!-- /span4 -->
 							<div class="span4">
 								<ul id="rb-work-items">
-									<li data-panel="panel-2"><a href="#"><img src="images/project2.jpg" /></a></li>
+									<li data-panel="panel-2"><a href="#"><img src="img/Book-That-Lesson.png" /></a></li>
 								</ul>
 								<p>Book That Lesson!</p>
 							</div><!-- /span4 -->
 							<div class="span4">
 								<ul id="rb-work-items">
-									<li data-panel="panel-3"><a href="#"><img src="images/project3.jpg" /></a></li>
+									<li data-panel="panel-3"><a href="#"><img src="img/underconstruction.png" /></a></li>
 								</ul>
 								<p>Nashville International Futbol Club</p>
 							</div><!-- /span4 -->
@@ -167,33 +172,34 @@
 						<div class="row-fluid">
 							<div class="span12">
 								<h2>Education</h2>
+								<br><br>
 								<div>
-									<img src="images/rbogentry.jpg" alt="">
-									<h3>Nashville Software School</h3>
+									<h3><img class="img-resume" src="img/NSS.png" alt="Nashville Software School">&nbsp Nashville Software School</h3>
 									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramrbed it to make a type specimen book.</p>
 									<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop purbishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 								</div>
 								<div>
-									<h3>Tepic Insitute of Technology</h3>
-									<img src="images/rbogentry.jpg" alt="">
+									<h3><img class="img-resume" src="img/ITT.gif" alt="Instituto Tecnologico de Tepic">&nbsp Tepic Insitute of Technology</h3>
 									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramrbed it to make a type specimen book.</p>
 									<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop purbishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-								</div>
+								</div><br><br>
+								<hr class="small"><br>
 								<h2>Work Experience</h2>
+								<br><br>
 								<div>
-									<h3>Lando B | Web Solutions</h3>
+									<h3><img class="img-resume" src="img/LandoBWebSolutionsLogo.png" alt="Lando B | Web Solutions">&nbsp Lando B | Web Solutions</h3>
 									<p>Contrary to popular belief, Lorem Ipsum is not simply random text.... </p>
 								</div>
 								<div>
-									<h3>BenefitMall, Inc</h3>
+									<h3><img class="img-resume" src="img/BenefitMall.jpg" alt="BenefitMall">&nbsp BenefitMall, Inc</h3>
 									<p>Contrary to popular belief, Lorem Ipsum is not simply random text.... </p>
 								</div>
 								<div>
-									<h3>Waller, Landsen, Dortch & Davis, LLC</h3>
+									<h3><img class="img-resume" src="img/waller.png" alt="Waller">&nbsp Waller, Landsen, Dortch & Davis, LLC</h3>
 									<p>Contrary to popular belief, Lorem Ipsum is not simply random text.... </p>
 								</div>
 								<div>
-									<h3>CompuPay, Inc</h3>
+									<h3><img class="img-resume" src="img/compupay.gif" alt="CompuPay">&nbsp CompuPay, Inc</h3>
 									<p>Contrary to popular belief, Lorem Ipsum is not simply random text.... </p>
 								</div>
 							</div><!-- /span12 -->
@@ -214,7 +220,7 @@
 							<div class="span12">
 								<h2>Get in touch!</h2>
 								<br>
-								<p>I am available for freelance work and/or full time jobs.</p>
+								<p class="im-available">I am available for freelance work and/or full time jobs.</p>
 
 								<div class="container-fluid white toppad" id="contactcontainer">
 									<div class="container">
@@ -229,10 +235,10 @@
 											<div class="row">
 											  <div class="col-md-12 contact-social-pad list-inline social">
 												<ul>
-												    <li><a href="https://www.linkedin.com/in/jrolandobernal"><i class="fa fa-linkedin fa-fw fa-3x"></i></a></li>
-													<li><a href="http://twitter.com/jrolandobernal"><i class="fa fa-twitter fa-fw fa-3x"></i></a></li>
-													<li><a href="https://plus.google.com/+RolandoBernal"><i class="fa fa-google-plus fa-fw fa-3x"></i></a></li>
-													<li><a href="https://github.com/LandoB/landob.github.io"><i class="fa fa-github"></i></a></li>
+												    <li><a href="https://www.linkedin.com/in/jrolandobernal"><i class="fa fa-linkedin fa-fw fa-4x"></i></a></li>
+													<li><a href="http://twitter.com/jrolandobernal"><i class="fa fa-twitter fa-fw fa-4x"></i></a></li>
+													<li><a href="https://plus.google.com/+RolandoBernal"><i class="fa fa-google-plus fa-fw fa-4x"></i></a></li>
+													<li><a href="https://github.com/LandoB/landob.github.io"><i class="fa fa-github fa-fw fa-4x"></i></a></li>
 												</ul>
 											  </div>
 											</div>
@@ -259,7 +265,7 @@
 									  </div>
 								</div>
 						</div>
-					<span class="rb-icon rb-icon-close"><i class="fa fa-times fa-3x"></i></span>
+					<span class="rb-icon rb-icon-close"></i></span>
 				</section>
 
 
@@ -270,7 +276,7 @@
 					<div data-panel="panel-1">
 						<div class="row-fluid">
 							<div class="span8 offset2 tweak">
-								<img src="images/project1.jpg" />
+								<img src="img/RE-Grocery-App.jpg" />
 								<br>
 								<br>
 								<h4>Project Overview</h4>
@@ -284,7 +290,7 @@
 					<div data-panel="panel-2">
 						<div class="row-fluid">
 							<div class="span8 offset2 tweak">
-							<img src="images/project2.jpg" />
+							<img src="img/Book-That-Lesson.png" />
 							<br>
 							<br>
 							<h4>Project Overview</h4>
@@ -298,7 +304,7 @@
 					<div data-panel="panel-3">
 						<div class="row-fluid">
 							<div class="span8 offset2 tweak">
-							<img src="images/project3.jpg" />
+							<img src="img/underconstruction.png" />
 							<br>
 							<br>
 							<h4>Project Overview</h4>
@@ -324,8 +330,10 @@
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
 
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+		<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+		<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 		<script type="text/javascript" src="js/boxlayout.js"></script>
 		<script>
 			$(function() {
