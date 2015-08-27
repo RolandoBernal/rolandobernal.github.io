@@ -169,10 +169,21 @@ a:hover {
 	text-transform: uppercase;
 }
 
-.black-shadow {
+.hola-im-rolando {
 	color:#fff;
 	text-shadow: 0 0 8px #09F, 0 0 5px #0000FF;
-		/*text-shadow: -3px -3px 8px #337ab7;*/
+}
+.my-projects {
+	color:#fff;
+	text-shadow: 0 0 8px #000, 0 0 5px #0000FF;
+}
+.my-resume {
+	color:#fff;
+	text-shadow: 0 0 8px #000, 0 0 5px #0000FF;
+}
+.contact-me {
+	color:#fff;
+	text-shadow: 0 0 8px #000, 0 0 5px #0000FF;
 }
 
 .rb-icon {
@@ -312,6 +323,14 @@ div.rb-panel-items > div > div {
 	padding-right: 3%;
 }
 
+.icon-user:before,
+.icon-heart:before,
+.icon-fire:before,
+.icon-rocket:before {
+  color: #2d7da4;
+}
+
+
 
 /* --------------------------------------------------------	*/
 /*  Progress Bar  */
@@ -353,27 +372,27 @@ div.rb-panel-items > div > div {
 
 .progress .color2,
 .progress .color2 .bar-width{
-  background: #6aa42f;
+  background: #c9ab8b;
 }
 
 .progress .color3,
 .progress .color3 .bar-width{
-  background: #ffcc33;
+  background: #2d7da4;
 }
 
 .progress .color4,
 .progress .color4 .bar-width{
-  background: #db3615;
+  background: #c9ab8b;
 }
 
 .progress .color5,
 .progress .color5 .bar-width{
-  background: #c9ab8b;
+  background: #2d7da4;
 }
 
 .progress .color6,
 .progress .color6 .bar-width{
-  background: #fafafa;
+  background: #c9ab8b;
 }
 
 .progress,
@@ -426,23 +445,23 @@ div.rb-panel-items > div > div {
 }
 
 .progress .color2 span:before{
-  border-color: #6aa42f transparent transparent transparent;
-}
-
-.progress .color3 span:before{
-  border-color: #ffcc33 transparent transparent transparent;
-}
-
-.progress .color4 span:before{
-  border-color: #db3615 transparent transparent transparent;
-}
-
-.progress .color5 span:before{
   border-color: #c9ab8b transparent transparent transparent;
 }
 
+.progress .color3 span:before{
+  border-color: #2d7da4 transparent transparent transparent;
+}
+
+.progress .color4 span:before{
+  border-color: #c9ab8b transparent transparent transparent;
+}
+
+.progress .color5 span:before{
+  border-color: #2d7da4 transparent transparent transparent;
+}
+
 .progress .color6 span:before{
-  border-color: #fafafa transparent transparent transparent;
+  border-color: #c9ab8b transparent transparent transparent;
 }
 
 /* --------------------------------------------------------	*/
@@ -508,7 +527,6 @@ div.rb-panel-items {
 
 div.rb-panel-items > div {
 	background: #337ab7;
-	/*#16a085;*/
 	z-index: 0;
 	opacity: 0;
 	-webkit-transform: translateY(0);
@@ -604,11 +622,9 @@ div.rb-panel-items > div.rb-hide-current-work {
 
 .rb-main > section:first-child.rb-expand {
 	background: #000000;
-	/*#144057;*/
 }
 .rb-main > section:nth-child(2).rb-expand {
 	background: #ee6557;
-	/*#2c2c2c;*/
 }
 .rb-main > section:nth-child(3).rb-expand {
 	background: #ffffff;
