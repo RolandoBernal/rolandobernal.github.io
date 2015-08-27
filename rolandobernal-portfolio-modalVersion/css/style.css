@@ -227,6 +227,10 @@ a:hover {
 	font-weight: normal !important;
 }
 
+.sjobs {
+	margin-left: 45px;
+}
+
 .rb-content,
 div.rb-panel-items > div > div {
 	opacity: 0;
