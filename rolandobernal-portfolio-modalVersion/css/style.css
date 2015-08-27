@@ -58,7 +58,7 @@ a {
 	font-weight: 700;
 	letter-spacing: 2px;
 	padding: 0 5px;
-	text-transform: uppercase;
+	/*text-transform: lowercase;*/
 	font-size: 80%;
 }
 
@@ -230,7 +230,20 @@ div.rb-panel-items > div > div {
 	overflow-y: auto;
 }
 
-/* Custom content */
+/* ---------------*/
+/* CUSTOM CONTENT */
+/* ---------------*/
+
+.experience li {
+	font-size: 1.2em;
+	text-align: left;
+}
+
+.proj-details li {
+	font-size: 1.2em;
+	text-align: left;
+	list-style: none;
+}
 
 .rb-content p {
 	margin: 0 auto;
@@ -324,6 +337,114 @@ div.rb-panel-items > div > div {
 	padding-left:30px !important;
 }
 
+.skill h2{
+	margin-top:-10px;
+	margin-bottom: 25px;
+}
+
+.progress-wrap{
+  position: relative;
+}
+
+.progress .color1,
+.progress .color1 .bar-width{
+  background: #2d7da4;
+}
+
+.progress .color2,
+.progress .color2 .bar-width{
+  background: #6aa42f;
+}
+
+.progress .color3,
+.progress .color3 .bar-width{
+  background: #ffcc33;
+}
+
+.progress .color4,
+.progress .color4 .bar-width{
+  background: #db3615;
+}
+
+.progress .color5,
+.progress .color5 .bar-width{
+  background: #c9ab8b;
+}
+
+.progress .color6,
+.progress .color6 .bar-width{
+  background: #fafafa;
+}
+
+.progress,
+.progress-bar {
+  height: 15px;
+  line-height: 15px;
+  background: #e6e6e6;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  overflow: visible;
+  text-align: right;
+}
+
+.progress{
+  position: relative;
+}
+
+.progress .bar-width{
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  top: -30px;
+  border-radius: 2px;
+  margin-left: -30px;
+}
+
+.progress span{
+  position: relative;
+}
+
+.progress span:before{
+  content: " ";
+  position: absolute;
+  width: auto;
+  height: auto;
+  border-width: 8px 5px;
+  border-style: solid;
+  bottom: -15px;
+  right: 8px;
+}
+
+.progress .color1 span:before{
+  border-color: #2d7da4 transparent transparent transparent;
+}
+
+.progress .color2 span:before{
+  border-color: #6aa42f transparent transparent transparent;
+}
+
+.progress .color3 span:before{
+  border-color: #ffcc33 transparent transparent transparent;
+}
+
+.progress .color4 span:before{
+  border-color: #db3615 transparent transparent transparent;
+}
+
+.progress .color5 span:before{
+  border-color: #c9ab8b transparent transparent transparent;
+}
+
+.progress .color6 span:before{
+  border-color: #fafafa transparent transparent transparent;
+}
+
 /* --------------------------------------------------------	*/
 /*  About Us  */
 /* --------------------------------------------------------	*/
@@ -386,7 +507,8 @@ div.rb-panel-items {
 }
 
 div.rb-panel-items > div {
-	background: #16a085;
+	background: #337ab7;
+	/*#16a085;*/
 	z-index: 0;
 	opacity: 0;
 	-webkit-transform: translateY(0);
@@ -455,8 +577,9 @@ div.rb-panel-items > div.rb-hide-current-work {
 	z-index: 0;
 }
 
-/* Transition classes and properties */
-/* Separated for a better overview and control */
+/* ------------------------------------------------*/
+/* THIS IS WHERE THE MAIN FOUR DIVS ARE CONTROLLED */
+/* ------------------------------------------------*/
 
 .rb-main > section {
 	-webkit-transition: all 0.5s ease-in-out;
@@ -475,7 +598,9 @@ div.rb-panel-items > div.rb-hide-current-work {
 	z-index: 100;
 }
 
+/* ------------------------- */
 /* Section background colors */
+/* ------------------------- */
 
 .rb-main > section:first-child.rb-expand {
 	background: #000000;
@@ -615,6 +740,14 @@ section.rb-expand .rb-icon-close {
 .fa-github:active {
 		color: #fff;
 		background-color: #000;
+		border-radius: 4px;
+}
+
+.fa-laptop:hover,
+.fa-laptop:focus,
+.fa-laptop:active {
+		color: #000;
+		background-color: #fff;
 		border-radius: 4px;
 }
 
