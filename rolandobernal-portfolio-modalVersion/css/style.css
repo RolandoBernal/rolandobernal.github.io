@@ -110,7 +110,7 @@ a:hover {
 .rb-main > section:nth-child(3) {
 	top: 50%;
 	left: 0;
-	background: url('../img/myResume2.png') no-repeat;
+	background: url('../img/myResume.png') no-repeat;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
@@ -175,17 +175,17 @@ a:hover {
 }
 .my-projects {
 	color:#fff;
-	text-shadow: 0 0 8px #000, 0 0 5px #0000FF;
+	text-shadow: 0 0 8px #09F, 0 0 5px #0000FF;
 	font-family: 'Rock Salt';
 }
 .my-resume {
 	color:#fff;
-	text-shadow: 0 0 8px #000, 0 0 5px #0000FF;
+	text-shadow: 0 0 8px #09F, 0 0 5px #0000FF;
 	font-family: 'Rock Salt';
 }
 .contact-me {
 	color:#fff;
-	text-shadow: 0 0 8px #000, 0 0 5px #0000FF;
+	text-shadow: 0 0 8px #09F, 0 0 5px #0000FF;
 	font-family: 'Rock Salt';
 }
 
