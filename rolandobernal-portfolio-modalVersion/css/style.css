@@ -58,7 +58,6 @@ a {
 	font-weight: 700;
 	letter-spacing: 2px;
 	padding: 0 5px;
-	/*text-transform: lowercase;*/
 	font-size: 80%;
 }
 
@@ -162,7 +161,7 @@ a:hover {
 	margin: 0;
 	padding: 20px;
 	width: 100%;
-	font-size: 2em;
+	font-size: 1.6em;
 	letter-spacing: 2px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -170,17 +169,17 @@ a:hover {
 
 .hola-im-rolando {
 	color:#fff;
-	text-shadow: 0 0 8px #09F, 0 0 5px #0000FF;
+	text-shadow: 0 0 8px #FF0000, 0 0 5px #0000FF;
 	font-family: 'Rock Salt';
 }
 .my-projects {
 	color:#fff;
-	text-shadow: 0 0 8px #09F, 0 0 5px #0000FF;
+	text-shadow: 0 0 8px #00FF00, 0 0 5px #0000FF;
 	font-family: 'Rock Salt';
 }
 .my-resume {
 	color:#fff;
-	text-shadow: 0 0 8px #09F, 0 0 5px #0000FF;
+	text-shadow: 0 0 8px #0000FF, 0 0 5px #000099;
 	font-family: 'Rock Salt';
 }
 .contact-me {
@@ -218,7 +217,6 @@ a:hover {
 }
 
 .rb-icon-close:before {
-	/*content: "\e0fd";*/
 	content: "\e0fa";
 }
 
@@ -478,7 +476,6 @@ div.rb-panel-items > div > div {
 .about-us h3{
 	font-size: 16px;
   color: #c9ab8b;
-  /* color: #337ab7; */
   padding-bottom: 10px;
   padding-left: 10px;
 }
