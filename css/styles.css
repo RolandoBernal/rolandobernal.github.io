@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,600|Lato:400,300,700|Kaushan+Script);
 body {
-	color:#FFF; 
+	color:#FFF;
 	font-family: 'Open Sans', sans-serif;
 	min-width:960px;
 	top:0;
@@ -12,12 +12,12 @@ body {
 	background-size:cover;
 }
 .ie body {
-	filter: dropshadow(color=#000000, offx=0, offy=1);	
+	filter: dropshadow(color=#000000, offx=0, offy=1);
 }
 h1 {
 	font-size:62px;
-	letter-spacing:-2px;  
-	text-align:center; 
+	letter-spacing:-2px;
+	text-align:center;
 	padding-top:0px;
 	margin-top: 5px;
 	margin-bottom: 5px;
@@ -27,8 +27,8 @@ h1 {
 }
 .ie h1 {
 	filter: dropshadow(color=#000000, offx=0, offy=3);
-	padding-bottom:12px;	
-} 
+	padding-bottom:12px;
+}
 .ie h2 {
 	filter: dropshadow(color=#000000, offx=0, offy=3);
 }
@@ -49,36 +49,36 @@ h1 {
 }
 h3 {
 	font-size:25px;
-	margin:0.2em 0; 
+	margin:0.2em 0;
 }
 .ie h3 {
 	filter: dropshadow(color=#000000, offx=0, offy=3);
 }
 h4 {
-	margin-bottom:5px;	
+	margin-bottom:5px;
 }
 p, pre {
-	margin:0 0 10px 0; 
+	margin:0 0 10px 0;
 }
 code {
 	text-transform:uppercase !important;
-	color:#EEE;	
+	color:#EEE;
 	border-bottom:1px dotted #666;
 }
 small {
 	background:url(../images/alpha.png);
-	background:rgba(0, 0, 0, 0.8) url();	
+	background:rgba(0, 0, 0, 0.8) url();
 	border:1px solid #111;
 	font-size:15px;
 	padding:0 5px;
 }
 a {
 	color: rgba(255, 255, 255, 0.57);
-	text-decoration:none;	
+	text-decoration:none;
 }
 a:hover {
-	color:#BBB;	
-} 
+	color:#BBB;
+}
 #Header {
 margin-bottom: 62px;
 position: relative;
@@ -97,7 +97,7 @@ z-index: 1;
   Landing Social
 ------------------------*/
 .social {
-  margin-top: 50px;
+  margin-top: 5px;
   width: 100%;
   height: 70px;
   display: block;
@@ -105,7 +105,7 @@ z-index: 1;
 }
 .social ul {
   margin: 20px 20px;
-  
+
 }
 
 .social ul li {
@@ -181,7 +181,7 @@ display: inline-block;
 margin: 25px 0 45px;
 padding: 0px;
 text-align: center;
-font-size: 28px; 
+font-size: 28px;
 font-weight: 300;
 color: #fff;
 line-height: 36px;
@@ -213,7 +213,7 @@ text-align:center;
 }
 #subscribe input {
 background: rgba(255, 255, 255, 0.52);
-color: #000; 
+color: #000;
 vertical-align: middle;
 width: 293px;
 border: 1px solid rgba(255, 255, 255, 0.76);
@@ -226,7 +226,7 @@ width: auto;
 padding: 0px 25px;
 cursor: pointer;
 margin-left: -5px;
-font-weight: bold; 
+font-weight: bold;
 height: 42px;
 display: inline-block;
 }
@@ -267,18 +267,18 @@ font-weight: 900;
 text-align: center;
 margin: 0 1px;
 width: 136px;
-padding: 10px 30px 53px; 
+padding: 10px 30px 53px;
 height: 100px;
 background:rgba(255, 255, 255, 0.0);
 text-shadow: none;
-vertical-align: middle; 
+vertical-align: middle;
 border-right:1px solid rgba(255, 255, 255, 0.36);
 text-shadow: 2px 2px rgba(12, 11, 11, 0.56);
 }
 .styled div:last-child{
 border:none;
 }
-#overlay{ 
+#overlay{
 background: rgba(0, 0, 0, 0.04) url(../images/overlays/06.png) top left repeat;
 background:rgba(0, 0, 0, 0.14);
 position: fixed;
@@ -320,7 +320,7 @@ margin:10px;
 	}
 	.wrapper{width:100%;}
 	.styled div {
-	  margin-bottom:10px; 
+	  margin-bottom:10px;
 	}
 }
 @media(max-width:420px){
@@ -338,11 +338,11 @@ margin:10px;
 	  padding-top: 110px;
 	  margin-bottom:10px;
 	  font-size: 40px;
-	  font-weight: normal; 
+	  font-weight: normal;
 	  text-align: center;
-	  width:80px; 
-	  border-radius:80px; 
-	  height:80px;  
+	  width:80px;
+	  border-radius:80px;
+	  height:80px;
 	}
 	.social ul {
     margin: 20px 20px;
