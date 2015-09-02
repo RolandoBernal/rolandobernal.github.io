@@ -165,6 +165,17 @@ z-index: 1;
 }
 
 
+#email:hover,
+#email:focus,
+#email:active,
+.fa-envelope-o:hover,
+.fa-envelope-o:focus,
+.fa-envelope-o:active {
+    color: #fff;
+    background-color: #34ED13;
+    border-radius: 4px;
+}
+
 #Content h2 {
 display: inline-block;
 margin: 25px 0 45px;
