@@ -173,24 +173,24 @@ h2 {
 }
 
 .hola-im-rolando {
-	font-size: 2.5em !important;
+	font-size: 2.3em !important;
 	color:#fff;
-	text-shadow: 0 0 8px #376E3F, 0 0 5px #0000FF;
+	text-shadow: 0 0 8px #000, 0 0 5px #000;
 }
 .my-projects {
-	font-size: 2.5em !important;
+	font-size: 2.3em !important;
 	color:#fff;
-	text-shadow: 0 0 8px #000, 0 0 5px #FF0000;
+	text-shadow: 0 0 8px #000, 0 0 5px #000;
 }
 .my-resume {
-	font-size: 2.5em !important;
+	font-size: 2.3em !important;
 	color:#fff;
-	text-shadow: 0 0 8px #000, 0 0 5px #FF0000;
+	text-shadow: 0 0 8px #000, 0 0 5px #000;
 }
 .contact-me {
-	font-size: 2.5em !important;
+	font-size: 2.3em !important;
 	color:#fff;
-	text-shadow: 0 0 8px #444, 0 0 5px #000;
+	text-shadow: 0 0 8px #000, 0 0 5px #000;
 }
 
 .rb-icon {
