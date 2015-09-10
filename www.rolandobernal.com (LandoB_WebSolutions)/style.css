@@ -7,6 +7,13 @@
  * Type:	Style - General
  */
 
+/* ------------------------------------
+	FONTS
+--------------------------------------*/
+/*@import url(https://fonts.googleapis.com/css?family=Montserrat);*/
+/*@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);*/
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300);
+
 /*-----------------------
 	Add-on's
 ------------------------*/
@@ -208,7 +215,7 @@ section#home {
 	height: 900px;
 	min-height: 500px;
 	width: 100%;
-	background: url(img/bg-landing-blur.jpg) no-repeat top center;
+	background: url(img/main-bg.jpg) no-repeat top center;
 	background-size: cover !important;
 	-webkit-background-size: cover !important;
 	text-align: center;
@@ -225,7 +232,7 @@ section#home {
 }
 .landing-bg {
 	opacity:0;
-	background: url(img/bg-landing-blur.jpg) no-repeat top center;
+	background: url(img/main-bg.jpg) no-repeat top center;
 	background-size: cover!important;
 	position: absolute;
 	top: 0;
@@ -242,6 +249,7 @@ section#home {
 	z-index: 1;
 	position: relative;
 	color:#FFF;
+	text-shadow: 0 0 3px #555, 0 0 5px #000;
 	top: 20%;
 	width:100%;
 	margin: 0!important;
@@ -314,7 +322,7 @@ section#home {
 	Landing Social
 ------------------------*/
 .social {
-	background:rgba(23, 64, 90, 0.7);
+	background:rgba(0, 0, 0, 0.7);
 	position: absolute;
 	bottom: 0;
 	width: 100%;
@@ -336,7 +344,7 @@ section#home {
 }
 .social ul li a:hover i {
 	opacity:1;
-	color:#09F;
+	color:#451010;
 }
 .social ul li a i.fa {
 	font-size: 30px;
@@ -387,14 +395,14 @@ section#home {
 	font-weight: 100;
 	font-size: 15px;
 	padding-right: 10px;
-	border-right: 2px solid #09F;
+	border-right: 2px solid #451010;
 	margin-bottom: 20px;
 	border-bottom-left-radius: 10px;
 	border-top-left-radius: 10px;
 }
 #about ul li i.fa {
 	font-size: 18px;
-	color: #09F;
+	color: #451010;
 }
 .about-left ul li i.fa{
 	padding-left: 10px;
@@ -403,7 +411,7 @@ section#home {
 	padding-right: 10px;
 }
 #about li:hover span {
-	color:#09F;
+	color:#451010;
 }
 .about-left ul li span {
 	display:block;
@@ -420,7 +428,7 @@ section#home {
 	font-weight: 100;
 	font-size: 15px;
 	padding-left: 10px;
-	border-left: 2px solid #09F;
+	border-left: 2px solid #451010;
 	margin-bottom: 20px;
 	border-bottom-right-radius: 10px;
 	border-top-right-radius: 10px;
@@ -431,7 +439,7 @@ section#home {
 	font-size:20px;
 }
 /*.about-left ul li:hover span, .about-right ul li:hover span {
-	color:#09F;
+	color:#451010;
 }*/
 @media (max-width: 767px) {
 	#about ul li {
@@ -467,6 +475,10 @@ section#home {
   margin: 0 auto;
 }
 
+.text-primary {
+    color: #999;
+}
+
 /*-----------------------
 	Easy Pie Chart
 ------------------------*/
@@ -495,7 +507,7 @@ section#home {
 	letter-spacing: 5px;
 }
 .piechart:hover span.skill {
-	color:#09F;
+	color:#451010;
 }
 
 /*-----------------------
@@ -555,13 +567,13 @@ section#home {
 .card-content i.fa{
 	display: block;
 	font-size: 20px;
-	color: #09F;
+	color: #451010;
 }
 .card-content span, .expand-title span{
 	font-size: 20px;
 	text-transform: uppercase;
 	letter-spacing: 3px;
-	color: #09F;
+	color: #451010;
 }
 .card-content p, .expand-title p{
 	font-size: 14px;
@@ -590,13 +602,13 @@ section#home {
 	display: block;
 	text-align: right;
 	font-size: 25px;
-	color: #09F;
+	color: #451010;
 	cursor:pointer;
 }
 .expand-content p {
 	font-weight: 100;
 	font-size: 18px;
-	border-top: 2px solid #09F;
+	border-top: 2px solid #451010;
 	padding-top: 20px;
 }
 
@@ -643,7 +655,7 @@ section#home {
 }
 .latest span{
 	padding: 5px 10px 5px 10px;
-	border-bottom: 2px solid #09F;
+	border-bottom: 2px solid #451010;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 }
@@ -651,7 +663,7 @@ section#home {
 	padding: 5px 10px 7px 10px;
 	padding-bottom: 7px;
 	padding-top: 5px;
-	border-top	: 2px solid #09F;
+	border-top	: 2px solid #451010;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 }
@@ -684,7 +696,7 @@ section#home {
 	left: 36%;
 	top: 30px;
 	color: #333333;
-	border-right: 2px solid #09F;
+	border-right: 2px solid #451010;
 	position: relative;
 	text-transform: uppercase;
 	border-top-left-radius: 10px;
@@ -692,15 +704,15 @@ section#home {
 	border-bottom-left-radius: 10px;
 }
 .group-right:hover span.group-date, .group-right:hover h3.group-title {
-	color: #09F;
-	border-color:#09F;
+	color: #451010;
+	border-color:#451010;
 }
 .group-left:hover h3.group-title, div.group-left:hover span.group-date {
-	color: #09F;
-	border-color:#09F;
+	color: #451010;
+	border-color:#451010;
 }
 div.group-left:hover  .group-middle, div.group-right:hover  .group-middle{
-	background:#09F;
+	background:#451010;
 	border: 2px solid #FFF;
 }
 .timeline-container .group-right .group-middle {
@@ -713,12 +725,12 @@ div.group-left:hover  .group-middle, div.group-right:hover  .group-middle{
 	left: 0;
 	right: 0;
 	top: 38px;
-	border: 2px solid #09F;
+	border: 2px solid #451010;
 	border-radius: 50%;
 }
 .timeline-container .group-right .group-desc {
 	text-align:left;
-	border-left: 2px solid #09F;
+	border-left: 2px solid #451010;
 	border-bottom-right-radius: 10px;
 	border-top-right-radius: 10px;
 	float: right;
@@ -736,7 +748,7 @@ div.group-left:hover  .group-middle, div.group-right:hover  .group-middle{
 	right: 36%;
 	top: 30px;
 	color: #333333;
-	border-left: 2px solid #09F;
+	border-left: 2px solid #451010;
 	position: relative;
 	text-transform: uppercase;
 	border-bottom-right-radius: 10px;
@@ -752,12 +764,12 @@ div.group-left:hover  .group-middle, div.group-right:hover  .group-middle{
 	left: 0;
 	right: 0;
 	top: 38px;
-	border: 2px solid #09F;
+	border: 2px solid #451010;
 	border-radius:50%;
 }
 .timeline-container .group-left .group-desc {
 	text-align:right;
-	border-right: 2px solid #09F;
+	border-right: 2px solid #451010;
 	float: left;
 	width: 45%;
 	padding: 10px 25px 10px 25px;
@@ -775,7 +787,7 @@ div.group-left:hover  .group-middle, div.group-right:hover  .group-middle{
 		display: block;
 		float: none;
 		position: static;
-		border-bottom: 2px solid #09F;
+		border-bottom: 2px solid #451010;
 		border-right:0px;
 		border-left:0px;
 		border-radius:0;
@@ -784,7 +796,7 @@ div.group-left:hover  .group-middle, div.group-right:hover  .group-middle{
 		text-align: center;
 		float: none;
 		width: 100%;
-		border-top: 2px solid #09F;
+		border-top: 2px solid #451010;
 		border-right:0px;
 		border-left:0px;
 		top: 20px;
@@ -825,7 +837,7 @@ div.group-left:hover  .group-middle, div.group-right:hover  .group-middle{
 	margin: 15px 10px;
 	background: #FFF;
 	border: 2px solid #FFF;
-	color:#09F;
+	color:#451010;
 	border-radius: 100%;
 	font-size: 50px;
 	position: relative;
@@ -864,11 +876,11 @@ div.group-left:hover  .group-middle, div.group-right:hover  .group-middle{
 	font-size:15px;
 }
 .award-container:hover .award i.fa {
-	background:#09F;
+	background:#451010;
 	color:#FFF;
 }
 .award-container:hover h3 {
-	color:#09F;
+	color:#451010;
 }
 
 /*-----------------------
@@ -888,11 +900,11 @@ div.group-left:hover  .group-middle, div.group-right:hover  .group-middle{
 	padding: 10px;
 }
 .quo-person {
-	/*border-right: 2px solid #09F;*/
+	/*border-right: 2px solid #451010;*/
 	padding: 20px 15px;
 }
 .fa-quote-left {
-	color: #09F;
+	color: #451010;
 }
 .quo-person h3 {
 	margin-top: 0;
@@ -915,7 +927,7 @@ p.quo-text {
 @media (max-width: 1199px) {
 	.quo-person {
 		text-align: center;
-		border-bottom:2px solid #09F;
+		border-bottom:2px solid #451010;
 		border-right:0;
 		margin-bottom: 20px;
 	}
@@ -941,7 +953,7 @@ p.quo-text {
 	padding: 10px;
 }
 .ref-person {
-	border-right: 2px solid #09F;
+	border-right: 2px solid #451010;
 	padding: 20px 15px;
 }
 .ref-person h3 {
@@ -965,7 +977,7 @@ p.ref-text {
 @media (max-width: 1199px) {
 	.ref-person {
 		text-align: center;
-		border-bottom:2px solid #09F;
+		border-bottom:2px solid #451010;
 		border-right:0;
 		margin-bottom: 20px;
 	}
@@ -998,7 +1010,7 @@ p.ref-text {
 .work-item .overlay {}
 .work-item .work-category, .work-item .work-name {
 	text-transform: uppercase;
-	background: #09F;
+	background: #451010;
 }
 .work-item .work-category{
 	padding: 5px 20px;
@@ -1064,7 +1076,7 @@ p.ref-text {
 }
 #contact .form-group input:focus, #contact .form-group textarea:focus{
 	background: rgba(255, 255, 255, 1);
-	border-left: 2px solid #09F;
+	border-left: 2px solid #451010;
 }
 /*Validation Labels*/
 label.error{
@@ -1097,7 +1109,7 @@ label.error{
 	width: 70px;
 	height: 70px;
 	font-size: 35px;
-	background: #09F;
+	background: #451010;
 	border-radius: 50%;
 	line-height: 2;
 }
@@ -1120,7 +1132,7 @@ label.error{
 	border-radius:0!important;
 }
 .owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
-	background:#09F;
+	background:#451010;
 }
 .owl-wrapper-outer {}
 
@@ -1132,7 +1144,7 @@ label.error{
 	border-radius:0;
 }
 .btn-about {
-	border: 2px solid #09F;
+	border: 2px solid #451010;
 	padding: 10px 20px;
 	font-size: 20px;
 	color: #333;
@@ -1140,12 +1152,12 @@ label.error{
 	letter-spacing: 3px;
 }
 .btn-about:hover, .btn-about:focus {
-	border: 2px solid #09F;
+	border: 2px solid #451010;
 	color: #FFF;
-	background: #09f;
+	background: #451010;
 }
 .btn-work {
-	border: 2px solid #09F;
+	border: 2px solid #451010;
 	padding: 10px 20px;
 	font-size: 15px;
 	color: #333;
@@ -1155,12 +1167,12 @@ label.error{
 	background: #FFF;
 }
 .btn-work:hover, .btn-work:focus {
-	border: 2px solid #09F;
+	border: 2px solid #451010;
 	color: #FFF;
-	background: #09f;
+	background: #451010;
 }
 .btn-contact {
-	border: 2px solid #09F;
+	border: 2px solid #451010;
 	padding: 10px 20px;
 	font-size: 20px;
 	color: #FFF;
@@ -1169,17 +1181,17 @@ label.error{
 	background: transparent;
 }
 .btn-contact:hover, .btn-contact:focus {
-	border: 2px solid #09F;
+	border: 2px solid #451010;
 	color: #FFF;
-	background: #09f;
+	background: #451010;
 }
 .social-btn {
 	font-size:13px!important;
 }
 .is-checked{
-	border: 2px solid #09F;
+	border: 2px solid #451010;
 	color: #FFF;
-	background: #09f;
+	background: #451010;
 }
 
 /*-----------------------
@@ -1193,13 +1205,13 @@ label.error{
 	bottom:0px;
 	right:0px;
 	display:none;
-	border: 2px solid rgba(0, 153, 255, 0.5);
-	color: rgba(0, 153, 255, 0.5);
+	border: 2px solid rgba(0, 0, 0, 0.5);
+	color: rgba(0, 0, 0, 0.5);
 }
 .scrollToTop:hover, .scrollToTop:focus{
 	text-decoration:none;
-	border: 2px solid #09F;
-	color: #09F;
+	border: 2px solid #451010;
+	color: #451010;
 }
 .scrollToTop i.fa{
 	width: 35px;
@@ -1228,7 +1240,7 @@ label.error{
 	display: inline-block;
 }
 .modal-caption {
-	background: #09F;
+	background: #451010;
     position: absolute;
     display: block;
     width: 100%;
