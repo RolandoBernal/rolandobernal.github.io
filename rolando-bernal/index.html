@@ -124,13 +124,14 @@
 		<div class="landing-bg"></div>
 		<!-- Social container start -->
 		<div class="social">
-		<ul>
-			<li><a href="http://twitter.com/jrolandobernal"><i class="fa fa-twitter"></i></a></li>
-			<li><a href="https://plus.google.com/+RolandoBernal"><i class="fa fa-google-plus"></i></a></li>
-			<li><a href="https://www.linkedin.com/in/jrolandobernal"><i class="fa fa-linkedin"></i></a></li>
-			<li><a href="https://github.com/LandoB/landob.github.io"><i class="fa fa-github"></i></a></li>
-		</ul>
-
+			<div class="contact-social-pad list-inline">
+				<ul>
+					<li><a href="https://www.linkedin.com/in/jrolandobernal"><i class="fa fa-linkedin fa-fw"></i></a></li>
+					<li><a href="http://twitter.com/jrolandobernal"><i class="fa fa-twitter fa-fw"></i></a></li>
+					<li><a href="https://plus.google.com/+RolandoBernal"><i class="fa fa-google-plus fa-fw"></i></a></li>
+					<li><a href="https://github.com/LandoB/landob.github.io"><i class="fa fa-github fa-fw"></i></a></li>
+				</ul>
+			</div>
 		</div>
 		<!-- Social container end -->
 	</section>
@@ -653,23 +654,17 @@
 								<img src="img/RE-Grocery-App.jpg" class="img-responsive" alt="work-item">
 								<div class="overlay">
 									<div class="work-category">
-										<h5>App Development</h5>
-									</div>
-									<div class="work-name">
-										<h3>RE Grocery App</h3>
+										<h5>RE Grocery App</h5>
 									</div>
 								</div>
 							</a>
 						</div>
 						<div class="item appdev work-item col-xs-6 col-sm-6 col-md-3 col-lg-3">
-							<a href="#" class="view-work-item" data-id="Book That Lesson!" data-toggle="modal" data-target="#lightbox">
+							<a href="#" class="view-work-item" data-id="This is the Book That Lesson!" data-toggle="modal" data-target="#lightbox">
 								<img src="img/Book-That-Lesson.png" class="img-responsive" alt="work-item">
 								<div class="overlay">
 									<div class="work-category">
-										<h5>App Development</h5>
-									</div>
-									<div class="work-name">
-										<h3>Book That Lesson!</h3>
+										<h5>Book That Lesson!</h5>
 									</div>
 								</div>
 							</a>
@@ -679,10 +674,7 @@
 								<img src="img/NIFC.png" class="img-responsive" alt="work-item">
 								<div class="overlay">
 									<div class="work-category">
-										<h5>web development</h5>
-									</div>
-									<div class="work-name">
-										<h3>Nashville International Futbol Club</h3>
+										<h5>Nashville International Futbol Club</h5>
 									</div>
 								</div>
 							</a>
@@ -692,10 +684,7 @@
 								<img src="img/websiteCommingSoon.png" class="img-responsive" alt="work-item">
 								<div class="overlay">
 									<div class="work-category">
-										<h5>web development</h5>
-									</div>
-									<div class="work-name">
-										<h3>fabulous website</h3>
+										<h5>Fabulous Website</h5>
 									</div>
 								</div>
 							</a>
@@ -711,55 +700,6 @@
 		<div class="container">
 			<div class="row margin-lg">
 				<h1 class="main-title text-center wow fadeIn">Contact</h1>
-				<div class="row">
-					<div class="col-lg-12">
-						<!--Validation messages start-->
-						<div class="alert alert-success hidden" id="contactSuccess">
-							<strong>Success!</strong> Your message has been sent to us.
-						</div>
-						<div class="alert alert-danger hidden" id="contactError">
-							<strong>Error!</strong> There was an error sending your message.
-						</div>
-						<!--Validation messages end-->
-						<!-- Contact form start -->
-						<form class="wow fadeInUp" id="contactForm" action="php/contact.php" method="POST">
-							<div class="row">
-								<div class="form-group">
-									<div class="col-md-6">
-										<label>Your name *</label>
-										<input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" id="name" required>
-									</div>
-									<div class="col-md-6">
-										<label>Your email address *</label>
-										<input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" id="email" required>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="form-group">
-									<div class="col-md-12">
-										<label>Subject</label>
-										<input type="text" value="" data-msg-required="Please enter the subject." maxlength="100" class="form-control" name="subject" id="subject" required>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="form-group">
-									<div class="col-md-12">
-										<label>Message *</label>
-										<textarea maxlength="5000" data-msg-required="Please enter your message." rows="10" class="form-control" name="message" id="message" required></textarea>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-12">
-									<input type="submit" value="Send Message" class="btn btn-contact" data-loading-text="Loading...">
-								</div>
-							</div>
-						</form>
-						<!-- Contact form end -->
-					</div>
-				</div>
 				<!--Social start-->
 				<div class="row">
 					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-delay="0.2s">
@@ -799,7 +739,20 @@
 						</div>
 					</div>
 				</div>
+				<div class="text-center">
+					<h2>Find me on the net:</h2>
+				</div>
 				<!--Social end-->
+				<div class="row text-center">
+					<div class="col-md-12 contact-social-pad list-inline social-bottom">
+					<ul>
+						<li><a href="https://www.linkedin.com/in/jrolandobernal"><i class="fa fa-linkedin fa-fw"></i></a></li>
+						<li><a href="http://twitter.com/jrolandobernal"><i class="fa fa-twitter fa-fw"></i></a></li>
+						<li><a href="https://plus.google.com/+RolandoBernal"><i class="fa fa-google-plus fa-fw"></i></a></li>
+						<li><a href="https://github.com/LandoB/landob.github.io"><i class="fa fa-github fa-fw"></i></a></li>
+					</ul>
+					</div>
+				</div><br><br><br><br><br>
 				<!--Footer start-->
 				<div class="row">
 					<div class="col-lg-12">
