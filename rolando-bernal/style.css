@@ -344,7 +344,7 @@ section#home {
 }
 .social ul li a:hover i {
 	opacity:1;
-	color:#451010;
+	color:#FFF;
 }
 .social ul li a i.fa {
 	font-size: 30px;
@@ -395,14 +395,14 @@ section#home {
 	font-weight: 100;
 	font-size: 15px;
 	padding-right: 10px;
-	border-right: 2px solid #451010;
+	border-right: 2px solid #BA0000;
 	margin-bottom: 20px;
 	border-bottom-left-radius: 10px;
 	border-top-left-radius: 10px;
 }
 #about ul li i.fa {
 	font-size: 18px;
-	color: #451010;
+	color: #BA0000;
 }
 .about-left ul li i.fa{
 	padding-left: 10px;
@@ -411,7 +411,7 @@ section#home {
 	padding-right: 10px;
 }
 #about li:hover span {
-	color:#451010;
+	color:#BA0000;
 }
 .about-left ul li span {
 	display:block;
@@ -428,7 +428,7 @@ section#home {
 	font-weight: 100;
 	font-size: 15px;
 	padding-left: 10px;
-	border-left: 2px solid #451010;
+	border-left: 2px solid #BA0000;
 	margin-bottom: 20px;
 	border-bottom-right-radius: 10px;
 	border-top-right-radius: 10px;
@@ -439,7 +439,7 @@ section#home {
 	font-size:20px;
 }
 /*.about-left ul li:hover span, .about-right ul li:hover span {
-	color:#451010;
+	color:#BA0000;
 }*/
 @media (max-width: 767px) {
 	#about ul li {
@@ -507,7 +507,7 @@ section#home {
 	letter-spacing: 5px;
 }
 .piechart:hover span.skill {
-	color:#451010;
+	color:#BA0000;
 }
 
 /*-----------------------
@@ -567,13 +567,13 @@ section#home {
 .card-content i.fa{
 	display: block;
 	font-size: 20px;
-	color: #451010;
+	color: #BA0000;
 }
 .card-content span, .expand-title span{
 	font-size: 20px;
 	text-transform: uppercase;
 	letter-spacing: 3px;
-	color: #451010;
+	color: #BA0000;
 }
 .card-content p, .expand-title p{
 	font-size: 14px;
@@ -602,13 +602,13 @@ section#home {
 	display: block;
 	text-align: right;
 	font-size: 25px;
-	color: #451010;
+	color: #BA0000;
 	cursor:pointer;
 }
 .expand-content p {
 	font-weight: 100;
 	font-size: 18px;
-	border-top: 2px solid #451010;
+	border-top: 2px solid #BA0000;
 	padding-top: 20px;
 }
 
@@ -655,7 +655,7 @@ section#home {
 }
 .latest span{
 	padding: 5px 10px 5px 10px;
-	border-bottom: 2px solid #451010;
+	border-bottom: 2px solid #BA0000;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 }
@@ -663,7 +663,7 @@ section#home {
 	padding: 5px 10px 7px 10px;
 	padding-bottom: 7px;
 	padding-top: 5px;
-	border-top	: 2px solid #451010;
+	border-top	: 2px solid #BA0000;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 }
@@ -696,7 +696,7 @@ section#home {
 	left: 36%;
 	top: 30px;
 	color: #333333;
-	border-right: 2px solid #451010;
+	border-right: 2px solid #BA0000;
 	position: relative;
 	text-transform: uppercase;
 	border-top-left-radius: 10px;
@@ -704,15 +704,15 @@ section#home {
 	border-bottom-left-radius: 10px;
 }
 .group-right:hover span.group-date, .group-right:hover h3.group-title {
-	color: #451010;
-	border-color:#451010;
+	color: #BA0000;
+	border-color:#BA0000;
 }
 .group-left:hover h3.group-title, div.group-left:hover span.group-date {
-	color: #451010;
-	border-color:#451010;
+	color: #BA0000;
+	border-color:#BA0000;
 }
 div.group-left:hover  .group-middle, div.group-right:hover  .group-middle{
-	background:#451010;
+	background:#BA0000;
 	border: 2px solid #FFF;
 }
 .timeline-container .group-right .group-middle {
@@ -725,12 +725,12 @@ div.group-left:hover  .group-middle, div.group-right:hover  .group-middle{
 	left: 0;
 	right: 0;
 	top: 38px;
-	border: 2px solid #451010;
+	border: 2px solid #BA0000;
 	border-radius: 50%;
 }
 .timeline-container .group-right .group-desc {
 	text-align:left;
-	border-left: 2px solid #451010;
+	border-left: 2px solid #BA0000;
 	border-bottom-right-radius: 10px;
 	border-top-right-radius: 10px;
 	float: right;
@@ -748,7 +748,7 @@ div.group-left:hover  .group-middle, div.group-right:hover  .group-middle{
 	right: 36%;
 	top: 30px;
 	color: #333333;
-	border-left: 2px solid #451010;
+	border-left: 2px solid #BA0000;
 	position: relative;
 	text-transform: uppercase;
 	border-bottom-right-radius: 10px;
@@ -764,12 +764,12 @@ div.group-left:hover  .group-middle, div.group-right:hover  .group-middle{
 	left: 0;
 	right: 0;
 	top: 38px;
-	border: 2px solid #451010;
+	border: 2px solid #BA0000;
 	border-radius:50%;
 }
 .timeline-container .group-left .group-desc {
 	text-align:right;
-	border-right: 2px solid #451010;
+	border-right: 2px solid #BA0000;
 	float: left;
 	width: 45%;
 	padding: 10px 25px 10px 25px;
@@ -787,7 +787,7 @@ div.group-left:hover  .group-middle, div.group-right:hover  .group-middle{
 		display: block;
 		float: none;
 		position: static;
-		border-bottom: 2px solid #451010;
+		border-bottom: 2px solid #BA0000;
 		border-right:0px;
 		border-left:0px;
 		border-radius:0;
@@ -796,7 +796,7 @@ div.group-left:hover  .group-middle, div.group-right:hover  .group-middle{
 		text-align: center;
 		float: none;
 		width: 100%;
-		border-top: 2px solid #451010;
+		border-top: 2px solid #BA0000;
 		border-right:0px;
 		border-left:0px;
 		top: 20px;
@@ -817,73 +817,6 @@ div.group-left:hover  .group-middle, div.group-right:hover  .group-middle{
 }
 
 /*-----------------------
-	Awards
-------------------------*/
-#awards {
-	background: url(img/awards-bg.jpg) 50% 0 repeat-y fixed;
-	color: #fff;
-	background-size: cover;
-  }
-.award-container {
-	text-align: center;
-}
-.award {
-	margin: 0 auto;
-	width: 150px;
-	height: 150px;
-}
-.award i.fa {
-	padding: 30px;
-	margin: 15px 10px;
-	background: #FFF;
-	border: 2px solid #FFF;
-	color:#451010;
-	border-radius: 100%;
-	font-size: 50px;
-	position: relative;
-	width: 120px;
-	height: 120px;
-	line-height: 1.2;
- }
-.award-container h3 {
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-size: 20px;
-	margin-bottom: 0;
-}
-.award-container span {
-	display: block;
-}
-.award-container span.award-desc {
-	padding-top: 15px;
-	font-weight: 100;
-	font-size: 18px;
-}
-.award-container .award-meta {
-	display:block;
-}
-.award-container .award-meta span, .award-container .award-meta i.fa {
-	padding: 0px 10px;
-}
-.award-container .award-meta i.fa {
-	font-size:17px;
-	padding: 10px 0px;
-}
-.award-container span.award-date {
-	font-weight: 100;
-	text-transform: uppercase;
-	letter-spacing: 3px;
-	font-size:15px;
-}
-.award-container:hover .award i.fa {
-	background:#451010;
-	color:#FFF;
-}
-.award-container:hover h3 {
-	color:#451010;
-}
-
-/*-----------------------
 	Quotes
 ------------------------*/
 #quotes {
@@ -900,11 +833,11 @@ div.group-left:hover  .group-middle, div.group-right:hover  .group-middle{
 	padding: 10px;
 }
 .quo-person {
-	/*border-right: 2px solid #451010;*/
+	/*border-right: 2px solid #BA0000;*/
 	padding: 20px 15px;
 }
 .fa-quote-left {
-	color: #451010;
+	color: #BA0000;
 }
 .quo-person h3 {
 	margin-top: 0;
@@ -927,7 +860,7 @@ p.quo-text {
 @media (max-width: 1199px) {
 	.quo-person {
 		text-align: center;
-		border-bottom:2px solid #451010;
+		border-bottom:2px solid #BA0000;
 		border-right:0;
 		margin-bottom: 20px;
 	}
@@ -953,7 +886,7 @@ p.quo-text {
 	padding: 10px;
 }
 .ref-person {
-	border-right: 2px solid #451010;
+	border-right: 2px solid #BA0000;
 	padding: 20px 15px;
 }
 .ref-person h3 {
@@ -977,7 +910,7 @@ p.ref-text {
 @media (max-width: 1199px) {
 	.ref-person {
 		text-align: center;
-		border-bottom:2px solid #451010;
+		border-bottom:2px solid #BA0000;
 		border-right:0;
 		margin-bottom: 20px;
 	}
@@ -1010,7 +943,7 @@ p.ref-text {
 .work-item .overlay {}
 .work-item .work-category, .work-item .work-name {
 	text-transform: uppercase;
-	background: #451010;
+	background: #BA0000;
 }
 .work-item .work-category{
 	padding: 5px 20px;
@@ -1076,7 +1009,7 @@ p.ref-text {
 }
 #contact .form-group input:focus, #contact .form-group textarea:focus{
 	background: rgba(255, 255, 255, 1);
-	border-left: 2px solid #451010;
+	border-left: 2px solid #BA0000;
 }
 /*Validation Labels*/
 label.error{
@@ -1115,7 +1048,7 @@ label.error{
 	width: 70px;
 	height: 70px;
 	font-size: 35px;
-	background: #451010;
+	background: #BA0000;
 	border-radius: 50%;
 	line-height: 2;
 }
@@ -1217,7 +1150,7 @@ label.error{
 	border-radius:0!important;
 }
 .owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
-	background:#451010;
+	background:#BA0000;
 }
 .owl-wrapper-outer {}
 
@@ -1229,7 +1162,7 @@ label.error{
 	border-radius:0;
 }
 .btn-about {
-	border: 2px solid #451010;
+	border: 2px solid #BA0000;
 	padding: 10px 20px;
 	font-size: 20px;
 	color: #333;
@@ -1237,12 +1170,12 @@ label.error{
 	letter-spacing: 3px;
 }
 .btn-about:hover, .btn-about:focus {
-	border: 2px solid #451010;
+	border: 2px solid #BA0000;
 	color: #FFF;
-	background: #451010;
+	background: #BA0000;
 }
 .btn-work {
-	border: 2px solid #451010;
+	border: 2px solid #BA0000;
 	padding: 10px 20px;
 	font-size: 15px;
 	color: #333;
@@ -1252,12 +1185,12 @@ label.error{
 	background: #FFF;
 }
 .btn-work:hover, .btn-work:focus {
-	border: 2px solid #451010;
+	border: 2px solid #BA0000;
 	color: #FFF;
-	background: #451010;
+	background: #BA0000;
 }
 .btn-contact {
-	border: 2px solid #451010;
+	border: 2px solid #BA0000;
 	padding: 10px 20px;
 	font-size: 20px;
 	color: #FFF;
@@ -1266,17 +1199,17 @@ label.error{
 	background: transparent;
 }
 .btn-contact:hover, .btn-contact:focus {
-	border: 2px solid #451010;
+	border: 2px solid #BA0000;
 	color: #FFF;
-	background: #451010;
+	background: #BA0000;
 }
 .social-btn {
 	font-size:13px!important;
 }
 .is-checked{
-	border: 2px solid #451010;
+	border: 2px solid #BA0000;
 	color: #FFF;
-	background: #451010;
+	background: #BA0000;
 }
 
 /*-----------------------
@@ -1295,8 +1228,8 @@ label.error{
 }
 .scrollToTop:hover, .scrollToTop:focus{
 	text-decoration:none;
-	border: 2px solid #451010;
-	color: #451010;
+	border: 2px solid #BA0000;
+	color: #BA0000;
 }
 .scrollToTop i.fa{
 	width: 35px;
@@ -1325,7 +1258,7 @@ label.error{
 	display: inline-block;
 }
 .modal-caption {
-	background: #451010;
+	background: #BA0000;
     position: absolute;
     display: block;
     width: 100%;
