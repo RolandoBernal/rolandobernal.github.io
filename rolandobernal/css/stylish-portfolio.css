@@ -1,0 +1,538 @@
+
+ /* --- Fonts selection ---*/
+@import url(https://fonts.googleapis.com/css?family=Reenie+Beanie|Architects+Daughter|Rock+Salt|Special+Elite|Nunito|Inconsolata);
+
+/* Global Styles */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Source Sans Pro","Nunito","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 7em;
+    font-weight: 700;
+}
+
+.rolando-bernal {
+    color: #337ab7;
+    text-shadow: -3px -3px 8px #fff;
+    /*text-shadow: 0 0 50px #FFF;*/
+    /*font-size: 5em;*/
+}
+
+.software-developer {
+    color: #337ab7;
+    text-shadow: 1px 1px #fafafa;
+}
+
+.welcome {
+    color: #fff;
+    text-shadow: 2px 2px #222;
+}
+
+.my-work {
+    color: #337ab7;
+    text-shadow: 2px 2px #ddd;
+}
+
+.work-process {
+    color: #fff;
+    text-shadow: 1px 1px #777;
+}
+
+.work-process li {
+    text-shadow: none;
+    display: inline-block;
+    text-decoration: none;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-shadow: none;
+}
+
+.thanks {
+    color: #fff;
+    text-shadow: 1px 1px #222;
+    text-align: center;
+}
+
+.rolando {
+    font-family: 'Reenie Beanie', Helvetica;
+    font-size: 3em;
+    color: rgba(255,255,255,.95);
+}
+
+.my-experience {
+    color: #337ab7;
+    background-color: #fafafa;
+}
+
+.my-resume {
+    color: #fff;
+    background-color: #337ab7;
+}
+
+.honest {
+    color: #fff;
+    text-shadow: 1px 1px #556666;
+}
+
+a {
+    color: rgba(255,255,255,.65);
+    text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: #55acee;
+    text-decoration: none;
+}
+
+
+/* Custom Button Styles */
+
+.btn-dark {
+  border-radius: 0;
+  color: #337ab7;
+  background-color: rgba(255,255,255,.5);
+  border-radius: 4px;
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(51,122,181,0.75);
+}
+
+.btn-light {
+    border-radius: 0;
+    color: #337ab7;
+    background-color: rgb(255,255,255);
+    border-radius: 4px;
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #333;
+    background-color: rgba(255,255,255,0.8);
+}
+
+.fa-circle {
+    color: #fff;
+}
+
+.fa-html5:hover,
+.fa-html5:focus,
+.fa-html5:active {
+    border-radius: 100%;
+    background-color: rgba(255,255,255,0.8);
+}
+
+/* Custom Horizontal Rule */
+
+hr.small {
+    max-width: 100px;
+}
+
+/* Side Menu */
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    margin-right: -250px;
+    overflow-y: auto;
+    background: rgba(51,122,181,0.85);
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    /*color: #112233;*/
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 55px;
+    font-size: 18px;
+    line-height: 55px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    /*color: #112233;*/
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+#menu-toggle {
+    color: #337ab7;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    border-radius: 4px;
+}
+
+#menu-toggle:hover,
+#menu-toggle:focus,
+#menu-toggle:active {
+    color: #fff;
+    background-color: rgba(51,122,181,0.85);
+}
+
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.toggle {
+    margin: 5px 5px 0 0;
+}
+
+/* Header */
+
+.header {
+    background-color: #F8F8F8;
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /*background: url(../img/Soldier.JPG) no-repeat center center scroll;*/
+    background: url(../img/MyGolfBackground1.JPG) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    filter: Alpha(Opacity=90);
+}
+
+/* About */
+
+#about {
+    height: 10%;
+}
+
+.about {
+    padding: 65px 0;
+}
+
+.about {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/MyGolfBackground4.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    filter: Alpha(Opacity=50);
+}
+
+
+/* Work process */
+#work-process {
+    background-color: #F8F8F8;
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 20%;
+    background: url(../img/MyGolfBackground4.JPG) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    filter: Alpha(Opacity=90);
+
+}
+
+.profile-photo {
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    opacity: 1;
+}
+
+/* Skills */
+
+.skills {
+    background-color: #337ab7;
+    padding: 50px 0;
+}
+
+#skills {
+    color: #337ab7;
+    background-color: #fafafa;
+}
+
+.fa-trophy {
+    padding: 50px 50px;
+}
+
+.skill-item {
+    margin-bottom: 30px;
+}
+
+.text-primary {
+      color: #337ab7;
+}
+
+
+.text-primary:hover,
+.text-primary:focus,
+.text-primary:active {
+  border-radius: 100%;
+  background-color: rgba(255,255,255,0.8);
+}
+
+.download {
+    font-size: 1em;
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgba(51,122,181,0.55);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-color: #fff;
+}
+
+.download:hover,
+.download:focus,
+.download:active {
+    color: #337ab7;
+    background-color: rgba(255,255,255,0.85);
+    border-radius: 10px;
+}
+
+
+.fa-angle-double-up {
+    font-size: 1em;
+    border-radius: 5px;
+    color: #F8F8F8;
+    background-color: rgba(0,0,0,0.3);
+    margin-bottom: 10px;
+}
+
+.fa-angle-double-up:hover,
+.fa-angle-double-up:focus,
+.fa-angle-double-up:active {
+    color: #FFFFCC;
+    background-color: rgba(0,0,0,0.85);
+}
+
+aside.tools img {
+  margin: 50px auto;
+}
+
+#jq-logo {
+  padding-top: 40px;
+}
+
+#sql-logo {
+  padding-top: 40px;
+}
+
+
+/* Callout */
+
+.callout {
+    display: table;
+    width: 100%;
+    height: 80%;
+    color: #fff;
+    background-color: #337ab7;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    filter: Alpha(Opacity=50);
+}
+
+#resume {
+    color: #FFF;
+}
+
+.resume-link {
+    text-align: center;
+}
+
+.resume-background-color {
+    background-color: #337ab7;
+}
+
+/* PARALLAX effect: setting base styles to image containers for the callout section */
+
+.bg_rolando_bernal,
+.bg_about,
+.bg_callout,
+.bg_work-process {
+  /* fix background */
+  background-attachment: fixed;
+  /* center it */
+  background-position: center center;
+  /* Scale it nicely to the element */
+  background-size: cover;
+}
+
+/* Portfolio */
+.my-work {
+  text-align: center;
+}
+
+hr.small-line {
+    max-width: 100px;
+    color: #000;
+}
+
+.portfolio {
+    padding: 50px 0;
+    background-color: #fff;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#portfolio2 {
+    /*background-color: #91bdff;*/
+    background-color: #fff;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.img-portfolio {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+}
+
+.img-portfolio:hover {
+    opacity: 0.7;
+}
+
+
+
+/* Call to Action */
+
+.call-to-action {
+    /*background-color: #112233;*/
+    background-color: #337ab7;
+    padding: 50px 0;
+}
+
+.call-to-action .btn {
+    margin: 10px;
+}
+
+/* Map */
+
+.map {
+    height: 230px;
+    background: url(../img/NashvilleColors.png) no-repeat center center scroll;
+}
+
+@media(max-width:768px) {
+    .map {
+        height: 75%;
+    }
+}
+
+/* Footer */
+
+footer {
+    padding: 100px 0;
+}
+
+.social a,
+.phone-email a {
+    color: #333;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: #55acee;
+    text-decoration: none;
+}
+
+
+.fa-linkedin:hover,
+.fa-linkedin:focus,
+.fa-linkedin:active {
+    color: #FFF;
+    background-color: #007bb6;
+    border-radius: 5px;
+}
+
+.fa-twitter:hover,
+.fa-twitter:focus,
+.fa-twitter:active {
+    color: #FFF;
+    background-color: #55acee;
+    border-radius: 5px;
+}
+
+.fa-google-plus:hover,
+.fa-google-plus:focus,
+.fa-google-plus:active {
+    color: #FFF;
+    background-color: #dd4b39;
+    border-radius: 5px;
+}
