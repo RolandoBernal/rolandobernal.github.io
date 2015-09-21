@@ -28,15 +28,14 @@ body {
 }
 
 .rolando-bernal {
-    color: #337ab7;
-    text-shadow: -3px -3px 8px #fff;
-    /*text-shadow: 0 0 50px #FFF;*/
-    /*font-size: 5em;*/
+    color: #fafafa;
+    /*#337ab7;*/
+    text-shadow: 0px 0px 8px #333;
 }
 
 .software-developer {
-    color: #337ab7;
-    text-shadow: 1px 1px #fafafa;
+    color: #fafafa;
+    text-shadow: 1px 1px #333;
 }
 
 .welcome {
@@ -65,7 +64,7 @@ body {
 
 .thanks {
     color: #fff;
-    text-shadow: 1px 1px #222;
+    text-shadow: 1px 1px #333;
     text-align: center;
 }
 
@@ -76,13 +75,13 @@ body {
 }
 
 .my-experience {
-    color: #337ab7;
-    background-color: #fafafa;
+    color: #333;
+    background-color: #f3f3f3;
 }
 
 .my-resume {
     color: #fff;
-    background-color: #337ab7;
+    background-color: #232323;
 }
 
 .honest {
@@ -107,8 +106,8 @@ a:active {
 
 .btn-dark {
   border-radius: 0;
-  color: #337ab7;
-  background-color: rgba(255,255,255,.5);
+  color: #fafafa;
+  background-color: rgba(3,3,3,0.5);
   border-radius: 4px;
 }
 
@@ -116,21 +115,21 @@ a:active {
 .btn-dark:focus,
 .btn-dark:active {
     color: #fff;
-    background-color: rgba(51,122,181,0.75);
+    background-color: rgba(256,256,256,0.75);
 }
 
 .btn-light {
     border-radius: 0;
-    color: #337ab7;
-    background-color: rgb(255,255,255);
+    color: #333;
+    background-color: rgba(255,255,255,0.8);
     border-radius: 4px;
 }
 
 .btn-light:hover,
 .btn-light:focus,
 .btn-light:active {
-    color: #333;
-    background-color: rgba(255,255,255,0.8);
+    color: red;
+    background-color: rgb(255,255,255);
 }
 
 .fa-circle {
@@ -142,6 +141,21 @@ a:active {
 .fa-html5:active {
     border-radius: 100%;
     background-color: rgba(255,255,255,0.8);
+}
+
+.skills-btn-dark {
+    border-radius: 0;
+    color: #777;
+    background-color: rgba(220,220,220,0.5);
+    border-radius: 4px;
+}
+.skills-btn-dark:hover,
+.skills-btn-dark:focus,
+.skills-btn-dark:active {
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(3,3,3,0.5);
+    border-radius: 4px;
 }
 
 /* Custom Horizontal Rule */
@@ -160,7 +174,7 @@ hr.small {
     height: 100%;
     margin-right: -250px;
     overflow-y: auto;
-    background: rgba(51,122,181,0.85);
+    background: rgba(3,3,3,0.85);
     -webkit-transition: all 0.4s ease 0s;
     -moz-transition: all 0.4s ease 0s;
     -ms-transition: all 0.4s ease 0s;
@@ -216,7 +230,7 @@ hr.small {
 }
 
 #menu-toggle {
-    color: #337ab7;
+    color: #fafafa;
     z-index: 1;
     position: fixed;
     top: 0;
@@ -228,7 +242,7 @@ hr.small {
 #menu-toggle:focus,
 #menu-toggle:active {
     color: #fff;
-    background-color: rgba(51,122,181,0.85);
+    background-color: rgba(3,3,3,0.85);
 }
 
 #sidebar-wrapper.active {
@@ -253,8 +267,7 @@ hr.small {
     position: relative;
     width: 100%;
     height: 100%;
-    /*background: url(../img/Soldier.JPG) no-repeat center center scroll;*/
-    background: url(../img/MyGolfBackground1.JPG) no-repeat center center scroll;
+    background: url(../img/main-bg.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -277,7 +290,7 @@ hr.small {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../img/MyGolfBackground4.jpg) no-repeat center center scroll;
+    background: url(../img/main-bg1.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -293,7 +306,7 @@ hr.small {
     position: relative;
     width: 100%;
     height: 20%;
-    background: url(../img/MyGolfBackground4.JPG) no-repeat center center scroll;
+    background: url(../img/main-bg1.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -312,13 +325,13 @@ hr.small {
 /* Skills */
 
 .skills {
-    background-color: #337ab7;
+    background-color: #333;
     padding: 50px 0;
 }
 
 #skills {
-    color: #337ab7;
-    background-color: #fafafa;
+    color: #333;
+    background-color: #f3f3f3;
 }
 
 .fa-trophy {
@@ -330,7 +343,7 @@ hr.small {
 }
 
 .text-primary {
-      color: #337ab7;
+      color: #333;
 }
 
 
@@ -345,7 +358,7 @@ hr.small {
     font-size: 1em;
     border-radius: 5px;
     color: #fff;
-    background-color: rgba(51,122,181,0.55);
+    background-color: rgba(3,3,3,0.55);
     margin-bottom: 10px;
     border-radius: 5px;
     border-color: #fff;
@@ -412,7 +425,7 @@ aside.tools img {
 }
 
 .resume-background-color {
-    background-color: #337ab7;
+    background-color: #232323;
 }
 
 /* PARALLAX effect: setting base styles to image containers for the callout section */
@@ -485,7 +498,8 @@ hr.small-line {
 
 .map {
     height: 230px;
-    background: url(../img/NashvilleColors.png) no-repeat center center scroll;
+    /*background: url(../img/NashvilleColors.png) no-repeat center center scroll;*/
+    background: url(../img/RB-logo2.png) no-repeat center center scroll;
 }
 
 @media(max-width:768px) {
@@ -497,7 +511,11 @@ hr.small-line {
 /* Footer */
 
 footer {
-    padding: 100px 0;
+    padding: 20px 0;
+}
+
+#contact {
+    height: 10%;
 }
 
 .social a,
@@ -512,27 +530,82 @@ a:active {
     text-decoration: none;
 }
 
+/*Social a the bottom fo the page*/
+.social-bottom {
+  margin-top: 50px;
+  width: 100%;
+  height: 70px;
+  display: block;
+  z-index: 2;
+}
+.social-bottom ul {
+  margin: 20px 20px;
 
+}
+
+.social-bottom ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 5px 5px;
+    margin: 20px;
+}
+
+.social-bottom ul li a i.fa {
+  font-size: 50px;
+}
+
+#linkedin:hover,
+#linkedin:focus,
+#linkedin:active,
 .fa-linkedin:hover,
 .fa-linkedin:focus,
 .fa-linkedin:active {
     color: #FFF;
     background-color: #007bb6;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
+#twitter:hover,
+#twitter:focus,
+#twitter:active,
 .fa-twitter:hover,
 .fa-twitter:focus,
 .fa-twitter:active {
     color: #FFF;
     background-color: #55acee;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
+
+#google-plus:hover,
+#google-plus:focus,
+#google-plus:active,
 .fa-google-plus:hover,
 .fa-google-plus:focus,
 .fa-google-plus:active {
     color: #FFF;
     background-color: #dd4b39;
-    border-radius: 5px;
+    border-radius: 4px;
+}
+
+#github:hover,
+#github:focus,
+#github:active,
+.fa-github:hover,
+.fa-github:focus,
+.fa-github:active {
+    color: #fff;
+    background-color: #444;
+    border-radius: 4px;
+}
+
+#email:hover,
+#email:focus,
+#email:active,
+.fa-envelope-o:hover,
+.fa-envelope-o:focus,
+.fa-envelope-o:active {
+    color: #fff;
+    background-color: #90BF88;
+    border-radius: 4px;
 }
