@@ -1,6 +1,7 @@
 
  /* --- Fonts selection ---*/
-@import url(https://fonts.googleapis.com/css?family=Reenie+Beanie|Architects+Daughter|Rock+Salt|Special+Elite|Nunito|Inconsolata);
+@import url(https://fonts.googleapis.com/css?family=Reenie+Beanie|Architects+Daughter|Rock+Salt|Special+Elite|Nunito|Inconsolata|Arvo:700|Open+Sans:400italic,400);
+@import url('https://fast.fonts.com/cssapi/95b765fd-fae4-4f1b-8155-d8244914a5c6.css');
 
 /* Global Styles */
 
@@ -14,6 +15,26 @@ body {
     font-family: "Source Sans Pro","Nunito","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+/*
+body {
+  color: #0f2a36;
+  font-family: 'Open Sans', Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}*/
+h1 {
+  font-family: 'Adelle W01 Bold', 'Arvo', Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+
+}
+h2 {
+  color: #dd3b2a;
+
+}
+h3 {
+  color: #dd3b2a;
+  font-family: 'Adelle W01 Bold', 'Arvo', Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+
+}
+
 .text-vertical-center {
     display: table-cell;
     text-align: center;
@@ -23,29 +44,43 @@ body {
 .text-vertical-center h1 {
     margin: 0;
     padding: 0;
-    font-size: 7em;
+    font-size: 5em;
     font-weight: 700;
 }
 
 .rolando-bernal {
     color: #fafafa;
-    /*#337ab7;*/
     text-shadow: 0px 0px 8px #333;
 }
 
 .software-developer {
-    color: #fafafa;
+    color: #dd3b2a;
     text-shadow: 1px 1px #333;
+    font-family: "Reenie Beanie",Helvetica,Arial,sans-serif;
+    font-size: 4em;
+}
+
+.scroll-down {
+    font-size: 1.5em;
+    font-family: "Source Sans Pro","Nunito","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #dd3b2a;
 }
 
 .welcome {
-    color: #fff;
-    text-shadow: 2px 2px #222;
+    color: #dd3b2a;
+    /*text-shadow: 0px 0px 1px #f3f3f3;*/
+}
+
+#welcome {
+    color: #fafafa;
+    /*text-shadow: 0px 0px 1px #f3f3f3;*/
 }
 
 .my-work {
-    color: #337ab7;
+    color: #333;
+    background-color: #f3f3f3;
     text-shadow: 2px 2px #ddd;
+    text-align: center;
 }
 
 .work-process {
@@ -136,6 +171,10 @@ a:active {
     color: #fff;
 }
 
+.fa-inverse {
+    color: #f3f3f3;
+}
+
 .fa-html5:hover,
 .fa-html5:focus,
 .fa-html5:active {
@@ -162,6 +201,7 @@ a:active {
 
 hr.small {
     max-width: 100px;
+    border-top: 1px solid #333;
 }
 
 /* Side Menu */
@@ -343,7 +383,7 @@ hr.small {
 }
 
 .text-primary {
-      color: #333;
+      color: #dd3b2a;
 }
 
 
@@ -367,9 +407,9 @@ hr.small {
 .download:hover,
 .download:focus,
 .download:active {
-    color: #337ab7;
+    color: #dd3b2a;
     background-color: rgba(255,255,255,0.85);
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 
@@ -443,27 +483,24 @@ aside.tools img {
 }
 
 /* Portfolio */
-.my-work {
-  text-align: center;
-}
 
 hr.small-line {
     max-width: 100px;
-    color: #000;
+    color: #f3f3f3;
 }
 
 .portfolio {
     padding: 50px 0;
-    background-color: #fff;
+    background-color: #f3f3f3;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
 
+#portfolio,
 #portfolio2 {
-    /*background-color: #91bdff;*/
-    background-color: #fff;
+    background-color: #f3f3f3;
 }
 
 .portfolio-item {
@@ -498,8 +535,8 @@ hr.small-line {
 
 .map {
     height: 230px;
-    /*background: url(../img/NashvilleColors.png) no-repeat center center scroll;*/
     background: url(../img/RB-logo2.png) no-repeat center center scroll;
+    background-color: #f3f3f3;
 }
 
 @media(max-width:768px) {
@@ -512,10 +549,15 @@ hr.small-line {
 
 footer {
     padding: 20px 0;
+    background-color: #f3f3f3;
 }
 
 #contact {
     height: 10%;
+}
+
+.rb-footer {
+    color: #dd3b2a;
 }
 
 .social a,
