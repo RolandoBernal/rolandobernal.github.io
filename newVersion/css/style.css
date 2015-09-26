@@ -185,7 +185,7 @@ h2 {
 .my-resume {
 	font-size: 2.3em !important;
 	color:#fff;
-	text-shadow: 0 0 8px red, 0 0 5px #000;
+	text-shadow: 0 0 8px #000, 0 0 5px #000;
 }
 .contact-me {
 	font-size: 2.3em !important;
@@ -384,7 +384,6 @@ div.rb-panel-items > div > div {
 .progress .color1,
 .progress .color1 .bar-width{
   background: #376E3F;
-  /*#2d7da4;*/
 }
 
 .progress .color2,
