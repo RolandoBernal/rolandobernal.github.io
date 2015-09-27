@@ -42,7 +42,7 @@
 		<link rel="stylesheet" type="text/css" href="css/animate.css" media="screen" />
 
 		<!-- Custom CSS -->
-		<!-- <link rel="stylesheet" href="css/style.css"> -->
+		<link href="css/modal.css" rel="stylesheet">
 		<link href="css/stylish-portfolio.css" rel="stylesheet">
 
 
@@ -260,7 +260,7 @@
 		</section>
 
 		<!-- Portfolio -->
-		<section id="portfolio">
+		<section id="portfolio" class="bg-light-gray">
 				<br><br><br>
 				<div class="my-work">
 						<h2 class="my-work">My Work</h2>
@@ -272,31 +272,39 @@
 										<div class="row">
 												<div class="col-md-6">
 														<div class="portfolio-item">
-																<a href="https://hidden-hamlet-9751.herokuapp.com/">
-																		<img class="img-portfolio img-responsive" src="img/RE-Grocery-App.jpg">
-																</a>
+															<h4 class="project-title">"RE Grocery App"</h4>
+															<img class="img-portfolio img-responsive" src="img/RE-Grocery-App.jpg">
 														</div>
+														<button type="button" class="btn btn-primary btn-lg download" data-toggle="modal" data-target="#myModalGroceryApp">
+															View Details
+														</button>
 												</div>
 												<div class="col-md-6">
 														<div class="portfolio-item">
-																<a href="https://book-that-lesson.firebaseapp.com/#/">
-																		<img class="img-portfolio img-responsive" src="img/Book-That-Lesson.png">
-																</a>
+															<h4 class="project-title">"Book That Lesson"</h4>
+															<img class="img-portfolio img-responsive" src="img/Book-That-Lesson.png">
 														</div>
+														<button type="button" class="btn btn-primary btn-lg download" data-toggle="modal" data-target="#myModalBookThatLesson">
+															View Details
+														</button>
 												</div>
 												<div class="col-md-6">
 														<div class="portfolio-item">
-																<a href="#contact">
-																		<img class="img-portfolio img-responsive" src="img/LandoBWebSolutionsLogo.png">
-																</a>
+															<h4 class="project-title">"Nashville International Futbol Club"</h4>
+															<img class="img-portfolio img-responsive" src="img/NIFC.png">
 														</div>
+														<button type="button" class="btn btn-primary btn-lg download" data-toggle="modal" data-target="#myModalNIFC">
+															View Details
+														</button>
 												</div>
 												<div class="col-md-6">
 														<div class="portfolio-item">
-																<a href="#top">
-																		<img class="img-portfolio img-responsive" src="img/NIFC.png">
-																</a>
+															<h4 class="project-title">"Lando B | Web Solutions"</h4>
+															<img class="img-portfolio img-responsive" src="img/LandoBWebSolutionsLogo.png">
 														</div>
+														<button type="button" class="btn btn-primary btn-lg download" data-toggle="modal" data-target="#myModalLBWS">
+															View Details
+														</button>
 												</div>
 										</div>
 										<!-- /.row (nested) -->
@@ -308,6 +316,121 @@
 				</div>
 				<!-- /.container -->
 		</section>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModalGroceryApp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">Project Overview</h4>
+			</div>
+			<div class="modal-body">
+				<div class="span8 offset2 tweak">
+					<p>"RE-Grocery-App" is an app that helps people that live under a budget. The idea came out from a friend of a friend of mine that always goes to the grocery store with her 3 kids, her grocery list on a piece of paper, a pen, and a calculator. Always trying to calculate what she was spending so she wouldn't go over her budget. I wanted to create an app that would help her with that situation.</p>
+					<h4>Project Details</h4>
+					<p>
+						<ul>
+							<li class="proj-details"><i class="fa fa-code"></i>&nbsp Languages: HTML, CSS, Bootstrap, JavaScript, jQuery, Node.js, Express.js, Heroku.</li>
+							<li class="proj-details"><a href="https://re-grocery-calculator.herokuapp.com/" class="proj-details" target="_blank"><i class="fa fa-laptop"></i>&nbsp Live Demo</a></li>
+							<li class="proj-details"><a href="https://github.com/LandoB/RE_groceryapp" class="proj-details" target="_blank"><i class="fa fa-github"></i>&nbsp Check out the code</a></li>
+						</ul>
+					</p>
+					<img class="img-modal" src="img/RE-Grocery-App.jpg" />
+				</div><!-- /span8 -->
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default download" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="myModalBookThatLesson" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">Project Overview</h4>
+			</div>
+			<div class="modal-body">
+				<div class="span8 offset2 tweak">
+					<p>"Book-That-Lesson" is an app for students to help book lessons with their favorite Golf Instructors.</p>
+					<h4>Project Details</h4>
+					<p>
+						<ul>
+							<li class="proj-details"><i class="fa fa-code"></i>&nbsp Languages: HTML, CSS, Bootstrap, JavaScript, jQuery, Angular.js, AngularFire, Firebase.</li>
+							<li class="proj-details"><a href="https://book-that-lesson.firebaseapp.com/#/" class="proj-details" target="_blank"><i class="fa fa-laptop"></i>&nbsp Live Demo</a></li>
+							<li class="proj-details"><a href="https://github.com/LandoB/Book-That-Lesson" class="proj-details" target="_blank"><i class="fa fa-github"></i>&nbsp Check out the code</a></li>
+						</ul>
+					</p>
+					<img class="img-modal" src="img/Book-That-Lesson.png" />
+				</div><!-- /span8 -->
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default download" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="myModalNIFC" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">Project Overview</h4>
+			</div>
+			<div class="modal-body">
+				<div class="span8 offset2 tweak">
+					<p>"Nashville International Futbol Club" is a full responsive, retina ready, clean code website created with love to show off all what this new soccer club is and has to offer. With the ability to register new teams, and players (for tryouts); share news, pictures, and important information; this website is a great, functional tool.</h4>
+					<p>
+						<ul>
+							<li class="proj-details"><i class="fa fa-code"></i>&nbsp Languages: HTML, CSS, Bootstrap, JavaScript, jQuery, Angular.js, C#, .Net, SQL.</li>
+							<li class="proj-details"><a href="https://nash-int-futbol-club.firebaseapp.com/#/" class="proj-details" target="_blank"><i class="fa fa-laptop"></i>&nbsp Live Demo</a></li>
+							<li class="proj-details"><a href="https://github.com/LandoB/NashvilleInternationalFC" class="proj-details" target="_blank"><i class="fa fa-github"></i>&nbsp Check out the code</a></li>
+						</ul>
+					</p>
+					<img class="img-modal" src="img/NIFC.png" />
+				</div><!-- /span8 -->
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default download" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="myModalLBWS" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">Project Overview</h4>
+			</div>
+			<div class="modal-body">
+				<div class="span8 offset2 tweak">
+					<p>"Lando B | Web Solutions" is a full responsive, retina ready, clean code website created with love to show off all what this new Web Agency is and has to offer.</h4>
+					<p>
+						<ul>
+							<li class="proj-details"><i class="fa fa-code"></i>&nbsp Languages: HTML, CSS, Bootstrap, JavaScript, jQuery, Angular.js, C#, .Net, SQL.</li>
+							<li class="proj-details"><a href="http://www.rolandobernal.com/" class="proj-details" target="_blank"><i class="fa fa-laptop"></i>&nbsp Live Demo</a></li>
+							<li class="proj-details"><a href="https://github.com/LandoB" class="proj-details" target="_blank"><i class="fa fa-github"></i>&nbsp Check out the code</a></li>
+						</ul>
+					</p>
+					<img class="img-modal" src="img/LandoBWebSolutionsLogo.png" />
+				</div><!-- /span8 -->
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default download" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
 
 
 		<!-- Work Process -->
@@ -367,9 +490,6 @@
 				</div>
 		</footer>
 
-
-
-
 		<!-- JavaScript -->
 		<!-- <script src="js/main.js"></script> -->
 
@@ -412,13 +532,10 @@
 		</script>
 		<!-- Plugin JavaScript -->
 		<script src="js/jquery.easing.min.js"></script>
+		<script src="js/modal.js"></script>
 
-		<!-- Contact Form JavaScript -->
-		<script src="js/jqBootstrapValidation.js"></script>
-		<script src="js/contact_me.js"></script>
-
-		<!-- Custom Theme JavaScript -->
-		<script src="js/my.js"></script>
+		<!-- My Modal JavaScript -->
+		<script src="js/modal.js"></script>
 
 </body>
 
