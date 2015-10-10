@@ -505,7 +505,9 @@ hr.small-line {
 }
 
 .img-portfolio:hover {
-    opacity: 0.7;
+    background: #fff;
+    opacity: 0.75;
+    cursor: pointer;
 }
 
 .proj-details {
@@ -523,6 +525,7 @@ hr.small-line {
 .project-title {
     color: #dd3b2a;
 }
+
 
 
 
