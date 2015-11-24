@@ -612,6 +612,10 @@ div.rb-panel-items > div.rb-hide-current-work {
 	z-index: 0;
 }
 
+#rb-work-items {
+	list-style: none;
+}
+
 /* ------------------------------------------------*/
 /* THIS IS WHERE THE MAIN FOUR DIVS ARE CONTROLLED */
 /* ------------------------------------------------*/
