@@ -526,8 +526,55 @@ hr.small-line {
 		color: #dd3b2a;
 }
 
-.project-border {
-	border-style: groove;
+.project-border-1 {
+	border-style: solid;
+	border-color: #dd3b2a;
+	border-width: 1px;
+}
+
+.project-border-2 {
+	border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: none;
+	border-color: #dd3b2a;
+	border-width: 1px;
+}
+
+.project-border-3 {
+	border-top-style: none;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+	border-color: #dd3b2a;
+	border-width: 1px;
+}
+
+.project-border-4 {
+	border-top-style: none;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: none;
+	border-color: #dd3b2a;
+	border-width: 1px;
+}
+
+.project-border-5 {
+	border-top-style: none;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+	border-color: #dd3b2a;
+	border-width: 1px;
+}
+
+.project-border-6 {
+	border-top-style: none;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: none;
+	border-color: #dd3b2a;
+	border-width: 1px;
 }
 
 
