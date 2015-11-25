@@ -341,7 +341,9 @@ div.rb-panel-items > div > div {
   color: #376E3F;
 }
 
-
+.projects-margin {
+	margin-left: 8%;
+}
 
 /* --------------------------------------------------------	*/
 /*  Progress Bar  */
