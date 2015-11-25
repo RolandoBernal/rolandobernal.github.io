@@ -526,6 +526,10 @@ hr.small-line {
 		color: #dd3b2a;
 }
 
+.project-border {
+	border-style: groove;
+}
+
 
 
 
