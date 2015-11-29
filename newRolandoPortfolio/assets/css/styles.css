@@ -45,10 +45,10 @@ a {
     position: absolute;
     right: 0;
     top: 0;
-    /*background-image:url('../../assets/img/main-bg.jpg');*/
+    background-image:url('../../assets/img/main-bg.jpg');
     /*background-image:url('../../assets/img/projects2.png');*/
-    background-image:url('../../assets/img/noche2.jpg');
-    background-size: fixed;
+    /*background-image:url('../../assets/img/noche2.jpg');*/
+    background-size:fixed;
     background-attachment:fixed;
 }
 
