@@ -62,7 +62,12 @@ a {
   height:70px;
   width:70px;
 }
-
+#sidebar li a:hover {
+    /*text-decoration: none;*/
+    color: #7CBEFF; /* #00295B; */
+    font-weight: bold;
+    /*background: rgba(124, 190, 255, .8);*/
+}
 #sidebar, #sidebar a {
     color:#ffffff;
     background-color:transparent;
