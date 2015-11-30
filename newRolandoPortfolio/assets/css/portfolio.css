@@ -9,6 +9,10 @@ a, a:hover, a:focus, a:active, a.active {
 		color: #7CBEFF;
 }
 
+.container {
+	width: 900px;
+}
+
 #portfolio .portfolio-item {
 		right: 0;
 		margin: 0 0 15px;

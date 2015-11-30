@@ -82,6 +82,10 @@ a {
   text-decoration:none;
   text-shadow:0 0 0;
 }
+.logo {
+  background-color:#7CBEFF !important;
+  color:#00295B !important;
+}
 #sidebar-footer {
   position:absolute;bottom:5px;
 }
