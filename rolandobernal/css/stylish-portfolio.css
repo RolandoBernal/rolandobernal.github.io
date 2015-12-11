@@ -459,12 +459,30 @@ aside.tools img {
 		background-color: #232323;
 }
 
+.contact-me {
+		padding: 65px 0;
+}
+
+.contact-me {
+		display: table;
+		position: relative;
+		width: 100%;
+		height: 100%;
+		background: url(../img/main-bg.jpg) no-repeat center center scroll;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+		filter: Alpha(Opacity=50);
+}
+
 /* PARALLAX effect: setting base styles to image containers for the various sections */
 
 .bg_rolando_bernal,
 .bg_about,
 .bg_callout,
-.bg_work-process {
+.bg_work-process,
+.bg_contact-me {
 	/* fix background */
 	background-attachment: fixed;
 	/* center it */
@@ -502,11 +520,12 @@ hr.small-line {
 		margin: 0 auto;
 		width: 300px;
 		height: 300px;
+		opacity: 0.8;
 }
 
 .img-portfolio:hover {
 		background: #fff;
-		opacity: 0.75;
+		opacity: 1;
 		cursor: pointer;
 }
 
@@ -530,6 +549,7 @@ hr.small-line {
 	border-style: solid;
 	border-color: #fff;
 	border-width: 1px;
+	background-color: #232323;
 }
 
 .project-border-2 {
@@ -539,6 +559,7 @@ hr.small-line {
   border-left-style: none;
 	border-color: #FFF;
 	border-width: 1px;
+	background-color: #232323;
 }
 
 .project-border-3 {
@@ -548,6 +569,7 @@ hr.small-line {
   border-left-style: solid;
 	border-color: #FFF;
 	border-width: 1px;
+	background-color: #232323;
 }
 
 .project-border-4 {
@@ -557,6 +579,7 @@ hr.small-line {
   border-left-style: none;
 	border-color: #FFF;
 	border-width: 1px;
+	background-color: #232323;
 }
 
 .project-border-5 {
@@ -566,6 +589,7 @@ hr.small-line {
   border-left-style: solid;
 	border-color: #FFF;
 	border-width: 1px;
+	background-color: #232323;
 }
 
 .project-border-6 {
@@ -575,6 +599,7 @@ hr.small-line {
   border-left-style: none;
 	border-color: #FFF;
 	border-width: 1px;
+	background-color: #232323;
 }
 
 
@@ -590,6 +615,8 @@ hr.small-line {
 .call-to-action .btn {
 		margin: 10px;
 }
+
+
 
 /* Map */
 
