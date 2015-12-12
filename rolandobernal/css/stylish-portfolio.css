@@ -373,10 +373,20 @@ hr.small {
 		margin-bottom: 30px;
 }
 
+.specialization {
+		display: block;
+		text-align: center;
+}
+
+.specialization img {
+		height: 100px;
+		display: inline-block;
+		padding: 10px;
+}
+
 .text-primary {
 			color: #dd3b2a;
 }
-
 
 .text-primary:hover,
 .text-primary:focus,
