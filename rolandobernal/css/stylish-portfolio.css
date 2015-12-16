@@ -546,6 +546,10 @@ hr.small-line {
 		color: #333;
 }
 
+.view-details {
+	display: none;
+}
+
 .img-modal {
 		width: 100%;
 		vertical-align: center;
@@ -564,9 +568,9 @@ hr.small-line {
 
 .project-border-2 {
 	border-top-style: solid;
-  border-right-style: solid;
-  border-bottom-style: solid;
-  border-left-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: none;
 	border-color: #FFF;
 	border-width: 1px;
 	background-color: #232323;
@@ -574,9 +578,9 @@ hr.small-line {
 
 .project-border-3 {
 	border-top-style: none;
-  border-right-style: solid;
-  border-bottom-style: solid;
-  border-left-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
 	border-color: #FFF;
 	border-width: 1px;
 	background-color: #232323;
@@ -584,9 +588,9 @@ hr.small-line {
 
 .project-border-4 {
 	border-top-style: none;
-  border-right-style: solid;
-  border-bottom-style: solid;
-  border-left-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: none;
 	border-color: #FFF;
 	border-width: 1px;
 	background-color: #232323;
@@ -594,9 +598,9 @@ hr.small-line {
 
 .project-border-5 {
 	border-top-style: none;
-  border-right-style: solid;
-  border-bottom-style: solid;
-  border-left-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
 	border-color: #FFF;
 	border-width: 1px;
 	background-color: #232323;
@@ -604,9 +608,9 @@ hr.small-line {
 
 .project-border-6 {
 	border-top-style: none;
-  border-right-style: solid;
-  border-bottom-style: solid;
-  border-left-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: none;
 	border-color: #FFF;
 	border-width: 1px;
 	background-color: #232323;
@@ -748,4 +752,37 @@ a:active {
 		color: #fff;
 		background-color: #90BF88;
 		border-radius: 4px;
+}
+
+@media(max-width:767px) {
+
+		.project-border-1 {
+			border-top-style: solid;
+			border-right-style: none;
+			border-bottom-style: solid;
+			border-left-style: none;
+			border-color: #dd4b39;
+			border-width: 1px;
+			background-color: #f3f3f3;
+		}
+
+		.project-border-2,
+		.project-border-3,
+		.project-border-4,
+		.project-border-5,
+		.project-border-6 {
+			border-top-style: none;
+			border-right-style: none;
+			border-bottom-style: solid;
+			border-left-style: none;
+			border-color: #dd4b39;
+			border-width: 1px;
+			background-color: #f3f3f3;
+		}
+
+		.view-details {
+			display: none;
+		}
+
+
 }
