@@ -297,8 +297,8 @@ a:focus {
 .pic {
 		background-color: #000;
 		height: auto;
-		padding: 40px 40px 0;
-		margin-bottom: 50px;
+		/*padding: 40px 40px 0;
+		margin-bottom: 50px;*/
 }
 
 .pic .group-img img {
@@ -446,12 +446,29 @@ ul.banner-social-buttons {
 }
 
 @media(max-width:767px) {
+		.pic {
+    	padding: 0;
+    	margin-bottom: 0;
+		}
 		ul.banner-social-buttons li {
 				display: block;
 				margin-bottom: 20px;
 				padding: 0;
 		}
-
+		.intro {
+				height: 100%;
+				padding: 100px 0;
+		}
+		p {
+				margin: 0 0 35px;
+				font-size: 16px;
+				line-height: 1.6;
+				width: 90%;
+				margin-left: 3%;
+		}
+		.students ul {
+			padding-left: 0;
+		}
 		ul.banner-social-buttons li:last-child {
 				margin-bottom: 0;
 		}
