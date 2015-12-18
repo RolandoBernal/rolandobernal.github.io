@@ -356,8 +356,15 @@ a:focus {
 }
 
 .student-name {
+		margin: -15px;
+		padding: 0px 0;
+		text-align: center;
+		color: rgb(246, 139, 31);
+}
+
+.student-name-modal {
 		margin: 0px;
-		padding: 10px 0;
+		padding: 0px 0;
 		text-align: center;
 		color: rgb(246, 139, 31);
 }
@@ -381,11 +388,17 @@ a:focus {
 		color: rgb(246, 139, 31);
 }
 
-/*.img-modal,
-.modal-content img {
-    width: 36rem;
-    height: 54rem;
-}*/
+
+/*.modal-content img, */
+.student-pic {
+    width: 90%;
+    height: 90%;
+}
+
+.crop {
+	width: 333px;
+	height: 500px;
+}
 
 
 /* Map
