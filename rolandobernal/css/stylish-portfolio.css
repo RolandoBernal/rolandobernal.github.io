@@ -530,12 +530,10 @@ hr.small-line {
 		margin: 0 auto;
 		width: 300px;
 		height: 300px;
-		opacity: 0.8;
 }
 
 .img-portfolio:hover {
 		background: #fff;
-		opacity: 1;
 		cursor: pointer;
 }
 
@@ -546,9 +544,6 @@ hr.small-line {
 		color: #333;
 }
 
-.view-details {
-	display: none;
-}
 
 .img-modal {
 		width: 100%;
@@ -780,9 +775,6 @@ a:active {
 			background-color: #f3f3f3;
 		}
 
-		.view-details {
-			display: none;
-		}
 
 
 }
