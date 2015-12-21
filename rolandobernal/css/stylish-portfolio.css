@@ -1,7 +1,7 @@
 
  /* --- Fonts selection ---*/
 @import url(https://fonts.googleapis.com/css?family=Reenie+Beanie|Architects+Daughter|Rock+Salt|Special+Elite|Nunito|Inconsolata|Arvo:700|Open+Sans:400italic,400);
-@import url('https://fast.fonts.com/cssapi/95b765fd-fae4-4f1b-8155-d8244914a5c6.css');
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
 
 /* Global Styles */
 
@@ -9,7 +9,8 @@ html,
 body {
 		width: 100%;
 		height: 100%;
-		font-family: "Source Sans Pro","Nunito","Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-family: "Lato","Nunito","Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-weight: 300;
 }
 
 h1 {
@@ -53,7 +54,8 @@ h3 {
 
 .scroll-down {
 		font-size: 1.5em;
-		font-family: "Source Sans Pro","Nunito","Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-family: "Lato","Nunito","Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-weight: 300;
 		color: #dd3b2a;
 }
 
