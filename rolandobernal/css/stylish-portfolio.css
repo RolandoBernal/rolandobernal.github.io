@@ -631,10 +631,17 @@ hr.small-line {
 
 /* Map */
 
-.map {
+/*.map {
 		height: 230px;
 		background: url(../img/RB-logo2.png) no-repeat center center scroll;
 		background-color: #f3f3f3;
+}*/
+
+
+.img-circle {
+	margin-top:18px;
+	height:130px;
+	width:130px;
 }
 
 @media(max-width:768px) {
