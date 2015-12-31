@@ -765,7 +765,8 @@ a:active {
 			border-right-style: none;
 			border-bottom-style: solid;
 			border-left-style: none;
-			border-color: #dd4b39;
+			/*border-color: #dd4b39;*/
+			border-color: #fff;
 			border-width: 1px;
 			background-color: #f3f3f3;
 		}
@@ -779,7 +780,8 @@ a:active {
 			border-right-style: none;
 			border-bottom-style: solid;
 			border-left-style: none;
-			border-color: #dd4b39;
+			/*border-color: #dd4b39;*/
+			border-color: #fff;
 			border-width: 1px;
 			background-color: #f3f3f3;
 		}
