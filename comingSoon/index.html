@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rolando Bernal | Personal Website">
-    <meta name="author" content="https://github.com/LandoB">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Rolando Bernal | Personal Website">
+		<meta name="author" content="https://github.com/LandoB">
 
-    		<!-- FavIcon.ico -->
+				<!-- FavIcon.ico -->
 		<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
 		<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
@@ -25,12 +25,12 @@
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">
-    <!-- <link rel="shortcut icon" href="img/favicon.ico"> -->
+		<!-- <link rel="shortcut icon" href="img/favicon.ico"> -->
 
-    <title>Rolando Bernal | Software Developer</title>
+		<title>Rolando Bernal | Software Developer</title>
 
-    <!-- Bootstrap -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
+		<!-- Bootstrap -->
+		<link href="assets/css/bootstrap.css" rel="stylesheet">
 	<link href="assets/css/bootstrap-theme.css" rel="stylesheet">
 
 	<!--Fonts-->
@@ -38,17 +38,17 @@
 	<link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
 	<link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-    <!-- siimple style -->
-    <link href="assets/css/style.css" rel="stylesheet">
+		<!-- siimple style -->
+		<link href="assets/css/style.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-  </head>
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+	</head>
 
-  <body>
+	<body>
 
 	<div id="wrapper">
 		<div class="container">
@@ -74,18 +74,24 @@
 			<br><br><br><br><br>
 			<div class="row">
 				<div class="col-lg-6 col-lg-offset-3">
-						<p class="copyright">Copyright &copy; 2015 - <a href="http://www.rolandobernal.com/">Lando B | Web Solutions</a></p>
+						<p class="copyright">Copyright &copy; <span id="current-year"></span> - <a href="http://www.rolandobernal.com/">Lando B | Web Solutions</a></p>
 				</div>
 			</div>
 		</div>
 	</div>
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/js/jquery.countdown.min.js"></script>
 	<script type="text/javascript">
-  $('#countdown').countdown('2016/01/04', function(event) {
-    $(this).html(event.strftime('%w weeks %d days <br /> %H:%M:%S'));
-  });
-</script>
-  </body>
+		$('#countdown').countdown('2016/01/12', function(event) {
+			$(this).html(event.strftime('%w weeks %d days <br /> %H:%M:%S'));
+		});
+	</script>
+	<script type="text/javascript">
+		var currentDate = new Date();
+		var year = currentDate.getFullYear();
+		//insert it via jquery
+		$('#current-year').html((currentDate.getFullYear()));
+	</script>
+	</body>
 </html>

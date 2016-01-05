@@ -199,7 +199,7 @@
 													<h4><b>Nashville Software School (NSS)<br>
 													Apprentice Web Developer</b></h4>
 													<p><i>January 2015 - Present</i><br>
-													Software bootcamp in Nashville.<br/> Learned Frontend Development: HTML, CSS, Javascript, jQuery, AngularJS.<br/>And Backend Development: C#, .Net, SQL, SQL Server, SQLite, Postgres.<br/> And Other Stuff: Grunt, Gulp, VIM, Git, GitHub, Sublime Text, Visual Studio, Command Line, RESTful API, MVC, Bower, NPM.</p>
+													Software bootcamp in Nashville.<br/> Frontend Development: HTML, CSS, Javascript, jQuery, AngularJS.<br/>Backend Development: C#, .Net, SQL, SQL Server, SQLite, Postgres.<br/> Plus: Grunt, Gulp, VIM, Git, GitHub, Sublime Text, Visual Studio, Command Line, RESTful API, MVC, Bower, NPM.</p>
 													<h4><b>BenefitMall<br>
 													Sr. Applications Support Analyst</b></h4>
 													<p><i>April 2015 - Present</i><br>
@@ -507,7 +507,7 @@
 											<li><a target="_blank" href="https://github.com/LandoB"><i class="fa fa-github fa-fw fa-3x"></i></a></li>
 										</ul>
 										<hr class="small">
-										<p class="text-muted">Copyright &copy; Rolando Bernal | Web Developer 2015</p>
+										<p class="text-muted">Copyright &copy; Rolando Bernal | Web Developer <span id="current-year"></span></p>
 										<a href="#top"><h2><i class="btn skills-btn-dark btn-lg fa fa-home"></i></h2></a>
 								</div>
 						</div>
@@ -525,34 +525,40 @@
 
 		<!-- Custom Theme JavaScript -->
 		<script>
-		// Closes the sidebar menu
-		$("#menu-close").click(function(e) {
-				e.preventDefault();
-				$("#sidebar-wrapper").toggleClass("active");
-		});
-
-		// Opens the sidebar menu
-		$("#menu-toggle").click(function(e) {
-				e.preventDefault();
-				$("#sidebar-wrapper").toggleClass("active");
-		});
-
-		// Scrolls to the selected menu item on the page
-		$(function() {
-				$('a[href*=#]:not([href=#])').click(function() {
-						if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-								var target = $(this.hash);
-								target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-								if (target.length) {
-										$('html,body').animate({
-												scrollTop: target.offset().top
-										}, 1000);
-										return false;
-								}
-						}
+				// Closes the sidebar menu
+				$("#menu-close").click(function(e) {
+						e.preventDefault();
+						$("#sidebar-wrapper").toggleClass("active");
 				});
-		});
+
+				// Opens the sidebar menu
+				$("#menu-toggle").click(function(e) {
+						e.preventDefault();
+						$("#sidebar-wrapper").toggleClass("active");
+				});
+
+				// Scrolls to the selected menu item on the page
+				$(function() {
+						$('a[href*=#]:not([href=#])').click(function() {
+								if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+										var target = $(this.hash);
+										target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+										if (target.length) {
+												$('html,body').animate({
+														scrollTop: target.offset().top
+												}, 1000);
+												return false;
+										}
+								}
+						});
+				});
+		</script>
+		<script type="text/javascript">
+				var currentDate = new Date();
+				var year = currentDate.getFullYear();
+				//insert it via jquery
+				$('#current-year').html((currentDate.getFullYear()));
 		</script>
 		<!-- Plugin JavaScript -->
 		<script src="js/jquery.easing.min.js"></script>
