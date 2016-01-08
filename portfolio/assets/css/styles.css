@@ -201,6 +201,13 @@ a {
 		font-weight: bold;
 		/*background: rgba(124, 190, 255, .8);*/
 	}
+	.homeSection,
+	.portfolioSection,
+	.skillsSection,
+	.aboutSection,
+	.contactSection {
+		padding-top: 80px !important;
+	}
 
 }
 @media (max-width: 991px) {
