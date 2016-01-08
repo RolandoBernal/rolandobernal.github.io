@@ -241,10 +241,9 @@ a {
 }
 
 
-
-
-
-/* bootstrap overrides */
+/* ---------------------------*/
+/*	bootstrap overrides       */
+/* ---------------------------*/
 
 h1,h2,h3 {
 	 font-weight:800;
@@ -273,6 +272,28 @@ h1,h2,h3 {
 small.text-muted {
 	font-family:courier,courier-new,monospace;
 }
+
+
+/* ------------------------ */
+/* Sections                 */
+/* ------------------------ */
+
+.visible {
+    display: block !important;
+}
+
+.invisible {
+	display: none;
+}
+
+.portfolioSection,
+.aboutSection,
+.skillsSection,
+.contactSection {
+	display: none;
+}
+
+
 
 
 /* -------------------------------------------------------- */
