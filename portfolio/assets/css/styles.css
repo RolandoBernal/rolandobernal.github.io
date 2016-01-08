@@ -282,10 +282,6 @@ small.text-muted {
     display: block !important;
 }
 
-.invisible {
-	display: none;
-}
-
 .portfolioSection,
 .aboutSection,
 .skillsSection,
