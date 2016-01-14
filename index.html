@@ -373,7 +373,7 @@
 										</div> <!-- col-md-12 -->
 										</div>
 										<hr class="small">
-										<p class="text-muted">Copyright &copy; Rolando Bernal | Software Developer 2015</p>
+										<p class="text-muted">Copyright &copy; Rolando Bernal | Web Developer <span id="current-year"></span></p>
 										</div>
 								</div>
 						</div>
@@ -507,6 +507,12 @@
 			$(function() {
 				Boxlayout.init();
 			});
+		</script>
+		<script type="text/javascript">
+				var currentDate = new Date();
+				var year = currentDate.getFullYear();
+				//insert it via jquery
+				$('#current-year').html((currentDate.getFullYear()));
 		</script>
 	</body>
 </html>
