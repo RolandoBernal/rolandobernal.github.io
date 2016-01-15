@@ -836,7 +836,7 @@ section.rb-expand .rb-icon-close {
 @media screen and (max-width: 46.5em) {
 	.rb-content,
 	.rb-box {
-		font-size: 75%;
+		font-size: 80%;
 	}
 
 	.rb-expand .rb-box {
@@ -845,6 +845,24 @@ section.rb-expand .rb-icon-close {
 
 	.rb-content > ul li {
 		width: 40%;
+	}
+
+	.contact-hdr {
+		font-size: 20px;
+	}
+
+	#email-text {
+		font-size: .8em;
+	}
+	#telephone {
+		font-size: .6em;
+	}
+
+	.social ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 15px 16px;
+    margin: -25px;
 	}
 
 }
