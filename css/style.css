@@ -65,6 +65,20 @@ a:hover {
 	color: #fff;
 }
 
+.btn-primary {
+    padding: 8px 20px;
+    background: #0F2A56;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    color: #0F2A56;
+    background: #ddd;
+}
+
 .container {
 	height: 100%;
 	width: 100%;
