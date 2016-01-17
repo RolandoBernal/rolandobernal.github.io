@@ -79,6 +79,11 @@ a:hover {
     background: #ddd;
 }
 
+hr.small-line {
+		max-width: 100px;
+		border-top: 1px solid #333;
+}
+
 .container {
 	height: 100%;
 	width: 100%;
