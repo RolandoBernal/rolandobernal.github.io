@@ -112,6 +112,7 @@ hr.small-line {
 	top: 0;
 	left: 0;
 	background: url('../img/thisisme.jpg') no-repeat;
+	/*background: url('../img/rola-color2.png') no-repeat;*/
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
@@ -866,6 +867,16 @@ section.rb-expand .rb-icon-close {
 		font-size: 80%;
 	}
 
+	.rb-main > section:first-child {
+		top: 0;
+		left: 0;
+		background: url('../img/rola-color2.png') no-repeat;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+	}
+
 	.rb-expand .rb-box {
 		height: 130px;
 	}
@@ -893,8 +904,8 @@ section.rb-expand .rb-icon-close {
 	}
 
 	.my-img {
-		opacity: .75;
-		margin:25%;
+		opacity: .85;
+		margin:10% 20% 10% 20%;
 		height:190px;
 		width:130px;
 		border-radius: 5px;
