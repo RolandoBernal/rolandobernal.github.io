@@ -348,10 +348,10 @@ div.rb-panel-items > div > div {
 }
 
 .my-img {
-	opacity: .75;
+	opacity: .85;
 	margin:2%;
-	height:282px;
-	width:204px;
+	height:362px;
+	width:262px;
 	border-radius: 10px;
 }
 
@@ -867,7 +867,7 @@ section.rb-expand .rb-icon-close {
 @media screen and (max-width: 46.5em) {
 	.rb-content,
 	.rb-box {
-		font-size: 80%;
+		font-size: 100%;
 	}
 
 	.rb-main > section:first-child {
@@ -908,9 +908,9 @@ section.rb-expand .rb-icon-close {
 
 	.my-img {
 		opacity: .85;
-		margin:10% 20% 10% 20%;
-		height:190px;
-		width:130px;
+		margin:10% 20% 10% 5%;
+		height:282px;
+		width:204px;
 		border-radius: 5px;
 	}
 
