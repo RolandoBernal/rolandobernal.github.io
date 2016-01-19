@@ -346,6 +346,14 @@ div.rb-panel-items > div > div {
 		text-align: center;
 }
 
+.my-img {
+	opacity: .75;
+	margin:2%;
+	height:282px;
+	width:204px;
+	border-radius: 10px;
+}
+
 .span4 > ul {
 	list-style: none;
 	padding: 0;
@@ -882,6 +890,14 @@ section.rb-expand .rb-icon-close {
     list-style-type: none;
     padding: 15px 16px;
     margin: -25px;
+	}
+
+	.my-img {
+		opacity: .75;
+		margin:25%;
+		height:190px;
+		width:130px;
+		border-radius: 5px;
 	}
 
 }
