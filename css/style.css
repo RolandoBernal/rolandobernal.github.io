@@ -198,7 +198,7 @@ h2 {
 .hola-im-rolando {
 	font-size: 2.3em !important;
 	color:#fff;
-	text-shadow: 0 0 8px green, 0 0 5px #000;
+	text-shadow: 0 0 8px #425f9c, 0 0 5px #7cbeff;
 }
 .my-projects {
 	font-size: 2.3em !important;
@@ -369,7 +369,7 @@ div.rb-panel-items > div > div {
 .icon-heart:before,
 .icon-fire:before,
 .icon-rocket:before {
-  color: #376E3F;
+  color: #425f9c;
 }
 
 .projects-margin {
@@ -416,7 +416,8 @@ div.rb-panel-items > div > div {
 
 .progress .color1,
 .progress .color1 .bar-width{
-  background: #376E3F;
+  /*background: #376E3F;*/
+  background:#425f9c;
 }
 
 .progress .color2,
@@ -426,7 +427,8 @@ div.rb-panel-items > div > div {
 
 .progress .color3,
 .progress .color3 .bar-width{
-  background: #376E3F;
+	background:#425f9c;
+  /*background: #376E3F;*/
   /*#2d7da4;*/
 }
 
@@ -437,7 +439,8 @@ div.rb-panel-items > div > div {
 
 .progress .color5,
 .progress .color5 .bar-width{
-  background: #376E3F;
+	background:#425f9c;
+  /*background: #376E3F;*/
   /*#2d7da4;*/
 }
 
@@ -492,7 +495,7 @@ div.rb-panel-items > div > div {
 }
 
 .progress .color1 span:before{
-  border-color: #376E3F transparent transparent transparent;
+  border-color: #425f9c transparent transparent transparent;
 }
 
 .progress .color2 span:before{
@@ -500,7 +503,7 @@ div.rb-panel-items > div > div {
 }
 
 .progress .color3 span:before{
-  border-color: #376E3F transparent transparent transparent;
+  border-color: #425f9c transparent transparent transparent;
 }
 
 .progress .color4 span:before{
@@ -508,7 +511,7 @@ div.rb-panel-items > div > div {
 }
 
 .progress .color5 span:before{
-  border-color: #376E3F transparent transparent transparent;
+  border-color: #425f9c transparent transparent transparent;
 }
 
 .progress .color6 span:before{
