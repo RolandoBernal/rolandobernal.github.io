@@ -198,7 +198,7 @@ h2 {
 .hola-im-rolando {
 	font-size: 2.3em !important;
 	color:#fff;
-	text-shadow: 0 0 8px #425f9c, 0 0 5px #7cbeff;
+	text-shadow: 0 0 8px #7cbeff, 0 0 5px #425f9c;
 }
 .my-projects {
 	font-size: 2.3em !important;
