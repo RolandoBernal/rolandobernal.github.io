@@ -297,10 +297,9 @@ div.rb-panel-items > div > div {
 }
 
 .rb-content h2 {
-
 	font-size: 3em;
 	font-weight: 300;
-	margin: 0 0 20px 0;
+	margin: 20px 0 40px 0;
 }
 
 .rb-content article {
@@ -373,7 +372,7 @@ div.rb-panel-items > div > div {
 }
 
 .projects-margin {
-	margin-left: 8%;
+	margin-left: 0%;
 }
 
 /* --------------------------------------------------------	*/
@@ -752,7 +751,7 @@ section.rb-expand .rb-icon-close {
 
 .social {
 	margin-top: 20px;
-	margin-bottom: 50px;
+	margin-bottom: 0px;
 	width: 100%;
 	height: 100%;
 	display: block;
@@ -858,6 +857,10 @@ section.rb-expand .rb-icon-close {
 	text-align: center !important;
 }
 
+.telephone {
+	margin-top: 50px !important;
+}
+
 .im-available {
 	margin-bottom: 30px !important;
 }
@@ -913,20 +916,26 @@ section.rb-expand .rb-icon-close {
 
 	.contact-hdr {
 		font-size: 20px;
+		margin-top: 0px;
+	}
+	.social ul li a i.fa {
+    font-size: 40px !important;
 	}
 
-	#email-text {
-		font-size: .8em;
+	.email-text {
+		font-size: 2.5em !important;
+		margin-top: 20px !important;
 	}
-	#telephone {
-		font-size: .6em;
+	.telephone {
+		font-size: 3em !important;
+		margin-top: 20px !important;
 	}
 
 	.social ul li {
-    display: inline-block;
+    display: inline;
     list-style-type: none;
-    padding: 15px 16px;
-    margin: -25px;
+    padding: 10px 5px;
+    margin: -7px;
 	}
 
 	.my-img {
