@@ -899,6 +899,10 @@ section.rb-expand .rb-icon-close {
 			background-size: cover;
 	}
 
+	.projects-margin {
+    margin-left: -1%;
+	}
+
 	.rb-expand .rb-box {
 		height: 130px;
 	}
