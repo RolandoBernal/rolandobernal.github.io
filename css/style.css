@@ -867,9 +867,28 @@ section.rb-expand .rb-icon-close {
 @media screen and (max-width: 46.5em) {
 	.rb-content,
 	.rb-box {
-		font-size: 100%;
+		font-size: 99% !important;
 	}
-
+	.hola-im-rolando {
+		font-size: 1.9em !important;
+		color:#fff;
+		text-shadow: 0 0 8px #7cbeff, 0 0 5px #425f9c;
+	}
+	.my-projects {
+		font-size: 2em !important;
+		color:#fff;
+		text-shadow: 0 0 8px #000, 0 0 5px #000;
+	}
+	.my-resume {
+		font-size: 2em !important;
+		color:#fff;
+		text-shadow: 0 0 8px #000, 0 0 5px #000;
+	}
+	.contact-me {
+		font-size: 2em !important;
+		color:#fff;
+		text-shadow: 0 0 8px #000, 0 0 5px #000;
+	}
 	.rb-main > section:first-child {
 		top: 0;
 		left: 0;
