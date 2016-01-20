@@ -923,11 +923,15 @@ section.rb-expand .rb-icon-close {
 	}
 
 	.email-text {
-		font-size: 2.5em !important;
+		font-family: 'Lato', Calibri, Arial, sans-serif;
+		font-size: 28px !important;
+		font-weight: 300 !important;
 		margin-top: 20px !important;
 	}
 	.telephone {
-		font-size: 3em !important;
+		font-family: 'Lato', Calibri, Arial, sans-serif;
+		font-size: 25px !important;
+		font-weight: 300 !important;
 		margin-top: 20px !important;
 	}
 
