@@ -654,7 +654,7 @@ hr.small-line {
 
 footer {
 		padding-top: 20px;
-		padding-bottom: 180px;
+		padding-bottom: 295px;
 		background-color: #f3f3f3;
 }
 
@@ -786,6 +786,11 @@ a:active {
 			background-color: #f3f3f3;
 		}
 
+footer {
+		padding-top: 20px;
+		padding-bottom: 10px;
+		background-color: #f3f3f3;
+}
 
 
 }
