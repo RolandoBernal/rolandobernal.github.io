@@ -765,7 +765,6 @@ a:active {
 			border-right-style: none;
 			border-bottom-style: solid;
 			border-left-style: none;
-			/*border-color: #dd4b39;*/
 			border-color: #fff;
 			border-width: 1px;
 			background-color: #f3f3f3;
@@ -780,7 +779,6 @@ a:active {
 			border-right-style: none;
 			border-bottom-style: solid;
 			border-left-style: none;
-			/*border-color: #dd4b39;*/
 			border-color: #fff;
 			border-width: 1px;
 			background-color: #f3f3f3;
@@ -795,4 +793,92 @@ a:active {
 }
 
 
+/*--------MEDIA--QUERIES--------*/
 
+@media screen and (max-width: 1025px){
+  #vid{
+    width: 500px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  #vid{
+    width: 450px;
+    margin-top: 10px;
+  }
+}
+/*IPAD*/
+@media screen and (max-width: 768px){
+  #vid{
+    width: 360px;
+    margin-top: -60px;
+  }
+  .large-header{
+    display: none;
+  }
+  .bg{
+    height: 1024px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px){
+  #vid{
+    width: 400px;
+    margin-top: -60px;
+  }
+}
+@media screen and (max-width: 400px){
+  #demo-canvas{
+    display: none;
+  }
+}
+@media screen and (max-width: 400px){
+  #vid{
+    width: 400px;
+    margin-top: -60px;
+    display: none;
+  }
+  #videoImg{
+    display: block;
+    height: 220px;
+    width: 100%;
+  }
+}
+/*Iphone4*/
+@media screen and (max-width: 320px){
+  #vid{
+    width: 400px;
+    margin-top: -60px;
+  }
+  #videoImg{
+    display: block;
+  }
+}
+@media screen and (max-width: 970px){
+  .large-header{
+    display: none;
+  }
+}
+
+/*laptops*/
+@media screen and (min-width: 980px){
+  .bg{
+    height: 0px;
+  }
+}
+
+/*Iphone6*/
+@media screen and (max-width: 375px){
+  .bg{
+    height: 630px;
+    width: 100%;
+  }
+}
+/*Iphone6+*/
+@media screen and (max-width: 414px){
+  .bg{
+    height: 736px;
+    width: 100%;
+  }
+}
