@@ -206,7 +206,7 @@ a {
 	.skillsSection,
 	.aboutSection,
 	.contactSection {
-		padding-top: 80px !important;
+		padding-top: 0px !important;
 	}
 
 }
