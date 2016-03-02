@@ -53,10 +53,10 @@ a {
 .divider {
 	/*margin-top:32px;*/
 /*	position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 100px;
-    width: 100%;*/
+		left: 0;
+		bottom: 0;
+		height: 100px;
+		width: 100%;*/
 }
 
 #main {
@@ -105,12 +105,17 @@ a {
 	position:absolute;bottom:5px;
 }
 #footer {
-	/*margin-bottom:20px;*/
-	position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 100px;
-    width: 100%;
+	position: fixed;
+  bottom: 0px;
+  height: 50px;
+  width: 83.3%;
+  background: #fff;
+  text-align: center;
+  right: 0;
+}
+
+.footer-text {
+	margin: 15px 0 10px;
 }
 
 /*-----------------------
@@ -201,12 +206,12 @@ a {
 	#main-navigation .navbar-nav li {
 		display: inline;
 		text-align: center;
-  }
-  #main-navigation .navbar-nav li a {
+	}
+	#main-navigation .navbar-nav li a {
 		color: #fdfdfd; /* #428bca; #00295B; */
 		/*background: rgba(124, 190, 255, .8);*/
 	}
-  #main-navigation .navbar-nav li a:hover {
+	#main-navigation .navbar-nav li a:hover {
 		color: #7CBEFF; /* #00295B; */
 		font-weight: bold;
 		/*background: rgba(124, 190, 255, .8);*/
@@ -296,7 +301,7 @@ small.text-muted {
 /* ------------------------ */
 
 .visible {
-    display: block !important;
+		display: block !important;
 }
 
 .portfolioSection,
@@ -304,6 +309,17 @@ small.text-muted {
 .skillsSection,
 .contactSection {
 	display: none;
+}
+
+.specialization {
+		display: block;
+		text-align: center;
+}
+
+.specialization img {
+		height: 100px;
+		display: inline-block;
+		padding: 10px;
 }
 
 
