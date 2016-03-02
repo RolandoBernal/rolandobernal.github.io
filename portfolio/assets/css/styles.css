@@ -1,8 +1,10 @@
 /* move special fonts to HTML head for better performance */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600|Lato:400,300,700|Kaushan+Script);
 
+/*--------------------------------
+	My Custom Stuff
+--------------------------------*/
 
-/* custom stuff */
 html, body {
 	 height: 100%;
 	 font-family:'Lato',arial,sans-serif;
@@ -72,6 +74,16 @@ a {
 	height:40px;
 	width:70px;
 }
+
+.welcome {
+	font-weight: lighter;
+	font-style: italic;
+}
+
+.ready-to-go {
+	padding-bottom: 100px;
+}
+
 
 /*--------------------------------
 	Sidebar Navigation
