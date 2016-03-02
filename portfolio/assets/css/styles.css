@@ -333,8 +333,6 @@ small.text-muted {
 }
 
 
-
-
 /* -------------------------------------------------------- */
 /*  Progress Bar  */
 /* -------------------------------------------------------- */
@@ -473,6 +471,10 @@ small.text-muted {
 
 .progress .color6 span:before{
 	border-color: #7CBEFF transparent transparent transparent;
+}
+
+.prog-bar-wrapper {
+  padding-bottom: 100px;
 }
 
 
