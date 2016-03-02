@@ -51,7 +51,12 @@ a {
 }
 
 .divider {
-	margin-top:32px;
+	/*margin-top:32px;*/
+/*	position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;*/
 }
 
 #main {
@@ -100,7 +105,12 @@ a {
 	position:absolute;bottom:5px;
 }
 #footer {
-	margin-bottom:20px;
+	/*margin-bottom:20px;*/
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
 }
 
 /*-----------------------
@@ -161,7 +171,7 @@ a {
 	border:2px solid transparent;
 	border-color:transparent!important;
 	color:#FFF;
-}*/
+}
 
 
 /*-----------------------
