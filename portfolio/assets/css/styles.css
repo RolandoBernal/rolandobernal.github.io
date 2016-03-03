@@ -284,6 +284,11 @@ a {
     right: 0;
     z-index: 2;
 	}
+
+	.footer-text {
+		margin: 15px 0 10px;
+		font-size: 10px;
+	}
 }
 
 
