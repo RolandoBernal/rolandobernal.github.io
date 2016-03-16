@@ -229,6 +229,7 @@ footer .footer-below {
 
 .portfolio-modal .modal-content img {
 		margin-bottom: 30px;
+		widows: 100%;
 }
 
 .portfolio-modal .modal-content .item-details {
