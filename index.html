@@ -120,6 +120,7 @@
 												<p>Thank you for taking the time to visit my site.<br><br><br>I am a Web Developer living in Music City USA.<br><br>I started this career in 2015 and have enjoyed every minute of it working on a wide range of personal and professional projects.</p><br>I have a passion for creating engaging applications and intuitive interfaces that bridge the gap between functionality and design.<br><br><br>In my free time, I love spending time with my wife, Emily, and my two children, Violet and Levi.<br><br> I can also be found playing golf, or screaming my head off at a Titans football game.</p><br><br>
 												<p class="welcome">Father, Husband, Friend, Golfer, Coder, Dreamer.</p><br> <p>That's me in a nutshell.</p>
 												<br/><br><br>
+												<i class="fa fa-star"></i>
 												<br><br><br>
 											</h4>
 										</div>
@@ -660,6 +661,18 @@
 				var year = currentDate.getFullYear();
 				//insert it via jquery
 				$('#current-year').html((currentDate.getFullYear()));
+		</script>
+		<script>
+		// jQuery for page scrolling feature - requires jQuery Easing plugin
+				$(function() {
+				    $('body').on('click', '.page-scroll a', function(event) {
+				        var $anchor = $(this);
+				        $('html, body').stop().animate({
+				            scrollTop: $($anchor.attr('href')).offset().top
+				        }, 1500, 'easeInOutExpo');
+				        event.preventDefault();
+				    });
+				});
 		</script>
 
 
