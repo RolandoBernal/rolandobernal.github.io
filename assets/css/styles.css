@@ -201,9 +201,7 @@ a {
 }
 @media (max-width: 767px) {
 
-	html, body {
-		 font-weight: 200 !important;
-	}
+
 	.navbar {
 		display:inline-block;
 	}
@@ -240,6 +238,10 @@ a {
 	.contactSection {
 		padding-top: 0px !important;
 	}
+
+	/*html, body {
+		 font-weight: 200 !important;
+	}*/
 
 }
 @media (max-width: 991px) {
@@ -300,9 +302,11 @@ a {
 /*	bootstrap overrides       */
 /* ---------------------------*/
 
-h1,h2,h3 {
-	 font-weight:800;
-	 font-family:'Lato',arial,sans-serif;
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family:'Lato',arial,sans-serif;
+  font-weight:200 !important;
+  line-height: 1.1;
+  color: inherit;
 }
 
 .jumbotron {
