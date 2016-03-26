@@ -324,6 +324,10 @@ small.text-muted {
 	font-family:courier,courier-new,monospace;
 }
 
+.details {
+	font-weight: 200 !important;
+}
+
 
 /* ------------------------ */
 /* Sections                 */
@@ -352,9 +356,9 @@ small.text-muted {
 }
 
 
-/* -------------------------------------------------------- */
+/* -------------- */
 /*  Progress Bar  */
-/* -------------------------------------------------------- */
+/* -------------- */
 
 .progress {
 	height:40px;
