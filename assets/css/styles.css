@@ -200,6 +200,10 @@ a {
 	box-shadow: inset 0 0px 0 rgba(255,255,255,.1)!important;
 }
 @media (max-width: 767px) {
+
+	html, body {
+		 font-weight: 200 !important;
+	}
 	.navbar {
 		display:inline-block;
 	}
