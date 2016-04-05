@@ -66,7 +66,7 @@ a, a:hover, a:focus, a:active, a.active {
 
 .proj-details {
 				font-size: 1em;
-				text-align: left;
+				text-align: center;
 				list-style: none;
 				color: #333;
 }
@@ -274,4 +274,13 @@ footer .footer-below {
 .portfolio-modal .modal-backdrop {
 		display: none;
 		opacity: 0;
+}
+
+/* ---------------------------*/
+/*	bootstrap overrides       */
+/* ---------------------------*/
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family:'Lato',arial,sans-serif;
+  font-weight:200 !important;
 }

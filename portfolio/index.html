@@ -12,6 +12,8 @@
 		<!--[if lt IE 9]>
 			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
+		<!-- Css3 Animations Styles -->
+		<link rel="stylesheet" type="text/css" href="assets/css/animate.css" media="screen" />
 		<!-- Custom CSS -->
 		<link href="assets/css/portfolio.css" rel="stylesheet">
 		<link href="assets/css/styles.css" rel="stylesheet">
@@ -57,6 +59,9 @@
 						<li><a class=" button skills" href="#skills">Skills</a></li>
 						<li><a target="_blank" href="docs/RolandoBernalResume.pdf">Resume</a></li>
 						<li><a class="button portfolio" href="#portfolio">Portfolio</a></li>
+						<li><a target="_blank" href="https://github.com/LandoB" onclick = $("#menu-close").click(); >GitHub</a></li>
+						<li><a target="_blank" href="http://twitter.com/jrolandobernal" onclick = $("#menu-close").click(); >Twitter</a></li>
+						<li><a target="_blank" href="https://www.linkedin.com/in/jrolandobernal" onclick = $("#menu-close").click(); >LinkedIn</a></li>
 						<li><a class="button contact" href="#contact">Contact</a></li>
 				</ul>
 			</div>
@@ -79,6 +84,9 @@
 						<li><a class=" button skills" href="#skills">Skills</a></li>
 						<li><a target="_blank" href="docs/RolandoBernalResume.pdf">Resume</a></li>
 						<li><a class="button portfolio" href="#portfolio">Portfolio</a></li>
+						<li><a target="_blank" href="https://github.com/LandoB" onclick = $("#menu-close").click(); >GitHub</a></li>
+						<li><a target="_blank" href="http://twitter.com/jrolandobernal" onclick = $("#menu-close").click(); >Twitter</a></li>
+						<li><a target="_blank" href="https://www.linkedin.com/in/jrolandobernal" onclick = $("#menu-close").click(); >LinkedIn</a></li>
 						<li><a class="button contact" href="#contact">Contact</a></li>
 					</ul>
 					<ul class="nav hidden-xs" id="sidebar-footer">
@@ -120,6 +128,7 @@
 												<p>Thank you for taking the time to visit my site.<br><br><br>I am a Web Developer living in Music City USA.<br><br>I started this career in 2015 and have enjoyed every minute of it working on a wide range of personal and professional projects.</p><br>I have a passion for creating engaging applications and intuitive interfaces that bridge the gap between functionality and design.<br><br><br>In my free time, I love spending time with my wife, Emily, and my two children, Violet and Levi.<br><br> I can also be found playing golf, or screaming my head off at a Titans football game.</p><br><br>
 												<p class="welcome">Father, Husband, Friend, Golfer, Coder, Dreamer.</p><br> <p>That's me in a nutshell.</p>
 												<br/><br><br>
+												<i class="fa fa-star"></i>
 												<br><br><br>
 											</h4>
 										</div>
@@ -274,7 +283,9 @@
 										<div class="page-header text-muted divider text-center">
 										My Work
 										</div>
-										<br><br><br>
+										<br><br>
+										<div class="row text-center text-muted details">(Click on the image to open project details)</div>
+										<br><br>
 									</div>
 											<div class="container" id="portfolio">
 												<br><br><br>
@@ -458,25 +469,26 @@
 																								<h2>Other Projects</h2>
 																								<hr>
 																								<img src="assets/img/portfolio/otherprojects.png" class="img-responsive img-centered" alt="">
-																								<p><b>Lando B | Web Solutions</b> is a full responsive, retina ready, clean code website created to learn new techniques with CSS transitions and jQuery.</p>
+																								<br><hr class="small-line"><br>
+																								<p><b>Lando B | Web Solutions</b> is a full responsive, retina ready, clean code website <br>created to learn new techniques with CSS transitions and jQuery.</p>
 																								<h5><b>Project Details</b></h5>
-																								<p>
+																								<div>
 																									<ul>
 																										<li class="proj-details"><i class="fa fa-code"></i>&nbsp Languages: HTML, CSS, Bootstrap, JavaScript, jQuery.</li>
 																										<li class="proj-details"><a href="https://landob.github.io/landob-websolutions/index.html" class="proj-details" target="_blank"><i class="fa fa-laptop"></i>&nbsp Live Demo</a></li>
 																										<li class="proj-details"><a href="https://github.com/LandoB/landob.github.io/tree/master/landob-websolutions" class="proj-details" target="_blank"><i class="fa fa-github"></i>&nbsp Check out the code</a></li>
 																									</ul>
-																								</p>
+																								</div>
 																								<br><hr class="small-line"><br>
-																								<p><b>Rolando Bernal - GitHub Personal Website</b> is a full responsive, retina ready, clean code website created to learn new techniques a jQuery plugin named "boxlayout.js" by Codrops. Also explodes the advantage of CSS transitions and Bootstrap modals.</p>
+																								<p><b>Rolando Bernal - GitHub Personal Website</b> is a full responsive, retina ready, <br>clean code website created to learn new techniques a jQuery plugin named "boxlayout.js" by Codrops. <br>Also explodes the advantage of CSS transitions and Bootstrap modals.</p>
 																								<h5><b>Project Details</b></h5>
-																								<p>
+																								<div>
 																									<ul>
 																										<li class="proj-details"><i class="fa fa-code"></i>&nbsp Languages: HTML, CSS, Bootstrap, JavaScript, jQuery.</li>
-																										<li class="proj-details"><a href="https://landob.github.io/" class="proj-details" target="_blank"><i class="fa fa-laptop"></i>&nbsp Live Demo</a></li>
-																										<li class="proj-details"><a href="https://github.com/LandoB/landob.github.io/" class="proj-details" target="_blank"><i class="fa fa-github"></i>&nbsp Check out the code</a></li>
+																										<li class="proj-details"><a href="http://landob.github.io/modalVersion/index.html" class="proj-details" target="_blank"><i class="fa fa-laptop"></i>&nbsp Live Demo</a></li>
+																										<li class="proj-details"><a href="https://github.com/LandoB/landob.github.io/tree/master/modalVersion" class="proj-details" target="_blank"><i class="fa fa-github"></i>&nbsp Check out the code</a></li>
 																									</ul>
-																								</p>
+																								</div>
 																								<br><hr class="small-line"><br>
 																								<p><b>Coming Soon</b> is a landing page created to learn how countdown pages work.</p>
 																								<h5><b>Project Details</b></h5>
@@ -488,15 +500,16 @@
 																									</ul>
 																								</p>
 																								<br><hr class="small-line"><br>
-																								<p><b>jQuery Portfolio Site</b> is a portfolio website created just for fun and with the purpose of learning different layout and styling techniques.</p>
+																								<p><b>My Portfolio Site</b> is a portfolio website created just for fun and with the purpose of learning different layout and styling techniques.</p>
 																								<h5><b>Project Details</b></h5>
 																								<p>
 																									<ul>
-																										<li class="proj-details"><i class="fa fa-code"></i>&nbsp Languages: HTML, CSS, Bootstrap, JavaScript, jQuery, AngularJS.</li>
-																										<li class="proj-details"><a href="http://www.rolandobernal.com/portfolio/index.html" class="proj-details" target="_blank"><i class="fa fa-laptop"></i>&nbsp Live Demo</a></li>
-																										<li class="proj-details"><a href="https://github.com/LandoB/landob.github.io/tree/master/portfolio" class="proj-details" target="_blank"><i class="fa fa-github"></i>&nbsp Check out the code</a></li>
+																										<li class="proj-details"><i class="fa fa-code"></i>&nbsp Languages: HTML, CSS, Bootstrap, JavaScript, jQuery.</li>
+																										<li class="proj-details"><a href="https://landob.github.io/rolandobernal/index.html" class="proj-details" target="_blank"><i class="fa fa-laptop"></i>&nbsp Live Demo</a></li>
+																										<li class="proj-details"><a href="https://github.com/LandoB/landob.github.io/tree/master/rolandobernal" class="proj-details" target="_blank"><i class="fa fa-github"></i>&nbsp Check out the code</a></li>
 																									</ul>
 																								</p>
+																								<br><hr class="small-line"><br>
 																								<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
 																						</div>
 																				</div>
@@ -658,6 +671,76 @@
 				var year = currentDate.getFullYear();
 				//insert it via jquery
 				$('#current-year').html((currentDate.getFullYear()));
+		</script>
+		<!-- jQuery for page scrolling feature - requires jQuery Easing plugin -->
+		<script type="text/javascript">
+				$(function() {
+				    $('body').on('click', '.page-scroll a', function(event) {
+				        var $anchor = $(this);
+				        $('html, body').stop().animate({
+				            scrollTop: $($anchor.attr('href')).offset().top
+				        }, 1500, 'easeInOutExpo');
+				        event.preventDefault();
+				    });
+				});
+		</script>
+
+		<script type="text/javascript">
+				function getScrollTop(){
+			if(typeof pageYOffset!= 'undefined'){
+					//most browsers except IE before #9
+					return pageYOffset;
+			} else {
+					var B = document.body; //IE 'quirks'
+					var D = document.documentElement; //IE with doctype
+					D = (D.clientHeight) ? D : B;
+					return D.scrollTop;
+			}
+		}
+
+		var timeouts = [];
+		var scrolling = false;
+		var scroller;
+		var scrollTop = getScrollTop();
+		var timeMs;
+		var alter = false;
+		var speed = 5;
+		window.onscroll = function() {
+			if(alter) {
+					var timeDif = new Date().getMilliseconds() - timeMs;
+					speed = 5 - (timeDif / 50);
+					console.log(speed);
+			}
+			timeMs = new Date().getMilliseconds();
+			alter = !alter;
+			var scrollDirection = getScrollTop() - scrollTop;
+			scrollDirection = scrollDirection / Math.abs(scrollDirection);
+			scrollTop = getScrollTop();
+			clearTimeout(scroller);
+			scroller = setTimeout(function(){
+					console.log('smooth scrolling active');
+					if(!scrolling) {
+							timeouts.length = 0;
+							scrolling = true;
+							var steps = 50;
+							var delay = 6;
+							for(var i = 0; i < steps; i++) {
+									(function(i){
+											var timeout = setTimeout(function(){
+													var perc = i / steps;
+													var val = (perc == 1) ? 1 : (-Math.pow(2, -10 * perc) + 1);
+													var scrollY = val * speed * scrollDirection;
+													window.scrollTo(0, getScrollTop() + scrollY);
+													setTimeout(function(){
+															if(i == (steps - 1)) scrolling = false;
+													}, steps * delay);
+											}, (i * delay));
+											timeouts.push(timeout);
+									})(i);
+							}
+					}
+			}, 50);
+		};
 		</script>
 
 
