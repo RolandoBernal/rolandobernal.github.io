@@ -1,0 +1,603 @@
+/* move special fonts to HTML head for better performance */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600|Lato:400,300,700|Kaushan+Script);
+
+/*--------------------------------
+	My Custom Stuff
+--------------------------------*/
+
+html, body {
+	 height: 100%;
+	 font-family:'Lato',arial,sans-serif;
+}
+
+a {
+	color:#222222;
+}
+
+.wrapper, .row {
+	 height: 100%;
+	 margin-left:0;
+	 margin-right:0;
+}
+
+.wrapper:before, .wrapper:after,
+.column:before, .column:after {
+		content: "";
+		display: table;
+}
+
+.wrapper:after,
+.column:after {
+		clear: both;
+}
+
+.column {
+		height: 100%;
+		overflow: auto;
+		*zoom:1;
+}
+
+.column .padding {
+		padding: 20px;
+}
+
+.box {
+		bottom: 0; /* increase for footer use */
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		background-image:url('../../assets/img/main-bg2.jpg');
+		background-size:fixed;
+		background-attachment:fixed;
+}
+
+.divider {
+	/*margin-top:32px;*/
+/*	position: absolute;
+		left: 0;
+		bottom: 0;
+		height: 100px;
+		width: 100%;*/
+}
+
+#main {
+		background-color:#fefefe;
+}
+#main .img-circle {
+	margin-top:18px;
+	height:130px;
+	width:130px;
+}
+.skill-img {
+	margin-top:18px;
+	height:40px;
+	width:70px;
+}
+
+.welcome {
+	font-weight: lighter;
+	font-style: italic;
+}
+
+.ready-to-go {
+	padding-bottom: 100px;
+}
+
+
+/*--------------------------------
+	Sidebar Navigation
+--------------------------------*/
+
+#sidebar li a:hover {
+		color: #7CBEFF; /* #00295B; */
+		font-weight: bold;
+		/*background: rgba(124, 190, 255, .8);*/
+}
+#sidebar, #sidebar a {
+		color:#f1f1f1;
+		background-color:transparent;
+	text-shadow:1px 0 1px #888888;
+}
+#sidebar a.logo {
+	display:block;
+	padding:3px;
+	background-color:#f1f1f1;
+	color:#777777;
+	height:40px;
+	width:40px;
+	margin:15px;
+	font-size:26px;
+	font-weight:700;
+	text-align:center;
+	text-decoration:none;
+	text-shadow:0 0 0;
+}
+#sidebar-footer {
+	position:absolute;bottom:5px;
+}
+#footer {
+	position: fixed;
+  	bottom: 0px;
+  	height: 50px;
+  	width: 83.3%;
+  	background: #fff;
+  	text-align: center;
+  	right: 0;
+  	z-index: 2;
+}
+
+.footer-text {
+	margin: 15px 0 10px;
+}
+
+/*-----------------------
+	Logo
+------------------------*/
+/*Full View*/
+.logo-img {
+		height: 70px;
+		width: 70px;
+		opacity: .75;
+}
+.logo-img:hover,
+.logo-img:focus,
+.logo-img:active {
+	opacity: 1;
+}
+
+/*Mobile*/
+.navbar-brand.logo img {
+	max-width:75px!important;
+}
+/*Full View*/
+#main-navigation .navbar-nav li.logo a{
+	opacity: 1;
+	border:0!important;
+	padding:0;
+}
+#main-navigation .navbar-nav li.logo img {
+	width:50px;
+	padding:15px;
+
+}
+#main-navigation .navbar-nav li.logo a {
+	margin:0;
+}
+
+/*-----------------------
+	Navigation
+------------------------*/
+#main-navigation {
+
+}
+.navbar{
+	margin: 0;
+	border-radius: 0;
+	display: none;
+}
+
+#main-navigation .navbar-nav li a:hover, #main-navigation .navbar-nav li a:focus{
+	background:transparent;
+	opacity: 1;
+	border:2px solid #FFF;
+	color:#FFF;
+}
+.stuck .navbar-nav li a:hover, .stuck .navbar-nav li a:focus{
+	background:transparent;
+	opacity: 1;
+	border:2px solid transparent;
+	border-color:transparent!important;
+	color:#FFF;
+}
+
+
+/*-----------------------
+	Mobile Navigation
+------------------------*/
+
+.navbar-collapse {
+	box-shadow: inset 0 0px 0 rgba(255,255,255,.1)!important;
+}
+@media (max-width: 767px) {
+
+
+	.navbar {
+		display:inline-block;
+	}
+	.navbar-toggle .icon-bar {
+	background:#7CBEFF !important;
+	}
+	.stuck {
+		background: #7CBEFF;
+		background-image:url('../../assets/img/main-bg2.jpg');
+	}
+	#rola {
+		padding-top: 50px !important;
+	}
+	#main-navigation .navbar-nav li.logo {
+		display:none;
+	}
+	#main-navigation .navbar-nav li {
+		display: inline;
+		text-align: center;
+	}
+	#main-navigation .navbar-nav li a {
+		color: #fdfdfd; /* #428bca; #00295B; */
+		/*background: rgba(124, 190, 255, .8);*/
+	}
+	#main-navigation .navbar-nav li a:hover {
+		color: #7CBEFF; /* #00295B; */
+		font-weight: bold;
+		/*background: rgba(124, 190, 255, .8);*/
+	}
+	.homeSection,
+	.portfolioSection,
+	.skillsSection,
+	.aboutSection,
+	.contactSection {
+		padding-top: 0px !important;
+	}
+
+	/*html, body {
+		 font-weight: 200 !important;
+	}*/
+
+}
+@media (max-width: 991px) {
+	/*.navbar {
+		padding:10px;
+	}*/
+	.navbar-brand{
+		padding: 5px 10px;
+	}
+	.navbar-brand img{
+		width: 40px;
+	}
+}
+
+/* center and adjust the sidebar contents on smaller devices */
+@media (max-width: 768px) {
+	/*#sidebar,#sidebar a.logo {
+		text-align:center;
+		margin:0 auto;
+		margin-top:30px;
+		font-size:26px;
+	}
+	#sidebar a.logo {
+		font-size:50px;
+		height:75px;
+		width:75px;
+		margin-bottom:30px;
+	}
+	.logo-img {
+		max-width:90px!important;
+		height:100px;
+		width:100px;
+	}*/
+	#sidebar,
+	.logo-img {
+		display: none;
+	}
+
+	#footer {
+    position: fixed;
+    bottom: 0px;
+    height: 50px;
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    right: 0;
+    z-index: 2;
+	}
+
+	.footer-text {
+		margin: 15px 0 10px;
+		font-size: 10px;
+	}
+}
+
+
+/* ---------------------------*/
+/*	bootstrap overrides       */
+/* ---------------------------*/
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family:'Lato',arial,sans-serif;
+  font-weight:200 !important;
+  line-height: 1.1;
+  color: inherit;
+}
+
+.jumbotron {
+	background-color:transparent;
+}
+.label-default {
+	background-color:#dddddd;
+}
+.page-header {
+	margin-top: 55px;
+	padding-top: 9px;
+	border-top:1px solid #eeeeee;
+	font-weight:700;
+	text-transform:uppercase;
+	letter-spacing:2px;
+}
+
+.col-sm-9.full {
+		width: 100%;
+}
+
+small.text-muted {
+	font-family:courier,courier-new,monospace;
+}
+
+.details {
+	font-weight: 200 !important;
+}
+
+
+/* ------------------------ */
+/* Sections                 */
+/* ------------------------ */
+
+.visible {
+		display: block !important;
+}
+
+.portfolioSection,
+.aboutSection,
+.skillsSection,
+.contactSection {
+	display: none;
+}
+
+.specialization {
+		display: block;
+		text-align: center;
+}
+
+.specialization img {
+		height: 100px;
+		display: inline-block;
+		padding: 10px;
+}
+
+
+/* -------------- */
+/*  Progress Bar  */
+/* -------------- */
+
+.progress {
+	height:40px;
+	border-radius:0px;
+	background:transparent !important;
+	-webkit-box-shadow:rgba(0, 0, 0, 0) 0 0 0 inset;
+	margin-bottom:10px;
+}
+
+.bar {
+	height:35px;
+	font-size:14px !important;
+	line-height:40px;
+	background: #c9ab8b !important;
+	border:0px;
+	-webkit-box-shadow:rgba(0, 0, 0, 0) 0 0 0 inset;
+	text-shadow: none !important;
+	text-align:left !important;
+	padding-left:30px !important;
+}
+
+.skill h2{
+	margin-top:-10px;
+	margin-bottom: 25px;
+}
+
+.progress-wrap{
+	position: relative;
+}
+
+.progress-wrap h4{
+	font-size: 1em !important;
+	font-weight: normal;
+}
+
+.progress .color1,
+.progress .color1 .bar-width{
+	background: #00295B;
+}
+
+.progress .color2,
+.progress .color2 .bar-width{
+	background: #7CBEFF;
+}
+
+.progress .color3,
+.progress .color3 .bar-width{
+	background: #00295B;
+	/*#2d7da4;*/
+}
+
+.progress .color4,
+.progress .color4 .bar-width{
+	background: #7CBEFF;
+	/*#c9ab8b;*/
+}
+
+.progress .color5,
+.progress .color5 .bar-width{
+	background: #00295B;
+	/*#2d7da4;*/
+}
+
+.progress .color6,
+.progress .color6 .bar-width{
+	background: #7CBEFF;
+}
+
+.progress,
+.progress-bar {
+	height: 15px;
+	line-height: 15px;
+	background: #e6e6e6;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border-radius: 0;
+	overflow: visible;
+	text-align: right;
+}
+
+.progress{
+	position: relative;
+}
+
+.progress .bar-width{
+	position: absolute;
+	width: 40px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	font-size: 12px;
+	font-weight: 700;
+	top: -30px;
+	border-radius: 2px;
+	margin-left: -30px;
+}
+
+.progress span{
+	position: relative;
+}
+
+.progress span:before{
+	content: " ";
+	position: absolute;
+	width: auto;
+	height: auto;
+	border-width: 8px 5px;
+	border-style: solid;
+	bottom: -15px;
+	right: 8px;
+}
+
+.progress .color1 span:before{
+	border-color: #00295B transparent transparent transparent;
+}
+
+.progress .color2 span:before{
+	border-color: #7CBEFF transparent transparent transparent;
+}
+
+.progress .color3 span:before{
+	border-color: #00295B transparent transparent transparent;
+}
+
+.progress .color4 span:before{
+	border-color: #7CBEFF transparent transparent transparent;
+}
+
+.progress .color5 span:before{
+	border-color: #00295B transparent transparent transparent;
+}
+
+.progress .color6 span:before{
+	border-color: #7CBEFF transparent transparent transparent;
+}
+
+.prog-bar-wrapper {
+  padding-bottom: 100px;
+}
+
+
+/* -------------------------------------------------------- */
+/*  Social Networks Icons */
+/* -------------------------------------------------------- */
+
+
+a:hover,
+a:focus,
+a:active {
+		color: #7CBEFF;
+		text-decoration: none;
+}
+
+.social {
+	margin-top: 20px;
+	margin-bottom: 50px;
+	width: 100%;
+	height: 100%;
+	display: block;
+	z-index: 2;
+	text-align: center;
+}
+.social ul {
+	margin: 20px 20px;
+
+}
+
+.social ul li {
+		display: inline-block;
+		list-style-type: none;
+		padding: 5px 5px;
+		margin: 20px;
+}
+
+.social ul li a i.fa {
+	font-size: 50px;
+}
+
+#linkedin:hover,
+#linkedin:focus,
+#linkedin:active,
+.fa-linkedin:hover,
+.fa-linkedin:focus,
+.fa-linkedin:active {
+		color: #FFF;
+		background-color: #007bb6;
+		border-radius: 4px;
+}
+
+#twitter:hover,
+#twitter:focus,
+#twitter:active,
+.fa-twitter:hover,
+.fa-twitter:focus,
+.fa-twitter:active {
+		color: #FFF;
+		background-color: #55acee;
+		border-radius: 4px;
+}
+
+
+#google-plus:hover,
+#google-plus:focus,
+#google-plus:active,
+.fa-google-plus:hover,
+.fa-google-plus:focus,
+.fa-google-plus:active {
+		color: #FFF;
+		background-color: #dd4b39;
+		border-radius: 4px;
+}
+
+#github:hover,
+#github:focus,
+#github:active,
+.fa-github:hover,
+.fa-github:focus,
+.fa-github:active {
+		color: #fff;
+		background-color: #444;
+		border-radius: 4px;
+}
+
+.fa-phone:hover,
+.fa-phone:focus,
+.fa-phone:active,
+.fa-envelope-o:hover,
+.fa-envelope-o:focus,
+.fa-envelope-o:active {
+		color: #fff;
+		background-color: #7CBEFF;
+		border-radius: 4px;
+}
