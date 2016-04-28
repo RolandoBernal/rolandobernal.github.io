@@ -1,0 +1,433 @@
+/*!
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+ /* move special fonts to HTML head for better performance */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600|Lato:400,300,700|Kaushan+Script);
+
+/*--------------------------------
+	My Custom Stuff
+--------------------------------*/
+
+html, body {
+	 height: 100%;
+	 font-family:'Lato',arial,sans-serif;
+   font-weight: 200;
+}
+
+body {
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 1.25em;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+hr {
+    max-width: 400px;
+    border-color: #999999;
+}
+
+a {
+  color: #ddd;
+}
+
+a:hover {
+  color: #ddd;
+}
+
+.brand,
+.address-bar {
+    display: none;
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.navbar-nav {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.navbar-default:hover .navbar-nav>li>a:hover {
+  color: rgb(255, 0, 0);
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #e7e7e7;
+    background-color: #000;
+}
+
+.navbar-default {
+    background-color: #000;
+    border-color: #e7e7e7;
+}
+
+.img-full {
+    min-width: 100%;
+}
+
+.brand-before,
+.brand-name {
+    text-transform: capitalize;
+}
+
+.brand-before {
+    margin: 15px 0;
+}
+
+.brand-name {
+    margin-top: 100px;
+    font-size: 4em;
+    color: rgb(255, 0, 0);
+}
+
+.tagline-divider {
+    margin: 15px auto 3px;
+    max-width: 250px;
+    border-color: #999999;
+}
+
+.box {
+    margin-bottom: 20px;
+    padding: 30px 15px;
+    color: #ddd;
+    background: #000;
+}
+
+.intro-text {
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.img-border {
+    float: none;
+    margin: 0 auto 0;
+    border: #999999 solid 1px;
+}
+
+.img-left {
+    float: none;
+    margin: 0 auto 0;
+}
+
+.purchase-tickets {
+    color: #FFFF00;
+}
+
+.background-section,
+.purchase-content-form {
+  background-color: #000;
+  border-color: #ddd;
+  border-radius: 5px;
+}
+#tagline-divider-color {
+  color: #000;
+}
+
+.carousel-inner {
+    height: 385px;
+}
+
+.text-justified {
+    font-size: 1em;
+    text-align: justify;
+}
+
+/* Custom Form and Table
+---------------------------*/
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+     background-color: #111;
+}
+
+.table-head {
+  background-color: #333;
+}
+
+.cartItem {
+  width: 767px;
+}
+.showtime {
+    width: 300px;
+}
+
+.goback-btn {
+    font-size: 24px;
+    /*margin-top: 20px;
+    margin-bottom: 10px;*/
+}
+.form-control {
+    color: #ddd;
+    background-color: #000;
+    background-image: none;
+}
+
+.input-group-addon {
+    color: #eee;
+    background-color: #555;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.totalLabel {
+    text-align: right;
+}
+
+.submitButtonContainer {
+    text-align: right;
+}
+
+.birthdayDayDisabled {
+  background-color: #000 !important;
+  opacity: .25 !important;
+}
+
+#qty {
+  width: 94px;
+}
+
+.mod-qty {
+  color: #FFFF00;
+}
+
+.promo-code {
+  display: inline-flex;
+  padding-left: 0px;
+}
+
+.promo-code-li {
+  padding-right: 10px;
+}
+
+/* Artists Profile Cells
+---------------------------*/
+
+.artists {
+  text-align: center;
+}
+.artists-list {
+		list-style: none;
+		display: inline-block;
+}
+.profile-cell {
+		display: inline-block;
+		width: 300px;
+		margin: 10px 3px;
+		height: 450px;
+		background-size: cover;
+		overflow-y: hidden;
+		overflow-x: hidden;
+		background: rgb(85, 85, 85);
+		text-align: left;
+}
+
+.profile-cell:hover {
+	cursor: pointer;
+}
+
+.artists-bio {
+		text-align: left;
+		margin: 0 15px 20px 20px;
+}
+
+.artists-name {
+		margin: -15px;
+		padding: 0px 0;
+		text-align: center;
+		color: rgb(255, 0, 0);
+}
+
+.artists-name-modal {
+		margin: 0px;
+		padding: 0px 0;
+		text-align: center;
+		color: rgb(255, 0, 0);
+}
+
+.artists-description {
+		margin: 0px;
+		padding: 10px 0;
+		text-align: center;
+		color: #333;
+}
+
+.img-modal {
+		width: 100%;
+		vertical-align: middle;
+}
+
+.artists-details {
+		font-size: 1em;
+		text-align: left;
+		list-style: none;
+		color: rgb(255, 0, 0);
+}
+
+.artists-pic {
+	width: 90%;
+	height: 90%;
+}
+.artists-pic:hover {
+	cursor: pointer;
+}
+
+.crop {
+	width: 333px;
+	height: 500px;
+}
+/*********************************/
+
+
+/* ------------------------ */
+/* Sections                 */
+/* ------------------------ */
+
+/*.visible {
+		display: block !important;
+}*/
+
+.showtimes-section,
+.purchase-section {
+	display: none;
+}
+
+.well {
+     background-color: #111;
+}
+
+.alert-info {
+  color: #f0f0f0;
+  background-color: #449d44;
+  border-color: #398439;
+}
+
+.msg-positive {
+  color: #337ab7;
+}
+
+.msg-negative {
+  color: red;
+}
+
+footer {
+    background: #000;
+}
+
+footer p {
+    margin: 0;
+    padding: 50px 0;
+}
+
+.text-muted {
+    color: #777;
+    font-size: 10px;
+    font-weight: 200;
+}
+
+@media screen and (min-width:768px) {
+    .brand {
+        display: inherit;
+        margin: 0;
+        padding: 30px 0 10px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        font-size: 5em;
+        font-weight: 700;
+        line-height: normal;
+        color: #fff;
+    }
+
+    .top-divider {
+        margin-top: 0;
+    }
+
+    .img-left {
+        float: left;
+        margin-right: 25px;
+    }
+
+    .address-bar {
+        display: inherit;
+        margin: 0;
+        padding: 0 0 40px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        text-transform: uppercase;
+        font-size: 1.25em;
+        font-weight: 400;
+        letter-spacing: 3px;
+        color: #fff;
+    }
+
+    .navbar {
+        border-radius: 0;
+    }
+
+    .navbar-header {
+        display: none;
+    }
+
+    .navbar {
+        min-height: 0;
+    }
+
+    .navbar-default {
+        border: none;
+        background: #000;
+    }
+
+    .nav>li>a {
+        padding: 0px;
+    }
+
+    .navbar-nav>li>a {
+        line-height: normal;
+    }
+
+    .navbar-nav {
+        display: table;
+        float: none;
+        margin: 0 auto;
+        table-layout: fixed;
+        font-size: 1.25em;
+    }
+
+    .artists ul {
+			padding-left: 0;
+		}
+}
+
+@media screen and (min-width:1200px) {
+    .box:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
