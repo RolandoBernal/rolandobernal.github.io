@@ -139,7 +139,6 @@
 
 .modal-body-zanies-img {
 	max-width: 600px !important;
-	/*max-height: 300px !important;*/
 	border-radius: 5px !important;
 }
 
@@ -147,4 +146,13 @@
 		#portfolio .portfolio-item {
 				margin: 0 0 30px;
 		}
+}
+
+@media (max-width: 480px){
+	.modal-body-zanies-img {
+		max-width: 350px !important;
+	}
+	.proto-img img {
+		width: 350px;
+	}
 }
