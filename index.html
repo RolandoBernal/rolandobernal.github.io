@@ -1,633 +1,826 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="csstransforms csstransforms3d csstransitions"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<head>
+<meta name="viewport" content="width=device-width, maximum-scale=1">
+<title>Rolando Bernal | Web Developer</title>
+<!-- FavIcon.ico -->
+<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+<link href="assets/css/portfolio.css" rel="stylesheet" type="text/css">
+<link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="assets/css/animate.css" rel="stylesheet" type="text/css">
 
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="">
-		<meta name="author" content="Rolando Bernal | Web Developer">
+<!--[if lt IE 9]>
+    <script src="js/respond-1.1.0.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/html5element.js"></script>
+<![endif]-->
 
-		<title>Rolando Bernal | Sofware Developer</title>
+<style type="text/css">.fancybox-margin{margin-right:0px;}</style><script type="text/javascript" src="chrome-extension://aadgmnobpdmgmigaicncghmmoeflnamj/ng-inspector.js"></script></head>
+<body cz-shortcut-listen="true">
+<header id="header">
+	<div id="head" class="parallax" parallax-speed="2" style="background-position: 50% 0px;">
+		<div class="top_left_cont zoomIn wow animated animated" id="logo" style="visibility: visible; animation-name: zoomIn;">
+		<img class="img-circle" src="assets/img/roly1.jpg" alt="">
+    <h2>Hola! I am Rolando Bernal <br><strong>A UI &amp; UX Digital Product Designer &amp; Developer based in Music City USA</strong></h2>
+	</div>
+</header>
 
-		<!-- Bootstrap Core CSS -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-
-		<!-- Custom Fonts -->
-		<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-	<!-- FavIcon.ico -->
-	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-	<link rel="manifest" href="/manifest.json">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-	<meta name="theme-color" content="#ffffff">
-	<!-- <link rel="shortcut icon" href="img/favicon.ico"> -->
-
-		<!-- Css3 Animations Styles -->
-		<link rel="stylesheet" type="text/css" href="css/animate.css" media="screen" />
-
-		<!-- Custom CSS -->
-		<link href="css/portfolio.css" rel="stylesheet">
-		<link href="css/stylish-portfolio.css" rel="stylesheet">
+<!--Header_section-->
+<header id="header_wrapper" class="" style="z-index: auto; position: relative; top: auto;">
+  <div class="container">
+    <div class="header_box">
+      <!--<div class="logo"><a href="#">Resume</a></div>-->
+	  <nav class="navbar navbar-inverse" role="navigation">
+      <div class="navbar-header">
+        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        </div>
+	    <div id="main-nav" class="collapse navbar-collapse navStyle" style="background: none;">
+			<ul class="nav navbar-nav" id="mainNav">
+			  <li class="active"><a href="#header" class="scroll-link">Home</a></li>
+        <li class=""><a href="#Portfolio" class="scroll-link">Portfolio</a></li>
+        <li class=""><a href="#experience" class="scroll-link">Experience</a></li>
+			  <li class=""><a href="#service" class="scroll-link">My Skills</a></li>
+			  <li><a href="#contact" class="scroll-link">Contact</a></li>
+			</ul>
+      </div>
+	 </nav>
+    </div>
+  </div>
+</header><div style="width: 1910px; height: 80px; float: none; display: none;"></div>
+<!--Header_section-->
 
 
-		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!--[if lt IE 9]>
-				<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-				<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-		<![endif]-->
+<!-- Portfolio -->
+<section id="Portfolio" class="content">
 
-</head>
+  <!-- Container -->
+  <div class="container portfolio_title">
 
-<body>
+    <!-- Title -->
+    <div class="section-title">
+      <h2>Portfolio</h2>
+      <div class="text-center">
+        <h5>Below I have a case study illustrating my UX process, as well as a few webapps and websites for which I was the sole designer and developer.</h5>
+      </div>
+    </div>
+    <!--/Title -->
 
-		<!-- Navigation -->
-		<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-		<nav id="sidebar-wrapper">
-				<ul class="sidebar-nav">
-						<a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-						<li class="sidebar-brand"><a href="#top"  onclick = $("#menu-close").click(); >Rolando Bernal</a></li>
-						<li><a href="#top" onclick = $("#menu-close").click(); >Home</a></li>
-						<li><a href="#about1" onclick = $("#menu-close").click(); >About</a></li>
-						<li><a href="#skills" onclick = $("#menu-close").click(); >Skills</a></li>
-						<li><a target="_blank" href="docs/RolandoBernalResume.pdf" onclick = $("#menu-close").click(); >Resume</a></li>
-						<!-- <li><a target="_blank" href="docs/RolandoBernalResumeExtVer.pdf" onclick = $("#menu-close").click(); >&nbsp&nbsp&nbsp&nbspExtended Version</a></li> -->
-						<li><a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a></li>
-						<li><a target="_blank" href="https://github.com/LandoB" onclick = $("#menu-close").click(); >GitHub</a></li>
-						<li><a target="_blank" href="http://twitter.com/jrolandobernal" onclick = $("#menu-close").click(); >Twitter</a></li>
-						<li><a target="_blank" href="https://www.linkedin.com/in/jrolandobernal" onclick = $("#menu-close").click(); >LinkedIn</a></li>
-						<li><a href="#contact-me" onclick = $("#menu-close").click(); >Contact</a></li>
-				</ul>
-		</nav>
+  </div>
+  <!-- Container -->
 
-		<!-- Header -->
-		<header id="top" class="header bg_rolando_bernal">
-				<div class="text-vertical-center"><br><br><br><br><br>
-						<h1 class="header-color rolando-bernal">Rolando Bernal</h1>
-						<h2 class="header-color software-developer">Software Developer</h2>
-						<br>
-						<a href="#about1"><h2><i class="btn btn-dark btn-lg fa fa-angle-double-down"></i></h2></a>
-				</div>
-		</header>
+  <div class="portfolio-top"></div>
 
-		<!-- About -->
-		<section id="about1" class="about bg_about">
-				<div class="container">
-						<div class="row">
-								<div class="col-lg-12 text-center inner-about thanks">
-										<!-- <img src="img/RolandoBernal-SWDev.jpg" alt="Rolando Bernal" class="profile-photo"> -->
-										<br>
-										<h1 class="software-developer"><span>Welcome!</span></h1><br/>
-										<h3 id="welcome">
-											<p>Thank you for taking the time to visit my site.<br><br>I am a Software Developer<br> with a passion for creating engaging applications<br> and intuitive interfaces that bridge the gap<br> between functionality and design.<br><br>In my free time, I love spending time with<br> my wife, Emily, and my two children, Violet and Levi.<br> I can also be found playing golf,<br> or screaming my head off at a Titans football game.</p><br><br>
-											<p class="welcome">Father, Husband, Friend, Golfer, Coder, Dreamer.</p><br> <p>That's me in a nutshell.</p>
-											<br/><br><br>
-											<h3 class="scroll-down">Scroll down to find out more.</h3>
-										</h3>
-										</p>
-										<a href="#skills"><h2><i class="btn btn-dark btn-lg fa fa-angle-double-down"></i></h2></a><br><br><br>
-								</div>
-						</div>
-						<!-- /.row -->
-				</div>
-				<!-- /.container -->
-		</section>
+  <!-- Portfolio Filters -->
+  <div class="portfolio">
 
-		<!-- Skills -->
-		<!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-		<section id="skills" class="skills bg-primary">
-				<div class="container">
-						<div class="row text-center">
-								<div class="col-lg-10 col-lg-offset-1">
-										<h2 class="my-experience">My Skills and Expertise</h2>
-										<hr class="small">
-								</div>
-								<!-- /.col-lg-10 -->
-						</div>
-						<!-- /.row -->
-				</div>
-				<!-- /.container -->
-		</section>
+    <div id="filters" class="sixteen columns">
+      <ul class="clearfix">
+        <li><a id="all" href="#" data-filter="*" class="active">
+          <h5>All</h5>
+          </a></li>
+        <li><a class="" href="#" data-filter=".uxdesign">
+          <h5>UX Design</h5>
+          </a></li>
+        <li><a class="" href="#" data-filter=".website">
+          <h5>Website</h5>
+          </a></li>
+        <li><a class="" href="#" data-filter=".webapp">
+          <h5>Web App</h5>
+          </a></li>
+        <!-- <li><a class="" href="#" data-filter=".animals">
+          <h5>Mobile App</h5>
+          </a></li> -->
+      </ul>
+    </div>
+    <!--/Portfolio Filters -->
 
-		<!-- Callout -->
-		<div id="skills" class="skills-section callout bg_callout">
-
-				 <!-- Skills Section -->
-				<section id="skills">
-					<div class="container">
-						<div class="row text-center">
-							<div class="col-md-4">
-								<span class="fa-stack fa-4x">
-									<i class="fa fa-circle fa-stack-2x text-primary"></i>
-									<i class="fa fa-code fa-stack-1x fa-inverse"></i>
-								</span>
-								<h4 class="skill-heading">Front End</h4>
-								<p class="text-muted">HTML, CSS, SASS, Jade, JavaScript, jQuery, AngularJS, AJAX, Bootstrap, Firebase</p>
-							</div>
-							<div class="col-md-4">
-								<span class="fa-stack fa-4x">
-									<i class="fa fa-circle fa-stack-2x text-primary"></i>
-									<i class="fa fa-database fa-stack-1x fa-inverse"></i>
-								</span>
-								<h4 class="skill-heading">Back End</h4>
-								<p class="text-muted">C#, .NET, SQL Databases, WPF, XAML, ASP.NET, Entity Framework, TestStack White, Code First Database Patterns</p>
-							</div>
-							<div class="col-md-4">
-								<span class="fa-stack fa-4x">
-									<i class="fa fa-circle fa-stack-2x text-primary"></i>
-									<i class="fa fa-cogs fa-stack-1x fa-inverse"></i>
-								</span>
-								<h4 class="skill-heading">Other</h4>
-								<p class="text-muted">Grunt, Gulp, VIM, Git, GitHub, Visual Studio, Command Line, RESTful API, MVC, SPAs, AWS Deployment, Bower, NPM</p>
-							</div>
-						</div>
+    <!-- Portfolio Wrapper -->
+    <div class="isotope fadeInLeft animated wow grid animated portfolio-wrapper" id="portfolio_wrapper">
+      <!-- Portfolio Item -->
+      <figure class="portfolio-item one-four uxdesign isotope-item effect-roly fig-style">
+				<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+					<div class="portfolio_img">
+						<img src="assets/img/projects/zanies.png" alt="Portfolio 1">
 					</div>
-				</section><br><br><br><br>
+					<figcaption>
+						<div>
+							<p>Zanies</p>
+							<p class="details"><i class="fa fa-search-plus fa-3x" aria-hidden="true"></i></p>
+						</div>
+					</figcaption>
+				</a>
+	    </figure>
+      <!--/Portfolio Item -->
 
-					<!-- Tools Aside -->
-				<aside class="tools">
-					<div class="container">
-						<div class="row margin-lg">
-							<div class="row">
-								<div class="specialization">
-									<img src="img/specialties/html5.png" title="HTML5" mouseover-src="img/specialties/html5.png">
-									<img src="img/specialties/CSS3logo.jpg" title="CSS3" mouseover-src="img/specialties/CSS3logo.jpg">
-									<img src="img/specialties/bootstrap_logo.png" title="Bootstrap" mouseover-src="img/specialties/bootstrap_logo.png">
-									<img src="img/specialties/javascriptlogo.png" title="JavaScript" mouseover-src="img/specialties/javascriptlogo.png">
-									<img src="img/specialties/jquerylogo.png" title="jQuery" mouseover-src="img/specialties/jquerylogo.png">
-									<img src="img/specialties/angularlogo.png" title="AngularJS" mouseover-src="img/specialties/angularlogo.png">
-									<img src="img/specialties/csharp.png" title="C#" mouseover-src="img/specialties/csharp.png">
-									<img src="img/specialties/dotnetlogo.jpeg" title=".NET" mouseover-src="img/specialties/dotnetlogo.jpeg">
-									<img src="img/specialties/sqllogo.png" title="SQL and Databases" mouseover-src="img/specialties/sqllogo.png">
-									<img src="img/specialties/visualstudiologo.svg" title="Visual Studio" mouseover-src="img/specialties/visualstudiologo.svg">
-									<img src="img/specialties/githublogo.png" title="Github" mouseover-src="img/specialties/githublogo.png">
-									<img src="img/specialties/git.png" title="Git" mouseover-src="img/specialties/git.png">
-								</div>
-							</div>
-					</div>
-				</aside>
-		</div> <!-- callout -->
+      <!-- Portfolio Item-->
+      <figure class="portfolio-item one-four webapp isotope-item effect-roly fig-style">
+        <div class="portfolio_img"> <img src="assets/img/projects/RE-Grocery-App.jpg" alt="Portfolio 1"> </div>
+        	<figcaption>
+				<div>
+          <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+						<p>RE Grocery App</p>
+						<p class="details"><i class="fa fa-search-plus fa-3x" aria-hidden="true"></i></p>
+				  </a>
+				</div>
+			</figcaption>
+        </figure>
+      <!--/Portfolio Item -->
 
-<!-- RESUME -->
-		<section id="resume" class="resume-background-color">
-			<div class="container">
-					<!-- /.row -->
-					<div class="row text-center">
-						<div class="col-lg-10 col-lg-offset-1">
-								<h2 class="my-experience"></h2>
-								<div class="row">
-								<div class="row">
-											<section class="col-md-12" id="resume">
-												<br><br><h2 class="my-resume">Resume</h2>
-												<hr class="small-line"><br><br>
-												<div>
-													<h3><i class="fa fa-building-o"></i> &nbsp Work.Experience() {</h3>
-													<h4><b>The Visibility Company - PropelWellness.com&copy;<br>
-													Junior Application Developer</b></h4>
-													<p><i>March 2016 - Present</i><br>
-														User Interface (UI) design, strategy, development and testing for Propel (online corporate wellness software)<br>
-														Preparing custom themes with client's branding and customized UI features for new and existing Propel clients<br>
-														Participating in various stages of website and web application development which may: Strategy and Outlines; and Web Design<br>
-														Front-End Development (HTML, CSS, JS/jQuery, AngularJS)<br>
-														CMS Setup (primarily Umbraco, including ASP.NET MVC, views/macros using Razor/C#)</p>
-													<h4><b>Lando B | Web Solutions<br>
-													Web Developer</b></h4>
-													<p><i>June 2015 - Present</i><br>
-													Own startup. Main software developer. Web design/development.</p>
-													<h4><b>Nashville Software School (NSS)<br>
-													Apprentice UX & UI Web Developer</b></h4>
-													<p><i>January 2015 - Present</i><br>
-													Software bootcamp in Nashville.<br/> Frontend Development: HTML, CSS, Javascript, jQuery, AngularJS.<br/>Backend Development: C#, .Net, SQL, SQL Server, SQLite, Postgres.<br/> Plus: Grunt, Gulp, VIM, Git, GitHub, Sublime Text, Visual Studio, Command Line, RESTful API, MVC, Bower, NPM.</p>
-													<h4><b>BenefitMall<br>
-													Sr. Applications Support Analyst</b></h4>
-													<p><i>April 2015 - April 2016</i><br>
-													Maintains and supports existing web application using the .NET Framework.<br/> Deploys new code to existing websites in all enviroments: DEV, QA, STG, DEMO, PROD (C#, .NET, MVC, SQL.).</p>
-													<h4><b>Waller, Lansden, Dortch & Davis, LLC<br>
-													IT Desktop Support Analyst.</b></h4>
-													<p><i>September 2013 - April 2015</i><br>
-													Performs software testing, requirements gathering, bug investigation, training material development, and training.<br/>
-													Performs user administration duties (Exchange, Active Directory, SCCM, etc).</p>
-													<h3>}</h3><br>
-													<h3><i class="fa fa-graduation-cap"></i> &nbsp Education() {</h3>
-													<p><h4><b>Software Development Bootcamp</b></h4>
-														Nashville Software School (NSS), <i>January 2015 - April 2016</i></p><br>
-													<p><h4><b>Bachelor of Science in Information Technology</b></h4>
-														Tepic Institute of Technology (Instituto Tecnologico de Tepic), <i>Mexico 1996-2001</i></p>
-													<h3>}</h3>
-												</div>
-											</section>
+      <!-- Portfolio Item -->
+      <figure class="portfolio-item one-four webapp isotope-item effect-roly fig-style">
+        <div class="portfolio_img"> <img src="assets/img/projects/Book-That-Lesson.png" alt="Portfolio 1"> </div>
+       <figcaption>
+				<div>
+          <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+						<p>Book That Lesson!</p>
+						<p class="details"><i class="fa fa-search-plus fa-3x" aria-hidden="true"></i></p>
+				  </a>
+				</div>
+			</figcaption>
+        </figure>
+      <!--/Portfolio Item-->
+
+      <!-- Portfolio Item-->
+      <figure class="portfolio-item one-four webapp web isotope-item effect-roly fig-style">
+        <div class="portfolio_img"> <img src="assets/img/projects/iMaintenanceTotal.png" alt="Portfolio 1"> </div>
+         <figcaption>
+				<div>
+          <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+						<p>i Maint Total</p>
+						<p class="details"><i class="fa fa-search-plus fa-3x" aria-hidden="true"></i></p>
+				  </a>
+				</div>
+			</figcaption>
+      </figure>
+      <!-- Portfolio Item -->
+
+      <!-- Portfolio Item -->
+      <figure class="portfolio-item one-four website isotope-item effect-roly fig-style">
+        <div class="portfolio_img"> <img src="assets/img/projects/NIFC.png" alt="Portfolio 1"> </div>
+       <figcaption>
+				<div>
+          <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+						<p>Nash Int FC</p>
+						<p class="details"><i class="fa fa-search-plus fa-3x" aria-hidden="true"></i></p>
+				  </a>
+				</div>
+			</figcaption>
+      </figure>
+      <!--/Portfolio Item -->
+
+
+      <!-- Portfolio Item  -->
+      <figure class="portfolio-item one-four website web isotope-item effect-roly fig-style">
+        <div class="portfolio_img"> <img src="assets/img/projects/cohort-e1.png" alt="Portfolio 1"> </div>
+       <figcaption>
+				<div>
+          <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+						<p>The Nighthawks</p>
+						<p class="details"><i class="fa fa-search-plus fa-3x" aria-hidden="true"></i></p>
+				  </a>
+				</div>
+			</figcaption>
+      </figure>
+      <!--/Portfolio Item -->
+
+      <!-- Portfolio Item -->
+      <figure class="portfolio-item one-four website isotope-item effect-roly fig-style">
+        <div class="portfolio_img"> <img src="assets/img/projects/modalVersion.png" alt="Portfolio 1"> </div>
+      <figcaption>
+				<div>
+				  <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
+						<p>Personal Portfolio</p>
+						<p class="details"><i class="fa fa-search-plus fa-3x" aria-hidden="true"></i></p>
+				  </a>
+				</div>
+			</figcaption>
+        </figure>
+      <!--/Portfolio Item -->
+
+      <!-- Portfolio Item -->
+      <figure class="portfolio-item one-four website web isotope-item effect-roly fig-style">
+        <div class="portfolio_img"> <img src="assets/img/projects/otherprojects.png" alt="Portfolio 1"> </div>
+        <figcaption>
+          <div>
+						<a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
+							<p>Other Projects</p>
+							<p class="details"><i class="fa fa-search-plus fa-3x" aria-hidden="true"></i></p>
+            </a>
+          </div>
+        </figcaption>
+      </figure>
+      <!--/Portfolio Item -->
+    </div>
+    <!--/Portfolio Wrapper -->
+  </div>
+  <!--/Portfolio Filters -->
+
+  <div class="portfolio_btm"></div>
+  <div id="project_container">
+    <div class="clear"></div>
+    <div id="project_data"></div>
+  </div>
+</section>
+
+<!-- Portfolio Modals -->
+		<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-content">
+						<div class="close-modal" data-dismiss="modal">
+								<div class="lr">
+										<div class="rl">
 										</div>
-								</div><br>
-								<!-- /.row (nested) -->
-								<section>
-									<br>
-									<a class="btn btn-dark fa fa-download download" target="_blank" href="docs/RolandoBernalResume.pdf"> Download Resume</a>
-								</section><br><br>
-						</div> <!-- /.col-lg-10 -->
-					</div> <!-- /.row -->
-					<div class="row resume-link">
-							<a href="#portfolio"><h2><i class="btn btn-dark btn-lg fa fa-angle-double-down"></i></h2></a><br><br><br>
-					</div>
-			</div>
-		</section>
-
-		<!-- Portfolio -->
-		<section id="portfolio" class="bg-light-gray">
-				<br><br><br>
-				<div class="my-work">
-						<h2 class="my-work">My Work</h2>
-						<hr class="small">
-				</div>
-				<br>
-				<div class="row text-center text-muted">(Click on the image to open project)</div>
-				<br><br>
-				<div class="container">
-						<div class="row">
-								<div class="col-sm-4 portfolio-item">
-										<a data-target="#myModalGroceryApp" class="portfolio-link" data-toggle="modal">
-												<div class="caption">
-														<div class="caption-content">
-																<i class="fa fa-search-plus fa-3x"></i>
-														</div>
-												</div>
-												<img src="img/projects/RE-Grocery-App.jpg" class="img-responsive" alt="">
-										</a>
-								</div>
-								<div class="col-sm-4 portfolio-item">
-										<a data-target="#myModalBookThatLesson" class="portfolio-link" data-toggle="modal">
-												<div class="caption">
-														<div class="caption-content">
-																<i class="fa fa-search-plus fa-3x"></i>
-														</div>
-												</div>
-												<img src="img/projects/Book-That-Lesson.png" class="img-responsive" alt="">
-										</a>
-								</div>
-								<div class="col-sm-4 portfolio-item">
-										<a data-target="#myModalNIFC" class="portfolio-link" data-toggle="modal">
-												<div class="caption">
-														<div class="caption-content">
-																<i class="fa fa-search-plus fa-3x"></i>
-														</div>
-												</div>
-												<img src="img/projects/NIFC.png" class="img-responsive" alt="">
-										</a>
-								</div>
-								<div class="col-sm-4 portfolio-item">
-										<a data-target="#myModalLBWS" class="portfolio-link" data-toggle="modal">
-												<div class="caption">
-														<div class="caption-content">
-																<i class="fa fa-search-plus fa-3x"></i>
-														</div>
-												</div>
-												<img src="img/projects/otherprojects.png" class="img-responsive" alt="">
-										</a>
-								</div>
-								<div class="col-sm-4 portfolio-item">
-										<a data-target="#myModaliMaint" class="portfolio-link" data-toggle="modal">
-												<div class="caption">
-														<div class="caption-content">
-																<i class="fa fa-search-plus fa-3x"></i>
-														</div>
-												</div>
-												<img src="img/projects/iMaintenanceTotal.png" class="img-responsive" alt="">
-										</a>
-								</div>
-								<div class="col-sm-4 portfolio-item">
-										<a data-target="#myModalCE1" class="portfolio-link" data-toggle="modal">
-												<div class="caption">
-														<div class="caption-content">
-																<i class="fa fa-search-plus fa-3x"></i>
-														</div>
-												</div>
-												<img src="img/projects/cohort-e1.png" class="img-responsive" alt="">
-										</a>
-								</div>
-							</div>
-								<!-- /.col-lg-10 -->
-							<div class="row text-center">
-								<a href="#contact"><h2><i class="btn skills-btn-dark btn-lg fa fa-angle-double-down"></i></h2></a><br><br><br>
-							</div>
-						</div>
-						<!-- /.row -->
-				</div>
-				<!-- /.container -->
-		</section>
-
-
-<!-- Modal -->
-<div class="modal fade" id="myModalGroceryApp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title" id="myModalLabel">Project Overview</h4>
-			</div>
-			<div class="modal-body">
-				<div class="span8 offset2 tweak">
-					<p><b>RE-Grocery-App</b> is a webapp that calculates your groceries total budget and lets you know when you whether you are over or not.<br> The idea came out from a friend of a friend of mine that always goes to the grocery store with her 3 kids, her grocery list on a piece of paper, a pen, and a calculator. Always trying to calculate what she was spending so she wouldn't go over her budget. I wanted to create an app that would help her with that situation.</p>
-					<h5>Project Details</h5>
-					<p>
-						<ul>
-							<li class="proj-details"><i class="fa fa-code"></i>&nbsp Languages: HTML, CSS, Bootstrap, JavaScript, jQuery, Node.js, Express.js, Heroku.</li>
-							<li class="proj-details"><a href="https://re-grocery-calculator.herokuapp.com/" class="proj-details" target="_blank"><i class="fa fa-laptop"></i>&nbsp Live Demo</a></li>
-							<li class="proj-details"><a href="https://github.com/LandoB/RE_groceryapp" class="proj-details" target="_blank"><i class="fa fa-github"></i>&nbsp Check out the code</a></li>
-						</ul>
-					</p>
-					<img class="img-modal" src="img/projects/RE-Grocery-App.jpg" />
-				</div><!-- /span8 -->
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default download" data-dismiss="modal">Close</button>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="modal fade" id="myModalBookThatLesson" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title" id="myModalLabel">Project Overview</h4>
-			</div>
-			<div class="modal-body">
-				<div class="span8 offset2 tweak">
-					<p><b>Book-That-Lesson</b> is an app for students to help book lessons with their favorite Golf Instructors.</p>
-					<h5>Project Details</h5>
-					<p>
-						<ul>
-							<li class="proj-details"><i class="fa fa-code"></i>&nbsp Languages: HTML, CSS, Bootstrap, JavaScript, jQuery, Angular.js, AngularFire, Firebase.</li>
-							<li class="proj-details"><a href="https://book-that-lesson.firebaseapp.com/#/" class="proj-details" target="_blank"><i class="fa fa-laptop"></i>&nbsp Live Demo</a></li>
-							<li class="proj-details"><a href="https://github.com/LandoB/Book-That-Lesson" class="proj-details" target="_blank"><i class="fa fa-github"></i>&nbsp Check out the code</a></li>
-						</ul>
-					</p>
-					<img class="img-modal" src="img/projects/Book-That-Lesson.png" />
-				</div><!-- /span8 -->
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default download" data-dismiss="modal">Close</button>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="modal fade" id="myModalNIFC" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title" id="myModalLabel">Project Overview</h4>
-			</div>
-			<div class="modal-body">
-				<div class="span8 offset2 tweak">
-					<p><b>Nashville International Futbol Club</b> is a full responsive, retina ready, clean code website created with love to show off all what this new soccer club is and has to offer. With the ability to register new teams, and players (for tryouts); share news, pictures, and important information; this website is a great, functional tool.</p>
-					<h5>Project Details</h5>
-					<p>
-						<ul>
-							<li class="proj-details"><i class="fa fa-code"></i>&nbsp Languages: HTML, CSS, Bootstrap, JavaScript, jQuery, Angular.js, Firebase.</li>
-							<li class="proj-details"><a href="https://nash-int-futbol-club.firebaseapp.com/#/" class="proj-details" target="_blank"><i class="fa fa-laptop"></i>&nbsp Live Demo</a></li>
-							<li class="proj-details"><a href="https://github.com/LandoB/NashvilleInternationalFC" class="proj-details" target="_blank"><i class="fa fa-github"></i>&nbsp Check out the code</a></li>
-						</ul>
-					</p>
-					<img class="img-modal" src="img/projects/NIFC.png" />
-				</div><!-- /span8 -->
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default download" data-dismiss="modal">Close</button>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="modal fade" id="myModalLBWS" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title" id="myModalLabel">Other Projects</h4>
-			</div>
-			<div class="modal-body">
-				<div class="span8 offset2 tweak">
-					<p><b>Lando B | Web Solutions</b> is a full responsive, retina ready, clean code website created to learn new techniques with CSS transitions and jQuery.</p>
-					<h5>Project Details</h5>
-					<p>
-						<ul>
-							<li class="proj-details"><i class="fa fa-code"></i>&nbsp Languages: HTML, CSS, Bootstrap, JavaScript, jQuery.</li>
-							<li class="proj-details"><a href="https://landob.github.io/landob-websolutions/index.html" class="proj-details" target="_blank"><i class="fa fa-laptop"></i>&nbsp Live Demo</a></li>
-							<li class="proj-details"><a href="https://github.com/LandoB/landob.github.io/tree/master/landob-websolutions" class="proj-details" target="_blank"><i class="fa fa-github"></i>&nbsp Check out the code</a></li>
-						</ul>
-					</p>
-					<br><hr class="small-line"><br>
-					<p><b>Rolando Bernal - GitHub Personal Website</b> is a full responsive, retina ready, clean code website created to learn new techniques a jQuery plugin named "boxlayout.js" by Codrops. Also explodes the advantage of CSS transitions and Bootstrap modals.</p>
-					<h5>Project Details</h5>
-					<p>
-						<ul>
-							<li class="proj-details"><i class="fa fa-code"></i>&nbsp Languages: HTML, CSS, Bootstrap, JavaScript, jQuery.</li>
-							<li class="proj-details"><a href="http://landob.github.io/modalVersion/" class="proj-details" target="_blank"><i class="fa fa-laptop"></i>&nbsp Live Demo</a></li>
-							<li class="proj-details"><a href="https://github.com/LandoB/landob.github.io/tree/master/modalVersion" class="proj-details" target="_blank"><i class="fa fa-github"></i>&nbsp Check out the code</a></li>
-						</ul>
-					</p>
-					<br><hr class="small-line"><br>
-					<p><b>Coming Soon</b> is a landing page created to learn how countdown pages work.</p>
-					<h5>Project Details</h5>
-					<p>
-						<ul>
-							<li class="proj-details"><i class="fa fa-code"></i>&nbsp Languages: HTML, CSS, Bootstrap, JavaScript, jQuery.</li>
-							<li class="proj-details"><a href="https://landob.github.io/comingSoon/index.html" class="proj-details" target="_blank"><i class="fa fa-laptop"></i>&nbsp Live Demo</a></li>
-							<li class="proj-details"><a href="https://github.com/LandoB/landob.github.io/tree/master/comingSoon" class="proj-details" target="_blank"><i class="fa fa-github"></i>&nbsp Check out the code</a></li>
-						</ul>
-					</p>
-					<br><hr class="small-line"><br>
-					<p><b>jQuery Portfolio Site</b> is a portfolio website created just for fun and with the purpose of learning different layout and styling techniques.</p>
-					<h5>Project Details</h5>
-					<p>
-						<ul>
-							<li class="proj-details"><i class="fa fa-code"></i>&nbsp Languages: HTML, CSS, Bootstrap, JavaScript, jQuery.</li>
-							<li class="proj-details"><a href="http://landob.github.io/portfolio/" class="proj-details" target="_blank"><i class="fa fa-laptop"></i>&nbsp Live Demo</a></li>
-							<li class="proj-details"><a href="https://github.com/LandoB/landob.github.io/tree/master/portfolio" class="proj-details" target="_blank"><i class="fa fa-github"></i>&nbsp Check out the code</a></li>
-						</ul>
-					</p>
-					<!-- <img class="img-modal" src="img/projects/LandoBWebSolutionsLogoBW.png" /> -->
-				</div><!-- /span8 -->
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default download" data-dismiss="modal">Close</button>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="modal fade" id="myModalCE1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title" id="myModalLabel">Project Overview</h4>
-			</div>
-			<div class="modal-body">
-				<div class="span8 offset2 tweak">
-					<p><b>Cohort Evening One - The Nighthawks</b> is a full responsive, retina ready, clean code website created to show off all the students' portfolio websites of our Night Class, Cohort Evening One, at NSS.</p>
-					<h5>Project Details</h5>
-					<p>
-						<ul>
-							<li class="proj-details"><i class="fa fa-code"></i>&nbsp Languages: HTML, CSS, Bootstrap, JavaScript, jQuery.</li>
-							<li class="proj-details"><a href="http://cohort-evening-one.github.io/" class="proj-details" target="_blank"><i class="fa fa-laptop"></i>&nbsp Live Demo</a></li>
-							<li class="proj-details"><a href="https://github.com/LandoB/Cohort-Evening-1-TheNighthawks" class="proj-details" target="_blank"><i class="fa fa-github"></i>&nbsp Check out the code</a></li>
-						</ul>
-					</p>
-					<img class="img-modal" src="img/projects/cohort-e1.png" />
-				</div><!-- /span8 -->
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default download" data-dismiss="modal">Close</button>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="modal fade" id="myModaliMaint" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title" id="myModalLabel">Project Overview</h4>
-			</div>
-			<div class="modal-body">
-				<div class="span8 offset2 tweak">
-					<p><b>iMaintenanceTotal</b> - Now you don't have to remember to replace your air filters in your house. Let's do that for you! iMaintenanceTotal is a full responsive, retina ready, clean code app created with the goal to remind you about all things maintenance around your house, your car, your health, etc. With the ability to create a list of tasks, and reminders for those tasks, iMaintenanceTotal is a great, functional tool that will help you remember all those tasks you have to do.</p>
-					<h5>Project Details</h5>
-					<p>
-						<ul>
-							<li class="proj-details"><i class="fa fa-code"></i>&nbsp Languages: HTML, CSS, Bootstrap, JavaScript, jQuery, ASP.Net, C#, .Net, SQL.</li>
-							<li class="proj-details"><a href="https://landob.github.io/comingSoon/index.html" class="proj-details" target="_blank"><i class="fa fa-laptop"></i>&nbsp Live Demo</a></li>
-							<li class="proj-details"><a href="https://github.com/LandoB/iMaintenanceTotal" class="proj-details" target="_blank"><i class="fa fa-github"></i>&nbsp Check out the code</a></li>
-						</ul>
-					</p>
-					<img class="img-modal" src="img/projects/iMaintenanceTotal.png" />
-				</div><!-- /span8 -->
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default download" data-dismiss="modal">Close</button>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- END of Modal -->
-
-		<!-- Contact Me -->
-		<section id="contact" class="contact-me bg_contact-me">
-		<!-- class="about bg_about"> -->
-				<div class="container">
-						<div class="row">
-								<div class="col-lg-12 text-center inner-about">
-									<section class="container-fluid" id="section7">
-										<h1 class="text-center honest">Flexible. Creative. Reliable. Pasionate.</h1>
-									</section>
 								</div>
 						</div>
-						<!-- /.row -->
+						<div class="container">
+								<div class="row">
+										<div class="col-lg-8 col-lg-offset-2">
+												<div class="modal-body text-left modal-body-zanies">
+														<h2 class="text-center">Zanies - Case Study</h2>
+														<hr>
+														<!-- <img src="assets/img/projects/zanies.png" class="img-responsive img-centered" alt=""> -->
+														<h4>Project Overview</h4>
+														<p><b>Zanies - Case Study</b> is my UX/UI project. With this project I wanted to improve the way that a client buys a ticket online for a certain show time at Zanies.</p>
+														<p>&nbsp;</p>
+														<h4>The Problem</h4>
+														<p>"I am a 43 year old male, fun guy. I am trying to get tickets for a show at Zanies but when I pick the show I want to get tickets for, I can't because after I click the show, they (Zanies website) tell me that tickets for that specific show are sold out, which makes me feel very frustrated (angry even), that I want pUncH somone in the face (Zanies webmaster)."</p>
+														<p>&nbsp;</p>
+														<img src="assets/img/projects/journeyMapping.png" class="img-responsive img-centered modal-body-zanies-img" alt="">
+														<p>&nbsp;</p>
+														<h4>So...</h4>
+														<p>I was tasked with designing a better way to get tickets online at Zanies portal.</p>
+														<p>&nbsp;</p>
+														<h4>Research</h4>
+														<p>I began by framing the problem.</p>
+														<p><strong>How might we...</strong></p>
+														<p>
+															<ul>
+																<li><strong>Create:</strong> a portal that has a simple way to purchase a ticket for a show time</li>
+																<li><strong>For:</strong> frustrated clients</li>
+																<li><strong>To:</strong> check all the show times of a specific artist on an given day, and the tickets available for that specific show time</li>
+																<li><strong>So that:</strong> clients could get (purchase) the tickets they wanted easily and fast</li>
+															</ul>
+														</p>
+														<p>&nbsp;</p>
+														<img src="assets/img/projects/problemFrame.png" class="img-responsive img-centered modal-body-zanies-img" alt="">
+														<p>&nbsp;</p>
+														<h4>Documentation</h4>
+														<p>Understanding the problem, I developed documentation to direct and support my design. I created:</p>
+														<p>
+															<ul>
+																<li>User stories, outlining tasks a user should complete.</li>
+																<li>A page flow, illustrating the users path through the application.</li>
+															</ul>
+														</p>
+														<p>With well defined user stories, a solid page flow, and detailed information about each page, I started prototyping.</p>
+														<p>&nbsp;</p>
+														<img src="assets/img/projects/userStory.png" class="img-responsive img-centered modal-body-zanies-img" alt="">
+														<p>&nbsp;</p>
+														<h4>Prototyping</h4>
+														<p>I began, as I do every project, with pen and paper. I find that writing things out, and letting the pen draw, is one of the most effective ways to move past bad designs and refine toward good designs.</p>
+														<p>
+															This project required:
+															<ul>
+																<li>All prototyping beyond pen and paper was done using JustInMind.</li>
+																<li>The prototype (final website design) was developed with HTML / CSS / jQuery / Bootstrap.</li>
+															</ul>
+														</p>
+														<p>&nbsp;</p>
+														<div class="row">
+															<div class="col-md-4 proto-img">
+																<img src="assets/img/projects/demo01.png" class="img-responsive img-centered modal-body-zanies-img" alt="">
+															</div>
+															<div class="col-md-4 proto-img">
+																<img src="assets/img/projects/demo03.png" class="img-responsive img-centered modal-body-zanies-img" alt="">
+															</div>
+															<div class="col-md-4 proto-img">
+																<img src="assets/img/projects/demo03.png" class="img-responsive img-centered modal-body-zanies-img" alt="">
+															</div>
+														</div>
+														<p>&nbsp;</p>
+														<h4>Iteration and Testing</h4>
+														<p>Iteration and testing was done internally only.</p>
+														<p>
+															<ul>
+																<li>I presented the prototype to the class.</li>
+																<li>Then they gave me feedback and some recommendations about it.</li>
+																<li>Through this testing I was able to refine and streamline the prototype further.</li>
+																<li>With a design the whole class felt comfortable with, I then proceded coding the final design.</li>
+															</ul>
+														</p>
+														<p>&nbsp;</p>
+														<h4>Final Design</h4>
+														<p>There was a lot work to do to bring it to a final design state:</p>
+														<p>
+															<ul>
+																<li>Hours of code were needed to put all the pieces together on the web.</li>
+																<li>This project was completed on time and the proposed website worked as expected.</li>
+																<li>And I still need to decide if I will present this to the Zanies stakeholders to see if they are able to find this proposal valuable.</li>
+															</ul>
+														</p>
+														<p>&nbsp;</p>
+														<img src="assets/img/projects/zanies.png" class="img-responsive img-centered modal-body-zanies-img" alt="">
+														<p>&nbsp;</p>
+														<p>To see it in action, please click the <strong>Live Demo</strong> link below and tell me what you think. </p>
+														<p>&nbsp;</p>
+														<h4>Project Details</h4>
+														<p>
+															<ul class="proj-details">
+																<li><i class="fa fa-code"></i>&nbsp Languages: HTML, CSS, Bootstrap, JavaScript, jQuery, GitHub Hosting.</li>
+																<li><a target="_blank" href="http://landob.github.io/zanies/" class=""><i class="fa fa-laptop"></i>&nbsp Live Demo</a></li>
+																<li><a target="_blank" href="https://github.com/LandoB/ZaniesPrototype/tree/master/Website" class=""><i class="fa fa-github"></i>&nbsp Check out the code</a></li>
+															</ul>
+														</p>
+														<p>&nbsp;</p>
+														<div class="text-center">
+															<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+														</div>
+												</div>
+										</div>
+								</div>
+						</div>
 				</div>
-				<!-- /.container -->
-		</section>
+		</div>
+		<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-content">
+						<div class="close-modal" data-dismiss="modal">
+								<div class="lr">
+										<div class="rl">
+										</div>
+								</div>
+						</div>
+						<div class="container">
+								<div class="row">
+										<div class="col-lg-8 col-lg-offset-2">
+												<div class="modal-body">
+														<h2>RE Grocery App</h2>
+														<hr>
+														<img src="assets/img/projects/RE-Grocery-App.jpg" class="img-responsive img-centered" alt="">
+														<h4>Project Overview</h4>
+														<p><b>RE-Grocery-App</b> is an app that helps people that live under a budget. The idea came out from a friend of a friend of mine that always goes to the grocery store with her 3 kids, her grocery list on a piece of paper, a pen, and a calculator. Always trying to calculate what she was spending so she wouldn't go over her budget. I wanted to create an app that would help her with that situation.</p>
+														<h4>Project Details</h4>
+														<p>
+															<ul class="proj-details">
+																<li><i class="fa fa-code"></i>&nbsp Languages: HTML, CSS, Bootstrap, JavaScript, jQuery, Node.js, Express.js, Heroku.</li>
+																<li><a target="_blank" href="https://re-grocery-calculator.herokuapp.com/" class=""><i class="fa fa-laptop"></i>&nbsp Live Demo</a></li>
+																<li><a target="_blank" href="https://github.com/LandoB/RE_groceryapp" class=""><i class="fa fa-github"></i>&nbsp Check out the code</a></li>
+															</ul>
+														</p>
+														<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+												</div>
+										</div>
+								</div>
+						</div>
+				</div>
+		</div>
+		<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-content">
+						<div class="close-modal" data-dismiss="modal">
+								<div class="lr">
+										<div class="rl">
+										</div>
+								</div>
+						</div>
+						<div class="container">
+								<div class="row">
+										<div class="col-lg-8 col-lg-offset-2">
+												<div class="modal-body">
+														<h2>Book That Lesson!</h2>
+														<hr>
+														<img src="assets/img/projects/Book-That-Lesson.png" class="img-responsive img-centered" alt="">
+														<h4>Project Overview</h4>
+														<p><b>Book-That-Lesson</b> is an app for students to help book lessons with their favorite Golf Instructors.</p>
+														<h4>Project Details</h4>
+														<p>
+															<ul class="proj-details">
+																<li><i class="fa fa-code"></i>&nbsp Languages: HTML, CSS, Bootstrap, JavaScript, jQuery, Angular.js, AngularFire, Firebase.</li>
+																<li><a target="_blank" href="https://book-that-lesson.firebaseapp.com/#/" class=""><i class="fa fa-laptop"></i>&nbsp Live Demo</a></li>
+																<li><a target="_blank" href="https://github.com/LandoB/Book-That-Lesson" class=""><i class="fa fa-github"></i>&nbsp Check out the code</a></li>
+															</ul>
+														</p>
+														<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+												</div>
+										</div>
+								</div>
+						</div>
+				</div>
+		</div>
+		<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-content">
+						<div class="close-modal" data-dismiss="modal">
+								<div class="lr">
+										<div class="rl">
+										</div>
+								</div>
+						</div>
+						<div class="container">
+								<div class="row">
+										<div class="col-lg-8 col-lg-offset-2">
+												<div class="modal-body">
+														<h2>Nashville International Futbol Club</h2>
+														<hr>
+														<img src="assets/img/projects/NIFC.png" class="img-responsive img-centered" alt="">
+														<h4>Project Overview</h4>
+														<p><b>Nashville International Futbol Club</b> is a full responsive, retina ready, clean code website created with love to show off all what this new soccer club is and has to offer. With the ability to register new teams, and players (for tryouts); share news, pictures, and important information; this website is a great, functional tool.</p>
+														<h4>Project Details</h4>
+														<p>
+															<ul class="proj-details">
+																<li><i class="fa fa-code"></i>&nbsp Languages: HTML, CSS, Bootstrap, JavaScript, jQuery, Angular.js, C#, .Net, SQL.</li>
+																<li><a target="_blank" href="https://nash-int-futbol-club.firebaseapp.com/#/" class=""><i class="fa fa-laptop"></i>&nbsp Live Demo</a></li>
+																<li><a target="_blank" href="https://github.com/LandoB/NashvilleInternationalFC" class=""><i class="fa fa-github"></i>&nbsp Check out the code</a></li>
+															</ul>
+														</p>
+														<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+												</div>
+										</div>
+								</div>
+						</div>
+				</div>
+		</div>
+		<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-content">
+						<div class="close-modal" data-dismiss="modal">
+								<div class="lr">
+										<div class="rl">
+										</div>
+								</div>
+						</div>
+						<div class="container">
+								<div class="row">
+										<div class="col-lg-8 col-lg-offset-2">
+												<div class="modal-body">
+														<h2>i Maintenance Total</h2>
+														<hr class="star-primary">
+														<img src="assets/img/projects/iMaintenanceTotal.png" class="img-responsive img-centered" alt="">
+														<h4>Project Overview</h4>
+														<p><b>iMaintenanceTotal</b> is a full responsive, retina ready, clean code app created with the goal to remind you about all things maintenance around your house, your car, your health, etc. With the ability to create a list of tasks, and reminders for those tasks, iMaintenanceTotal is a great, functional tool that will help you remember all those tasks you have to do.</p>
+														<h4>Project Details</h4>
+														<p>
+															<ul class="proj-details">
+																<li><i class="fa fa-code"></i>&nbsp Languages: HTML, CSS, Bootstrap, JavaScript, Angular.js, ASP.Net, C#, .Net, SQL.</li>
+																<li><a target="_blank" href="https://landob.github.io/comingSoon/index.html" class=""><i class="fa fa-laptop"></i>&nbsp Live Demo</a></li>
+																<li><a target="_blank" href="https://github.com/LandoB/iMaintenanceTotal" class=""><i class="fa fa-github"></i>&nbsp Check out the code</a></li>
+															</ul>
+														</p>
+														<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+												</div>
+										</div>
+								</div>
+						</div>
+				</div>
+		</div>
+		<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-content">
+						<div class="close-modal" data-dismiss="modal">
+								<div class="lr">
+										<div class="rl">
+										</div>
+								</div>
+						</div>
+						<div class="container">
+								<div class="row">
+										<div class="col-lg-8 col-lg-offset-2">
+												<div class="modal-body">
+														<h2>Cohort Evening One - The Nighthawks</h2>
+														<hr>
+														<img src="assets/img/projects/cohort-e1.png" class="img-responsive img-centered" alt="">
+														<h4>Project Overview</h4>
+														<p><b>Cohort Evening One - The Nighthawks</b> is a full responsive, retina ready, clean code website created to show off all the students' portfolio websites of our Night Class, Cohort Evening One, at NSS.</p>
+														<h4>Project Details</h4>
+														<p>
+															<ul>
+																<li class="proj-details"><i class="fa fa-code"></i>&nbsp Languages: HTML, CSS, Bootstrap, JavaScript, jQuery.</li>
+																<li class="proj-details"><a href="http://cohort-evening-one.github.io/" class="proj-details" target="_blank"><i class="fa fa-laptop"></i>&nbsp Live Demo</a></li>
+																<li class="proj-details"><a href="https://github.com/LandoB/Cohort-Evening-1-TheNighthawks" class="proj-details" target="_blank"><i class="fa fa-github"></i>&nbsp Check out the code</a></li>
+															</ul>
+														</p>
+														<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+												</div>
+										</div>
+								</div>
+						</div>
+				</div>
+		</div>
+		<div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-content">
+						<div class="close-modal" data-dismiss="modal">
+								<div class="lr">
+										<div class="rl">
+										</div>
+								</div>
+						</div>
+						<div class="container">
+								<div class="row">
+										<div class="col-lg-8 col-lg-offset-2">
+												<div class="modal-body">
+														<h2>Personal Portfolio</h2>
+														<hr>
+														<img src="assets/img/projects/modalVersion.png" class="img-responsive img-centered" alt="">
+														<h4>Project Overview</h4>
+														<p><b>Personal Portfolio Website</b> is a full responsive, retina ready, <br>clean code website created to learn new techniques a jQuery plugin named "boxlayout.js" by Codrops. <br>Also explodes the advantage of CSS transitions and Bootstrap modals.</p>
+														<h4>Project Details</h4>
+														<p>
+															<ul>
+																<li class="proj-details"><i class="fa fa-code"></i>&nbsp Languages: HTML, CSS, Bootstrap, JavaScript, jQuery.</li>
+																<li class="proj-details"><a href="http://landob.github.io/modalVersion/index.html" class="proj-details" target="_blank"><i class="fa fa-laptop"></i>&nbsp Live Demo</a></li>
+																<li class="proj-details"><a href="https://github.com/LandoB/landob.github.io/tree/master/modalVersion" class="proj-details" target="_blank"><i class="fa fa-github"></i>&nbsp Check out the code</a></li>
+															</ul>
+														</p>
+														<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+												</div>
+										</div>
+								</div>
+						</div>
+				</div>
+		</div>
+		<div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-content">
+						<div class="close-modal" data-dismiss="modal">
+								<div class="lr">
+										<div class="rl">
+										</div>
+								</div>
+						</div>
+						<div class="container">
+								<div class="row">
+										<div class="col-lg-8 col-lg-offset-2">
+												<div class="modal-body">
+														<h2>Other Projects</h2>
+														<hr>
+														<img src="assets/img/projects/otherprojects.png" class="img-responsive img-centered" alt="">
+														<br><hr class="small-line"><br>
+														<p><b>Lando B | Web Solutions</b> is a full responsive, retina ready, clean code website <br>created to learn new techniques with CSS transitions and jQuery.</p>
+														<h5><b>Project Details</b></h5>
+														<div>
+															<ul>
+																<li class="proj-details"><i class="fa fa-code"></i>&nbsp Languages: HTML, CSS, Bootstrap, JavaScript, jQuery.</li>
+																<li class="proj-details"><a href="https://landob.github.io/landob-websolutions/index.html" class="proj-details" target="_blank"><i class="fa fa-laptop"></i>&nbsp Live Demo</a></li>
+																<li class="proj-details"><a href="https://github.com/LandoB/landob.github.io/tree/master/landob-websolutions" class="proj-details" target="_blank"><i class="fa fa-github"></i>&nbsp Check out the code</a></li>
+															</ul>
+														</div>
+														<br><hr class="small-line"><br>
+														<p><b>Coming Soon</b> is a landing page created to learn how countdown pages work.</p>
+														<h5><b>Project Details</b></h5>
+														<p>
+															<ul>
+																<li class="proj-details"><i class="fa fa-code"></i>&nbsp Languages: HTML, CSS, Bootstrap, JavaScript, jQuery.</li>
+																<li class="proj-details"><a href="https://landob.github.io/comingSoon/index.html" class="proj-details" target="_blank"><i class="fa fa-laptop"></i>&nbsp Live Demo</a></li>
+																<li class="proj-details"><a href="https://github.com/LandoB/landob.github.io/tree/master/comingSoon" class="proj-details" target="_blank"><i class="fa fa-github"></i>&nbsp Check out the code</a></li>
+															</ul>
+														</p>
+														<br><hr class="small-line"><br>
+														<p><b>My Portfolio Site</b> is a portfolio website created just for fun and with the purpose of learning different layout and styling techniques.</p>
+														<h5><b>Project Details</b></h5>
+														<p>
+															<ul>
+																<li class="proj-details"><i class="fa fa-code"></i>&nbsp Languages: HTML, CSS, Bootstrap, JavaScript, jQuery.</li>
+																<li class="proj-details"><a href="https://landob.github.io/rolandobernal/index.html" class="proj-details" target="_blank"><i class="fa fa-laptop"></i>&nbsp Live Demo</a></li>
+																<li class="proj-details"><a href="https://github.com/LandoB/landob.github.io/tree/master/rolandobernal" class="proj-details" target="_blank"><i class="fa fa-github"></i>&nbsp Check out the code</a></li>
+															</ul>
+														</p>
+														<br><hr class="small-line"><br>
+														<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+												</div>
+										</div>
+								</div>
+						</div>
+				</div>
+		</div>
 
 
-		<!-- Footer -->
-		<footer>
-				<div class="container" id="contact-me">
-						<div class="row">
+<!--/Portfolio -->
+
+<!-- EXPERIENCE Section -->
+
+<section id="experience" class="secPad">
+<div class="container">
+<div class="heading">
+  <!-- Heading -->
+	<div class="text-center section-title">
+		<h2>Experience</h2>
+	</div>
+  <br>
+  <h5>15+ Years of Experience in IT!</h5>
+  <p>If I gave myself a job title I suppose it would be <strong>Websitemaker</strong>. It gets straight to the point.<br>While I specialise in web design and front-end development, my experience and knowledge covers a whole lot more. I offer a complete web solution: I can guide you through the early stages of project planning and research, help you with information architecture and user experience, design your website, and finally build the site for you.<br>In my previous experiences, I have found satisfaction in discovering and implementing solutions. Now I am very excited to be doing just that through code. So if anyone asks, tell them I build websites. Beautiful, functional websites.</p>
+</div>
+
+<div class="row">
+	<div class="col-md-3 col-sm-6">
+		<div class="exp-wrapper">
+			<img src="assets/img/experience/TVC.gif" width="90" alt="Name">
+			<div class="news-content">
+				<h3>The Visibility Company</h3>
+				<span>UX/UI Application Developer Junior</span>
+				<p>March 2016 – Present</p>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-3 col-sm-6">
+		<div class="exp-wrapper">
+			<img src="assets/img/experience/NSS.png" width="90" alt="Name">
+			<div class="news-content">
+				<h3>NSS</h3>
+				<span>Web Developer & UX/UI Designer</span>
+				<p>January 2015 – May 2016</p>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-3 col-sm-6">
+		<div class="exp-wrapper">
+			<img src="assets/img/experience/LandoBWebSolutionsLogo.png" width="90" alt="Name">
+			<div class="news-content">
+				<h3>Lando B Web Solutions</h3>
+				<span>Own Startup. Main Web Developer</span>
+				<p>April 2015 – Present</p>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-3 col-sm-6">
+		<div class="exp-wrapper">
+			<img src="assets/img/experience/BenefitMall.jpg" width="90" alt="Name">
+			<div class="news-content">
+				<h3>BenefitMall, Inc.</h3>
+				<span>Senior Applications Support Analyst</span>
+				<p>April 2015 – April 2016</p>
+			</div>
+		</div>
+	</div>
+
+</div>
+</div></section>
+<!-- /EXPERIENCE Section -->
+
+<!--Service-->
+<section id="service">
+  <div class="container section-title">
+    <h2>My Skills</h2>
+	  <h5>I am a Software Developer with a passion for creating engaging applications and intuitive interfaces that bridge the gap between functionality and design.</h5>
+    <div class="service_wrapper">
+      <div class="row">
+        <div class="col-md-3">
+		<div class="service_icon delay-03s animated wow  zoomIn animated" style="visibility: visible; animation-name: zoomIn;"> <span><i class="fa fa-pencil-square-o"></i></span> </div>
+          <div class="service_block">
+            <h3 class="animated fadeInUp wow animated" style="visibility: visible; animation-name: fadeInUp;">UX/UI Design & Development</h3>
+            <!-- <p class="animated fadeInDown wow animated" style="visibility: visible; animation-name: fadeInDown;">​Customer and User Research, Research Methods and Analytics, Wireframe and Prototype, Visual Design (Hi-Fidelity), Usability Testing and Best Practices, Product Management.</p> -->
+          </div>
+        </div>
+        <div class="col-md-3">
+		<div class="service_icon icon2  delay-03s animated wow zoomIn animated" style="visibility: visible; animation-name: zoomIn;"> <span><i class="fa fa-desktop"></i></span> </div>
+        <div class="service_block">
+          <h3 class="animated fadeInUp wow animated" style="visibility: visible; animation-name: fadeInUp;">Graphic Design</h3>
+          <!-- <p class="animated fadeInDown wow animated" style="visibility: visible; animation-name: fadeInDown;">​Adobe Creative Cloud: Photoshop, Illustrator, and Fireworks.</p> -->
+        </div>
+        </div>
+        <div class="col-md-3">
+		<div class="service_icon icon3  delay-03s animated wow zoomIn animated" style="visibility: visible; animation-name: zoomIn;"> <span><i class="fa fa-code"></i></span> </div>
+          <div class="service_block">
+            <h3 class="animated fadeInUp wow animated" style="visibility: visible; animation-name: fadeInUp;">Front-end Development</h3>
+            <!-- <p class="animated fadeInDown wow animated" style="visibility: visible; animation-name: fadeInDown;">​HTML5, CSS3, LESS, Bootstrap, Jade, JavaScript, jQuery, AngularJS.</p> -->
+          </div>
+        </div>
+		  <div class="col-md-3">
+		<div class="service_icon icon3  delay-03s animated wow zoomIn animated" style="visibility: visible; animation-name: zoomIn;"> <span><i class="fa fa-mobile"></i></span> </div>
+          <div class="service_block">
+            <h3 class="animated fadeInUp wow animated" style="visibility: visible; animation-name: fadeInUp;">Responsive Design</h3>
+            <!-- <p class="animated fadeInDown wow animated" style="visibility: visible; animation-name: fadeInDown;">Optimal viewing and interaction experience across a wide range of devices (from desktop computer monitors to mobile phones).</p> -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!--Service-->
+
+<section id="techSkills">
+<div class="container">
+ <div class="row">
+	<div class="col-sm-6 col-md-6">
+		<h2>More Skills</h2>
+		<p><i class="fa fa-rocket"></i>&nbsp &nbsp Ready To Go</p>
+		<p>As a NSS Graduate, I gained experience in:<br/> <b>Frontend Development:</b> HTML, CSS, LESS, Bootstrap (Responsive Design), Javascript, jQuery, AngularJS.<br/>And <b>Backend Development:</b> C#, .Net, SQL, SQL Server, SQLite, Postgres.<br/> Some <b>Tools:</b> Grunt, Gulp, VIM, Git, GitHub, Sublime Text, Visual Studio, Command Line, RESTful API, MVC, Bower, NPM.<br/> And <b>UX & UI Design:</b> Customer and User Research, Research Methods and Analytics, Wireframe and Prototype, Visual Design (Hi-Fidelity), Usability Testing and Best Practices, Product Management.<br> Also, <strong>Golf</strong>: I love golf. My best score is 84 and I hope to break 80 at some point one of these days.</p>
+	</div>
+	<div class="col-sm-6 col-md-6">
+	        <div class="progress">
+	            <div class="progress-bar progress-bar-info color1" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+	                <span class="sr-only">80% Complete (info)</span>
+	            </div>
+	            <span class="progress-type">UX/UI Design</span>
+	            <span class="progress-completed">80%</span>
+	        </div>
+	        <div class="progress">
+	            <div class="progress-bar color2" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 93%;">
+	                <span class="sr-only">93% Complete</span>
+	            </div>
+	            <span class="progress-type">HTML5 / CSS3 / LESS</span>
+	            <span class="progress-completed">93%</span>
+	        </div>
+	        <div class="progress">
+	            <div class="progress-bar progress-bar-warning color1" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 85%">
+	                <span class="sr-only">85% Complete (warning)</span>
+	            </div>
+	            <span class="progress-type">JavaScript / jQuery / AngularJS</span>
+	            <span class="progress-completed">85%</span>
+	        </div>
+	        <div class="progress">
+	            <div class="progress-bar progress-bar-success color2" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 77%">
+	                <span class="sr-only">77% Complete (success)</span>
+	            </div>
+	            <span class="progress-type">C# / .Net / SQL / MVC</span>
+	            <span class="progress-completed">77%</span>
+	        </div>
+	        <div class="progress">
+	            <div class="progress-bar progress-bar-danger color1" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+	                <span class="sr-only">80% Complete (danger)</span>
+	            </div>
+	            <span class="progress-type">Grunt / Gulp / VIM / Git / GitHub / RESTful API / Bower / NPM</span>
+	            <span class="progress-completed">80%</span>
+	        </div>
+	        <div class="progress">
+	            <div class="progress-bar progress-bar-success color2" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 84%">
+	                <span class="sr-only">84% Complete (success)</span>
+	            </div>
+	            <span class="progress-type">Golf</span>
+	            <span class="progress-completed">84%</span>
+	        </div>
+		</div>
+	</div>
+
+<div>
+</div>
+</div>
+</section>
+
+<!--Footer-->
+<footer class="footer_wrapper" id="contact">
+  <div class="container">
+    <section class="page_section contact" id="contact">
+      <div class="contact_section">
+        <div class="row">
 								<div class="col-lg-10 col-lg-offset-1 text-center">
-										<div class="text-center">
-											<a target="_blank" href="img/roly.jpg"><img src="img/roly1.jpg" class="img-circle"></a>
+										<div class="text-center img-margin-bot">
+											<img src="assets/img/RB-logo-blue.png" class="img-footer">
 										</div><br><br>
-										<h4 class="rb-footer"><strong>Rolando Bernal | Software Developer</strong>
-										</h4>
-										<p>Nashville, TN</p>
+										<h2 class="">
+                      <strong>Let's Talk!</strong>
+										</h2>
 										<ul class="list-unstyled phone-email">
 												<li><i class="fa fa-phone fa-fw"></i> <a href="tel:615-290-3050" class="telephone">(615) 290-3050</a></li>
 												<li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:jrolandobernal@gmail.com">jrolandobernal@gmail.com</a>
 												</li>
 										</ul>
 										<br>
-										<h4 class="contact-hdr">Find me on the net.</h4>
+										<h2 class="">Find me on the net.</h2>
 										<br>
 										<ul class="list-inline social">
 											<li><a target="_blank" href="https://www.linkedin.com/in/jrolandobernal"><i class="fa fa-linkedin fa-fw fa-3x"></i></a></li>
 											<li><a target="_blank" href="http://twitter.com/jrolandobernal"><i class="fa fa-twitter fa-fw fa-3x"></i></a></li>
 											<li><a target="_blank" href="https://github.com/LandoB"><i class="fa fa-github fa-fw fa-3x"></i></a></li>
 										</ul>
-										<hr class="small">
-										<p class="text-muted">Copyright &copy; Rolando Bernal | Software Developer <span id="current-year"></span></p>
-										<a href="#top"><h2><i class="btn skills-btn-dark btn-lg fa fa-home"></i></h2></a>
 								</div>
 						</div>
-				</div>
-		</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="container">
+    <div class="footer_bottom text-muted">
+			<span>Copyright &copy; <a href="http://landob.github.io/" class="text-muted">Rolando Bernal | Web Developer and Designer</a><span id="current-year"></span></span>
+		</div>
+  </div>
+</footer>
 
-		<!-- JavaScript -->
-		<!-- <script src="js/main.js"></script> -->
-
-		<!-- jQuery -->
-		<script src="js/jquery.js"></script>
-
-		<!-- Bootstrap Core JavaScript -->
-		<script src="js/bootstrap.min.js"></script>
-
-		<!-- Custom Theme JavaScript -->
-		<script>
-				// Closes the sidebar menu
-				$("#menu-close").click(function(e) {
-						e.preventDefault();
-						$("#sidebar-wrapper").toggleClass("active");
-				});
-
-				// Opens the sidebar menu
-				$("#menu-toggle").click(function(e) {
-						e.preventDefault();
-						$("#sidebar-wrapper").toggleClass("active");
-				});
-
-				// Scrolls to the selected menu item on the page
-				$(function() {
-						$('a[href*=#]:not([href=#])').click(function() {
-								if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-										var target = $(this.hash);
-										target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-										if (target.length) {
-												$('html,body').animate({
-														scrollTop: target.offset().top
-												}, 1000);
-												return false;
-										}
-								}
-						});
-				});
-		</script>
+<script type="text/javascript" src="assets/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-scrolltofixed.js"></script>
+<script type="text/javascript" src="assets/js/jquery.nav.js"></script>
+<script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="assets/js/jquery.isotope.js"></script>
+<script type="text/javascript" src="assets/js/wow.js"></script>
+<script type="text/javascript" src="assets/js/custom.js"></script>
+<!-- To obtain Current Year -->
 		<script type="text/javascript">
 				var currentDate = new Date();
 				var year = currentDate.getFullYear();
 				//insert it via jquery
 				$('#current-year').html((currentDate.getFullYear()));
 		</script>
-		<!-- Plugin JavaScript -->
-		<script src="js/jquery.easing.min.js"></script>
-		<script src="js/portfolio.js"></script>
 
-</body>
-
-</html>
+</body></html>
