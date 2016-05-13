@@ -808,7 +808,8 @@ a.contact_btn:hover {
 
 .img-footer {
   max-width: 200px;
-  opacity: .55;
+  border-radius: 10px;
+  opacity: .75;
 }
 
 /* no transition on .isotope container */
@@ -1070,7 +1071,7 @@ margin-bottom: 5px;
 .team_box ul li a.fa-google-plus:hover {
     color: #dd4b39;
 }
- .img-circle {
+.img-circle {
 border-radius: 50%;
 }
 .centered {
