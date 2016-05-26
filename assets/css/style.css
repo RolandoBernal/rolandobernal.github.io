@@ -883,7 +883,7 @@ a.contact_btn:hover {
 }
 .exp-hover-link:hover {
   cursor: pointer;
-  opacity: 0.75;
+  opacity: 0.5;
 }
 
 /* About Section
