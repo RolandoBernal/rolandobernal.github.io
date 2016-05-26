@@ -881,6 +881,10 @@ a.contact_btn:hover {
   font-size: 1.2em;
   margin: 10px 0 !important;
 }
+.exp-hover-link:hover {
+  cursor: pointer;
+  opacity: 0.75;
+}
 
 /* About Section
 --------------------------- */
