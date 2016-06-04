@@ -827,6 +827,14 @@ section.rb-expand .rb-icon-close {
 		border-radius: 4px;
 }
 
+.fa-envelope-o:hover,
+.fa-envelope-o:focus,
+.fa-envelope-o:active {
+		color: #fff;
+		background-color: #7CBEFF;
+		border-radius: 4px;
+}
+
 .social-network {
 	display:inline-rbock;
 	background: url(../img/social-networks.png) no-repeat top left;
