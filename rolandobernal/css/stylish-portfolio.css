@@ -27,6 +27,10 @@ h3 {
 
 }
 
+.contact-hdr {
+	color: #dd3b2a;
+}
+
 .text-vertical-center {
 		display: table-cell;
 		text-align: center;
