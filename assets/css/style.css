@@ -259,6 +259,10 @@ p {
 	margin:20px 0 20px 0;
 }
 
+.hola {
+  color: #fff;
+}
+
 /* Header Styles
 ---------------------------------*/
 
@@ -384,8 +388,6 @@ p {
   text-align: center;
 }
 #head {
-  /*background: #f4f4f4 url(../img/bg-head.jpg) top center;*/
-  /*background: #f4f4f4 url(../img/bg-head.png) top center;*/
   background-size: cover;
   color: #fff;
   background-color: #0A1525;
