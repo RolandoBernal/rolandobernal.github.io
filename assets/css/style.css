@@ -649,29 +649,6 @@ margin: 35px 0 15px;
 		padding: 0px;
 }
 
-.service-list {
-		padding: 0 0 0 0;
-		font-size: 14px;
-		margin-bottom: 40px;
-}
-
-.service-list-col1 {
-		float: left;
-		width: 60px;
-		text-align: center;
-}
-
-.service-list-col1 i {
-		display:;
-		color: #888;
-		font-size: 19px;
-		font-style: normal;
-		line-height: 20px;
-}
-
-.service-list-col2 {
-		overflow: hidden;
-}
 
 .page_section.alabaster {
 		background: #fafafa;
