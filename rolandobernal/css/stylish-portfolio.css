@@ -651,8 +651,8 @@ hr.small-line {
 
 .img-circle {
 	margin-top:18px;
-	height:130px;
-	width:130px;
+	height:300px;
+	width:300px;
 }
 
 @media(max-width:768px) {
