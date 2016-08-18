@@ -392,8 +392,8 @@ p {
 }
 #head img.img-circle {
 	display: block;
-	width: 140px;
-	height: 140px;
+	width: 180px;
+	height: 180px;
 	overflow: hidden;
 	border: 8px groove rgba(255, 255, 255, 0.23);
 	margin: 0 auto 20px;
@@ -1544,7 +1544,7 @@ margin: 0 18px;
 }
 .page_section.team{
 padding: 40px 0;
-} 
+}
 #clients {
 padding: 40px 0;
 }
