@@ -66,8 +66,8 @@ a {
 }
 #main .img-circle {
 	margin-top:18px;
-	height:300px;
-	width:300px;
+	height:150px;
+	width:150px;
 }
 .skill-img {
 	margin-top:18px;
@@ -82,6 +82,49 @@ a {
 
 .ready-to-go {
 	padding-bottom: 100px;
+}
+
+.img-circle-contact {
+	margin-top:18px;
+	height:300px;
+	width:300px;
+}
+
+/* ---------------------------
+	Custom Button Styles
+-----------------------------*/
+
+.btn-dark {
+	border-radius: 0;
+	color: #fafafa;
+	background-color: #00295B;
+	border-radius: 4px;
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+		color: #00295B;
+		background-color: #7CBEFF;
+		border-color: #7CBEFF;
+}
+
+.btn-light {
+		border-radius: 0;
+		color: #333;
+		background-color: rgba(255,255,255,0.8);
+		border-radius: 4px;
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+		color: red;
+		background-color: rgb(255,255,255);
+}
+
+.download {
+	font-family:'Lato',arial,sans-serif;
 }
 
 
@@ -233,6 +276,7 @@ a {
 	}
 	.homeSection,
 	.portfolioSection,
+	.resumeSection,
 	.skillsSection,
 	.aboutSection,
 	.contactSection {

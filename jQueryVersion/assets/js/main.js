@@ -5,6 +5,7 @@ $(document).ready(function() {
 		var $home = $('.homeSection');
 		var $portfolio = $('.portfolioSection');
 		var $skills = $('.skillsSection');
+		var $resume = $('.resumeSection');
 		var $about = $('.aboutSection');
 		var $contact = $('.contactSection');
 
@@ -22,6 +23,7 @@ $(document).ready(function() {
 		$contact.hide();
 		$portfolio.hide();
 		$skills.hide();
+		$resume.hide();
 		$about.hide();
   });
   $('.about').click(function() {
@@ -30,6 +32,7 @@ $(document).ready(function() {
 		$contact.hide();
 		$portfolio.hide();
 		$skills.hide();
+		$resume.hide();
 		$about.show();
   });
   $('.portfolio').click(function() {
@@ -38,6 +41,7 @@ $(document).ready(function() {
 		$contact.hide();
 		$portfolio.show();
 		$skills.hide();
+		$resume.hide();
 		$about.hide();
   });
   $('.skills').click(function() {
@@ -46,6 +50,16 @@ $(document).ready(function() {
 		$contact.hide();
 		$portfolio.hide();
 		$skills.show();
+		$resume.hide();
+		$about.hide();
+  });
+	$('.resume').click(function() {
+    onClickSelect($(this), $('.resumeSection'));
+    $home.hide();
+		$contact.hide();
+		$portfolio.hide();
+		$skills.hide();
+		$resume.show();
 		$about.hide();
   });
   $('.contact').click(function() {
@@ -54,6 +68,7 @@ $(document).ready(function() {
 		$contact.show();
 		$portfolio.hide();
 		$skills.hide();
+		$resume.hide();
 		$about.hide();
   });
 
