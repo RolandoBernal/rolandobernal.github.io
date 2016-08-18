@@ -106,7 +106,7 @@ a {
 .btn-dark:active {
 		color: #00295B;
 		background-color: #7CBEFF;
-		border-color: #7CBEFF;
+		border-color: #00295B;
 }
 
 .btn-light {
@@ -391,6 +391,7 @@ small.text-muted {
 
 .portfolioSection,
 .aboutSection,
+.resumeSection,
 .skillsSection,
 .contactSection {
 	display: none;
