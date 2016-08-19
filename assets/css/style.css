@@ -263,6 +263,12 @@ p {
 	color: #fff;
 }
 
+.main-page {
+	visibility: visible;
+	animation-name: zoomIn;
+}
+
+
 /* Header Styles
 ---------------------------------*/
 
