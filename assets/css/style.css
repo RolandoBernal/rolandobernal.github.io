@@ -268,6 +268,13 @@ p {
 	animation-name: zoomIn;
 }
 
+.scroll-down {
+		font-size: 1.5em;
+		font-family: "Lato","Nunito","Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-weight: 300;
+		color: rgba(124, 190, 255, .8);
+}
+
 
 /* Header Styles
 ---------------------------------*/
@@ -377,6 +384,102 @@ p {
 		text-decoration: none;
 		color: #428bca;
 		background-color: transparent;
+}
+
+
+/* Side Menu */
+
+#sidebar-wrapper {
+		z-index: 1000;
+		position: fixed;
+		right: 0;
+		width: 250px;
+		height: 100%;
+		margin-right: -250px;
+		overflow-y: auto;
+		background: rgba(3,3,3,0.85);
+		-webkit-transition: all 0.4s ease 0s;
+		-moz-transition: all 0.4s ease 0s;
+		-ms-transition: all 0.4s ease 0s;
+		-o-transition: all 0.4s ease 0s;
+		transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+		position: absolute;
+		top: 0;
+		width: 250px;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+}
+
+.sidebar-nav li {
+		text-indent: 20px;
+		line-height: 40px;
+}
+
+.sidebar-nav li a {
+		display: block;
+		text-decoration: none;
+		/*color: #112233;*/
+}
+
+.sidebar-nav li a:hover {
+		text-decoration: none;
+		color: #fff;
+		font-weight: bold;
+		background: #428bca;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+		text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+		height: 55px;
+		font-size: 18px;
+		line-height: 55px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+		/*color: #112233;*/
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+		color: #fff;
+		background: none;
+}
+
+#menu-toggle {
+		color: #fafafa;
+		z-index: 10;
+		position: fixed;
+		top: 0;
+		right: 0;
+		border-radius: 4px;
+}
+
+#menu-toggle:hover,
+#menu-toggle:focus,
+#menu-toggle:active {
+		color: #FFF;
+		background-color: #428bca;
+}
+
+#sidebar-wrapper.active {
+		right: 250px;
+		width: 250px;
+		-webkit-transition: all 0.4s ease 0s;
+		-moz-transition: all 0.4s ease 0s;
+		-ms-transition: all 0.4s ease 0s;
+		-o-transition: all 0.4s ease 0s;
+		transition: all 0.4s ease 0s;
+}
+
+.toggle {
+		margin: 5px 5px 0 0;
 }
 
 .borderLeft {
