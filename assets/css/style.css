@@ -284,6 +284,10 @@ p {
 		position: relative;
 }
 
+.head-class {
+	background-position: 50% 0px;
+}
+
 .logo a{
 		float: left;
 
@@ -316,6 +320,7 @@ p {
 
 .navStyle {
 		float: right;
+		background: none;
 }
 
 .navStyle ul {
