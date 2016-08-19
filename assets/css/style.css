@@ -470,12 +470,6 @@ p {
 }
 
 #menu-close {
-		/*color: #428bca;
-		z-index: 10;
-		position: fixed;
-		top: 0;
-		right: 0;
-		border-radius: 4px;*/
 		background: rgba(3,3,3,0.90);
 }
 
