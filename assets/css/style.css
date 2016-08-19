@@ -387,7 +387,7 @@ p {
 }
 
 
-/* Side Menu */
+/* Side Nav Bar Menu */
 
 #sidebar-wrapper {
 		z-index: 1000;
@@ -397,7 +397,7 @@ p {
 		height: 100%;
 		margin-right: -250px;
 		overflow-y: auto;
-		background: rgba(3,3,3,0.85);
+		background: rgba(3,3,3,0.90);
 		-webkit-transition: all 0.4s ease 0s;
 		-moz-transition: all 0.4s ease 0s;
 		-ms-transition: all 0.4s ease 0s;
@@ -444,7 +444,7 @@ p {
 }
 
 .sidebar-nav > .sidebar-brand a {
-		/*color: #112233;*/
+		color: #428bca;
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
@@ -459,11 +459,27 @@ p {
 		top: 0;
 		right: 0;
 		border-radius: 4px;
+		background-color: #428bca !important;
+		border-color: rgba(256,256,256,0.30);
 }
 
-#menu-toggle:hover,
-#menu-toggle:focus,
-#menu-toggle:active {
+#menu-toggle:hover {
+		color: #428bca;
+		background-color: #fafafa !important;
+		border-color: rgba(256,256,256,0.50);
+}
+
+#menu-close {
+		/*color: #428bca;
+		z-index: 10;
+		position: fixed;
+		top: 0;
+		right: 0;
+		border-radius: 4px;*/
+		background: rgba(3,3,3,0.90);
+}
+
+#menu-close:hover {
 		color: #FFF;
 		background-color: #428bca;
 }
