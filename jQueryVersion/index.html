@@ -228,14 +228,14 @@
 
 							<section class="skillsSection">
 								<!-- <p>THIS IS THE SKILL SECTION</p> -->
-									<div class="" id="skills">
+									<div id="skills">
 										<div class="page-header text-muted divider text-center">
 										Skills
 										</div>
 									</div>
 
 									<div class="row">
-										<div class="">
+										<div>
 											<br>
 											<h4>I'm a graduate from Nashville Software School. At NSS I learned the craft of Software Development and UX design. <br><br> <b>Frontend:</b> HTML, CSS, Javascript, jQuery, AngularJS.<br/><b>Backend:</b> C#, .Net, SQL, SQL Server, SQLite, Postgres.<br/> <b>Dev Tools:</b> Grunt, Gulp, VIM, Git, GitHub, Sublime Text, Visual Studio, Command Line, RESTful API, MVC, Bower, NPM.<br><b>UX & UI Development:</b>​ Customer and User Research, Research Methods and Analytics, Wireframe and Prototype, Visual Design (Hi-Fidelity), Usability Testing and Best Practices, Product Management.<br><br> In my previous experiences, I have found satisfaction in discovering and implementing solutions. Now I am very excited to be doing just that through code.<br><br>My approach? Simple and Functional. It is too easy for us to complicate our lives, why do so with our software?</h4>
 											<br><br>
@@ -718,59 +718,59 @@
 
 		<script type="text/javascript">
 				function getScrollTop(){
-			if(typeof pageYOffset!= 'undefined'){
-					//most browsers except IE before #9
-					return pageYOffset;
-			} else {
-					var B = document.body; //IE 'quirks'
-					var D = document.documentElement; //IE with doctype
-					D = (D.clientHeight) ? D : B;
-					return D.scrollTop;
+				if(typeof pageYOffset!= 'undefined'){
+						//most browsers except IE before #9
+						return pageYOffset;
+				} else {
+						var B = document.body; //IE 'quirks'
+						var D = document.documentElement; //IE with doctype
+						D = (D.clientHeight) ? D : B;
+						return D.scrollTop;
+				}
 			}
-		}
 
-		var timeouts = [];
-		var scrolling = false;
-		var scroller;
-		var scrollTop = getScrollTop();
-		var timeMs;
-		var alter = false;
-		var speed = 5;
-		window.onscroll = function() {
-			if(alter) {
-					var timeDif = new Date().getMilliseconds() - timeMs;
-					speed = 5 - (timeDif / 50);
-					console.log(speed);
-			}
-			timeMs = new Date().getMilliseconds();
-			alter = !alter;
-			var scrollDirection = getScrollTop() - scrollTop;
-			scrollDirection = scrollDirection / Math.abs(scrollDirection);
-			scrollTop = getScrollTop();
-			clearTimeout(scroller);
-			scroller = setTimeout(function(){
-					console.log('smooth scrolling active');
-					if(!scrolling) {
-							timeouts.length = 0;
-							scrolling = true;
-							var steps = 50;
-							var delay = 6;
-							for(var i = 0; i < steps; i++) {
-									(function(i){
-											var timeout = setTimeout(function(){
-													var perc = i / steps;
-													var val = (perc == 1) ? 1 : (-Math.pow(2, -10 * perc) + 1);
-													var scrollY = val * speed * scrollDirection;
-													window.scrollTo(0, getScrollTop() + scrollY);
-													setTimeout(function(){
-															if(i == (steps - 1)) scrolling = false;
-													}, steps * delay);
-											}, (i * delay));
-											timeouts.push(timeout);
-									})(i);
-							}
-					}
-			}, 50);
+			var timeouts = [];
+			var scrolling = false;
+			var scroller;
+			var scrollTop = getScrollTop();
+			var timeMs;
+			var alter = false;
+			var speed = 5;
+			window.onscroll = function() {
+				if(alter) {
+						var timeDif = new Date().getMilliseconds() - timeMs;
+						speed = 5 - (timeDif / 50);
+						console.log(speed);
+				}
+				timeMs = new Date().getMilliseconds();
+				alter = !alter;
+				var scrollDirection = getScrollTop() - scrollTop;
+				scrollDirection = scrollDirection / Math.abs(scrollDirection);
+				scrollTop = getScrollTop();
+				clearTimeout(scroller);
+				scroller = setTimeout(function(){
+						console.log('smooth scrolling active');
+						if(!scrolling) {
+								timeouts.length = 0;
+								scrolling = true;
+								var steps = 50;
+								var delay = 6;
+								for(var i = 0; i < steps; i++) {
+										(function(i){
+												var timeout = setTimeout(function(){
+														var perc = i / steps;
+														var val = (perc == 1) ? 1 : (-Math.pow(2, -10 * perc) + 1);
+														var scrollY = val * speed * scrollDirection;
+														window.scrollTo(0, getScrollTop() + scrollY);
+														setTimeout(function(){
+																if(i == (steps - 1)) scrolling = false;
+														}, steps * delay);
+												}, (i * delay));
+												timeouts.push(timeout);
+										})(i);
+								}
+						}
+				}, 50);
 		};
 		</script>
 
