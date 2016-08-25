@@ -52,15 +52,6 @@ a {
 		background-attachment:fixed;
 }
 
-.divider {
-	/*margin-top:32px;*/
-/*	position: absolute;
-		left: 0;
-		bottom: 0;
-		height: 100px;
-		width: 100%;*/
-}
-
 #main {
 		background-color:#fefefe;
 }
@@ -274,19 +265,6 @@ a {
 		font-weight: bold;
 		/*background: rgba(124, 190, 255, .8);*/
 	}
-	.homeSection,
-	.portfolioSection,
-	.resumeSection,
-	.skillsSection,
-	.aboutSection,
-	.contactSection {
-		padding-top: 0px !important;
-	}
-
-	/*html, body {
-		 font-weight: 200 !important;
-	}*/
-
 }
 @media (max-width: 991px) {
 	/*.navbar {
