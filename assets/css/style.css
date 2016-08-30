@@ -461,7 +461,13 @@ p {
 }
 
 .sidebar-nav-soc-media-icons a {
+	font-size: 18px;
 	margin: 15px !important;
+}
+
+.fa-arrow-right:before {
+    content: "\f061";
+    color: #428bca;
 }
 
 #menu-toggle {
@@ -486,8 +492,7 @@ p {
 }
 
 #menu-close:hover {
-		color: #FFF;
-		background-color: #428bca;
+		background-color: #fafafa;
 }
 
 #sidebar-wrapper.active {
