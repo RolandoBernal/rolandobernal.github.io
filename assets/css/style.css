@@ -452,6 +452,18 @@ p {
 		background: none;
 }
 
+.sidebar-nav-soc-media-icons {
+	position: absolute;
+	top: 270px;
+	width: 250px;
+	margin-left: 20px;
+	list-style: none;
+}
+
+.sidebar-nav-soc-media-icons a {
+	margin: 15px !important;
+}
+
 #menu-toggle {
 		color: #fafafa;
 		z-index: 10;
