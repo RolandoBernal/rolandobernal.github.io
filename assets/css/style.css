@@ -713,7 +713,7 @@ div#main-nav {
 .btn-dark:active {
 		color: #fafafa;
 		background-color: #428bca;
-		border-color: #00295B;
+		border-color: #428bca;
 }
 
 .btn-light {
