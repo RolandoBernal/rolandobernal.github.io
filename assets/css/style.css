@@ -1496,6 +1496,7 @@ padding:80px 0 60px;
 		width: 100%;
 		margin: 0 auto;
 		display: block;
+		background-color: #0A1525;
 }
 
 #portfolio_wrapper .one-four {
@@ -1659,15 +1660,6 @@ padding:80px 0 60px;
 /*
 	 Media Queries
 --------------------------- */
-@media (min-width: 1201px) {
-	.grid figure {
-		margin: 10px 1%;
-		min-width: 300px;
-		max-width: 320px;
-		max-height: 320px;
-		width: 10%;
-	}
-}
 
 @media (min-width: 768px) and (max-width: 1200px) {
 	.aboutUs-container {
