@@ -1311,13 +1311,28 @@ color: #0A1525;
 		color: #fff;
 }
 
-#google_translate_element {
+#copyright {
 		display: block;
 		clear: left;
+		/*margin: 6px 10px 10px 0;*/
+		/*padding: 4px 10px;*/
+		/*background-color: #428bca;*/
+		float: left;
+		/*-webkit-border-radius: 6px;
+		-moz-border-radius: 6px;
+		-ms-border-radius: 6px;
+		-o-border-radius: 6px;
+		border-radius: 6px;
+		border: 1px solid #555;*/
+}
+
+#google_translate_element {
+		display: block;
+		clear: right;
 		margin: 6px 10px 10px 0;
 		padding: 4px 10px;
-		background-color: #DDD;
-		float: left;
+		background-color: #428bca;
+		float: right;;
 		-webkit-border-radius: 6px;
 		-moz-border-radius: 6px;
 		-ms-border-radius: 6px;
