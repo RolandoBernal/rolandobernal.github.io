@@ -354,6 +354,14 @@ div.rb-panel-items > div > div {
 	border-radius: 10px;
 }
 
+.my-img-about-me {
+	/*opacity: .85;*/
+	margin:2%;
+	/*height:362px;*/
+	/*width:262px;*/
+	border-radius: 10px;
+}
+
 .span4 > ul {
 	list-style: none;
 	padding: 0;
