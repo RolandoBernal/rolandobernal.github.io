@@ -269,10 +269,10 @@ p {
 }
 
 .scroll-down {
-		font-size: 1.5em;
-		font-family: "Lato","Nunito","Helvetica Neue",Helvetica,Arial,sans-serif;
-		font-weight: 300;
-		color: rgba(124, 190, 255, .8);
+	font-size: 1.5em;
+	font-family: "Lato","Nunito","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 300;
+	color: rgba(124, 190, 255, .8);
 }
 
 
@@ -280,15 +280,27 @@ p {
 ---------------------------------*/
 
 #header_wrapper {
-		background: #0A1525;
-		padding: 15px 0px;
-
+	background: #0A1525;
+	padding: 15px 0px;
 	box-shadow: 1px 1px 4px rgba(60, 60, 60, 0.44);
-		position: relative;
+	position: relative;
+	/* position: absolute; */
+	display: block;
+}
+
+#header_wrapper::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 75px;
+    position: absolute;
+    transform: skewY(-2deg);
+    background-color: #fff;
+    bottom: -40px;
 }
 
 .header_box {
-		position: relative;
+	position: relative;
 }
 
 .head-class {
@@ -296,15 +308,14 @@ p {
 }
 
 .logo a{
-		float: left;
-
-		font-size: 28px;
-		line-height: 50px;
-		color: #FF6C71;
+	float: left;
+	font-size: 28px;
+	line-height: 50px;
+	color: #FF6C71;
 }
 
 .res-nav_click {
-		display: none;
+	display: none;
 }
 
 
