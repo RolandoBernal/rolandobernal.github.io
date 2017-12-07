@@ -480,6 +480,10 @@ section#home {
     color: #999;
 }
 
+.text-secondary {
+    color: #BA0000;
+}
+
 /*-----------------------
 	Easy Pie Chart
 ------------------------*/
@@ -509,6 +513,9 @@ section#home {
 }
 .piechart:hover span.skill {
 	color:#BA0000;
+}
+.piechart p.text-muted {
+    margin: 10px 0;
 }
 
 /*-----------------------
