@@ -20,6 +20,7 @@
 .uppercase{text-transform:uppercase;}
 .margin-md {margin:30px 0px;}
 .margin-lg {margin:110px 0px;}
+.margin-xl {margin:150px 0px;}
 .padding-sm {padding:15px 0px;}
 .padding-md {padding:50px 0px;}
 .padding-lg {padding:100px 0px;}
@@ -147,22 +148,22 @@ a:hover {
 #main-navigation .navbar-nav li a:hover, #main-navigation .navbar-nav li a:focus{
 	background:transparent;
 	opacity: 1;
-	border:2px solid #FFF;
-	color:#FFF;
+	border:2px solid #BA0000;
+	color:#BA0000;
 }
 .stuck .navbar-nav li a:hover, .stuck .navbar-nav li a:focus{
 	background:transparent;
 	opacity: 1;
 	border:2px solid transparent;
 	border-color:transparent!important;
-	color:#FFF;
+	color:#BA0000;
 }
 
 /*-----------------------
 	Navigation stuck
 ------------------------*/
 .stuck {
-	background: rgba(0, 0, 0, 0.5)
+	background: rgba(0, 0, 0, 1)
 }
 .stuck .navbar-nav li.logo img {
 	width:0px!important;
@@ -986,6 +987,9 @@ p.ref-text {
 	background-size: cover;
 }
 #contact .margin-lg {
+	margin-bottom: 150px!important;
+}
+#findMe {
 	margin-bottom: 50px!important;
 }
 .alert {
@@ -1021,43 +1025,6 @@ label.error{
 	margin-bottom: 20px;
 }
 /*Social*/
-.social:hover,
-.social:focus,
-.social:active {
-    color: #FFF;
-    border-radius: 4px;
-}
-.social-box-container {
-	margin: 100px 0px;
-}
-@media (max-width: 767px) {
-	.social-box-container {
-		margin: 50px 0px;
-	}
-}
-.social-box-container a {
-	text-decoration:none;
-}
-.social-box-container:hover {
-	opacity:0.8;
-}
-.social-box-container a:focus {
-	color:#FFF;
-}
-.social-box-container i.fa {
-	width: 70px;
-	height: 70px;
-	font-size: 35px;
-	background: #BA0000;
-	border-radius: 50%;
-	line-height: 2;
-}
-.social-box-container .social-text {
-	margin: 20px 0px;
-	font-size:20px;
-	font-weight: 100;
-}
-/*Social a the bottom fo the page*/
 .social-bottom {
   margin-top: 50px;
   width: 100%;
@@ -1069,24 +1036,27 @@ label.error{
   margin: 20px 20px;
 
 }
-
 .social-bottom ul li {
     display: inline-block;
     list-style-type: none;
     padding: 5px 5px;
     margin: 20px;
 }
-
-.social-bottom ul li a i.fa {
-  font-size: 50px;
+.social-bottom i.fa {
+    width: 70px;
+	height: 70px;
+	font-size: 35px;
+	background: #BA0000;
+	border-radius: 50%;
+	line-height: 2;
 }
 
 #linkedin:hover,
 #linkedin:focus,
 #linkedin:active,
-.fa-linkedin:hover,
-.fa-linkedin:focus,
-.fa-linkedin:active {
+i.fa-linkedin:hover,
+i.fa-linkedin:focus,
+i.fa-linkedin:active {
     color: #FFF;
     background-color: #007bb6;
     border-radius: 4px;
@@ -1095,9 +1065,9 @@ label.error{
 #twitter:hover,
 #twitter:focus,
 #twitter:active,
-.fa-twitter:hover,
-.fa-twitter:focus,
-.fa-twitter:active {
+i.fa-twitter:hover,
+i.fa-twitter:focus,
+i.fa-twitter:active {
     color: #FFF;
     background-color: #55acee;
     border-radius: 4px;
@@ -1107,9 +1077,9 @@ label.error{
 #google-plus:hover,
 #google-plus:focus,
 #google-plus:active,
-.fa-google-plus:hover,
-.fa-google-plus:focus,
-.fa-google-plus:active {
+i.fa-google-plus:hover,
+i.fa-google-plus:focus,
+i.fa-google-plus:active {
     color: #FFF;
     background-color: #dd4b39;
     border-radius: 4px;
@@ -1118,9 +1088,9 @@ label.error{
 #github:hover,
 #github:focus,
 #github:active,
-.fa-github:hover,
-.fa-github:focus,
-.fa-github:active {
+i.fa-github:hover,
+i.fa-github:focus,
+i.fa-github:active {
     color: #fff;
     background-color: #444;
     border-radius: 4px;
@@ -1136,13 +1106,27 @@ label.error{
     background-color: #90BF88;
     border-radius: 4px;
 }
-/*footer*/
+
+/*-----------------------
+     Footer
+------------------------*/
+#footerRow {
+    margin: 50px 0 !important;
+}
 .copyright {
 	font-weight:100;
 	font-size: 15px;
 	letter-spacing: 3px;
 }
-
+.copyright a {
+	color: #BA0000;
+}
+.copyright a:hover,
+.copyright a:focus,
+.copyright a:active {
+/*    color: #BA0000;*/
+    opacity: 0.75;
+}
 /*-----------------------
 	Owl Carousel
 ------------------------*/
@@ -1223,13 +1207,14 @@ label.error{
 	bottom:0px;
 	right:0px;
 	display:none;
-	border: 2px solid rgba(0, 0, 0, 0.5);
-	color: rgba(0, 0, 0, 0.5);
+	border: 2px solid #BA0000;
+    color: #BA0000;
 }
 .scrollToTop:hover, .scrollToTop:focus{
 	text-decoration:none;
 	border: 2px solid #BA0000;
-	color: #BA0000;
+	background-color: #BA0000;
+    color: #fff;
 }
 .scrollToTop i.fa{
 	width: 35px;
