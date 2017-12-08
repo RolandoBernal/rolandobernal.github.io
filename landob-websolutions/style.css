@@ -139,7 +139,7 @@ a:hover {
 }
 #main-navigation .navbar-nav li a{
 	margin: 5px 10px;
-	opacity:0.7;
+	opacity:0.9;
 	font-size:18px;
 	text-transform:uppercase;
 	letter-spacing:3px;
@@ -163,7 +163,7 @@ a:hover {
 	Navigation stuck
 ------------------------*/
 .stuck {
-	background: rgba(0, 0, 0, 1)
+	background: rgba(0, 0, 0, .93)
 }
 .stuck .navbar-nav li.logo img {
 	width:0px!important;
@@ -194,7 +194,10 @@ a:hover {
 	}
 	#main-navigation .navbar-nav li {
 		display: inline-block;
-  }
+    }
+    #main-navigation {
+        background-color: rgba(0,0,0,.93);
+    }
 }
 @media (max-width: 991px) {
 	.navbar {
@@ -490,7 +493,7 @@ section#home {
 .piechart {
 	position: relative;
 	width: 150px;
-	height: 220px;
+	height: 270px;
 	text-align: center;
 	margin-left: auto!important;
 	margin-right: auto!important;
