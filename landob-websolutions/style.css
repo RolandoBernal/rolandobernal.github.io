@@ -1197,6 +1197,19 @@ i.fa-github:active {
 	color: #FFF;
 	background: #BA0000;
 }
+.btn-resume {
+	border: 2px solid #BA0000;
+	padding: 10px 20px;
+	font-size: 20px;
+	color: #333;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+.btn-resume:hover, .btn-resume:focus {
+	border: 2px solid #BA0000;
+	color: #FFF;
+	background: #BA0000;
+}
 .social-btn {
 	font-size:13px!important;
 }
