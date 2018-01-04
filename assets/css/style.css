@@ -1884,6 +1884,21 @@ display:none;
     -webkit-animation-delay: 1.2s;
 }
 
+.delay-13s {
+    animation-delay: 1.3s;
+    -webkit-animation-delay: 1.3s;
+}
+
+.delay-14s {
+    animation-delay: 1.4s;
+    -webkit-animation-delay: 1.4s;
+}
+
+.delay-15s {
+    animation-delay: 1.5s;
+    -webkit-animation-delay: 1.5s;
+}
+
 
 /*  Social Media Section */
 
