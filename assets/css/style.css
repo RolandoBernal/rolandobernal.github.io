@@ -649,16 +649,16 @@ p {
 }
 
 .top_left_cont p {
-font-size: 18px;
-color: #FFFFFF;
-margin: 0 0 30px 0;
-line-height: 33px;
-text-align: center;
-font-weight: normal;
-font-size: 20px;
-/* font-weight: 300; */
-text-align: center;
-letter-spacing: 1px;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin: 0 0 30px 0;
+    line-height: 33px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+    /* font-weight: 300; */
+    text-align: center;
+    letter-spacing: 1px;
 }
 
 a.read_more, a.read_more2 {
@@ -678,7 +678,7 @@ a.read_more, a.read_more2 {
     background: transparent;
     color: #fff;
     border: 1px solid #fff;
-  margin:0 auto;
+    margin:0 auto;
     text-transform: capitalize;
 }
 a.read_more{
@@ -779,7 +779,6 @@ div#main-nav {
     display: block;
     height: 95px;
     width: 95px;
-
     border: 1px solid #FFFFFF;
     border-radius: 50%;
     padding: 6px 0 0;
@@ -801,7 +800,7 @@ div#main-nav {
     font-weight: 600;
     font-size: 25px;
     color: #fff;
-margin: 35px 0 15px;
+    margin: 35px 0 15px;
 }
 #service h6,
 #service h5,
@@ -883,18 +882,18 @@ a.contact_btn:hover {
 }
 
 #techSkills h2 {
-  margin-top: 0px;
+    margin-top: 0px;
 }
 
 /* My Portfolio
 ---------------------------------*/
 
 .portfolio-wrapper {
-  position: relative;
-  overflow: hidden;
-  visibility: visible;
-  animation-name: fadeInLeft;
-  height: 636px;
+      position: relative;
+      overflow: hidden;
+      visibility: visible;
+      animation-name: fadeInLeft;
+      height: 636px;
 }
 
 #Portfolio {
@@ -969,15 +968,15 @@ a.contact_btn:hover {
 }
 
 .img-footer {
-  max-width: 200px;
-  border-radius: 10px;
-  opacity: .75;
+    max-width: 200px;
+    border-radius: 10px;
+    opacity: .75;
 }
 
 /* no transition on .isotope container */
 
 .isotope .isotope-item {
-  /* change duration value to whatever you like */
+  /* duration value*/
     -webkit-transition-duration: 0.6s;
     -moz-transition-duration: 0.6s;
     transition-duration: 0.6s;
@@ -1526,7 +1525,6 @@ padding:80px 0 60px;
     color: #fff;
     text-transform: uppercase;
     margin-top: 25px;
-
     opacity: 0;
     font-size: 18px;
     transition: all 0.2s ease 0s;
@@ -1930,58 +1928,43 @@ a:active {
       width: 70px;
       height: 70px;
       font-size: 35px;
-      color:#F9F9F9;
+      color:#F7F7F7;
       background: #428bca;
       border-radius: 50%;
       line-height: 2;
   }
   #linkedin:hover,
   #linkedin:focus,
-  #linkedin:active,
-  i.fa-linkedin:hover,
-  i.fa-linkedin:focus,
-  i.fa-linkedin:active {
+  #linkedin:active {
       color: #FFF;
       background-color: #007bb6;
-      border-radius: 4px;
+      cursor: pointer;
   }
   #twitter:hover,
   #twitter:focus,
-  #twitter:active,
-  i.fa-twitter:hover,
-  i.fa-twitter:focus,
-  i.fa-twitter:active {
+  #twitter:active {
       color: #FFF;
       background-color: #55acee;
-      border-radius: 4px;
+      cursor: pointer;
   }
   #google-plus:hover,
   #google-plus:focus,
-  #google-plus:active,
-  i.fa-google-plus:hover,
-  i.fa-google-plus:focus,
-  i.fa-google-plus:active {
+  #google-plus:active {
       color: #FFF;
       background-color: #dd4b39;
-      border-radius: 4px;
+      cursor: pointer;
   }
   #github:hover,
   #github:focus,
-  #github:active,
-  i.fa-github:hover,
-  i.fa-github:focus,
-  i.fa-github:active {
+  #github:active {
       color: #fff;
       background-color: #444;
-      border-radius: 4px;
+      cursor: pointer;
   }
   #email:hover,
   #email:focus,
-  #email:active,
-  i.fa-envelope-o:hover,
-  i.fa-envelope-o:focus,
-  i.fa-envelope-o:active {
+  #email:active {
       color: #fff;
-      background-color: #90BF88;
-      border-radius: 4px;
+      background-color: #dd4b39;
+      cursor: pointer;
   }
