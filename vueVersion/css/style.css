@@ -25,15 +25,15 @@ p {
     font-size: 1.2em; }
 
 a {
-  color: #278da4;
+  color: #0C2340;
   text-decoration: none; }
   a:hover {
-    color: #b13c69; }
+    color: #4B92DB; }
 
 /* HEADER & FOOTER -------------------------------- */
 header {
   height: 460px;
-  background: linear-gradient(#009fe1, #3acec2), url("../img/bg.jpg") no-repeat;
+  background: linear-gradient(#4B92DB, #0C2340), url("../img/bg.jpg") no-repeat;
   background-blend-mode: multiply;
   background-size: cover;
   position: relative; }
@@ -43,7 +43,7 @@ header {
     margin-bottom: 0;
     letter-spacing: 1px; }
   header p {
-    color: #eeea72;
+    color: #A5ACAF;
     font-size: 1.25em;
     margin: 0; }
   header::after {
@@ -94,7 +94,7 @@ footer {
     padding: 0.5em;
     transition: 0.3s; }
     .main-nav a:hover {
-      color: #eeea72; }
+      color: #A5ACAF; }
 
 .img-featured {
   width: 165px;
@@ -115,7 +115,7 @@ footer {
     line-height: 1.25; }
   .card .icon,
   .card h1 {
-    color: #278da4; }
+    color: #0C2340; }
 
 .btn-callout, .btn-info {
   color: #fff;
@@ -133,10 +133,10 @@ footer {
 
 .btn-callout {
   font-size: 1.1em;
-  background-color: #b13c69; }
+  background-color: #4B92DB; }
 .btn-info {
   font-size: 0.85em;
-  background-color: #278da4;
+  background-color: #0C2340;
   margin-top: auto; }
 
 /* MEDIA QUERIES ---------------------------------- */
