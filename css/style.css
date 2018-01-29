@@ -151,7 +151,7 @@ footer {
 /* MEDIA QUERIES ---------------------------------- */
 @media (max-width: 575px) {
   header {
-    height: 340px; }
+    height: 460px; }
     header h1 {
       font-size: 3.4em; }
 
