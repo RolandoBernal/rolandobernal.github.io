@@ -89,7 +89,12 @@ footer {
 
 /* COMPONENTS ------------------------------------- */
 .main-nav {
-  margin-top: 1em; }
+  margin-top: 1em;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 400; }
   .main-nav li {
     display: inline-block;
     margin: 0 0.65em; }
