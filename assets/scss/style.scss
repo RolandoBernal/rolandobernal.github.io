@@ -174,7 +174,9 @@ footer {
         //display: none;
         visibility: hidden;
         opacity: 0;
-        transition: visibility 0.15s, opacity 0.5s linear;
+        //transition: visibility 0.15s, opacity 0.5s linear;
+        transform: scale(1, 1);
+        transition: visibility 0.15s, opacity 0.5s ease-in, transform 0.5s ease;
     }
 }
 

@@ -131,11 +131,13 @@
                 //document.getElementById("img-featured-navbar").style.display = "inline-block";
                 document.getElementById("img-featured-navbar").style.visibility = "visible";
                 document.getElementById("img-featured-navbar").style.opacity = "1";
+                document.getElementById("img-featured-navbar").style.transform = "scale(1,1)";
                 document.getElementById("img-featured-header").style.transform = "scale(0.5,0.5)";
                 document.getElementById("img-featured-header").style.visibility = "hidden";
             } else {
                 document.getElementById("navbar").style.background = "transparent";
                 //document.getElementById("img-featured-navbar").style.display = "none";
+                document.getElementById("img-featured-navbar").style.transform = "scale(0.5,0.5)";
                 document.getElementById("img-featured-navbar").style.visibility = "hidden";
                 document.getElementById("img-featured-navbar").style.opacity = "0";
                 //document.getElementById("img-featured-header").style.display = "initial";
