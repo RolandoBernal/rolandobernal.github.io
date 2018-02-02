@@ -49,17 +49,18 @@
   </head>
   <body>
     <header>
-      <div class="inner">
-        <ul class="main-nav">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <h1 id="rb">Rolando Bernal</h1>
-        <p>UI &amp; UX Digital Product Designer &amp; Web Developer based in Music City USA</p>
-        <img class="img-featured" src="assets/img/Roly-Chilling.png" alt="Roly chilling">
-      </div>
+        <div id="navbar">
+            <img id="img-featured-navbar" src="assets/img/Roly-Chilling-v2a.png" alt="Roly chilling">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="inner">
+            <h1 id="rb">Rolando Bernal</h1>
+            <p>UI &amp; UX Digital Product Designer &amp; Web Developer based in Music City USA</p>
+            <img class="img-featured" id="img-featured-header" src="assets/img/Roly-Chilling.png" alt="Roly chilling">
+        </div>
     </header>
 
     <div class="intro">
@@ -120,5 +121,30 @@
             $('#current-year').html((currentDate.getFullYear()));
         </script>
     <!-- End of To obtain Current Year -->
+    <!-- To control the Nav Bar     -->
+      <script>
+        // When the user scrolls down 20px from the top of the document, slide down the navbar
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 64 || document.documentElement.scrollTop > 64) {
+                document.getElementById("navbar").style.background = "rgba(10, 21, 37, 0.85)";
+                //document.getElementById("img-featured-navbar").style.display = "inline-block";
+                document.getElementById("img-featured-navbar").style.visibility = "visible";
+                document.getElementById("img-featured-navbar").style.opacity = "1";
+                document.getElementById("img-featured-header").style.transform = "scale(0.5,0.5)";
+                document.getElementById("img-featured-header").style.visibility = "hidden";
+            } else {
+                document.getElementById("navbar").style.background = "transparent";
+                //document.getElementById("img-featured-navbar").style.display = "none";
+                document.getElementById("img-featured-navbar").style.visibility = "hidden";
+                document.getElementById("img-featured-navbar").style.opacity = "0";
+                //document.getElementById("img-featured-header").style.display = "initial";
+                document.getElementById("img-featured-header").style.visibility = "visible";
+                document.getElementById("img-featured-header").style.opacity = "1";
+                document.getElementById("img-featured-header").style.transform = "scale(1,1)";
+            }
+        }
+        </script>
+    <!--    -->
   </body>
 </html>
