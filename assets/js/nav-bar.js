@@ -1,9 +1,5 @@
 // When the user scrolls down 64px from the top of the document, change the navbar background
 
-$(document).ready(function() {
-
-    'use strict';
-
     window.onscroll = function() {scrollFunction()};
     function scrollFunction() {
         if (document.body.scrollTop > 64 || document.documentElement.scrollTop > 64) {
@@ -26,6 +22,3 @@ $(document).ready(function() {
             document.getElementById("img-featured-header").style.transform = "scale(1,1)";
         }
     }
-
-
-});
