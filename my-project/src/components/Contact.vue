@@ -13,10 +13,10 @@
 <script>
 export default {
   name: 'Contact',
-  data(){
+  data () {
     return {
-      email: landob.websolutions@gmail.com,
-      web: rolandobernal.github.io'
+      email: 'landob.websolutions@gmail.com',
+      web: 'rolandobernal.github.io'
     }
   }
 }

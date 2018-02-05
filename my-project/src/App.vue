@@ -6,8 +6,12 @@
 </template>
 
 <script>
+import Navigation from './components/Navigation'
 export default {
-  name: 'App'
+  name: 'app',
+  components: {
+    'Navigation': Navigation
+  }
 }
 </script>
 
