@@ -76,7 +76,7 @@ a {
   color: $color-primary;
   text-decoration: none;
   &:hover {
-    color: $color-secondary;
+    color: $color-accent;
   }
 }
 
@@ -140,7 +140,8 @@ footer {
 /* COMPONENTS ------------------------------------- */
 
 // Nav-bar
-#navbar {
+#navbar,
+#navbar-sm {
     padding: 0;
     background-color: transparent;
     overflow: hidden;
@@ -149,23 +150,24 @@ footer {
     width: 100%;
     height: 64px;
     line-height: 64px;
-    transition: top 0.3s;
+    //transition: top 0.3s;
     z-index: 400;
     a {
         display: inline-block;
-        color: $white;
+        color: $color-shade;
         font-size: 1.15em;
         text-align: center;
         text-transform: uppercase;
         padding: 0 1em;
-        transition: 0.3s;
+        //transition: 0.3s;
         vertical-align: top;
         //line-height: 64px;
         &:hover {
             color: $color-accent;
         }
     }
-    #img-featured-navbar {
+    #img-featured-navbar,
+    #img-featured-navbar-sm {
         width: 64px;
         height: 64px;
         padding: 0.5em;
@@ -177,6 +179,18 @@ footer {
         //transition: visibility 0.15s, opacity 0.5s linear;
         transform: scale(1, 1);
         transition: visibility 0.15s, opacity 0.5s ease-in, transform 0.5s ease;
+    }
+}
+
+#navbar-sm {
+    visibility: hidden;
+    a {
+        font-size: 1em;
+        //transition: 0.1s;
+        &:hover {
+            color: $color-primary;
+            background-color: $color-shade;
+        }
     }
 }
 
