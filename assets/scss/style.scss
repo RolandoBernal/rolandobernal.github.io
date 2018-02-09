@@ -309,6 +309,40 @@ header > nav {
 }
 
 
+// Typewriter Effect
+.typewriter {
+    h1 {
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .1em solid transparent; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        //margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .05em; /* Space between the letters */
+        animation:
+            typing 3.5s steps(30, end),
+            blink-caret .5s step-end 5;
+    }
+    span {
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-bottom: .08em solid transparent; /* The typwriter cursor */
+        margin-top: -3px; /* Gives that scrolling effect as the typing happens */
+        //letter-spacing: .05em; /* Space between the letters */
+        animation:
+            typing 3.5s steps(30, end),
+            blink-caret .5s step-end infinite;
+    }
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: $color-shade }
+}
 
 // Header image
 .img-featured {
@@ -407,6 +441,9 @@ header > nav {
         z-index: 10;
         color: $white;
         background-color: rgba(10, 21, 37, 0.93); //$color-bg;
+        &:hover {
+            color: $color-accent;
+        }
     }
     #navbar-mobile a:not(:first-child) {
         &:hover {
@@ -423,8 +460,8 @@ header > nav {
         width: 64px;
         height: 64px;
         &:hover {
-            color: $color-primary;
-            background-color: $color-shade;
+            color: $color-accent;
+            background-color: transparent;
         }
     }
     #navbar-mobile.responsive a {
@@ -462,6 +499,10 @@ header > nav {
             position: absolute;
             right: 0;
             top: 0;
+            &:hover {
+                color: $color-accent;
+                background-color: transparent;
+            }
         }
     }
     header > nav.responsive {

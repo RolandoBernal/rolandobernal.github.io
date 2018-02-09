@@ -27,21 +27,20 @@
   <body>
     <header>
         <div id="navbar">
-            <a href="#about">About</a>
+            <a href="#tools">Tools</a>
             <a href="#projects">Projects</a>
             <a href="#experience">Experience</a>
-            <a href="#tools">Tools</a>
+            <a href="#about">About</a>
         </div>
         <div id="navbar-sm">
             <img id="img-featured-navbar-sm" src="assets/img/Roly-Chilling-v2a.png" alt="Roly chilling">
-            <a href="#about">About</a>
+            <a href="#tools">Tools</a>
             <a href="#projects">Projects</a>
             <a href="#experience">Experience</a>
-            <a href="#tools">Tools</a>
+            <a href="#about">About</a>
         </div>
         <div id="navbar-mobile" class="navbar-mob">
             <img id="img-featured-navbar-mobile" src="assets/img/Roly-Chilling-v2a.png" alt="Roly chilling">
-<!--            <a href="#" class="menu-icon" onclick="toggleFunction(); return false;">&#9776;</a>-->
             <div id="nav-icon3" class="menu-icon" onclick="toggleFunction(); return false;">
               <span></span>
               <span></span>
@@ -51,15 +50,16 @@
         </div>
         <nav id="nav-links" class="navbar-links">
             <ul>
-                <li><a href="#about">About</a></li>
+                <li><a href="#tools">Tools</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#tools">Tools</a></li>
+                <li><a href="#about">About</a></li>
             </ul>
         </nav>
-        <div class="inner">
+        <div class="inner typewriter">
             <h1 id="rb">Rolando Bernal</h1>
-            <p>UI &amp; UX Digital Product Designer &amp; Web Developer based in Music City USA</p>
+            <!--<p>UI &amp; UX Digital Product Designer &amp; Web Developer based in Music City USA</p>-->
+             <p id="typedtext"></p>
             <img class="img-featured" id="img-featured-header" src="assets/img/Roly-Chilling.png" alt="Roly chilling">
         </div>
     </header>
@@ -72,8 +72,8 @@
 
     <div class="main-content">
       <div class="card">
-        <i class="material-icons icon">person</i>
-        <h1>About</h1>
+        <i class="material-icons icon">build</i>
+        <h1>Tools</h1>
         <p></p>
         <a class="btn-info" href="#">Learn more</a>
       </div>
@@ -90,8 +90,8 @@
         <a class="btn-info" href="#">Learn more</a>
       </div>
         <div class="card">
-        <i class="material-icons icon">build</i>
-        <h1>Tools</h1>
+        <i class="material-icons icon">person</i>
+        <h1>About</h1>
         <p></p>
         <a class="btn-info" href="#">Learn more</a>
       </div>
@@ -111,6 +111,7 @@
     <script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="assets/js/jquery.isotope.js"></script>
     <script type="text/javascript" src="assets/js/nav-bar.js"></script>
+      <script type="text/javascript" src="assets/js/typewriter.js"></script>
     <!-- To obtain Current Year -->
         <script type="text/javascript">
             var currentDate = new Date();

@@ -1,5 +1,4 @@
 // When the user scrolls down 64px from the top of the document, change the navbar background
-
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
     if (document.body.scrollTop > 64 || document.documentElement.scrollTop > 64) {
@@ -25,6 +24,7 @@ function scrollFunction() {
         document.getElementById("img-featured-header").style.transform = "scale(1,1)";
     }
 }
+//To display the different links of the menu: Tools, Projects, Expeience, About:
 function toggleFunction() {
     var x = document.getElementById("navbar-mobile");
     if (x.className === "navbar-mob") {

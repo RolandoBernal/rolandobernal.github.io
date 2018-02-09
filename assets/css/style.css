@@ -231,6 +231,37 @@ header > nav {
   width: 0%;
   left: 50%; }
 
+.typewriter h1 {
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .1em solid transparent;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  letter-spacing: .05em;
+  /* Space between the letters */
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end 5; }
+.typewriter span {
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-bottom: .08em solid transparent;
+  /* The typwriter cursor */
+  margin-top: -3px;
+  /* Gives that scrolling effect as the typing happens */
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite; }
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent; }
+  50% {
+    border-color: #eee; } }
 .img-featured {
   width: 165px;
   border: 2px solid #fff;
@@ -300,6 +331,8 @@ header > nav {
     z-index: 10;
     color: #fff;
     background-color: rgba(10, 21, 37, 0.93); }
+    #navbar-mobile:hover {
+      color: #A5ACAF; }
 
   #navbar-mobile a:not(:first-child):hover {
     color: #0A1525;
@@ -313,8 +346,8 @@ header > nav {
     width: 64px;
     height: 64px; }
     #navbar-mobile a.menu-icon:hover {
-      color: #0A1525;
-      background-color: #eee; }
+      color: #A5ACAF;
+      background-color: transparent; }
 
   #navbar-mobile.responsive a {
     float: none;
@@ -344,6 +377,9 @@ header > nav {
       position: absolute;
       right: 0;
       top: 0; }
+      #navbar-mobile.responsive .menu-icon:hover {
+        color: #A5ACAF;
+        background-color: transparent; }
 
   header > nav.responsive {
     display: block; } }
