@@ -40,12 +40,15 @@ header {
   header h1 {
     color: #fff;
     font-size: 4.8em;
-    margin: 80px 0 0 0;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    margin: auto;
+    vertical-align: middle; }
   header p {
     color: #A5ACAF;
     font-size: 1.25em;
     margin: 0; }
+  header #space {
+    padding: 50px 0 0 0; }
   header::before {
     content: '';
     overflow: hidden;
@@ -238,17 +241,7 @@ header > nav {
   /* The typwriter cursor */
   white-space: nowrap;
   /* Keeps the content on a single line */
-  letter-spacing: .05em;
-  /* Space between the letters */
   animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end 5; }
-.typewriter span {
-  overflow: hidden;
-  /* Ensures the content is not revealed until the animation */
-  border-bottom: .08em solid transparent;
-  /* The typwriter cursor */
-  margin-top: -3px;
-  /* Gives that scrolling effect as the typing happens */
-  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite; }
 
 /* The typing effect */
 @keyframes typing {
@@ -262,6 +255,18 @@ header > nav {
     border-color: transparent; }
   50% {
     border-color: #eee; } }
+#typed-cursor {
+  font-weight: 100;
+  font-size: 30px;
+  color: #fff; }
+
+#typed-cursor.blinking {
+  -webkit-animation: .5s blink step-end infinite;
+  -moz-animation: .5s blink step-end infinite;
+  -ms-animation: .5s blink step-end infinite;
+  -o-animation: .5s blink step-end infinite;
+  animation: .5s blink step-end infinite; }
+
 .img-featured {
   width: 165px;
   border: 2px solid #fff;
@@ -310,12 +315,12 @@ header > nav {
   margin-top: auto; }
 
 /* MEDIA QUERIES ---------------------------------- */
-@media (max-width: 575px) {
+@media only screen and (max-width: 606px) {
   header {
     height: 460px; }
     header h1 {
-      font-size: 3.4em;
-      margin-bottom: 36px; }
+      font-size: 2.75em;
+      margin-bottom: 30px; }
 
   .img-featured {
     display: none; }
@@ -383,7 +388,7 @@ header > nav {
 
   header > nav.responsive {
     display: block; } }
-@media (min-width: 576px) {
+@media (min-width: 607px) {
   .main-content {
     display: flex;
     flex-wrap: wrap; }

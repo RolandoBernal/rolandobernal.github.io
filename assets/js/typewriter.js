@@ -20,8 +20,7 @@ function typewriter()
  while ( iRow < iIndex ) {
   sContents += aText[iRow++] + '<br />';
  }
- destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + " <span></span>";
-    //<span style='color:red'>4</span>
+ destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + " <span id='typed-cursor' class='blinking'>|</span>";
  if ( iTextPos++ == iArrLength ) {
   iTextPos = 0;
   iIndex++;
@@ -33,20 +32,6 @@ function typewriter()
   setTimeout("typewriter()", iSpeed);
  }
 }
-
-//var i = 0;
-//var txt = 'UI & UX Digital Product Designer, and Web Developer based in Music City USA';
-//var speed = 100;
-//var x = document.getElementById("typedtext");
-//
-//function typeWriter() {
-//  if (i < txt.length) {
-//    document.getElementById("typedtext").innerHTML += txt.charAt(i);
-//    i++;
-//    setTimeout(typeWriter, speed);
-//  }
-//}
-
 
 function myFunction() {
     setTimeout(function(){ typewriter(); }, 3500);

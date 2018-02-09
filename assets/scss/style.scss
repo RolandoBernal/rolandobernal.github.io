@@ -92,14 +92,18 @@ header {
   h1 {
     color: $white;
     font-size: 4.8em;
-    margin: 80px 0 0 0;
     letter-spacing: 1px;
+    margin:auto;
+    vertical-align:middle;
   }
   p {
     color: $color-accent;
     font-size: 1.25em;
     margin: 0;
   }
+    #space {
+        padding: 50px 0 0 0;
+    }
   @include skewed {
     height: 85px;
     background-color: $white;
@@ -308,30 +312,17 @@ header > nav {
   left: 50%;
 }
 
-
 // Typewriter Effect
 .typewriter {
     h1 {
         overflow: hidden; /* Ensures the content is not revealed until the animation */
         border-right: .1em solid transparent; /* The typwriter cursor */
         white-space: nowrap; /* Keeps the content on a single line */
-        //margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-        letter-spacing: .05em; /* Space between the letters */
         animation:
             typing 3.5s steps(30, end),
             blink-caret .5s step-end 5;
     }
-    span {
-        overflow: hidden; /* Ensures the content is not revealed until the animation */
-        border-bottom: .08em solid transparent; /* The typwriter cursor */
-        margin-top: -3px; /* Gives that scrolling effect as the typing happens */
-        //letter-spacing: .05em; /* Space between the letters */
-        animation:
-            typing 3.5s steps(30, end),
-            blink-caret .5s step-end infinite;
-    }
 }
-
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
@@ -343,6 +334,20 @@ header > nav {
   from, to { border-color: transparent }
   50% { border-color: $color-shade }
 }
+
+#typed-cursor {
+    font-weight: 100;
+    font-size: 30px;
+    color: $white;
+ }
+#typed-cursor.blinking {
+    -webkit-animation: .5s blink step-end infinite;
+    -moz-animation: .5s blink step-end infinite;
+    -ms-animation: .5s blink step-end infinite;
+    -o-animation: .5s blink step-end infinite;
+    animation: .5s blink step-end infinite;
+}
+
 
 // Header image
 .img-featured {
@@ -418,14 +423,16 @@ header > nav {
 
 
 /* MEDIA QUERIES ---------------------------------- */
+//Remember: 'min-' means 'larger than' and 'max-' means 'smaller than'
 
-@media (max-width: 575px) {
+
+@media only screen and (max-width: 606px) {
     header {
-    height: 460px;
-    h1 {
-        font-size: 3.4em;
-        margin-bottom: 36px;
-    }
+        height: 460px;
+        h1 {
+            font-size: 2.75em;
+            margin-bottom: 30px;
+        }
     }
     .img-featured {
         display: none;
@@ -455,7 +462,6 @@ header > nav {
         float: right;
         display: block;
         font-size: 35px;
-        //padding-right: 15px;
         color: $white;
         width: 64px;
         height: 64px;
@@ -476,12 +482,6 @@ header > nav {
             background-color: $color-shade;
         }
     }
-//    #navbar-mobile.responsive a:first-of-type {
-//        &:hover {
-//            color: $color-primary;
-//            background-color: $color-shade;
-//        }
-//    }
     #img-featured-navbar-mobile {
         width: 64px;
         height: 64px;
@@ -510,7 +510,7 @@ header > nav {
     }
 }
 
-@media (min-width: 576px) {
+@media (min-width: 607px) {
   .main-content {
     display: flex;
     flex-wrap: wrap;
