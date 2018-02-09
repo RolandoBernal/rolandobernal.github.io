@@ -38,4 +38,10 @@ function toggleFunction() {
     } else {
         y.className = "navbar-links";
     }
+    var z = document.getElementById("nav-icon3");
+    if (z.className === "menu-icon") {
+        z.className += " open";
+    } else {
+        z.className = "menu-icon";
+    }
 }
