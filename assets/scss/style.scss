@@ -40,6 +40,7 @@ $max-width: 1000px;
   margin-right: auto;
 }
 
+
 /* BASE ------------------------------------------- */
 
 * {
@@ -80,6 +81,142 @@ a {
     color: $color-accent;
   }
 }
+
+
+/* MEDIA QUERIES ---------------------------------- */
+//Remember: 'min-' means 'larger than' and 'max-' means 'smaller than'
+
+
+    /*==========  Mobile First Method  ==========*/
+
+    /* Custom, iPhone Retina */
+    @media only screen and (min-width : 320px) {
+        header {
+            h1 {
+                font-size: 2.75em;
+            }
+        }
+    }
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (min-width : 480px) {
+            header {
+                height: 460px;
+                h1 {
+                    font-size: 3.75em;
+                    margin-bottom: 30px;
+                }
+            }
+            .img-featured {
+                display: none;
+            }
+            #navbar,
+            #navbar-sm {
+                display: none;
+            }
+            #navbar-mobile {
+                width: 100%;
+                display: block;
+                position: fixed;
+                z-index: 10;
+                color: $white;
+                background-color: rgba(10, 21, 37, 0.93); //$color-bg;
+                &:hover {
+                    color: $color-accent;
+                }
+            }
+            #navbar-mobile a:not(:first-child) {
+                &:hover {
+                    color: $color-primary;
+                    background-color: $color-shade;
+                }
+            }
+            #navbar-mobile a.menu-icon {
+                float: right;
+                display: block;
+                font-size: 35px;
+                color: $white;
+                width: 64px;
+                height: 64px;
+                &:hover {
+                    color: $color-accent;
+                    background-color: transparent;
+                }
+            }
+            #navbar-mobile.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+                padding-left: 15px;
+                color: $color-shade;
+                background-color: lighten($color-bg, 10%);
+                &:hover {
+                    color: $color-primary;
+                    background-color: $color-shade;
+                }
+            }
+            #img-featured-navbar-mobile {
+                width: 64px;
+                height: 64px;
+                padding: 0.5em;
+                visibility: visible;
+                opacity: 1;
+                transform: scale(1, 1);
+                transition: visibility 0.15s, opacity 0.5s ease-in, transform 0.5s ease;
+                float: left;
+            }
+            #navbar-mobile.responsive {
+                position: fixed;
+                z-index: 10;
+                .menu-icon {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    &:hover {
+                        color: $color-accent;
+                        background-color: transparent;
+                    }
+                }
+            }
+            header > nav.responsive {
+                display: block;
+            }
+    }
+
+    /* Smaller Devices, Tablets */
+    @media (min-width: 607px) {
+      .main-content {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .card {
+        flex: 1;
+      }
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+        .main-content {
+            @include center;
+          }
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+          header {
+            background-position: 0 0, 0 45%;
+          }
+          .intro {
+            width: 45%;
+          }
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+
+    }
+// End of Media Queries.
+
 
 /* HEADER & FOOTER -------------------------------- */
 
@@ -313,39 +450,45 @@ header > nav {
 }
 
 // Typewriter Effect
-.typewriter {
-    h1 {
-        overflow: hidden; /* Ensures the content is not revealed until the animation */
-        border-right: .1em solid transparent; /* The typwriter cursor */
-        white-space: nowrap; /* Keeps the content on a single line */
-        animation:
-            typing 3.5s steps(30, end),
-            blink-caret .5s step-end 5;
-    }
-}
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+
+#typewriter-div {
+    width: 100%;
 }
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: $color-shade }
+.var-highlight{
+    color: $color-primary;
+    font-weight: 500;
+}
+.string-highlight{
+    color: #559CD6;//rgba(253, 149, 90, 0.8);
 }
 
-#typed-cursor {
-    font-weight: 100;
-    font-size: 30px;
-    color: $white;
- }
-#typed-cursor.blinking {
-    -webkit-animation: .5s blink step-end infinite;
-    -moz-animation: .5s blink step-end infinite;
-    -ms-animation: .5s blink step-end infinite;
-    -o-animation: .5s blink step-end infinite;
-    animation: .5s blink step-end infinite;
+#typewriter{
+        width: 30%;
+        font-size: 1.5em;
+        color: $color-shade;
+        font-family: "Courier New";
+        &:after{
+            content: "|";
+            animation: blink 500ms linear infinite alternate;
+        }
+        margin:auto;
+        text-align: left;
+}
+
+@-webkit-keyframes blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@-moz-keyframes blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@keyframes blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
 
 
@@ -422,138 +565,6 @@ header > nav {
 
 
 
-/* MEDIA QUERIES ---------------------------------- */
-//Remember: 'min-' means 'larger than' and 'max-' means 'smaller than'
-
-
-    /*==========  Mobile First Method  ==========*/
-
-    /* Custom, iPhone Retina */
-    @media only screen and (min-width : 320px) {
-        header {
-            h1 {
-                font-size: 2.75em;
-            }
-        }
-    }
-
-    /* Extra Small Devices, Phones */
-    @media only screen and (min-width : 480px) {
-            header {
-                height: 460px;
-                h1 {
-                    font-size: 3.75em;
-                    margin-bottom: 30px;
-                }
-            }
-            .img-featured {
-                display: none;
-            }
-            #navbar,
-            #navbar-sm {
-                display: none;
-            }
-            #navbar-mobile {
-                width: 100%;
-                display: block;
-                position: fixed;
-                z-index: 10;
-                color: $white;
-                background-color: rgba(10, 21, 37, 0.93); //$color-bg;
-                &:hover {
-                    color: $color-accent;
-                }
-            }
-            #navbar-mobile a:not(:first-child) {
-                &:hover {
-                    color: $color-primary;
-                    background-color: $color-shade;
-                }
-            }
-            #navbar-mobile a.menu-icon {
-                float: right;
-                display: block;
-                font-size: 35px;
-                color: $white;
-                width: 64px;
-                height: 64px;
-                &:hover {
-                    color: $color-accent;
-                    background-color: transparent;
-                }
-            }
-            #navbar-mobile.responsive a {
-                float: none;
-                display: block;
-                text-align: left;
-                padding-left: 15px;
-                color: $color-shade;
-                background-color: lighten($color-bg, 10%);
-                &:hover {
-                    color: $color-primary;
-                    background-color: $color-shade;
-                }
-            }
-            #img-featured-navbar-mobile {
-                width: 64px;
-                height: 64px;
-                padding: 0.5em;
-                visibility: visible;
-                opacity: 1;
-                transform: scale(1, 1);
-                transition: visibility 0.15s, opacity 0.5s ease-in, transform 0.5s ease;
-                float: left;
-            }
-            #navbar-mobile.responsive {
-                position: fixed;
-                z-index: 10;
-                .menu-icon {
-                    position: absolute;
-                    right: 0;
-                    top: 0;
-                    &:hover {
-                        color: $color-accent;
-                        background-color: transparent;
-                    }
-                }
-            }
-            header > nav.responsive {
-                display: block;
-            }
-    }
-
-    /* Smaller Devices, Tablets */
-    @media (min-width: 607px) {
-      .main-content {
-        display: flex;
-        flex-wrap: wrap;
-      }
-      .card {
-        flex: 1;
-      }
-    }
-
-    /* Small Devices, Tablets */
-    @media only screen and (min-width : 768px) {
-        .main-content {
-            @include center;
-          }
-    }
-
-    /* Medium Devices, Desktops */
-    @media only screen and (min-width : 992px) {
-          header {
-            background-position: 0 0, 0 45%;
-          }
-          .intro {
-            width: 45%;
-          }
-    }
-
-    /* Large Devices, Wide Screens */
-    @media only screen and (min-width : 1200px) {
-
-    }
 
 
 

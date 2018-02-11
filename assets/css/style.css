@@ -30,6 +30,109 @@ a {
   a:hover {
     color: #A5ACAF; }
 
+/* MEDIA QUERIES ---------------------------------- */
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  header h1 {
+    font-size: 2.75em; } }
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  header {
+    height: 460px; }
+    header h1 {
+      font-size: 3.75em;
+      margin-bottom: 30px; }
+
+  .img-featured {
+    display: none; }
+
+  #navbar,
+  #navbar-sm {
+    display: none; }
+
+  #navbar-mobile {
+    width: 100%;
+    display: block;
+    position: fixed;
+    z-index: 10;
+    color: #fff;
+    background-color: rgba(10, 21, 37, 0.93); }
+    #navbar-mobile:hover {
+      color: #A5ACAF; }
+
+  #navbar-mobile a:not(:first-child):hover {
+    color: #0A1525;
+    background-color: #eee; }
+
+  #navbar-mobile a.menu-icon {
+    float: right;
+    display: block;
+    font-size: 35px;
+    color: #fff;
+    width: 64px;
+    height: 64px; }
+    #navbar-mobile a.menu-icon:hover {
+      color: #A5ACAF;
+      background-color: transparent; }
+
+  #navbar-mobile.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    padding-left: 15px;
+    color: #eee;
+    background-color: #152c4d; }
+    #navbar-mobile.responsive a:hover {
+      color: #0A1525;
+      background-color: #eee; }
+
+  #img-featured-navbar-mobile {
+    width: 64px;
+    height: 64px;
+    padding: 0.5em;
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1, 1);
+    transition: visibility 0.15s, opacity 0.5s ease-in, transform 0.5s ease;
+    float: left; }
+
+  #navbar-mobile.responsive {
+    position: fixed;
+    z-index: 10; }
+    #navbar-mobile.responsive .menu-icon {
+      position: absolute;
+      right: 0;
+      top: 0; }
+      #navbar-mobile.responsive .menu-icon:hover {
+        color: #A5ACAF;
+        background-color: transparent; }
+
+  header > nav.responsive {
+    display: block; } }
+/* Smaller Devices, Tablets */
+@media (min-width: 607px) {
+  .main-content {
+    display: flex;
+    flex-wrap: wrap; }
+
+  .card {
+    flex: 1; } }
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  .main-content {
+    width: 90%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto; } }
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  header {
+    background-position: 0 0, 0 45%; }
+
+  .intro {
+    width: 45%; } }
+/* Large Devices, Wide Screens */
 /* HEADER & FOOTER -------------------------------- */
 header {
   height: 460px;
@@ -234,39 +337,42 @@ header > nav {
   width: 0%;
   left: 50%; }
 
-.typewriter h1 {
-  overflow: hidden;
-  /* Ensures the content is not revealed until the animation */
-  border-right: .1em solid transparent;
-  /* The typwriter cursor */
-  white-space: nowrap;
-  /* Keeps the content on a single line */
-  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end 5; }
+#typewriter-div {
+  width: 100%; }
 
-/* The typing effect */
-@keyframes typing {
-  from {
-    width: 0; }
-  to {
-    width: 100%; } }
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to {
-    border-color: transparent; }
-  50% {
-    border-color: #eee; } }
-#typed-cursor {
-  font-weight: 100;
-  font-size: 30px;
-  color: #fff; }
+.var-highlight {
+  color: #0A1525;
+  font-weight: 500; }
 
-#typed-cursor.blinking {
-  -webkit-animation: .5s blink step-end infinite;
-  -moz-animation: .5s blink step-end infinite;
-  -ms-animation: .5s blink step-end infinite;
-  -o-animation: .5s blink step-end infinite;
-  animation: .5s blink step-end infinite; }
+.string-highlight {
+  color: #559CD6; }
 
+#typewriter {
+  width: 30%;
+  font-size: 1.5em;
+  color: #eee;
+  font-family: "Courier New";
+  margin: auto;
+  text-align: left; }
+  #typewriter:after {
+    content: "|";
+    animation: blink 500ms linear infinite alternate; }
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-moz-keyframes blink {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes blink {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 .img-featured {
   width: 165px;
   border: 2px solid #fff;
@@ -313,109 +419,5 @@ header > nav {
   font-size: 0.85em;
   background-color: #0A1525;
   margin-top: auto; }
-
-/* MEDIA QUERIES ---------------------------------- */
-/*==========  Mobile First Method  ==========*/
-/* Custom, iPhone Retina */
-@media only screen and (min-width: 320px) {
-  header h1 {
-    font-size: 2.75em; } }
-/* Extra Small Devices, Phones */
-@media only screen and (min-width: 480px) {
-  header {
-    height: 460px; }
-    header h1 {
-      font-size: 3.75em;
-      margin-bottom: 30px; }
-
-  .img-featured {
-    display: none; }
-
-  #navbar,
-  #navbar-sm {
-    display: none; }
-
-  #navbar-mobile {
-    width: 100%;
-    display: block;
-    position: fixed;
-    z-index: 10;
-    color: #fff;
-    background-color: rgba(10, 21, 37, 0.93); }
-    #navbar-mobile:hover {
-      color: #A5ACAF; }
-
-  #navbar-mobile a:not(:first-child):hover {
-    color: #0A1525;
-    background-color: #eee; }
-
-  #navbar-mobile a.menu-icon {
-    float: right;
-    display: block;
-    font-size: 35px;
-    color: #fff;
-    width: 64px;
-    height: 64px; }
-    #navbar-mobile a.menu-icon:hover {
-      color: #A5ACAF;
-      background-color: transparent; }
-
-  #navbar-mobile.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-    padding-left: 15px;
-    color: #eee;
-    background-color: #152c4d; }
-    #navbar-mobile.responsive a:hover {
-      color: #0A1525;
-      background-color: #eee; }
-
-  #img-featured-navbar-mobile {
-    width: 64px;
-    height: 64px;
-    padding: 0.5em;
-    visibility: visible;
-    opacity: 1;
-    transform: scale(1, 1);
-    transition: visibility 0.15s, opacity 0.5s ease-in, transform 0.5s ease;
-    float: left; }
-
-  #navbar-mobile.responsive {
-    position: fixed;
-    z-index: 10; }
-    #navbar-mobile.responsive .menu-icon {
-      position: absolute;
-      right: 0;
-      top: 0; }
-      #navbar-mobile.responsive .menu-icon:hover {
-        color: #A5ACAF;
-        background-color: transparent; }
-
-  header > nav.responsive {
-    display: block; } }
-/* Smaller Devices, Tablets */
-@media (min-width: 607px) {
-  .main-content {
-    display: flex;
-    flex-wrap: wrap; }
-
-  .card {
-    flex: 1; } }
-/* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {
-  .main-content {
-    width: 90%;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto; } }
-/* Medium Devices, Desktops */
-@media only screen and (min-width: 992px) {
-  header {
-    background-position: 0 0, 0 45%; }
-
-  .intro {
-    width: 45%; } }
-/* Large Devices, Wide Screens */
 
 /*# sourceMappingURL=style.css.map */
