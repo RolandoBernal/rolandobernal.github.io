@@ -1,0 +1,259 @@
+// VARIABLES ------------------------------------ /
+
+$white: #fff;
+
+$color-primary: #0A1525;
+$color-secondary: #4B92DB;
+$color-accent: #A5ACAF; //#C8102E;
+$color-shade: #eee;
+
+$color-text: #343434;
+$color-bg: #0A1525;
+$color-bg-lt: #0f2039;
+$color-bg-light: #4B92DB;
+
+$font-stack-primary: 'Raleway', sans-serif;
+$font-stack-secondary: 'Bree Serif', serif;
+
+$max-width: 1000px;
+
+// MIXINS ------------------------------------ /
+
+@mixin skewed {
+  position: relative;
+  &::before {
+    content: '';
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    //height: 100%;
+    position: absolute;
+    transform: skewY(-2deg);
+    @content;
+  }
+}
+
+@mixin center {
+  width: 90%;
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* BASE ------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: $color-text;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: $font-stack-primary;
+  text-align: center;
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-family: $font-stack-secondary;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin-bottom: 1.25em;
+  .intro & {
+    font-size: 1.2em;
+  }
+}
+
+a {
+  color: $color-primary;
+  text-decoration: none;
+  &:hover {
+    color: $color-accent;
+  }
+}
+
+/* HEADER & FOOTER -------------------------------- */
+
+header {
+  height: 460px;
+  background: linear-gradient($color-bg-light, $color-bg),
+              url('../img/bg.jpg') no-repeat;
+  background-blend-mode: multiply;
+  background-size: cover;
+  h1 {
+    color: $white;
+    font-size: 4.8em;
+    letter-spacing: 1px;
+    margin:auto;
+    vertical-align:middle;
+  }
+  p {
+    color: $color-accent;
+    font-size: 1.25em;
+    margin: 0;
+  }
+    #space {
+        padding: 50px 0 0 0;
+    }
+  @include skewed {
+    height: 85px;
+    background-color: $white;
+    bottom: -35px;
+  }
+}
+
+footer {
+  padding: 2em 0 0;
+  height: 100px;
+  background-color: $color-shade;
+  margin-top: 3.5em;
+  @include skewed {
+    height: 75px;
+    background-color: $color-shade;
+    top: -40px;
+  }
+    .footer-text {
+        margin: 20px 0;
+    }
+}
+
+/* CONTAINERS ------------------------------------- */
+
+.inner {
+  padding: 0.5em 1em;
+}
+
+.intro {
+  margin: auto;
+  padding: 3em;
+}
+
+.main-content {
+    margin-bottom: 100px;
+  }
+
+
+/* COMPONENTS ------------------------------------------*/
+
+
+// Typewriter Effect
+
+#typewriter-div {
+    width: 100%;
+}
+
+.var-highlight{
+    color: $color-primary;
+    font-weight: 500;
+}
+.string-highlight{
+    color: #559CD6;//rgba(253, 149, 90, 0.8);
+}
+
+#typewriter{
+        width: 30%;
+        font-size: 1.5em;
+        color: $color-shade;
+        font-family: "Courier New";
+        &:after{
+            content: "|";
+            animation: blink 500ms linear infinite alternate;
+        }
+        margin:auto;
+        text-align: left;
+}
+
+@-webkit-keyframes blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@-moz-keyframes blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@keyframes blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+// Header image
+.img-featured {
+    width: 165px;
+    border: 2px solid $white;
+    border-radius: 50%;
+    margin-top: 90px;
+    position: relative;
+    z-index: 100;
+    transform: scale(1, 1);
+    transition: visibility 0.15s, opacity 0.5s ease-in, transform 0.5s ease;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em 1em;
+    border: 1px solid $color-shade;
+    border-radius: 0.25em;
+    h1 {
+    margin: 0.35em 0 0;
+    line-height: 1.25;
+    }
+    .icon,
+    h1 {
+    color: $color-primary;
+    }
+    .icon {
+        font-size: 80px;
+    }
+}
+
+%clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+%btn {
+  color: $white;
+  display: inline-block;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.75em 1.5em;
+  border-radius: 0.35em;
+  &:hover {
+    color: $white;
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: initial;
+  }
+}
+
+.btn {
+  &-callout {
+    @extend %btn;
+    font-size: 1.1em;
+    background-color: $color-secondary;
+  }
+  &-info {
+    @extend %btn;
+    font-size: 0.85em;
+    background-color: $color-primary;
+    margin-top: auto;
+  }
+}
