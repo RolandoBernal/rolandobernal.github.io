@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rolando Bernal | Web Developer</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="The Lando Beist" content="">
+    <meta name="Lando Beist" content="">
+    <title>The Lando Beist</title>
     <!-- FavIcon.ico -->
     <link rel="shortcut icon" href="favicon/favicon.ico">
     <link rel="icon" sizes="16x16 64x64" href="favicon/favicon.ico">
@@ -14,49 +17,94 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="favicon/ms-icon-310x310.png">
     <meta name="theme-color" content="#ffffff">
-
-    <!--[if lt IE 9]>
-    <script src="js/respond-1.1.0.min.js"></script>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/html5element.js"></script>
-    <![endif]-->
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Raleway" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/app.css">
   </head>
+
   <body>
-    <header>
-        <div id="navbar">
-            <a href="#tools">Tools</a>
-            <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
-            <a href="#about">About</a>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="myNavbar">
+      <a class="navbar-brand" href="#"><img id="img-featured-navbar-sm" src="assets/img/Roly-Chilling-v2a.png" alt="Roly chilling"></a>
+<!--
+      <button class="navbar-toggler navbar-toggler-icon menu-icon" id="nav-icon3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleFunction(); return false;">
+        <div>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
         </div>
-        <div id="navbar-sm">
-            <img id="img-featured-navbar-sm" src="assets/img/Roly-Chilling-v2a.png" alt="Roly chilling">
-            <a href="#tools">Tools</a>
-            <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
-            <a href="#about">About</a>
+      </button>
+-->
+        <div class="navbar-toggler navbar-toggler-icon menu-icon" id="nav-icon3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleFunction(); return false;">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
         </div>
-        <div id="navbar-mobile" class="navbar-mob">
-            <img id="img-featured-navbar-mobile" src="assets/img/Roly-Chilling-v2a.png" alt="Roly chilling">
-            <div id="nav-icon3" class="menu-icon" onclick="toggleFunction(); return false;">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Projects
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Zanie's UX Case Study</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Grocery Budget Calc</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Nashville International FC</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Book That Lesson</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">iMaintenance Total</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Nighthawks</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Other Projects</a>
             </div>
-        </div>
-        <nav id="nav-links" class="navbar-links">
-            <ul>
-                <li><a href="#tools">Tools</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-        </nav>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Tools
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Converters</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">To Do</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Budget</a>
+                <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Translator</a>
+                <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">ASCII</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Experience</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Download Resume</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+<!--
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+-->
+      </div>
+    </nav>
+
+    <header>
         <div class="inner">
             <div id="space">&nbsp;</div>
             <div id="typewriter-div">
@@ -71,18 +119,20 @@
             <span class="string-highlight">'Front-End Development'</span>];
 }; </pre>
             </div>
-            <img class="img-featured" id="img-featured-header" src="assets/img/Roly-Chilling.png" alt="Roly chilling">
+            <img class="img-featured" id="img-featured-header" src="assets/img/Roly-Chilling-v2a.png" alt="Roly chilling">
         </div>
     </header>
+      
+    <div class="container">
 
-    <div class="intro">
-      <h2>15+ Years of Experience in IT</h2>
-      <p>UI &amp; UX Digital Product Designer &amp; Web Developer based in Music City USA</p>
-      <p>While I specialise in web design and front-end development, my experience and knowledge covers a whole lot more. I offer a complete web solution: I can guide you through the early stages of project planning and research, help you with information architecture and user experience, design your website, and finally build the site for you.<br></p>
-      <a class="btn-callout" href="#About">Learn more</a>
-    </div>
-
-    <div class="main-content">
+        <div class="intro">
+          <h2>15+ Years of Experience in IT</h2>
+          <p>UI &amp; UX Digital Product Designer &amp; Web Developer based in Music City USA</p>
+          <p>While I specialise in web design and front-end development, my experience and knowledge covers a whole lot more. I offer a complete web solution: I can guide you through the early stages of project planning and research, help you with information architecture and user experience, design your website, and finally build the site for you.<br></p>
+          <a class="btn-callout" href="#About">Learn more</a>
+        </div>
+        
+        <div class="main-content">
       <div class="card">
         <i class="material-icons icon">build</i>
         <h1>Tools</h1>
@@ -109,6 +159,8 @@
       </div>
     </div>
 
+    </div><!-- /.container -->
+
     <footer>
       <div class="footer-text text-muted">
         <div id="copyright">
@@ -131,5 +183,6 @@
             $('#current-year').html((currentDate.getFullYear()));
         </script>
     <!-- End of To obtain Current Year -->
+
   </body>
 </html>
