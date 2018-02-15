@@ -6602,7 +6602,7 @@ footer {
     width: 64px;
     height: 64px;
     padding: 0.5em;
-    margin-top: -13px;
+    margin-top: 0px;
     visibility: hidden;
     opacity: 0;
     transform: scale(1, 1);
