@@ -31,7 +31,7 @@ $email-bg-color: #dd4b39;
   
   #linkedin i.fa {
     &:hover,
-    &active,
+    &:active,
     &:focus {
       @include hover-social-media-icons {
         background-color: $linkedin-bg-color;
@@ -41,7 +41,7 @@ $email-bg-color: #dd4b39;
   }
   #twitter i.fa {
     &:hover,
-    &active,
+    &:active,
     &:focus {
       @include hover-social-media-icons {
         background-color: $twitter-bg-color;
@@ -51,7 +51,7 @@ $email-bg-color: #dd4b39;
   }
   #github i.fa {
     &:hover,
-    &active,
+    &:active,
     &:focus {
       @include hover-social-media-icons {
         background-color: $github-bg-color;
@@ -61,7 +61,7 @@ $email-bg-color: #dd4b39;
   }
   #email i.fa {
     &:hover,
-    &active,
+    &:active,
     &:focus {
       @include hover-social-media-icons {
         background-color: $email-bg-color;

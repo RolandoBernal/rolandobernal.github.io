@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <title>Rolando Bernal | Web Developer</title>
+    <link href="assets/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class='page'>
+      <div class='section menu'></div>
+      <div class='section header'>
+        <img src='assets/images/header.svg'/>
+      </div>
+      <div class='section content'>
+        <img src='assets/images/content.svg'/>
+      </div>
+      <div class='section sign-up'>
+        <img src='assets/images/sign-up.svg'/>
+      </div>
+      <div class='section feature-1'>
+        <img src='assets/images/feature.svg'/>
+      </div>
+      <div class='section feature-2'>
+        <img src='assets/images/feature.svg'/>
+      </div>
+      <div class='section feature-3'>
+        <img src='assets/images/feature.svg'/>
+      </div>
+    </div>
+    <footer>
+      <!-- <span>&copy;2017 Rolando Bernal | Web Developer | UX &amp; UI Designer</span> -->
+      <div class="footer-text text-muted">
+        <div id="copyright">
+          <span id="current-year"></span></span><span>&nbsp;Copyright &copy; <a href="http://landob.github.io/" class="text-muted">Rolando Bernal | Web Developer | UX &amp; UI Designer</a>
+        </div>
+      </div>
+    </footer>
+    <!-- <script type="text/javascript" src="js/main.js"></script> -->
+    <!-- <script type="text/javascript" src="js/custom.js"></script> -->
+    <!-- <script type="text/javascript" src="js/progress-bar.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script> <!-- Adding Vue.js via CDN -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script> <!-- Adding Axios to make HTTP request in our Vue App -->
+    <!-- To obtain Current Year -->
+        <script type="text/javascript">
+            var currentDate = new Date();
+            var year = currentDate.getFullYear();
+            //insert it via jquery
+            $('#current-year').html((currentDate.getFullYear()));
+        </script>
+    <!-- End of To obtain Current Year -->
+  </body>
+</html>
