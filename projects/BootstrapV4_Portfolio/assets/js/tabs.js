@@ -11,10 +11,10 @@ function openSection(evt, sectionName) {
     //console.log("--- assigned Learn More to the innerHTML ---");
     if (evt.currentTarget.classList.contains("no-active")) {
       document.getElementById(sectionName).style.display = "block";
-      console.log("evt.currentTarget.className: (1) ", evt.currentTarget.className);
+      //console.log("evt.currentTarget.className: (1) ", evt.currentTarget.className);
       evt.currentTarget.classList.remove("no-active");
       evt.currentTarget.className += " active showing";
-      console.log("evt.currentTarget.className: (2)", evt.currentTarget.className);
+      //console.log("evt.currentTarget.className: (2)", evt.currentTarget.className);
     }
   }
   if (evt.currentTarget.classList.contains("showing")) {
