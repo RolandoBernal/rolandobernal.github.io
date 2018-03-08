@@ -25,6 +25,11 @@
   }
 }
 
+button.tablinks.active {
+    background-color: #ccc;
+    color: $color-secondary;
+  }
+
 //* Style the tab */
 .tab {
   overflow: hidden;
@@ -47,6 +52,7 @@
   padding: 6px 12px;
   -webkit-animation: fadeEffect 1.5s;
   animation: fadeEffect 1.5s;
+  background-color: #fcfcfc;
   border: 1px solid rgb(238, 238, 238);
   @include rounded;
   @include custom-center (900px);

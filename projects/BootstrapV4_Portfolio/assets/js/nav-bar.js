@@ -43,7 +43,7 @@ function scrollFunction() {
   }
     
 }
-//To display the different links of the menu: Tools, Projects, Expeience, About:
+//To display the different links of the menu: Apps, Projects, Expeience, About:
 function toggleFunction() {
 // Hamburguer Menu Icon
     var z = document.getElementById("nav-animated-hamburguer-icon");

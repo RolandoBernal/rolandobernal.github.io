@@ -110,7 +110,7 @@
     color: $color-secondary;
   }
   //* Create an active/current tablink class */
-  .active {
+  &:active {
     background-color: #ccc;
     color: $color-secondary;
   }
@@ -133,7 +133,7 @@
     background-color: $cust-hover-bk-color;
   }
   //* Create an active/current tablink class */
-  .active {
+  &:active {
     color: $cust-active-color;
     background-color: $cust-active-bk-color;
   }
