@@ -107,13 +107,13 @@
   //* Change background color of buttons on hover */
   &:hover {
     background-color: #ddd;
-    color: $color-secondary;
+    color: $color-primary;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   }
   //* Create an active/current tablink class */
   &:active {
     background-color: #ccc;
-    color: $color-secondary;
+    color: $color-primary;
   }
 }
 
@@ -132,6 +132,7 @@
   &:hover {
     color: $cust-hover-color;
     background-color: $cust-hover-bk-color;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   }
   //* Create an active/current tablink class */
   &:active {

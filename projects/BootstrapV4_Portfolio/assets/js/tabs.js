@@ -7,7 +7,7 @@ function openSection(evt, sectionName) {
   tablinks = document.getElementsByClassName("tablinks");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
-    tablinks[i].innerHTML = "Learn more";
+    tablinks[i].innerHTML = "Open";
     console.log("--- assigned Learn More to the innerHTML ---");
     if (evt.currentTarget.classList.contains("no-active")) {
       document.getElementById(sectionName).style.display = "block";
@@ -23,7 +23,7 @@ function openSection(evt, sectionName) {
     evt.currentTarget.innerHTML = "&times Close";
     console.log("evt.innerHTML -> ", evt.currentTarget.innerHTML);
   } else if (evt.currentTarget.classList.contains("hiding")) {
-    evt.currentTarget.innerHTML = "Learn more";
+    evt.currentTarget.innerHTML = "Open";
     evt.currentTarget.className = "tablinks no-active";
     console.log("evt.innerHTML: ", evt.currentTarget.innerHTML);
   }
