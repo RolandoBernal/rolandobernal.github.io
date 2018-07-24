@@ -1,0 +1,41 @@
+/* Custom BASE ------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  color: $color-text;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: $font-stack-primary;
+  text-align: center;
+  margin: 0;
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
+h1,
+h2 {
+  font-family: $font-stack-secondary;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin-bottom: 1.25em;
+  .intro & {
+    font-size: 1.2em;
+  }
+}
+
+a {
+  @include custom-link-style;
+}

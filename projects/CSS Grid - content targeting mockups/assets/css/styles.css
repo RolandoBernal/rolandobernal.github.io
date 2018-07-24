@@ -1,0 +1,251 @@
+/* line 13, C:/Users/rbernal.TVC/Downloads/My Other Stuff/CSS Grid - content targeting mockups/assets/scss/styles.scss */
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* line 19, C:/Users/rbernal.TVC/Downloads/My Other Stuff/CSS Grid - content targeting mockups/assets/scss/styles.scss */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "title title" "header header" "sidebar sidebar" "content content" "side-callouts side-callouts" "footer footer";
+}
+
+/* line 24, C:/Users/rbernal.TVC/Downloads/My Other Stuff/CSS Grid - content targeting mockups/assets/scss/styles.scss */
+.title {
+  grid-area: title;
+  background-color: #999;
+  padding: 1em 0;
+}
+
+/* line 29, C:/Users/rbernal.TVC/Downloads/My Other Stuff/CSS Grid - content targeting mockups/assets/scss/styles.scss */
+.header {
+  grid-area: header;
+  background-color: #BBB;
+  padding: 1em 0;
+}
+
+/* line 34, C:/Users/rbernal.TVC/Downloads/My Other Stuff/CSS Grid - content targeting mockups/assets/scss/styles.scss */
+.sidebar {
+  grid-area: sidebar;
+  border: #999 1px solid;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "articles courses tools";
+  background-color: transparent !important;
+  display: grid;
+}
+
+/* line 43, C:/Users/rbernal.TVC/Downloads/My Other Stuff/CSS Grid - content targeting mockups/assets/scss/styles.scss */
+.content {
+  grid-area: content;
+  border: #999 1px solid;
+}
+
+/* line 47, C:/Users/rbernal.TVC/Downloads/My Other Stuff/CSS Grid - content targeting mockups/assets/scss/styles.scss */
+.articles {
+  padding: 1em 0;
+  grid-area: articles;
+  background-color: #CCC;
+  border: #4286f4 1px solid;
+}
+
+/* line 53, C:/Users/rbernal.TVC/Downloads/My Other Stuff/CSS Grid - content targeting mockups/assets/scss/styles.scss */
+.courses {
+  padding: 1em 0;
+  grid-area: courses;
+  background-color: #eaeaea;
+  border: #e0e3ee 1px solid;
+}
+
+/* line 59, C:/Users/rbernal.TVC/Downloads/My Other Stuff/CSS Grid - content targeting mockups/assets/scss/styles.scss */
+.tools {
+  padding: 1em 0;
+  grid-area: tools;
+  background-color: #eaeaea;
+  border: #e0e3ee 1px solid;
+}
+
+/* line 65, C:/Users/rbernal.TVC/Downloads/My Other Stuff/CSS Grid - content targeting mockups/assets/scss/styles.scss */
+.content-title {
+  padding: 1em 0;
+  background-color: #999;
+}
+
+/* line 69, C:/Users/rbernal.TVC/Downloads/My Other Stuff/CSS Grid - content targeting mockups/assets/scss/styles.scss */
+.box-item {
+  padding: 1em 0;
+  background-color: #BBB !important;
+  border: #EAEAEA 1px solid;
+  height: 200px;
+  width: 200px;
+  margin: 1em 1em 0 1em;
+}
+
+/* line 77, C:/Users/rbernal.TVC/Downloads/My Other Stuff/CSS Grid - content targeting mockups/assets/scss/styles.scss */
+.side-callouts {
+  padding: 1em 0;
+  grid-area: side-callouts;
+  background-color: #999;
+  color: #242424;
+  font-size: 12px;
+  height: 250px;
+}
+
+/* line 85, C:/Users/rbernal.TVC/Downloads/My Other Stuff/CSS Grid - content targeting mockups/assets/scss/styles.scss */
+.footer {
+  padding: 1em 0;
+  grid-area: footer;
+  background-color: #242424;
+  color: #eaeaea;
+}
+
+/* line 91, C:/Users/rbernal.TVC/Downloads/My Other Stuff/CSS Grid - content targeting mockups/assets/scss/styles.scss */
+.box1 {
+  grid-area: box1;
+}
+
+/* line 94, C:/Users/rbernal.TVC/Downloads/My Other Stuff/CSS Grid - content targeting mockups/assets/scss/styles.scss */
+.box2 {
+  grid-area: box2;
+}
+
+/* line 97, C:/Users/rbernal.TVC/Downloads/My Other Stuff/CSS Grid - content targeting mockups/assets/scss/styles.scss */
+.box3 {
+  grid-area: box3;
+}
+
+/* line 100, C:/Users/rbernal.TVC/Downloads/My Other Stuff/CSS Grid - content targeting mockups/assets/scss/styles.scss */
+.box4 {
+  grid-area: box4;
+}
+
+/* line 103, C:/Users/rbernal.TVC/Downloads/My Other Stuff/CSS Grid - content targeting mockups/assets/scss/styles.scss */
+.box5 {
+  grid-area: box5;
+}
+
+/* line 106, C:/Users/rbernal.TVC/Downloads/My Other Stuff/CSS Grid - content targeting mockups/assets/scss/styles.scss */
+.box6 {
+  grid-area: box6;
+}
+
+/* line 109, C:/Users/rbernal.TVC/Downloads/My Other Stuff/CSS Grid - content targeting mockups/assets/scss/styles.scss */
+.box7 {
+  grid-area: box7;
+}
+
+/* line 112, C:/Users/rbernal.TVC/Downloads/My Other Stuff/CSS Grid - content targeting mockups/assets/scss/styles.scss */
+.box8 {
+  grid-area: box8;
+}
+
+/* line 115, C:/Users/rbernal.TVC/Downloads/My Other Stuff/CSS Grid - content targeting mockups/assets/scss/styles.scss */
+.box9 {
+  grid-area: box9;
+}
+
+/* line 118, C:/Users/rbernal.TVC/Downloads/My Other Stuff/CSS Grid - content targeting mockups/assets/scss/styles.scss */
+.box10 {
+  grid-area: box10;
+  background-color: #999;
+  border: #333 1px solid;
+  margin: 1em;
+}
+
+/* line 124, C:/Users/rbernal.TVC/Downloads/My Other Stuff/CSS Grid - content targeting mockups/assets/scss/styles.scss */
+.box-container {
+  background-color: #CCC;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  grid-template-areas: ". box1 ." ". box2 ." ". box3 ." ". box4 ." ". box5 ." ". box6 ." ". box7 ." ". box8 ." ". box9 ." ". box10 .";
+}
+
+@media (min-width: 500px) {
+  /* line 133, C:/Users/rbernal.TVC/Downloads/My Other Stuff/CSS Grid - content targeting mockups/assets/scss/styles.scss */
+  .box-container {
+    display: grid;
+    grid-template-columns: 1fr 210px 210px 1fr;
+    align-items: center;
+    grid-template-areas: ". box1 box2 ." ". box3 box4 ." ". box5 box6 ." ". box7 box8 ." ". box9 box9 ." ". box10 box10 .";
+    grid-column-gap: 1em;
+  }
+}
+
+@media (min-width: 700px) {
+  /* line 143, C:/Users/rbernal.TVC/Downloads/My Other Stuff/CSS Grid - content targeting mockups/assets/scss/styles.scss */
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 200px 400px 1fr;
+    grid-template-areas: "title title title title" ". header header ." ". sidebar content ." ". side-callouts content ." ". side-callouts content ." ". side-callouts content ." ". side-callouts content ." "footer footer footer footer";
+    grid-gap: 1em;
+  }
+  /* line 149, C:/Users/rbernal.TVC/Downloads/My Other Stuff/CSS Grid - content targeting mockups/assets/scss/styles.scss */
+  .sidebar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "articles" "courses" "tools";
+    grid-gap: 10px;
+    border: none;
+  }
+  /* line 156, C:/Users/rbernal.TVC/Downloads/My Other Stuff/CSS Grid - content targeting mockups/assets/scss/styles.scss */
+  .box-container {
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    grid-template-areas: "box1 box2 box3" "box4 box5 box6" "box7 box8 box9" "box10 box10 box10";
+    grid-column-gap: 1em;
+  }
+  /* line 164, C:/Users/rbernal.TVC/Downloads/My Other Stuff/CSS Grid - content targeting mockups/assets/scss/styles.scss */
+  .box-item {
+    height: 100px;
+    width: auto;
+    margin: 1em 0 0 0;
+    border: #999 1px solid;
+  }
+  /* line 170, C:/Users/rbernal.TVC/Downloads/My Other Stuff/CSS Grid - content targeting mockups/assets/scss/styles.scss */
+  .box1, .box4, .box7 {
+    margin-left: 1em;
+  }
+  /* line 173, C:/Users/rbernal.TVC/Downloads/My Other Stuff/CSS Grid - content targeting mockups/assets/scss/styles.scss */
+  .box3, .box6, .box9 {
+    margin-right: 1em;
+  }
+  /* line 176, C:/Users/rbernal.TVC/Downloads/My Other Stuff/CSS Grid - content targeting mockups/assets/scss/styles.scss */
+  .content {
+    border: #999 1px solid;
+  }
+  /* line 179, C:/Users/rbernal.TVC/Downloads/My Other Stuff/CSS Grid - content targeting mockups/assets/scss/styles.scss */
+  .box10 {
+    border: #EAEAEA 1px solid;
+  }
+  /* line 182, C:/Users/rbernal.TVC/Downloads/My Other Stuff/CSS Grid - content targeting mockups/assets/scss/styles.scss */
+  .side-callouts {
+    height: auto;
+  }
+  /* line 185, C:/Users/rbernal.TVC/Downloads/My Other Stuff/CSS Grid - content targeting mockups/assets/scss/styles.scss */
+  .articles {
+    text-align: left !important;
+    padding-left: 1em;
+  }
+  /* line 189, C:/Users/rbernal.TVC/Downloads/My Other Stuff/CSS Grid - content targeting mockups/assets/scss/styles.scss */
+  .courses {
+    text-align: left !important;
+    padding-left: 1em;
+  }
+  /* line 193, C:/Users/rbernal.TVC/Downloads/My Other Stuff/CSS Grid - content targeting mockups/assets/scss/styles.scss */
+  .tools {
+    text-align: left !important;
+    padding-left: 1em;
+  }
+  /* line 197, C:/Users/rbernal.TVC/Downloads/My Other Stuff/CSS Grid - content targeting mockups/assets/scss/styles.scss */
+  .content-title {
+    text-align: left !important;
+    padding-left: 1em;
+  }
+}
+
+/*# sourceMappingURL=../css/styles.map */

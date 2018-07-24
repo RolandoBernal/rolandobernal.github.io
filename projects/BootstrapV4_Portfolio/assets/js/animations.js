@@ -6,7 +6,7 @@ myID = document.getElementById("myID");
 var myScrollFunc = function () {
   var y = window.scrollY;
 
-  if (y >= 500) {
+  if (y >= 150) {
     myID.className = "contact-icons delay-15s show"
   } else {
     myID.className = "contact-icons delay-05s hide"

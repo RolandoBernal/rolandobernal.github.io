@@ -1,0 +1,192 @@
+// Colours:
+$color_1: #242424;
+$color_2: #eaeaea;
+$background_color_1: #999;
+$background_color_2: #BBB;
+$background_color_3: #242424;
+$background_color_4: #CCC;
+$background_color_5: #eaeaea;
+$background_color_6: transparent;
+
+//* Clear Margins and Padding */
+* {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+//* CSS Grid */
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: "title title" "header header" "sidebar sidebar" "content content" "side-callouts side-callouts" "footer footer";
+}
+.title {
+	grid-area: title;
+	background-color: $background_color_1;
+	padding: 1em 0;
+}
+.header {
+	grid-area: header;
+	background-color: $background_color_2;
+	padding: 1em 0;
+}
+.sidebar {
+	grid-area: sidebar;
+	border: #999 1px solid;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: "articles courses tools";
+	background-color: $background_color_6 !important;
+	display: grid;
+}
+.content {
+	grid-area: content;
+	border: #999 1px solid;
+}
+.articles {
+	padding: 1em 0;
+	grid-area: articles;
+	background-color: $background_color_4;
+	border: #fff 1px solid;
+}
+.courses {
+	padding: 1em 0;
+	grid-area: courses;
+	background-color: $background_color_5;
+	border: #e0e3ee 1px solid;
+}
+.tools {
+	padding: 1em 0;
+	grid-area: tools;
+	background-color: $background_color_5;
+	border: #e0e3ee 1px solid;
+}
+.content-title {
+	padding: 1em 0;
+	background-color: $background_color_1;
+}
+.box-item {
+	padding: 1em 0;
+	background-color: $background_color_2 !important;
+	border: #EAEAEA 1px solid;
+	height: 200px;
+	width: 200px;
+	margin: 1em 1em 0 1em;
+}
+.side-callouts {
+	padding: 1em 0;
+	grid-area: side-callouts;
+	background-color: $background_color_1;
+	color: $color_1;
+	font-size: 12px;
+	height: 250px;
+}
+.footer {
+	padding: 1em 0;
+	grid-area: footer;
+	background-color: $background_color_3;
+	color: $color_2;
+}
+.box1 {
+	grid-area: box1;
+}
+.box2 {
+	grid-area: box2;
+}
+.box3 {
+	grid-area: box3;
+}
+.box4 {
+	grid-area: box4;
+}
+.box5 {
+	grid-area: box5;
+}
+.box6 {
+	grid-area: box6;
+}
+.box7 {
+	grid-area: box7;
+}
+.box8 {
+	grid-area: box8;
+}
+.box9 {
+	grid-area: box9;
+}
+.box10 {
+	grid-area: box10;
+	background-color: $background_color_1;
+	border: #333 1px solid;
+	margin: 1em;
+}
+.box-container {
+	background-color: $background_color_4;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
+	grid-template-areas: ". box1 ." ". box2 ." ". box3 ." ". box4 ." ". box5 ." ". box6 ." ". box7 ." ". box8 ." ". box9 ." ". box10 .";
+}
+//* Media Queries */
+@media (min-width: 500px) {
+  .box-container {
+    display: grid;
+    grid-template-columns: 1fr 210px 210px 1fr;
+    align-items: center;
+    grid-template-areas: ". box1 box2 ." ". box3 box4 ." ". box5 box6 ." ". box7 box8 ." ". box9 box9 ." ". box10 box10 .";
+  }
+}
+
+@media (min-width: 700px) {
+	.grid {
+		display: grid;
+		grid-template-columns: 1fr 200px 400px 1fr;
+		grid-template-areas: "title title title title" ". header header ." ". sidebar content ." ". side-callouts content ." ". side-callouts content ." ". side-callouts content ." ". side-callouts content ." "footer footer footer footer";
+		grid-gap: 1em;
+	}
+	.sidebar {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas: "articles" "courses" "tools";
+		grid-gap: 10px;
+		border: none;
+	}
+	.box-container {
+		background-color: $background_color_6;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		align-items: center;
+		grid-template-areas: "box1 box2 box3" "box4 box5 box6" "box7 box8 box9" "box10 box10 box10";
+	}
+	.box-item {
+		height: 100px;
+		width: auto;
+		margin: 1em 1em 0 1em;
+		border: #999 1px solid;
+	}
+	.content {
+		border: #999 1px solid;
+	}
+	.box10 {
+		border: #EAEAEA 1px solid;
+	}
+	.side-callouts {
+		height: auto;
+	}
+	.articles {
+		text-align: left !important;
+		padding-left: 1em;
+	}
+	.courses {
+		text-align: left !important;
+		padding-left: 1em;
+	}
+	.tools {
+		text-align: left !important;
+		padding-left: 1em;
+	}
+	.content-title {
+		text-align: left !important;
+		padding-left: 1em;
+	}
+} //* End on Media Queries */

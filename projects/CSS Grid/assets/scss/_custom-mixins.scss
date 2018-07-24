@@ -1,0 +1,205 @@
+// Custom MIXINS ------------------------------------ /
+
+@mixin skewed {
+  position: relative;
+  &::before {
+    content: '';
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    //height: 100%;
+    position: absolute;
+    transform: skewY(-2deg);
+    @content;
+  }
+}
+
+@mixin center {
+  width: 90%;
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin custom-center ($width-px) {
+  width: $width-px;
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin custom-link-style {
+  color: $color-primary;
+  text-decoration: none;
+  &:hover {
+    color: $color-accent;
+  }
+}
+
+// Single side border-radius
+
+@mixin shadow ($params: 1px 1px 2px 2px rgba(0,0,0,0.2)) {
+  -moz-box-shadow: $params;
+  -webkit-box-shadow: $params;
+  box-shadow: $params;
+}
+@mixin rotate ($deg: 5deg) {
+    -ms-transform: rotate($deg); ///* IE 9 */
+    -webkit-transform: rotate($deg); ///* Chrome, Safari, Opera */
+    transform: rotate($deg);
+}
+@mixin rounded ($radius: 6px) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin rounded-top ($radius: 6px) {
+  -webkit-border-radius: $radius $radius 0 0;
+  -moz-border-radius: $radius $radius 0 0;
+  -ms-border-radius: $radius $radius 0 0;
+  -o-border-radius: $radius $radius 0 0;
+  border-radius: $radius $radius 0 0;
+}
+@mixin rounded-bottom ($radius: 6px) {
+  -webkit-border-radius: 0 0 $radius $radius;
+  -moz-border-radius: 0 0 $radius $radius;
+  -ms-border-radius: 0 0 $radius $radius;
+  -o-border-radius: 0 0 $radius $radius;
+  border-radius: 0 0 $radius $radius;
+}
+@mixin rounded-right ($radius: 6px) {
+  -webkit-border-radius: 0 $radius $radius 0;
+  -moz-border-radius: 0 $radius $radius 0;
+  -ms-border-radius: 0 $radius $radius 0;
+  -o-border-radius: 0 $radius $radius 0;
+  border-radius: 0 $radius $radius 0;
+}
+@mixin rounded-left ($radius: 6px) {
+  -webkit-border-radius: $radius 0 0 $radius;
+  -moz-border-radius: $radius 0 0 $radius;
+  -ms-border-radius: $radius 0 0 $radius;
+  -o-border-radius: $radius 0 0 $radius;
+  border-radius: $radius 0 0 $radius;
+}
+@mixin rounded-custom($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+  border-radius: $radius;
+}
+
+
+//* Style the buttons */
+@mixin button {
+  color: $color-shade;
+  background-color: $color-primary;
+  border: 1px solid $color-shade;
+  @include rounded;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  flex: 1;
+  //* Change background color of buttons on hover */
+  &:hover {
+    background-color: #ddd;
+    color: $color-primary;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  //* Create an active/current tablink class */
+  &:active {
+    background-color: #ccc;
+    color: $color-primary;
+  }
+}
+
+@mixin custom-button ($cust-color, $cust-bk-color, $cust-border-color, $cust-hover-color, $cust-hover-bk-color, $cust-active-color, $cust-active-bk-color) {
+  color: $cust-color;
+  background-color: $cust-bk-color;
+  border: 1px solid $cust-border-color;
+  @include rounded;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  flex: 1;
+  //* Change background color of buttons on hover */
+  &:hover {
+    color: $cust-hover-color;
+    background-color: $cust-hover-bk-color;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  //* Create an active/current tablink class */
+  &:active {
+    color: $cust-active-color;
+    background-color: $cust-active-bk-color;
+  }
+}
+
+//* Hover */
+@mixin hover {
+  &:hover { @content; }
+}
+
+@mixin hover-focus {
+  &:hover,
+  &:focus {
+    @content;
+  }
+}
+
+@mixin plain-hover-focus {
+  &,
+  &:hover,
+  &:focus {
+    @content;
+  }
+}
+
+@mixin hover-focus-active {
+  &:hover,
+  &:focus,
+  &:active {
+    @content;
+  }
+}
+
+//* Single side border-radius */
+@mixin border-radius($radius: $border-radius) {
+  @if $enable-rounded {
+    border-radius: $radius;
+  }
+}
+
+@mixin border-top-radius($radius) {
+  @if $enable-rounded {
+    border-top-left-radius: $radius;
+    border-top-right-radius: $radius;
+  }
+}
+
+@mixin border-right-radius($radius) {
+  @if $enable-rounded {
+    border-top-right-radius: $radius;
+    border-bottom-right-radius: $radius;
+  }
+}
+
+@mixin border-bottom-radius($radius) {
+  @if $enable-rounded {
+    border-bottom-right-radius: $radius;
+    border-bottom-left-radius: $radius;
+  }
+}
+
+@mixin border-left-radius($radius) {
+  @if $enable-rounded {
+    border-top-left-radius: $radius;
+    border-bottom-left-radius: $radius;
+  }
+}

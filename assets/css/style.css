@@ -1926,6 +1926,7 @@ a:active {
   #linkedin:active {
       color: #FFF;
       background-color: #007bb6;
+      border-color: #007bb6;
       cursor: pointer;
   }
   #twitter:hover,
@@ -1933,6 +1934,7 @@ a:active {
   #twitter:active {
       color: #FFF;
       background-color: #55acee;
+      border-color: #55acee;
       cursor: pointer;
   }
   #google-plus:hover,
@@ -1940,6 +1942,7 @@ a:active {
   #google-plus:active {
       color: #FFF;
       background-color: #dd4b39;
+      border-color: #dd4b39;
       cursor: pointer;
   }
   #github:hover,
@@ -1947,6 +1950,7 @@ a:active {
   #github:active {
       color: #fff;
       background-color: #444;
+      border-color: #444;
       cursor: pointer;
   }
   #email:hover,
@@ -1954,5 +1958,6 @@ a:active {
   #email:active {
       color: #fff;
       background-color: #dd4b39;
+      border-color: #dd4b39;
       cursor: pointer;
   }

@@ -1,0 +1,78 @@
+// Tabs Container
+.tabs-container {
+  margin-bottom: 150px;
+  .material-icons {
+      position: relative;
+      top: 5px;
+      width: 24px;
+      margin-right: 55px;
+  }
+  .section-tittle {
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  .item-centered {
+    @include custom-center (200px);
+  }
+  .custom-button {
+    @include custom-button ($color-shade, $color-primary, $color-shade, $color-secondary, $color-shade, $color-secondary, $color-shade);
+    a {
+      color: inherit !important;
+    }
+  }
+  .download-icon {
+    margin-right: 5px;
+  }
+}
+
+button.tablinks.active {
+    background-color: #ccc;
+    color: $color-secondary;
+  }
+
+//* Style the tab */
+.tab {
+  overflow: hidden;
+  border: none; //1px solid #ccc;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 300px;
+  //* Style the buttons inside the tab */
+  button {
+    @include button;
+  }
+} // End of .tab
+
+//* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1.5s;
+  animation: fadeEffect 1.5s;
+  background-color: #fcfcfc;
+  border: 1px solid rgb(238, 238, 238);
+  @include rounded;
+  @include custom-center (900px);
+  .img-resume {
+    width: 70px;
+    height: 70px;
+  }
+  p, .span12 {
+    text-align: justify;
+    @include center;
+  }
+  padding-bottom: 50px;
+}
+
+//* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
