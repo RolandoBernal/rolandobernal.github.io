@@ -4,8 +4,8 @@ Author: Rolando Bernal | Web Developer
 
 /* FONTS */
 @charset "utf-8";
-@import url(http://fonts.googleapis.com/css?family=Raleway:800,700,400);
-@import url(http://fonts.googleapis.com/css?family=Signika:400,600);
+@import url(https://fonts.googleapis.com/css?family=Raleway:800,700,400);
+@import url(https://fonts.googleapis.com/css?family=Signika:400,600);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,400italic,700);
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,700,900,400italic,700italic);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600|Lato:400,300,700|Kaushan+Script);
@@ -710,8 +710,8 @@ a.read_more, a.read_more2 {
     text-transform: capitalize;
 }
 a.read_more{
-   color: #3C3C3C;
-   border: 1px solid #3C3C3C;
+    color: #3C3C3C;
+    border: 1px solid #3C3C3C;
 }
 a.read_more2:hover, a.read_more:hover {
     background: #FFFFFF;
@@ -725,26 +725,26 @@ a.read_more:hover {
 }
 
 div#main-nav {
-  width: 100%;
-  text-align: center;
+    width: 100%;
+    text-align: center;
 }
 .navbar-nav {
-  width: 100%;
+    width: 100%;
 }
 .navbar-nav>li {
-  float: initial !important;
+    float: initial !important;
 }
 
 
 /* ---------------------------
-  Custom Button Styles
+Custom Button Styles
 -----------------------------*/
 
 .btn-dark {
-  border-radius: 0;
-  color: #fafafa;
-  background-color: #00295B;
-  border-radius: 4px;
+    border-radius: 0;
+    color: #fafafa;
+    background-color: #00295B;
+    border-radius: 4px;
 }
 
 .btn-dark:hover,
@@ -770,7 +770,7 @@ div#main-nav {
 }
 
 .download {
-  font-family:'Lato',arial,sans-serif;
+    font-family:'Lato',arial,sans-serif;
 }
 
 /* Services
@@ -781,10 +781,10 @@ div#main-nav {
     background: #428bca;
 }
 #service h2{
-  color: #fff;
+    color: #fff;
 }
 .service_wrapper {
-  padding: 40px 0 40px;
+    padding: 40px 0 40px;
 }
 
 .service_block {
@@ -1008,7 +1008,7 @@ a.contact_btn:hover {
 /* no transition on .isotope container */
 
 .isotope .isotope-item {
-  /* duration value*/
+    /* duration value*/
     -webkit-transition-duration: 0.6s;
     -moz-transition-duration: 0.6s;
     transition-duration: 0.6s;
@@ -1108,7 +1108,7 @@ a.contact_btn:hover {
 }
 
 .about-us h3{
-  font-size:28px;
+    font-size:28px;
 }
 .points{
     margin-bottom: 10px;
@@ -1163,7 +1163,7 @@ a.contact_btn:hover {
 }
 
 .contact_section ul {
-  margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .contact_block {
@@ -1361,7 +1361,7 @@ a.contact_btn:hover {
     height: 25px;
 }
 .progress-one {
-  margin-top: 70px;
+    margin-top: 70px;
 }
 .progress > .progress-type {
     position: absolute;
@@ -1460,7 +1460,7 @@ a.contact_btn:hover {
 }
 
 #skillbar-percent-grunt {
-  color: #AAA !important;
+    color: #AAA !important;
 }
 
 .color1 {
@@ -1643,7 +1643,7 @@ a.contact_btn:hover {
 }
 
 /*
-   Media Queries
+Media Queries
 --------------------------- */
 
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -1823,7 +1823,7 @@ a.contact_btn:hover {
 }
 
 .img-margin-bot {
-  margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .footer_bottom span a:hover {
@@ -1929,62 +1929,62 @@ a:active {
     height: 70px;
     display: block;
     z-index: 2;
-  }
-  .social-bottom ul {
+}
+.social-bottom ul {
     margin: 20px 20px;
-  }
-  .social-bottom ul li {
-      display: inline-block;
-      list-style-type: none;
-      padding: 5px 5px;
-      margin: 20px;
-  }
-  .social-bottom i.fa {
-      width: 70px;
-      height: 70px;
-      font-size: 35px;
-      color:#F7F7F7;
-      background: #428bca;
-      border-radius: 50%;
-      line-height: 2;
-  }
-  #linkedin:hover,
-  #linkedin:focus,
-  #linkedin:active {
-      color: #FFF;
-      background-color: #007bb6;
-      border-color: #007bb6;
-      cursor: pointer;
-  }
-  #twitter:hover,
-  #twitter:focus,
-  #twitter:active {
-      color: #FFF;
-      background-color: #55acee;
-      border-color: #55acee;
-      cursor: pointer;
-  }
-  #google-plus:hover,
-  #google-plus:focus,
-  #google-plus:active {
-      color: #FFF;
-      background-color: #dd4b39;
-      border-color: #dd4b39;
-      cursor: pointer;
-  }
-  #github:hover,
-  #github:focus,
-  #github:active {
-      color: #fff;
-      background-color: #444;
-      border-color: #444;
-      cursor: pointer;
-  }
-  #email:hover,
-  #email:focus,
-  #email:active {
-      color: #fff;
-      background-color: #dd4b39;
-      border-color: #dd4b39;
-      cursor: pointer;
-  }
+}
+.social-bottom ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 5px 5px;
+    margin: 20px;
+}
+.social-bottom i.fa {
+    width: 70px;
+    height: 70px;
+    font-size: 35px;
+    color:#F7F7F7;
+    background: #428bca;
+    border-radius: 50%;
+    line-height: 2;
+}
+#linkedin:hover,
+#linkedin:focus,
+#linkedin:active {
+    color: #FFF;
+    background-color: #007bb6;
+    border-color: #007bb6;
+    cursor: pointer;
+}
+#twitter:hover,
+#twitter:focus,
+#twitter:active {
+    color: #FFF;
+    background-color: #55acee;
+    border-color: #55acee;
+    cursor: pointer;
+}
+#google-plus:hover,
+#google-plus:focus,
+#google-plus:active {
+    color: #FFF;
+    background-color: #dd4b39;
+    border-color: #dd4b39;
+    cursor: pointer;
+}
+#github:hover,
+#github:focus,
+#github:active {
+    color: #fff;
+    background-color: #444;
+    border-color: #444;
+    cursor: pointer;
+}
+#email:hover,
+#email:focus,
+#email:active {
+    color: #fff;
+    background-color: #dd4b39;
+    border-color: #dd4b39;
+    cursor: pointer;
+}
