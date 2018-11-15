@@ -1792,6 +1792,22 @@ Media Queries
         display: inline-block;
         /* color: #3C3A3A !important; */
     }
+    #head img.img-circle {
+        width: 170px;
+        height: 170px;
+    }
+    .top_left_cont h1 {
+        font-size: 30px;
+        margin: 40px 0 0 0;
+    }
+    .top_left_cont h2 {
+        font-size: 20px;
+        line-height: 20px;
+        margin: 0 0 10px 0;
+    }
+    .top_left_cont h2 strong {
+        font-size: 16px;
+    }
 }
 
 /* Footer
