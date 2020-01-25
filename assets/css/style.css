@@ -1407,7 +1407,6 @@ p {
 
 /* Skill Bars */
 .skillbar {
-    font-family: "Open Sans", "sans-serif";
     position: relative;
     display: block;
     margin-bottom: 15px;
