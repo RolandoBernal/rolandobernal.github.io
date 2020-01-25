@@ -1087,8 +1087,8 @@ a.contact_btn:hover {
     -webkit-box-shadow: 0 0 3px #999;
     -moz-box-shadow: 0 0 3px #999;
     box-shadow: 0 0 3px #999;
-    color: 0 0 3px #999;
-    height: 339px;
+    color: #999;
+    height: 339px !important;
 }
 .exp-wrapper h3 {
     font-size: 1.2em;
