@@ -1,17 +1,21 @@
-/*!
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+// Controls the Portfolio Gallery with Filtering and Animations
+$(function() {
+    let filterList = {
+        init: function() {
+            // MixItUp plugin
+            // http://mixitup.io
+            $("#portfoliolist").mixItUp({
+                selectors: {
+                    target: ".portfolio",
+                    filter: ".filter"
+                },
+                load: {
+                    filter: "*" // show all tab on first load
+                }
+            });
+        }
+    };
 
-
-// Projects Functions
-(function(){
-
-  $('img').bind('mouseenter mouseleave', function() {
-      $(this).attr({
-          src: $(this).attr('mouseover-src')
-          , 'mouseover-src': $(this).attr('src')
-      })
-  });
-
-})();
+    // Run the show!
+    filterList.init();
+});

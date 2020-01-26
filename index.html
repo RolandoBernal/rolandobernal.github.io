@@ -38,7 +38,7 @@
                         class="fa fa-arrow-right"></i></a>
                 <li class="sidebar-brand"><a href="#top" onclick=$("#menu-close").click();>Rolando Bernal</a></li>
                 <li><a href="#top" onclick=$("#menu-close").click();>Home</a></li>
-                <li><a href="#Portfolio" onclick=$("#menu-close").click();>Portfolio</a></li>
+                <li><a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a></li>
                 <li><a href="#experience" onclick=$("#menu-close").click();>Experience</a></li>
                 <li><a target="_blank" href="docs/RolandoBernalResume.pdf" onclick=$("#menu-close").click();>Download
                         Resume</a></li>
@@ -80,7 +80,7 @@
         <!--Header_section-->
 
         <!-- Portfolio -->
-        <section id="Portfolio" class="content">
+        <section id="portfolio" class="portfolio-section-content">
 
             <!-- Container -->
             <div class="container portfolio_title">
@@ -103,23 +103,21 @@
             <!-- Portfolio Filters -->
             <div class="portfolio">
 
-                <div id="filters" class="sixteen columns">
-                    <ul class="clearfix">
-                        <li><a id="all" href="#" data-filter="*" class="active">
+                <div id="filterscontainer" class="sixteen columns">
+
+                    <ul id="filters" class="clearfix">
+                        <li><span class="filter active" data-filter="*">
                                 <h5>All</h5>
-                            </a></li>
-                        <li><a class="" href="#" data-filter=".uxdesign">
-                                <h5>UX Design</h5>
-                            </a></li>
-                        <li><a class="" href="#" data-filter=".website">
-                                <h5>Website</h5>
-                            </a></li>
-                        <li><a class="" href="#" data-filter=".webapp">
+                            </span></li>
+                        <li><span class="filter" data-filter=".webapp">
                                 <h5>Web App</h5>
-                            </a></li>
-                        <!-- <li><a class="" href="#" data-filter=".mobile-app">
-<h5>Mobile App</h5>
-</a></li> -->
+                            </span></li>
+                        <li><span class="filter" data-filter=".uxdesign">
+                                <h5>UX Design</h5>
+                            </span></li>
+                        <li><span class="filter" data-filter=".website">
+                                <h5>Website</h5>
+                            </span></li>
                     </ul>
                     <div class="text-center tap-me text-muted">
                         <span>(Tap image to view project details)</span>
@@ -127,139 +125,118 @@
                 </div>
                 <!--/Portfolio Filters -->
 
-
-
                 <!-- Portfolio Wrapper -->
-                <div class="isotope fadeInLeft animated wow grid animated portfolio-wrapper" id="portfolio_wrapper">
-                    <!-- Portfolio Item -->
-                    <figure class="portfolio-item one-four uxdesign isotope-item effect-roly fig-style">
+                <div class="portfolio-wrapper fadeInLeft animated wow" id="portfoliolist">
+                    <!-- Zanie's Project -->
+                    <div class="portfolio portfolio-item-img-container uxdesign">
                         <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                            <div class="portfolio_img">
-                                <img src="assets/img/projects/zanies.png" alt="Portfolio 1">
-                            </div>
-                            <figcaption>
-                                <div>
-                                    <!-- <p>Zanies - Case Study</p> -->
-                                    <p>Project Details</p>
-                                    <p class="details"><i class="fa fa-search-plus fa-3x" aria-hidden="true"></i></p>
+                            <img src="assets/img/projects/zanies.png" alt="Zanie's Project" class="portfolio-item-image"
+                                style="width:100%">
+                            <div class="portfolio-item-middle">
+                                <div class="portfolio-item-text">
+                                    <i class="fas fa-search-plus"></i>&nbsp;&nbsp;Project Details
                                 </div>
-                            </figcaption>
+                            </div>
                         </a>
-                    </figure>
-                    <!--/Portfolio Item -->
-
-                    <!-- Portfolio Item-->
-                    <figure class="portfolio-item one-four webapp isotope-item effect-roly fig-style">
-                        <div class="portfolio_img"> <img src="assets/img/projects/RE-Grocery-App.jpg" alt="Portfolio 1">
-                        </div>
-                        <figcaption>
-                            <div>
-                                <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                                    <!-- <p>RE Grocery App</p> -->
-                                    <p>Project Details</p>
-                                    <p class="details"><i class="fa fa-search-plus fa-3x" aria-hidden="true"></i></p>
-                                </a>
+                    </div>
+                    <!-- Grocery Calculator Project -->
+                    <div class="portfolio portfolio-item-img-container webapp">
+                        <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                            <img src="assets/img/projects/RE-Grocery-App.jpg" alt="Grocery Calculator"
+                                class="portfolio-item-image" tyle="width:100%">
+                            <div class="portfolio-item-middle">
+                                <div class="portfolio-item-text">
+                                    <i class="fas fa-search-plus"></i>&nbsp;&nbsp;Project Details
+                                </div>
                             </div>
-                        </figcaption>
-                    </figure>
-                    <!--/Portfolio Item -->
-
-                    <!-- Portfolio Item -->
-                    <figure class="portfolio-item one-four website isotope-item effect-roly fig-style">
-                        <div class="portfolio_img"> <img src="assets/img/projects/NIFC.png" alt="Portfolio 1"> </div>
-                        <figcaption>
-                            <div>
-                                <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                                    <!-- <p>Nash Int FC</p> -->
-                                    <p>Project Details</p>
-                                    <p class="details"><i class="fa fa-search-plus fa-3x" aria-hidden="true"></i></p>
-                                </a>
+                        </a>
+                    </div>
+                    <!-- Book That Lesson! Project -->
+                    <div class="portfolio portfolio-item-img-container webapp" data-cat="webapp">
+                        <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/projects/Book-That-Lesson.png"
+                                    alt="Nashville International Futbol Club" class="portfolio-item-image">
+                                <div class="portfolio-item-middle">
+                                    <div class="portfolio-item-text">
+                                        <i class="fas fa-search-plus"></i>&nbsp;&nbsp;Project Details
+                                    </div>
+                                </div>
                             </div>
-                        </figcaption>
-                    </figure>
-                    <!--/Portfolio Item -->
-
-                    <!-- Portfolio Item -->
-                    <figure class="portfolio-item one-four webapp isotope-item effect-roly fig-style">
-                        <div class="portfolio_img"> <img src="assets/img/projects/Book-That-Lesson.png"
-                                alt="Portfolio 1"> </div>
-                        <figcaption>
-                            <div>
-                                <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                                    <!-- <p>Book That Lesson!</p> -->
-                                    <p>Project Details</p>
-                                    <p class="details"><i class="fa fa-search-plus fa-3x" aria-hidden="true"></i></p>
-                                </a>
+                        </a>
+                    </div>
+                    <!-- Nashville International Futbol Club Project -->
+                    <div class="portfolio portfolio-item-img-container website" data-cat="website">
+                        <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/projects/NIFC.png" alt="Nashville International Futbol Club"
+                                    class="portfolio-item-image">
+                                <div class="portfolio-item-middle">
+                                    <div class="portfolio-item-text">
+                                        <i class="fas fa-search-plus"></i>&nbsp;&nbsp;Project Details
+                                    </div>
+                                </div>
                             </div>
-                        </figcaption>
-                    </figure>
-                    <!--/Portfolio Item-->
-
-                    <!-- Portfolio Item-->
-                    <figure class="portfolio-item one-four webapp web isotope-item effect-roly fig-style">
-                        <div class="portfolio_img"> <img src="assets/img/projects/iMaintenanceTotal.png"
-                                alt="Portfolio 1"> </div>
-                        <figcaption>
-                            <div>
-                                <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                                    <!-- <p>iMaintenanceTotal</p> -->
-                                    <p>Project Details</p>
-                                    <p class="details"><i class="fa fa-search-plus fa-3x" aria-hidden="true"></i></p>
-                                </a>
+                        </a>
+                    </div>
+                    <!-- iMaintenanceTotal Project -->
+                    <div class="portfolio portfolio-item-img-container webapp" data-cat="webapp">
+                        <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/projects/iMaintenanceTotal.png" alt="iMaintenanceTotal"
+                                    class="portfolio-item-image">
+                                <div class="portfolio-item-middle">
+                                    <div class="portfolio-item-text">
+                                        <i class="fas fa-search-plus"></i>&nbsp;&nbsp;Project Details
+                                    </div>
+                                </div>
                             </div>
-                        </figcaption>
-                    </figure>
-                    <!-- Portfolio Item -->
-
-                    <!-- Portfolio Item  -->
-                    <figure class="portfolio-item one-four website web isotope-item effect-roly fig-style">
-                        <div class="portfolio_img"> <img src="assets/img/projects/cohort-e1.png" alt="Portfolio 1">
-                        </div>
-                        <figcaption>
-                            <div>
-                                <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                                    <!-- <p>The Nighthawks</p> -->
-                                    <p>Project Details</p>
-                                    <p class="details"><i class="fa fa-search-plus fa-3x" aria-hidden="true"></i></p>
-                                </a>
+                        </a>
+                    </div>
+                    <!-- The Nighthawks Project -->
+                    <div class="portfolio portfolio-item-img-container website" data-cat="website">
+                        <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/projects/cohort-e1.png" alt="The Nighthawks"
+                                    class="portfolio-item-image">
+                                <div class="portfolio-item-middle">
+                                    <div class="portfolio-item-text">
+                                        <i class="fas fa-search-plus"></i>&nbsp;&nbsp;Project Details
+                                    </div>
+                                </div>
                             </div>
-                        </figcaption>
-                    </figure>
-                    <!--/Portfolio Item -->
-
-                    <!-- Portfolio Item -->
-                    <figure class="portfolio-item one-four website isotope-item effect-roly fig-style">
-                        <div class="portfolio_img"> <img src="assets/img/projects/rolandoBernal.png" alt="Portfolio 1">
-                        </div>
-                        <figcaption>
-                            <div>
-                                <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
-                                    <!-- <p>Portfolio Website</p> -->
-                                    <p>Project Details</p>
-                                    <p class="details"><i class="fa fa-search-plus fa-3x" aria-hidden="true"></i></p>
-                                </a>
+                        </a>
+                    </div>
+                    <!-- Personal Portfolio Website Project -->
+                    <div class="portfolio portfolio-item-img-container website" data-cat="website">
+                        <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/projects/rolandoBernal.png" alt="Personal Portfolio Website"
+                                    class="portfolio-item-image">
+                                <div class="portfolio-item-middle">
+                                    <div class="portfolio-item-text">
+                                        <i class="fas fa-search-plus"></i>&nbsp;&nbsp;Project Details
+                                    </div>
+                                </div>
                             </div>
-                        </figcaption>
-                    </figure>
-                    <!--/Portfolio Item -->
-
-                    <!-- Portfolio Item -->
-                    <figure class="portfolio-item one-four website web isotope-item effect-roly fig-style">
-                        <div class="portfolio_img"> <img src="assets/img/projects/otherprojects.png" alt="Portfolio 1">
-                        </div>
-                        <figcaption>
-                            <div>
-                                <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
-                                    <!-- <p>Other Projects</p> -->
-                                    <p>Project Details</p>
-                                    <p class="details"><i class="fa fa-search-plus fa-3x" aria-hidden="true"></i></p>
-                                </a>
+                        </a>
+                    </div>
+                    <!-- Other Projects -->
+                    <div class="portfolio portfolio-item-img-container website" data-cat="website">
+                        <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-wrapper">
+                                <img src="assets/img/projects/otherprojects.png" alt="Other Projects"
+                                    class="portfolio-item-image">
+                                <div class="portfolio-item-middle">
+                                    <div class="portfolio-item-text">
+                                        <i class="fas fa-search-plus"></i>&nbsp;&nbsp;Project Details
+                                    </div>
+                                </div>
                             </div>
-                        </figcaption>
-                    </figure>
-                    <!--/Portfolio Item -->
+                        </a>
+                    </div>
                 </div>
-                <!--/Portfolio Wrapper -->
+
             </div>
             <!--/Portfolio Filters -->
 
@@ -392,7 +369,8 @@
                                 <img src="assets/img/projects/zanies.png"
                                     class="img-responsive img-centered modal-body-zanies-img" alt="">
                                 <p>&nbsp;</p>
-                                <p>To see it in action, please click the <strong>Live Demo</strong> link below. Enjoy!
+                                <p>To see it in action, please click the <strong><span>Live Demo</span></strong> link
+                                    below. Thanks!
                                 </p>
                                 <p>&nbsp;</p>
                                 <h4>Project Details</h4>
@@ -401,10 +379,14 @@
                                         <li><i class="fa fa-code"></i>&nbsp; Languages: HTML, CSS, Bootstrap,
                                             JavaScript, jQuery, GitHub Hosting.</li>
                                         <li><a target="_blank" href="https://rolandobernal.github.io/projects/zanies/"
-                                                class=""><i class="fa fa-laptop"></i>&nbsp; Live Demo</a></li>
+                                                class="proj-details-link"><i class="fa fa-laptop"></i>&nbsp; <span>Live
+                                                    Demo</span></a>
+                                        </li>
                                         <li><a target="_blank"
                                                 href="https://github.com/RolandoBernal/rolandobernal.github.io/tree/master/projects/zanies"
-                                                class=""><i class="fa fa-github"></i>&nbsp; Check out the code</a></li>
+                                                class="proj-details-link"><i class="fab fa-github"></i>&nbsp;
+                                                <span>Check out the
+                                                    code</span></a></li>
                                     </ul>
                                 </p>
                                 <p>&nbsp;</p>
@@ -446,9 +428,13 @@
                                         <li><i class="fa fa-code"></i>&nbsp; Languages: HTML, CSS, Bootstrap,
                                             JavaScript, jQuery, Node.js, Express.js, Heroku.</li>
                                         <li><a target="_blank" href="https://re-grocery-calculator.herokuapp.com/"
-                                                class=""><i class="fa fa-laptop"></i>&nbsp; Live Demo</a></li>
-                                        <li><a target="_blank" href="https://github.com/RolandoBernal/RE_groceryapp"
-                                                class=""><i class="fa fa-github"></i>&nbsp; Check out the code</a></li>
+                                                class="proj-details-link"><i class="fa fa-laptop"></i>&nbsp; <span>Live
+                                                    Demo</span></a>
+                                        </li>
+                                        <li><a target="_blank" href="https://github.com/RolandoBernal/RE_grocerywebapp"
+                                                class="proj-details-link"><i class="fab fa-github"></i>&nbsp;
+                                                <span>Check out the
+                                                    code</span></a></li>
                                     </ul>
                                 </p>
                                 <button type="button" class="btn btn-dark download" data-dismiss="modal"><i
@@ -484,9 +470,13 @@
                                         <li><i class="fa fa-code"></i>&nbsp; Languages: HTML, CSS, Bootstrap,
                                             JavaScript, jQuery, Angular.js, AngularFire, Firebase.</li>
                                         <li><a target="_blank" href="https://book-that-lesson.firebaseapp.com/#/"
-                                                class=""><i class="fa fa-laptop"></i>&nbsp; Live Demo</a></li>
+                                                class="proj-details-link"><i class="fa fa-laptop"></i>&nbsp; <span>Live
+                                                    Demo</span></a>
+                                        </li>
                                         <li><a target="_blank" href="https://github.com/RolandoBernal/Book-That-Lesson"
-                                                class=""><i class="fa fa-github"></i>&nbsp; Check out the code</a></li>
+                                                class="proj-details-link"><i class="fab fa-github"></i>&nbsp;
+                                                <span>Check out the
+                                                    code</span></a></li>
                                     </ul>
                                 </p>
                                 <button type="button" class="btn btn-dark download" data-dismiss="modal"><i
@@ -525,7 +515,9 @@
                                             JavaScript, jQuery, Angular.js, C#, .Net, SQL.</li>
                                         <li><a target="_blank"
                                                 href="https://github.com/RolandoBernal/NashvilleInternationalFC"
-                                                class=""><i class="fa fa-github"></i>&nbsp; Check out the code</a></li>
+                                                class="proj-details-link"><i class="fab fa-github"></i>&nbsp;
+                                                <span>Check out the
+                                                    code</span></a></li>
                                     </ul>
                                 </p>
                                 <button type="button" class="btn btn-dark download" data-dismiss="modal"><i
@@ -565,9 +557,13 @@
                                             JavaScript, Angular.js, ASP.Net, C#, .Net, SQL.</li>
                                         <li><a target="_blank"
                                                 href="https://rolandobernal.github.io/projects/comingSoon/index.html"
-                                                class=""><i class="fa fa-laptop"></i>&nbsp; Live Demo</a></li>
+                                                class="proj-details-link"><i class="fa fa-laptop"></i>&nbsp; <span>Live
+                                                    Demo</span></a>
+                                        </li>
                                         <li><a target="_blank" href="https://github.com/RolandoBernal/iMaintenanceTotal"
-                                                class=""><i class="fa fa-github"></i>&nbsp; Check out the code</a></li>
+                                                class="proj-details-link"><i class="fab fa-github"></i>&nbsp;
+                                                <span>Check out the
+                                                    code</span></a></li>
                                     </ul>
                                 </p>
                                 <button type="button" class="btn btn-dark download" data-dismiss="modal"><i
@@ -603,12 +599,14 @@
                                         <li class="proj-details"><i class="fa fa-code"></i>&nbsp; Languages: HTML, CSS,
                                             Bootstrap, JavaScript, jQuery.</li>
                                         <li class="proj-details"><a href="http://cohort-evening-one.github.io/"
-                                                class="proj-details" target="_blank"><i class="fa fa-laptop"></i>&nbsp;
-                                                Live Demo</a></li>
+                                                class="proj-details-link" target="_blank"><i
+                                                    class="fa fa-laptop"></i>&nbsp;
+                                                <span>Live Demo</span></a></li>
                                         <li class="proj-details"><a
                                                 href="https://github.com/RolandoBernal/cohort-evening-one.github.io"
-                                                class="proj-details" target="_blank"><i class="fa fa-github"></i>&nbsp;
-                                                Check out the code</a></li>
+                                                class="proj-details-link" target="_blank"><i
+                                                    class="fab fa-github"></i>&nbsp;
+                                                <span>Check out the code</span></a></li>
                                     </ul>
                                 </p>
                                 <button type="button" class="btn btn-dark download" data-dismiss="modal"><i
@@ -646,12 +644,14 @@
                                             Bootstrap, JavaScript, jQuery.</li>
                                         <li class="proj-details"><a
                                                 href="https://rolandobernal.github.io/projects/rolandobernal/index.html"
-                                                class="proj-details" target="_blank"><i class="fa fa-laptop"></i>&nbsp;
-                                                Live Demo</a></li>
+                                                class="proj-details-link" target="_blank"><i
+                                                    class="fa fa-laptop"></i>&nbsp;
+                                                <span>Live Demo</span></a></li>
                                         <li class="proj-details"><a
                                                 href="https://github.com/RolandoBernal/rolandobernal.github.io/tree/master/projects/rolandobernal"
-                                                class="proj-details" target="_blank"><i class="fa fa-github"></i>&nbsp;
-                                                Check out the code</a></li>
+                                                class="proj-details-link" target="_blank"><i
+                                                    class="fab fa-github"></i>&nbsp;
+                                                <span>Check out the code</span></a></li>
                                     </ul>
                                 </p>
                                 <button type="button" class="btn btn-dark download" data-dismiss="modal"><i
@@ -676,8 +676,8 @@
                             <div class="modal-body">
                                 <h2>Other Projects</h2>
                                 <hr>
-                                <img src="assets/img/projects/otherprojects.png" class="img-responsive img-centered"
-                                    alt="Other Projects">
+                                <img src="assets/img/projects/otherprojects-modal.png"
+                                    class="img-responsive img-centered" alt="Other Projects">
                                 <br>
                                 <hr class="small-line"><br>
                                 <p><b>Lando B | Web Solutions</b> is a full responsive, retina ready, clean code website
@@ -689,12 +689,14 @@
                                             Bootstrap, JavaScript, jQuery.</li>
                                         <li class="proj-details"><a
                                                 href="https://rolandobernal.github.io/projects/landob-websolutions/index.html"
-                                                class="proj-details" target="_blank"><i class="fa fa-laptop"></i>&nbsp;
-                                                Live Demo</a></li>
+                                                class="proj-details-link" target="_blank"><i
+                                                    class="fa fa-laptop"></i>&nbsp;
+                                                <span>Live Demo</span></a></li>
                                         <li class="proj-details"><a
                                                 href="https://github.com/RolandoBernal/rolandobernal.github.io/tree/master/projects/landob-websolutions"
-                                                class="proj-details" target="_blank"><i class="fa fa-github"></i>&nbsp;
-                                                Check out the code</a></li>
+                                                class="proj-details-link" target="_blank"><i
+                                                    class="fab fa-github"></i>&nbsp;
+                                                <span>Check out the code</span></a></li>
                                     </ul>
                                 </div>
                                 <br>
@@ -707,12 +709,14 @@
                                             Bootstrap, JavaScript, jQuery.</li>
                                         <li class="proj-details"><a
                                                 href="https://rolandobernal.github.io/projects/comingSoon/index.html"
-                                                class="proj-details" target="_blank"><i class="fa fa-laptop"></i>&nbsp;
-                                                Live Demo</a></li>
+                                                class="proj-details-link" target="_blank"><i
+                                                    class="fa fa-laptop"></i>&nbsp;
+                                                <span>Live Demo</span></a></li>
                                         <li class="proj-details"><a
                                                 href="https://github.com/RolandoBernal/rolandobernal.github.io/tree/master/projects/comingSoon"
-                                                class="proj-details" target="_blank"><i class="fa fa-github"></i>&nbsp;
-                                                Check out the code</a></li>
+                                                class="proj-details-link" target="_blank"><i
+                                                    class="fab fa-github"></i>&nbsp;
+                                                <span>Check out the code</span></a></li>
                                     </ul>
                                 </p>
                                 <br>
@@ -728,12 +732,14 @@
                                             Bootstrap, JavaScript, jQuery.</li>
                                         <li class="proj-details"><a
                                                 href="https://rolandobernal.github.io/projects/modalVersion/index.html"
-                                                class="proj-details" target="_blank"><i class="fa fa-laptop"></i>&nbsp;
-                                                Live Demo</a></li>
+                                                class="proj-details-link" target="_blank"><i
+                                                    class="fa fa-laptop"></i>&nbsp;
+                                                <span>Live Demo</span></a></li>
                                         <li class="proj-details"><a
                                                 href="https://github.com/RolandoBernal/rolandobernal.github.io/tree/master/projects/modalVersion"
-                                                class="proj-details" target="_blank"><i class="fa fa-github"></i>&nbsp;
-                                                Check out the code</a></li>
+                                                class="proj-details-link" target="_blank"><i
+                                                    class="fab fa-github"></i>&nbsp;
+                                                <span>Check out the code</span></a></li>
                                     </ul>
                                 </p>
                                 <br>
@@ -832,8 +838,8 @@
                         href="docs/RolandoBernalResume.pdf"><i class="fa fa-download"></i>
                         &nbsp;&nbsp;Download Resume</a> -->
                     <a class="btn btn-dark download" target="_blank"
-                        href="https://www.linkedin.com/in/jrolandobernal"><i class="far fa-address-card"></i>
-                        &nbsp;&nbsp;View Full Resume</a>
+                        href="https://www.linkedin.com/in/jrolandobernal"><i class="far fa-eye"></i>
+                        &nbsp;View Full Experience</a>
                     <br>
                 </div>
             </div>
@@ -845,7 +851,7 @@
             <div class="container section-title">
                 <h2>My Skills</h2>
                 <!-- <h5>I am a Software Developer with a passion for creating engaging applications and intuitive interfaces
-                    that bridge the gap between functionality and design.</!--> -->
+                    that bridge the gap between functionality and design.</!-->
                 <div class="service_wrapper">
                     <div class="row">
                         <div class="col-md-3">
@@ -896,15 +902,17 @@
                 <div class="row">
                     <div class="col-sm-6 col-md-6">
                         <h2><i class="fa fa-rocket"></i>&nbsp; &nbsp; Ready To Go</h2>
-                        <p>I have experience in:<br /> <b>Frontend Development:</b> HTML, CSS, LESS, SASS, Bootstrap
-                            (Responsive Design), Javascript, jQuery, AngularJS, Vue.js, Razor, ASP.NET MVC.<br />And
-                            <b>Backend Development:</b> C#, .Net, SQL, SQL Server.<br /><b>Tools:</b> Grunt, Gulp, VIM,
-                            Git, GitHub, SVN, Sublime Text, Visual Studio, VS Code, Command Line, RESTful API, MVC,
-                            Bower, NPM, CMS (Umbraco), Agile Methodologies.<br /> And <b>UX & UI for Digital Product
-                                Design:</b> Customer and User Research, Research Methods and Analytics, Wireframe and
-                            Prototype, Visual Design (Hi-Fidelity), Usability Testing and Best Practices, Product
-                            Management.<br><br> Also, <strong>Golf</strong>: I love golf. My best score is 84 and I hope
-                            to break 80 at some point one of these days.</p>
+                        <p>I have experience in:<br /><br /> <b>Frontend Development:</b> HTML, CSS, LESS, SASS,
+                            Bootstrap
+                            (Responsive Design), Javascript, jQuery, AngularJS, Vue.js, React.js, Razor, ASP.NET
+                            MVC.<br /><br />
+                            <b>Tools:</b> Grunt, Gulp, VIM, Git, GitHub, SVN, Sublime Text, Visual Studio, VS
+                            Code, Command Line, RESTful API, MVC, Bower, NPM, CMS (Umbraco), Agile
+                            Methodologies.<br /><br />
+                            <b>UX & UI for Digital Product Design:</b> Customer and User Research, Research Methods
+                            and Analytics, Wireframe and Prototype, Visual Design (Hi-Fidelity), Usability Testing and
+                            Best Practices, Product Management.<br><br><strong>Golf</strong>: I love golf. My best score
+                            is 84 and I hope to break 80 at some point one of these days.</p>
                     </div>
                     <div class="col-sm-6 col-md-6">
                         <!---  UX/UI Design -->
@@ -924,7 +932,8 @@
                         <!--- JavaScript / jQuery / AngularJS -->
                         <div class="skillbar clearfix">
                             <div class="skillbar-bar color1" style="width: 87%"></div>
-                            <div class="skillbar-title"><span>JavaScript / jQuery / AngularJS / Vue.js</span></div>
+                            <div class="skillbar-title"><span>JavaScript / jQuery / Angular / Vue.js / React.js</span>
+                            </div>
                             <div class="skillbar-percent">87%</div>
                         </div>
                         <!--- /JavaScript / jQuery / AngularJS -->
@@ -1039,10 +1048,12 @@
         <script type="text/javascript" src="assets/js/jquery.nav.js"></script>
         <script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
         <script type="text/javascript" src="assets/js/jquery.isotope.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.mixitup.min.js"></script>
         <script type="text/javascript" src="assets/js/wow.js"></script>
         <script type="text/javascript" src="assets/js/main.js"></script>
         <script type="text/javascript" src="assets/js/custom.js"></script>
         <script type="text/javascript" src="assets/js/progress-bar.js"></script>
+        <script type="text/javascript" src="assets/js/portfolio.js"></script>
         <!-- To obtain Current Year -->
         <script type="text/javascript">
             var currentDate = new Date();
