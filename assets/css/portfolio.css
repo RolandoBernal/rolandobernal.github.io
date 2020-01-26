@@ -260,6 +260,7 @@
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25) !important;
 }
 
 .portfolio-item-img-container:hover .portfolio-item-image {
@@ -297,6 +298,11 @@
     #portfoliolist .portfolio {
         width: 48%;
         margin: 1%;
+    }
+
+    #filters li span {
+        padding: 10px;
+        cursor: pointer;
     }
 }
 
