@@ -2,6 +2,11 @@
 ***** Portfolio ******
 ******************* */
 
+#portfolio {
+    padding: 60px 0 20px;
+    background: #eeeeee;
+}
+
 .container.portfolio_title {
     padding-bottom: 0px;
 }
@@ -12,10 +17,6 @@
 
 .page_section.paddind {
     padding-bottom: 60px;
-}
-
-#portfolio {
-    padding: 60px 0 40px;
 }
 
 .portfolio-link {
@@ -188,7 +189,8 @@
 }
 
 #filterscontainer ul li span h5 {
-    background: none repeat scroll 0 0 #f7f7f7;
+    /* background: none repeat scroll 0 0 #f7f7f7; */
+    background: none repeat scroll 0 0 #eee;
     border-radius: 4px;
     display: inline-block;
     font-family: "Lato", sans-serif;
@@ -199,7 +201,7 @@
     padding: 10px 22px;
     text-transform: uppercase;
     transition: all 0.3s ease-in-out 0s;
-    background: #fff;
+    /* background: #fff; */
     border: #c2c2c2 solid 1px;
     color: #7c7c7c;
 }
@@ -303,6 +305,10 @@
     #filters li span {
         padding: 10px;
         cursor: pointer;
+    }
+
+    .tap-me {
+        display: block;
     }
 }
 
