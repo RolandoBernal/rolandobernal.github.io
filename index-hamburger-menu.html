@@ -12,13 +12,15 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="favicon/ms-icon-310x310.png">
         <meta name="theme-color" content="#ffffff">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/main-styles.css" rel="stylesheet" type="text/css">
         <link href="assets/css/portfolio.css" rel="stylesheet" type="text/css">
         <!--load all styles of Font Awesome-->
         <link href="assets/font-awesome/css/all.css" rel="stylesheet">
         <link href="assets/css/animate.css" rel="stylesheet" type="text/css">
         <link href="assets/css/scroll-down-icon.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/h-menu.css" rel="stylesheet" type="text/css">
 
         <!--[if lt IE 9]>
 <script src="js/respond-1.1.0.min.js"></script>
@@ -31,38 +33,44 @@
     <body cz-shortcut-listen="true">
 
         <!-- Navigation -->
-        <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle menu-toggle"><i class="fa fa-bars"></i></a>
-        <nav id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle menu-toggle"><i
-                        class="fa fa-arrow-right"></i></a>
-                <li class="sidebar-brand menu-toggle"><a href="#top">Rolando Bernal</a></li>
-                <li><a href="#top" onclick="toggleMenu()">Home</a></li>
-                <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a target="_blank" href="docs/RolandoBernalResume.pdf" onclick="toggleMenu()">Download
-                        Resume</a></li>
-                <li><a href="#service" onclick="toggleMenu()">Skills</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </ul>
-            <div class="sidebar-nav-soc-media-icons">
-                <a target="_blank" href="https://www.linkedin.com/in/jrolandobernal" onclick="toggleMenu()"><i
-                        class="fab fa-linkedin-in"></i>&nbsp;&nbsp;
-                    <a target="_blank" href="http://twitter.com/jrolandobernal" onclick="toggleMenu()"><i
-                            class="fab fa-twitter"></i></a>&nbsp;&nbsp;
-                    <a target="_blank" href="https://github.com/rolandobernal" onclick="toggleMenu()"><i
-                            class="fab fa-github"></i></a>&nbsp;&nbsp;
-                    <a href="mailto:jrolandobernal@gmail.com?subject=Hola,%20Rolando.%20Let's%20talk.&body=Hi,%20my%20name%20is...%20"
-                        onclick="toggleMenu()"><i class="far fa-envelope"></i></a>
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler" id="checkboxid">
+            <div class="hamburger">
+                <div></div>
             </div>
-        </nav>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li><a href="#top" class="toggle-menu-item">Home</a></li>
+                            <li><a href="#portfolio" class="toggle-menu-item">Portfolio</a></li>
+                            <li><a href="#experience" class="toggle-menu-item">Experience</a></li>
+                            <li><a href="#contact" class="toggle-menu-item">Contact</a></li>
+                            <li>
+                                <div class="sidebar-nav-soc-media-icons">
+                                    <a target="_blank" href="https://www.linkedin.com/in/jrolandobernal"
+                                        class="toggle-menu-item"><i class="fab fa-linkedin-in"></i>&nbsp;&nbsp;
+                                        <a target="_blank" href="http://twitter.com/jrolandobernal"
+                                            class="toggle-menu-item"><i class="fab fa-twitter"></i></a>&nbsp;&nbsp;
+                                        <a target="_blank" href="https://github.com/rolandobernal"
+                                            class="toggle-menu-item"><i class="fab fa-github"></i></a>&nbsp;&nbsp;
+                                        <a href="mailto:jrolandobernal@gmail.com?subject=Hola,%20Rolando.%20Let's%20talk.&body=Hi,%20my%20name%20is...%20"
+                                            class="toggle-menu-item"><i class="far fa-envelope"></i></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Navigation -->
 
-        <header id="header">
-            <div id="head" class="parallax head-class" parallax-speed="2">
+        <!--Header section-->
+        <header class="showcase">
+            <div class="header-container showcase-inner" id="header">
                 <div class="top_left_cont wow animated animated main-page" id="logo">
-                    <img class="img-circle" src="assets/img/Roly-Chilling.png" alt="Roly's avatar">
+                    <img id="img-circle" src="assets/img/Roly-Chill-900x900.png" alt="Roly's avatar">
                     <h1 class="hola">Rolando Bernal</h1><br>
-                    <!-- <h2><strong>UI &amp; UX Digital Product Designer &amp; Web Developer based in Music City USA</strong></h2> -->
                     <h2><strong>Fron-End Web Application Developer &amp; Designer based in Music City USA</strong></h2>
                     <div class="scroll-body">
                         <div class="scroll-down-icon">
@@ -77,14 +85,12 @@
         </header>
 
         <div style="width: 1910px; height: 80px; float: none; display: none;"></div>
-        <!--Header_section-->
+        <!--End of Header section-->
 
         <!-- Portfolio -->
         <section id="portfolio" class="portfolio-section-content">
-
             <!-- Container -->
             <div class="container portfolio_title">
-
                 <!-- Title -->
                 <div class="section-title">
                     <h2>Portfolio</h2>
@@ -94,17 +100,12 @@
                     </div>
                 </div>
                 <!--/Title -->
-
             </div>
             <!-- Container -->
-
             <div class="portfolio-top"></div>
-
             <!-- Portfolio Filters -->
             <div class="portfolio">
-
                 <div id="filterscontainer" class="sixteen columns">
-
                     <ul id="filters" class="clearfix">
                         <li><span class="filter active" data-filter="*">
                                 <h5>All</h5>
@@ -771,9 +772,6 @@
                         design your website, and finally build the site for you.<br />
                         I am a Software Developer with a passion for creating engaging applications and intuitive
                         interfaces that bridge the gap between functionality and design.</p>
-                    <!-- <br>In my previous experiences, I have
-                        found satisfaction in discovering and implementing solutions. Now I am very excited to be doing
-                        just that through code.</p> -->
                 </div>
 
                 <div class="row">
@@ -834,9 +832,6 @@
                 </div>
                 <div class="row text-center">
                     <br>
-                    <!-- <a class="btn btn-dark download" target="_blank"
-                        href="docs/RolandoBernalResume.pdf"><i class="fa fa-download"></i>
-                        &nbsp;&nbsp;Download Resume</a> -->
                     <a class="btn btn-dark download" target="_blank"
                         href="https://www.linkedin.com/in/jrolandobernal"><i class="far fa-eye"></i>
                         &nbsp;View Full Experience</a>
@@ -977,9 +972,9 @@
         <footer class="footer_wrapper">
             <div class="container">
                 <section class="page_section contact" id="contact">
-                    <div class="contact_section">
-                        <div class="row">
-                            <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <div class="contact_section" id="contact-centered">
+                        <div class="row" id="contact-centered-child">
+                            <div class="col-lg-12 text-center">
                                 <div class="text-center img-margin-bot">
                                     <img src="assets/img/RolandoBernal.png" class="img-footer"
                                         alt="Roly's cartoon picture">
@@ -1030,18 +1025,18 @@
                             </div>
                         </div>
                     </div>
-            </div>
-            </section>
-            </div>
-            <div class="container">
-                <div class="footer_bottom text-muted">
-                    <div id="copyright"><span>Copyright &copy; <a href="https://rolandobernal.github.io/"
-                                class="text-muted">Rolando Bernal | Web Developer | UX &amp; UI Designer</a><span
-                                id="current-year"></span></span></div>
-                </div>
+                    <div class="container">
+                        <div class="footer_bottom text-muted">
+                            <div id="copyright"><span>Copyright &copy; <a href="https://rolandobernal.github.io/"
+                                        class="text-muted">Rolando Bernal | Web Developer | UX &amp; UI
+                                        Designer</a><span id="current-year"></span></span></div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </footer>
 
+        <!-- Vendor JS scripts -->
         <script type="text/javascript" src="assets/js/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="assets/js/jquery-scrolltofixed.js"></script>
@@ -1050,14 +1045,14 @@
         <script type="text/javascript" src="assets/js/jquery.isotope.js"></script>
         <script type="text/javascript" src="assets/js/jquery.mixitup.min.js"></script>
         <script type="text/javascript" src="assets/js/wow.js"></script>
-        <script type="text/javascript" src="assets/js/main.js"></script>
-        <script type="text/javascript" src="assets/js/custom.js"></script>
+        <!-- My JS Scripts -->
+        <script type="text/javascript" src="assets/js/toggle-menu.js"></script>
         <script type="text/javascript" src="assets/js/progress-bar.js"></script>
         <script type="text/javascript" src="assets/js/portfolio.js"></script>
         <!-- To obtain Current Year -->
         <script type="text/javascript">
-            var currentDate = new Date();
-            var year = currentDate.getFullYear();
+            let currentDate = new Date();
+            let year = currentDate.getFullYear();
             //insert it via jquery
             $('#current-year').html((currentDate.getFullYear()));
         </script>

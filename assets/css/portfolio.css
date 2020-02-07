@@ -1,9 +1,8 @@
-/* *******************
-***** Portfolio ******
-******************* */
+/* Portfolio Section
+------------------------*/
 
 #portfolio {
-    padding: 60px 0 20px;
+    padding: 100px 0;
     background: #eeeeee;
 }
 
@@ -46,6 +45,7 @@
     text-decoration: underline;
 }
 
+/* Portfolio Modals */
 .portfolio-modal .modal-content {
     padding: 100px 0;
     min-height: 100%;
@@ -141,8 +141,7 @@
 /* Portfolio Items
 ------------------------*/
 
-/* Portfolio Gallery with Filtering and Animations
-****************************************************** */
+/* Portfolio Gallery with Filtering and Animations */
 
 .portfolio-items-container {
     position: relative;
@@ -175,7 +174,6 @@
     text-align: center;
     display: block;
     float: none;
-    z-index: 2;
     position: relative;
 }
 
@@ -189,7 +187,6 @@
 }
 
 #filterscontainer ul li span h5 {
-    /* background: none repeat scroll 0 0 #f7f7f7; */
     background: none repeat scroll 0 0 #eee;
     border-radius: 4px;
     display: inline-block;
@@ -201,7 +198,6 @@
     padding: 10px 22px;
     text-transform: uppercase;
     transition: all 0.3s ease-in-out 0s;
-    /* background: #fff; */
     border: #c2c2c2 solid 1px;
     color: #7c7c7c;
 }
@@ -276,8 +272,6 @@
 .portfolio-item-text {
     background-color: #428bca;
     color: white;
-    /* background-color: #ffffff;
-    color: #428bca; */
     font-size: 16px;
     padding: 16px 32px;
     width: 200px;
