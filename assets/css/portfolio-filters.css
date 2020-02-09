@@ -1,0 +1,168 @@
+/* RESET RULES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ol {
+    list-style: none;
+}
+
+input[type="radio"] {
+    position: absolute;
+    /* left: -9999px; */
+    display: none;
+}
+
+/* Portfolio Filters
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#filters {
+    margin: 1%;
+    padding: 0;
+    list-style: none;
+}
+
+#portfoliolist .portfolio {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    /* width: 23%;
+    margin: 1%; */
+    float: left;
+    overflow: hidden;
+}
+
+.portfolio-filters {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.portfolio-filters * {
+    display: inline-block;
+    margin: 0 3px;
+}
+
+.portfolio-filters label {
+    cursor: pointer;
+    background: none repeat scroll 0 0 #eee;
+    border-radius: 4px;
+    display: inline-block;
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 20px;
+    margin-bottom: 5px;
+    padding: 10px 22px;
+    text-transform: uppercase;
+    transition: all 0.1s ease-in-out 0s;
+    border: #c2c2c2 solid 1px;
+    color: #7c7c7c;
+}
+
+.portfolio-filters label:hover {
+    background: #4b92db;
+    color: #ffffff;
+    text-decoration: none;
+    border: #4b92db solid 1px;
+    cursor: pointer;
+}
+
+/* FILTERING RULES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+[value="All"]:checked~.portfolio-filters [for="All"],
+[value="App"]:checked~.portfolio-filters [for="App"],
+[value="UX"]:checked~.portfolio-filters [for="UX"],
+[value="Site"]:checked~.portfolio-filters [for="Site"] {
+    background: #4b92db;
+    color: #ffffff;
+}
+
+/* When we click on the All filter, all posts which have a data-category attribute will appear: */
+[value="All"]:checked~.portfolio-item-list [data-category] {
+    display: block;
+}
+
+/* When we click on any other filter category, only the target posts will be visible: */
+/* (Looks for checked radio buttons with a specific value: app, ux, site) */
+[value="App"]:checked~.portfolio-item-list .portfolio-item:not([data-category ~="App"]),
+[value="UX"]:checked~.portfolio-item-list .portfolio-item:not([data-category ~="UX"]),
+[value="Site"]:checked~.portfolio-item-list .portfolio-item:not([data-category ~="Site"]) {
+    display: none;
+}
+
+/* ANIMATION
+  ___________________________________________________ */
+
+.animated {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-100px);
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-100px);
+        -ms-transform: translateX(-100px);
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+
+@-webkit-keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(100px);
+        transform: translateX(100px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(100px);
+        -ms-transform: translateX(100px);
+        transform: translateX(100px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+}

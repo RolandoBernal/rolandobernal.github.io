@@ -1,4 +1,4 @@
-/* Menu Toggler. 
+/* Menu Toggler.
 ------------------------*/
 
 /* CORE STYLES */
@@ -10,7 +10,7 @@
     --default-white: #ffffff;
     --default-black: #000;
     --overlay-color: rgba(75, 146, 219, 0.95);
-    --menu-speed: 0.75s;
+    --menu-speed: 0.025s;
 }
 
 * {
@@ -158,12 +158,12 @@ body {
 
 .menu-wrap .toggler:checked ~ .menu > div {
     transform: scale(1);
-    transition-duration: var(--menu-speed);
+    transition-duration: 0.4s;
 }
 
 .menu-wrap .toggler:checked ~ .menu > div > div {
     opacity: 1;
-    transition: opacity 0.4s ease 0.4s;
+    transition: opacity 0.2s ease 0.2s;
 }
 
 .menu-wrap .menu {
@@ -197,7 +197,7 @@ body {
     max-width: 90vw;
     max-height: 100vh;
     opacity: 0;
-    transition: opacity 0.4s ease;
+    transition: opacity 0.2s ease;
 }
 
 .menu-wrap .menu > div > div > ul > li {

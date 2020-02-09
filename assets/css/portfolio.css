@@ -123,16 +123,11 @@
     border-radius: 5px !important;
 }
 
-@media (min-width: 767px) {
-    #portfolio .portfolio-item {
-        margin: 0 0 30px;
-    }
-}
-
 @media (max-width: 480px) {
     .modal-body-zanies-img {
         max-width: 350px !important;
     }
+
     .proto-img img {
         width: 350px;
     }
@@ -143,82 +138,12 @@
 
 /* Portfolio Gallery with Filtering and Animations */
 
-.portfolio-items-container {
+#portfoliolist {
     position: relative;
-    width: 960px;
-    margin: 0 auto;
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
     transition: all 1s ease;
-}
-
-/* Portfolio Filters */
-#filters {
-    margin: 1%;
-    padding: 0;
-    list-style: none;
-}
-
-#filters li span {
-    display: block;
-    padding: 5px 20px;
-    text-decoration: none;
-    color: #666;
-    cursor: pointer;
-}
-
-#filterscontainer {
-    margin-top: 10px;
-    margin-bottom: 40px;
-    text-align: center;
-    display: block;
-    float: none;
-    position: relative;
-}
-
-#filterscontainer ul li {
-    display: inline-block;
-    margin: 0 -10px;
-}
-
-#filterscontainer ul li span {
-    display: block;
-}
-
-#filterscontainer ul li span h5 {
-    background: none repeat scroll 0 0 #eee;
-    border-radius: 4px;
-    display: inline-block;
-    font-family: "Lato", sans-serif;
-    font-size: 12px;
-    font-weight: 200;
-    line-height: 20px;
-    margin-bottom: 5px;
-    padding: 10px 22px;
-    text-transform: uppercase;
-    transition: all 0.3s ease-in-out 0s;
-    border: #c2c2c2 solid 1px;
-    color: #7c7c7c;
-}
-
-#filterscontainer ul li span:hover h5,
-#filterscontainer ul li span.active h5 {
-    background: #4b92db;
-    color: #ffffff;
-    text-decoration: none;
-    border: #4b92db solid 1px;
-}
-
-#portfoliolist .portfolio {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    width: 23%;
-    margin: 1%;
-    display: none;
-    float: left;
-    overflow: hidden;
 }
 
 .portfolio-wrapper {
@@ -278,77 +203,110 @@
     border-radius: 4px;
 }
 
-/* #Tablet (Portrait) */
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-    .portfolio-items-container {
-        width: 768px;
+
+/* MEDIA QUERIES. Definition of how the page should display on different screen sizes */
+/* Extra small devices (phones, 400px and down) */
+/* When the browser's width is 400px and down */
+@media only screen and (max-width: 400px) {
+    .breakpoints {
+        background-color: red;
+    }
+
+    #portfoliolist .portfolio {
+        width: 96%;
+        /* float: none; */
+        margin: 1%;
+    }
+
+    .portfolio-filters {
+        display: none;
     }
 }
 
-/*  #Mobile (Portrait) - Note: Design for a width of 320px */
-@media only screen and (max-width: 767px) {
-    .portfolio-items-container {
-        width: 95%;
+/* Small devices (portrait tablets and large phones, 400px and 759px) */
+/* When the browser's width is between 400 and 759px */
+@media (max-width: 759px) and (min-width: 400px) {
+    .breakpoints {
+        background-color: orange;
+    }
+
+    #portfoliolist .portfolio {
+        width: 96%;
+        margin: 1%;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .tap-me {
+        display: block;
+    }
+}
+
+/* Medium devices (landscape tablets, 760px and 1023px) */
+/* When the browser's width is between 760 and 1023px */
+@media screen and (max-width: 1023px) and (min-width: 760px) {
+    .breakpoints {
+        background-color: pink;
     }
 
     #portfoliolist .portfolio {
         width: 48%;
         margin: 1%;
     }
-
-    #filters li span {
-        padding: 10px;
-        cursor: pointer;
-    }
-
-    .tap-me {
-        display: block;
-    }
 }
 
-/* #Mobile (Landscape) - Note: Design for a width of 480px */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-    .portfolio-items-container {
-        width: 70%;
+/* Large devices (laptops/desktops, 768px and 1199px) */
+/* When the browser's width is between 1024 and 1199px */
+@media screen and (max-width: 1199px) and (min-width: 1024px) {
+    .breakpoints {
+        background-color: blue;
+        color: white;
+    }
+
+    #portfoliolist .portfolio {
+        width: 23%;
+        margin: 1%;
     }
 }
 
-/* #Clearing */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* When the browser's width is between 1200 and 1259px */
+@media screen and (max-width: 1259px) and (min-width: 1200px) {
+    .breakpoints {
+        background-color: purple;
+        color: white;
+    }
 
-/* Self Clearing Goodness */
-.portfolio-items-container:after {
-    content: "\0020";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
-}
-
-.clearfix:before,
-.clearfix:after,
-.row:before,
-.row:after {
-    content: "\0020";
-    display: block;
-    overflow: hidden;
-    visibility: hidden;
-    width: 0;
-    height: 0;
-}
-.row:after,
-.clearfix:after {
-    clear: both;
-}
-.row,
-.clearfix {
-    zoom: 1;
+    #portfoliolist .portfolio {
+        width: 23%;
+        margin: 1%;
+    }
 }
 
-.clear {
-    clear: both;
-    display: block;
-    overflow: hidden;
-    visibility: hidden;
-    width: 0;
-    height: 0;
+/* When the browser's width is between 1260 and 1524px */
+@media screen and (max-width: 1524px) and (min-width: 1260px) {
+    .breakpoints {
+        background-color: darkcyan;
+        color: white;
+    }
+
+    #portfoliolist .portfolio {
+        width: 23%;
+        margin: 1%;
+    }
 }
+
+/* When the browser's width is 1525px and up */
+@media (min-width: 1525px) {
+    .breakpoints {
+        background-color: greenyellow;
+        color: black;
+    }
+
+    #portfoliolist .portfolio {
+        width: 23%;
+        margin: 1%;
+    }
+}
+
+/* /.MEDIA QUERIES */

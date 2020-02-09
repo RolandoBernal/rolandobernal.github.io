@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html class="csstransforms csstransforms3d csstransitions">
+<html>
 
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="viewport" content="width=device-width, maximum-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Rolando Bernal | Web Developer</title>
         <!-- FavIcon.ico -->
         <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
@@ -14,13 +14,15 @@
         <meta name="theme-color" content="#ffffff">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/animate.css" rel="stylesheet" type="text/css">
         <link href="assets/css/main-styles.css" rel="stylesheet" type="text/css">
-        <link href="assets/css/portfolio.css" rel="stylesheet" type="text/css">
         <!--load all styles of Font Awesome-->
         <link href="assets/font-awesome/css/all.css" rel="stylesheet">
-        <link href="assets/css/animate.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/portfolio.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/portfolio-filters.css" rel="stylesheet" type="text/css">
         <link href="assets/css/scroll-down-icon.css" rel="stylesheet" type="text/css">
         <link href="assets/css/h-menu.css" rel="stylesheet" type="text/css">
+        <!-- <link rel="stylesheet" href="assets/css/filter.css" type="text/css"> -->
 
         <!--[if lt IE 9]>
 <script src="js/respond-1.1.0.min.js"></script>
@@ -30,7 +32,7 @@
 
     </head>
 
-    <body cz-shortcut-listen="true">
+    <body>
 
         <!-- Navigation -->
         <div class="menu-wrap">
@@ -68,7 +70,7 @@
         <!--Header section-->
         <header class="showcase">
             <div class="header-container showcase-inner" id="header">
-                <div class="top_left_cont wow animated animated main-page" id="logo">
+                <div class="top_left_cont animated main-page" id="logo">
                     <img id="img-circle" src="assets/img/Roly-Chill-900x900.png" alt="Roly's avatar">
                     <h1 class="hola">Rolando Bernal</h1><br>
                     <h2><strong>Fron-End Web Application Developer &amp; Designer based in Music City USA</strong></h2>
@@ -102,142 +104,162 @@
                 <!--/Title -->
             </div>
             <!-- Container -->
-            <div class="portfolio-top"></div>
+            <div class="portfolio-top"><br><br>
+                <h2></h2>
+                <p class="breakpoints" style="text-align:center">Typical Media Query Breakpoints</p>
+            </div>
             <!-- Portfolio Filters -->
             <div class="portfolio">
-                <div id="filterscontainer" class="sixteen columns">
-                    <ul id="filters" class="clearfix">
-                        <li><span class="filter active" data-filter="*">
-                                <h5>All</h5>
-                            </span></li>
-                        <li><span class="filter" data-filter=".webapp">
-                                <h5>Web App</h5>
-                            </span></li>
-                        <li><span class="filter" data-filter=".uxdesign">
-                                <h5>UX Design</h5>
-                            </span></li>
-                        <li><span class="filter" data-filter=".website">
-                                <h5>Website</h5>
-                            </span></li>
-                    </ul>
+                <div id="filterscontainer" class="container">
+                    <input type="radio" id="All" name="categories" value="All" checked>
+                    <input type="radio" id="App" name="categories" value="App">
+                    <input type="radio" id="UX" name="categories" value="UX">
+                    <input type="radio" id="Site" name="categories" value="Site">
+                    <ol id="filters" class="clearfix portfolio-filters">
+                        <li>
+                            <label for="All">All</label>
+                        </li>
+                        <li>
+                            <label for="App">App</label>
+                        </li>
+                        <li>
+                            <label for="UX">UX</label>
+                        </li>
+                        <li>
+                            <label for="Site">Site</label>
+                        </li>
+                    </ol><br>
                     <div class="text-center tap-me text-muted">
                         <span>(Tap image to view project details)</span>
-                    </div>
+                    </div><br>
+                    <!-- Portfolio Wrapper -->
+                    <ol class="portfolio-wrapper fadeInLeft animated portfolio-item-list posts" id="portfoliolist">
+                        <!-- Zanie's Project -->
+                        <li class="post portfolio-item" data-category="UX">
+                            <div class="portfolio portfolio-item-img-container">
+                                <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                                    <img src="assets/img/projects/zanies.png" alt="Zanie's Project"
+                                        class="portfolio-item-image" style="width:100%">
+                                    <div class="portfolio-item-middle">
+                                        <div class="portfolio-item-text">
+                                            <i class="fas fa-search-plus"></i>&nbsp;&nbsp;Project Details
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <!-- Grocery Calculator Project -->
+                        <li class="post portfolio-item" data-category="App">
+                            <div class="portfolio portfolio-item-img-container">
+                                <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                                    <img src="assets/img/projects/RE-Grocery-App.jpg" alt="Grocery Calculator"
+                                        class="portfolio-item-image" tyle="width:100%">
+                                    <div class="portfolio-item-middle">
+                                        <div class="portfolio-item-text">
+                                            <i class="fas fa-search-plus"></i>&nbsp;&nbsp;Project Details
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <!-- Book That Lesson! Project -->
+                        <li class="post portfolio-item" data-category="App">
+                            <div class="portfolio portfolio-item-img-container">
+                                <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                                    <div class="portfolio-wrapper">
+                                        <img src="assets/img/projects/Book-That-Lesson.png"
+                                            alt="Nashville International Futbol Club" class="portfolio-item-image">
+                                        <div class="portfolio-item-middle">
+                                            <div class="portfolio-item-text">
+                                                <i class="fas fa-search-plus"></i>&nbsp;&nbsp;Project Details
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <!-- Nashville International Futbol Club Project -->
+                        <li class="post portfolio-item" data-category="Site">
+                            <div class="portfolio portfolio-item-img-container">
+                                <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                                    <div class="portfolio-wrapper">
+                                        <img src="assets/img/projects/NIFC.png"
+                                            alt="Nashville International Futbol Club" class="portfolio-item-image">
+                                        <div class="portfolio-item-middle">
+                                            <div class="portfolio-item-text">
+                                                <i class="fas fa-search-plus"></i>&nbsp;&nbsp;Project Details
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <!-- iMaintenanceTotal Project -->
+                        <li class="post portfolio-item" data-category="App">
+                            <div class="portfolio portfolio-item-img-container">
+                                <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                                    <div class="portfolio-wrapper">
+                                        <img src="assets/img/projects/iMaintenanceTotal.png" alt="iMaintenanceTotal"
+                                            class="portfolio-item-image">
+                                        <div class="portfolio-item-middle">
+                                            <div class="portfolio-item-text">
+                                                <i class="fas fa-search-plus"></i>&nbsp;&nbsp;Project Details
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <!-- The Nighthawks Project -->
+                        <li class="post portfolio-item" data-category="Site">
+                            <div class="portfolio portfolio-item-img-container">
+                                <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                                    <div class="portfolio-wrapper">
+                                        <img src="assets/img/projects/cohort-e1.png" alt="The Nighthawks"
+                                            class="portfolio-item-image">
+                                        <div class="portfolio-item-middle">
+                                            <div class="portfolio-item-text">
+                                                <i class="fas fa-search-plus"></i>&nbsp;&nbsp;Project Details
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <!-- Personal Portfolio Website Project -->
+                        <li class="post portfolio-item" data-category="Site">
+                            <div class="portfolio portfolio-item-img-container">
+                                <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
+                                    <div class="portfolio-wrapper">
+                                        <img src="assets/img/projects/rolandoBernal.png"
+                                            alt="Personal Portfolio Website" class="portfolio-item-image">
+                                        <div class="portfolio-item-middle">
+                                            <div class="portfolio-item-text">
+                                                <i class="fas fa-search-plus"></i>&nbsp;&nbsp;Project Details
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <!-- Other Projects -->
+                        <li class="post portfolio-item" data-category="Site">
+                            <div class="portfolio portfolio-item-img-container">
+                                <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
+                                    <div class="portfolio-wrapper">
+                                        <img src="assets/img/projects/otherprojects.png" alt="Other Projects"
+                                            class="portfolio-item-image">
+                                        <div class="portfolio-item-middle">
+                                            <div class="portfolio-item-text">
+                                                <i class="fas fa-search-plus"></i>&nbsp;&nbsp;Project Details
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ol>
                 </div>
-                <!--/Portfolio Filters -->
-
-                <!-- Portfolio Wrapper -->
-                <div class="portfolio-wrapper fadeInLeft animated wow" id="portfoliolist">
-                    <!-- Zanie's Project -->
-                    <div class="portfolio portfolio-item-img-container uxdesign">
-                        <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                            <img src="assets/img/projects/zanies.png" alt="Zanie's Project" class="portfolio-item-image"
-                                style="width:100%">
-                            <div class="portfolio-item-middle">
-                                <div class="portfolio-item-text">
-                                    <i class="fas fa-search-plus"></i>&nbsp;&nbsp;Project Details
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- Grocery Calculator Project -->
-                    <div class="portfolio portfolio-item-img-container webapp">
-                        <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                            <img src="assets/img/projects/RE-Grocery-App.jpg" alt="Grocery Calculator"
-                                class="portfolio-item-image" tyle="width:100%">
-                            <div class="portfolio-item-middle">
-                                <div class="portfolio-item-text">
-                                    <i class="fas fa-search-plus"></i>&nbsp;&nbsp;Project Details
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- Book That Lesson! Project -->
-                    <div class="portfolio portfolio-item-img-container webapp" data-cat="webapp">
-                        <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                            <div class="portfolio-wrapper">
-                                <img src="assets/img/projects/Book-That-Lesson.png"
-                                    alt="Nashville International Futbol Club" class="portfolio-item-image">
-                                <div class="portfolio-item-middle">
-                                    <div class="portfolio-item-text">
-                                        <i class="fas fa-search-plus"></i>&nbsp;&nbsp;Project Details
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- Nashville International Futbol Club Project -->
-                    <div class="portfolio portfolio-item-img-container website" data-cat="website">
-                        <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                            <div class="portfolio-wrapper">
-                                <img src="assets/img/projects/NIFC.png" alt="Nashville International Futbol Club"
-                                    class="portfolio-item-image">
-                                <div class="portfolio-item-middle">
-                                    <div class="portfolio-item-text">
-                                        <i class="fas fa-search-plus"></i>&nbsp;&nbsp;Project Details
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- iMaintenanceTotal Project -->
-                    <div class="portfolio portfolio-item-img-container webapp" data-cat="webapp">
-                        <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                            <div class="portfolio-wrapper">
-                                <img src="assets/img/projects/iMaintenanceTotal.png" alt="iMaintenanceTotal"
-                                    class="portfolio-item-image">
-                                <div class="portfolio-item-middle">
-                                    <div class="portfolio-item-text">
-                                        <i class="fas fa-search-plus"></i>&nbsp;&nbsp;Project Details
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- The Nighthawks Project -->
-                    <div class="portfolio portfolio-item-img-container website" data-cat="website">
-                        <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                            <div class="portfolio-wrapper">
-                                <img src="assets/img/projects/cohort-e1.png" alt="The Nighthawks"
-                                    class="portfolio-item-image">
-                                <div class="portfolio-item-middle">
-                                    <div class="portfolio-item-text">
-                                        <i class="fas fa-search-plus"></i>&nbsp;&nbsp;Project Details
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- Personal Portfolio Website Project -->
-                    <div class="portfolio portfolio-item-img-container website" data-cat="website">
-                        <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
-                            <div class="portfolio-wrapper">
-                                <img src="assets/img/projects/rolandoBernal.png" alt="Personal Portfolio Website"
-                                    class="portfolio-item-image">
-                                <div class="portfolio-item-middle">
-                                    <div class="portfolio-item-text">
-                                        <i class="fas fa-search-plus"></i>&nbsp;&nbsp;Project Details
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- Other Projects -->
-                    <div class="portfolio portfolio-item-img-container website" data-cat="website">
-                        <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
-                            <div class="portfolio-wrapper">
-                                <img src="assets/img/projects/otherprojects.png" alt="Other Projects"
-                                    class="portfolio-item-image">
-                                <div class="portfolio-item-middle">
-                                    <div class="portfolio-item-text">
-                                        <i class="fas fa-search-plus"></i>&nbsp;&nbsp;Project Details
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
             </div>
             <!--/Portfolio Filters -->
 
@@ -1040,15 +1062,12 @@
         <script type="text/javascript" src="assets/js/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="assets/js/jquery-scrolltofixed.js"></script>
-        <script type="text/javascript" src="assets/js/jquery.nav.js"></script>
         <script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
-        <script type="text/javascript" src="assets/js/jquery.isotope.js"></script>
-        <script type="text/javascript" src="assets/js/jquery.mixitup.min.js"></script>
         <script type="text/javascript" src="assets/js/wow.js"></script>
         <!-- My JS Scripts -->
         <script type="text/javascript" src="assets/js/toggle-menu.js"></script>
         <script type="text/javascript" src="assets/js/progress-bar.js"></script>
-        <script type="text/javascript" src="assets/js/portfolio.js"></script>
+        <!-- <script type="text/javascript" src="assets/js/portfolio.js"></script> -->
         <!-- To obtain Current Year -->
         <script type="text/javascript">
             let currentDate = new Date();
