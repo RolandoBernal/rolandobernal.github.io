@@ -77,6 +77,7 @@ input[type="radio"] {
 /* When we click on the All filter, all posts which have a data-category attribute will appear: */
 [value="All"]:checked~.portfolio-item-list [data-category] {
     display: block;
+    transition: display 1.5s ease 1.5s;
 }
 
 /* When we click on any other filter category, only the target posts will be visible: */
@@ -85,6 +86,7 @@ input[type="radio"] {
 [value="UX"]:checked~.portfolio-item-list .portfolio-item:not([data-category ~="UX"]),
 [value="Site"]:checked~.portfolio-item-list .portfolio-item:not([data-category ~="Site"]) {
     display: none;
+    transition: display 1.5s ease 1.5s;
 }
 
 /* ANIMATION
