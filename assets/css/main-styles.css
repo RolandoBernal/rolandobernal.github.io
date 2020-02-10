@@ -785,7 +785,7 @@ Media Queries
     }
 
     .page_section.contact {
-        padding: 60px 0 50px;
+        padding: 10px 0 150px;
     }
 }
 
@@ -828,9 +828,10 @@ Media Queries
 /* Footer
 ---------------------------------*/
 
-/* footer {
+footer {
     height: 100vh;
-} */
+}
+
 .footer_wrapper {
     background: #0a1525;
 }
@@ -866,8 +867,8 @@ Media Queries
 
 .img-footer {
     max-width: 200px;
-    border-radius: 10px;
-    opacity: 0.75;
+    border-radius: 50%;
+    opacity: 0.55;
 }
 
 /* Animation Timers
@@ -947,7 +948,34 @@ a:active {
 }
 
 /*Social Media Icons*/
-.social-bottom {
+.social-icon {
+    width: 90px;
+    height: 85px;
+    margin: 0px auto 25px;
+}
+
+.social-icon span {
+    background: transparent;
+    display: block;
+    height: 95px;
+    width: 95px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    padding: 6px 0 0;
+}
+
+.social-icon i {
+    color: #ffffff;
+    font-size: 40px;
+    margin-top: 0;
+    position: relative;
+    top: 20px;
+    z-index: 20;
+    display: block;
+    text-align: center;
+}
+
+/* .social-bottom {
     margin-top: 50px;
     width: 100%;
     height: 70px;
@@ -974,6 +1002,30 @@ a:active {
     background: #4b92db;
     border-radius: 50%;
     line-height: 2;
+} */
+
+@media only screen and (max-width: 992px) {
+    .social-icon {
+        width: 50px;
+        height: 50px;
+        margin: 0px auto 25px;
+    }
+
+    .social-icon span {
+        height: 60px;
+        width: 60px;
+    }
+
+    .social-icon i {
+        /* color: #ffffff; */
+        font-size: 20px;
+        /* margin-top: 0; */
+        /* position: relative; */
+        top: 15px;
+        /* z-index: 20; */
+        /* display: block; */
+        /* text-align: center; */
+    }
 }
 
 #linkedin:hover,
