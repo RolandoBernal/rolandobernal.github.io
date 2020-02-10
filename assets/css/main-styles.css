@@ -785,7 +785,7 @@ Media Queries
     }
 
     .page_section.contact {
-        padding: 10px 0 150px;
+        padding: 90px 0 100px;
     }
 }
 
@@ -960,6 +960,13 @@ _____________________________*/
 @media only screen and (max-width: 992px) {
     footer {
         height: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .page_section.contact {
+        padding: 100px 0 150px;
+        width: 100vw;
     }
 }
 
