@@ -954,7 +954,7 @@ _____________________________*/
     margin: 10px;
     border-radius: 50%;
     color: #fff;
-    border: #fff solid 2px;
+    border: #fff solid 1px;
 }
 
 @media only screen and (max-width: 992px) {
@@ -997,7 +997,6 @@ _____________________________*/
         margin: 5px;
         border-radius: 50%;
         color: #fff;
-        border: #fff solid 1px;
     }
 }
 
