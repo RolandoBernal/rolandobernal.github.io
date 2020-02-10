@@ -850,10 +850,6 @@ footer {
     transform: translate(-50%, -50%);
 }
 
-/* .footer-content-container div {
-    margin: 250px;
-} */
-
 #copyright {
     position: fixed;
     left: 0;
@@ -981,6 +977,12 @@ _____________________________*/
     #findMe {
         font-size: 30px;
         margin: 30px;
+    }
+
+    #copyright {
+        padding: 5px;
+        background-color: #0a152523;
+        color: rgba(255, 255, 255, 0.705);
     }
 }
 
