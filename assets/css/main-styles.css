@@ -968,6 +968,22 @@ _____________________________*/
         padding: 100px 0 150px;
         width: 100vw;
     }
+
+    #copyright {
+        width: 70vw;
+    }
+
+    .footer_bottom {
+        position: relative;
+    }
+
+    .footer_bottom div {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 @media only screen and (max-width: 380px) {
