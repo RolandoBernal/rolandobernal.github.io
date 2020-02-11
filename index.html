@@ -30,6 +30,29 @@
 <script src="js/html5element.js"></script>
 <![endif]-->
 
+        <script>
+
+            // Defining event listener function
+            function displayWindowSize() {
+
+                // Get width and height of the window
+                // excluding scrollbars
+                var w = document.documentElement.clientWidth;
+                var h = document.documentElement.clientHeight;
+
+                // Display result inside a div element
+                document.getElementById("result").innerHTML
+                    = "Width: " + w + ", " + "Height: " + h;
+            }
+
+            // Attaching the event listener function
+            // to window's resize event
+            window.addEventListener("resize", displayWindowSize);
+
+            // Calling the function for the first time
+            displayWindowSize();
+        </script>
+
     </head>
 
     <body>
@@ -106,7 +129,8 @@
             <!-- Container -->
             <div class="portfolio-top"><br><br>
                 <h2></h2>
-                <!-- <p class="breakpoints" style="text-align:center">Typical Media Query Breakpoints</p> -->
+                <!-- <p class="breakpoints" style="text-align:center">Typical Media Query Breakpoints &nbsp;&nbsp; <span
+                        id="result"></span></p> -->
             </div>
             <!-- Portfolio Filters -->
             <div class="portfolio">
@@ -1001,16 +1025,19 @@
                         <h2 id="findMe">Let's Connect!</h2>
                     </div>
                     <div class="social-icons-container">
-                        <a target="_blank" href="https://www.linkedin.com/in/jrolandobernal" class="social-icons fab fa-linkedin-in"
-                            id="linkedin"></a>
-                        <a target="_blank" href="http://twitter.com/jrolandobernal" class="social-icons fab fa-twitter" id="twitter"></a>
-                        <a target="_blank" href="https://github.com/rolandobernal" class="social-icons fab fa-github" id="github"></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/jrolandobernal"
+                            class="social-icons fab fa-linkedin-in" id="linkedin"></a>
+                        <a target="_blank" href="http://twitter.com/jrolandobernal" class="social-icons fab fa-twitter"
+                            id="twitter"></a>
+                        <a target="_blank" href="https://github.com/rolandobernal" class="social-icons fab fa-github"
+                            id="github"></a>
                         <a href="mailto:jrolandobernal@gmail.com?subject=Hola,%20Rolando.%20Let's%20talk.&body=Hi,%20my%20name%20is...%20"
                             class="social-icons far fa-envelope" id="email"></a>
                     </div>
 
                 </div>
-                <div id="copyright"><span>Copyright &copy; <a href="https://rolandobernal.github.io/" class="text-muted">Rolando Bernal
+                <div id="copyright"><span>Copyright &copy; <a href="https://rolandobernal.github.io/"
+                            class="text-muted">Rolando Bernal
                             | Web Developer | UX &amp; UI
                             Designer &nbsp;</a><span id="current-year"></span></span>
                 </div>

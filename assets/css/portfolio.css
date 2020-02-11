@@ -203,6 +203,16 @@
     border-radius: 4px;
 }
 
+.breakpoints {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    width: 100vw;
+}
+
 
 /* MEDIA QUERIES. Definition of how the page should display on different screen sizes */
 /* Extra small devices (phones, 400px and down) */
