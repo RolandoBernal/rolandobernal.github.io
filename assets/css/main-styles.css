@@ -692,19 +692,7 @@ a.contact_btn:hover {
 Media Queries
 --------------------------- */
 
-@media (min-width: 768px) and (max-width: 1200px) {
-    .aboutUs-container {
-        background-repeat: no-repeat;
-        background-position: right;
-        background-size: auto 59%;
-        background-position-y: 150px;
-    }
-}
-
 @media (max-width: 768px) {
-    .aboutUs-container {
-        background-image: none;
-    }
 
     p {
         font-size: 14px;
@@ -727,15 +715,6 @@ Media Queries
 
     .inner_section {
         padding: 20px 0 20px;
-    }
-
-    #aboutUs img {
-        margin-bottom: 20px;
-    }
-
-    #aboutUs h3 {
-        font-size: 26px;
-        line-height: 22px;
     }
 
     .service_block h3 {
@@ -856,18 +835,18 @@ footer {
     bottom: 0;
     width: 100%;
     padding: 10px;
-    background-color: #0a15253f;
-    color: rgba(255, 255, 255, 0.705);
+    color: #0a1525a1;
+    background-color: #fff;
     text-align: center;
     border-top: 1px solid #A2AAAD;
 }
 
 #copyright a {
-    color: rgba(75, 147, 219, 0.747);
+    color: rgb(75, 147, 219);
 }
 
 #copyright a:hover {
-    color: rgb(75, 147, 219);
+    color: rgba(75, 147, 219, 0.747);
 }
 
 .img-footer {
@@ -950,13 +929,13 @@ _____________________________*/
 /*Style Social Media Buttons*/
 
 .social-icons {
-    padding: 12px;
-    font-size: 30px;
-    width: 60px;
-    height: 60px;
+    padding: 30px;
+    font-size: 60px;
+    width: 120px;
+    height: 120px;
     text-align: center;
     text-decoration: none;
-    margin: 10px;
+    margin: 30px;
     border-radius: 50%;
     color: #fff;
     border: #fff solid 1px;
@@ -966,12 +945,29 @@ _____________________________*/
     footer {
         height: auto;
     }
+
+    .social-icons {
+        padding: 12px;
+        font-size: 30px;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px;
+        border-radius: 50%;
+        color: #fff;
+    }
 }
 
 @media only screen and (max-width: 600px) {
     .page_section.contact {
         padding: 100px 0 150px;
         width: 100vw;
+    }
+
+    .img-footer {
+        display: none;
+        ;
     }
 
     #findMe {
@@ -986,19 +982,6 @@ _____________________________*/
     }
 }
 
-@media only screen and (max-width: 380px) {
-    .social-icons {
-        padding: 10px;
-        font-size: 25px;
-        width: 50px;
-        height: 50px;
-        text-align: center;
-        text-decoration: none;
-        margin: 5px;
-        border-radius: 50%;
-        color: #fff;
-    }
-}
 
 #linkedin:hover,
 #linkedin:focus,
