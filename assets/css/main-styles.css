@@ -2,11 +2,15 @@
 Author: Rolando Bernal | Front-End Web Developer
 -------------------------------------------------------*/
 
-/* FONTS */
+/* FONTS
+----------------------------------*/
+
 @charset "utf-8";
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,900|Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway:800, 700, 400");
 @import url("https://fonts.googleapis.com/css?family=Signika:400, 600");
+@import url("https://fonts.googleapis.com/css?family=Reenie+Beanie|Architects+Daughter|Rock+Salt|Special+Elite|Nunito|Inconsolata|Arvo:700|Open+Sans:400italic,400");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
 
 /* Reset
 ---------------------------------*/
@@ -112,6 +116,23 @@ p {
     animation-name: zoomIn;
 }
 
+.rolando-bernal {
+    color: #fafafa;
+    text-shadow: 0px 0px 8px #333;
+    margin: 0;
+    padding: 0;
+    font-size: 5em;
+    font-weight: 700;
+    font-family: 'Adelle W01 Bold', 'Arvo', Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
+
+.software-developer {
+    color: #C8102E;
+    text-shadow: 1px 1px #333;
+    font-family: "Reenie Beanie", Helvetica, Arial, sans-serif;
+    font-size: 4em;
+}
+
 .scroll-down {
     font-size: 1.5em;
     font-family: "Lato", "Nunito", "Helvetica Neue", Helvetica, Arial,
@@ -168,52 +189,6 @@ p {
     margin: 0 auto 20px;
     /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18); */
     opacity: 0.9;
-}
-
-/* Top_content
----------------------------------*/
-
-.top_left_cont {
-    padding: 15px 0;
-}
-
-.top_left_cont h3 {
-    font-size: 16px;
-    color: #f56eab;
-    margin: 0 0 20px 0;
-    text-align: left;
-    font-weight: 700;
-}
-
-.top_left_cont h2 {
-    font-size: 36px;
-    color: #fafafa;
-    line-height: 58px;
-    margin: 0 0 26px 0;
-    font-family: "Merriweather", serif;
-    font-weight: 900;
-    text-align: center;
-    text-transform: capitalize;
-}
-
-.top_left_cont h2 strong {
-    font-weight: 400;
-    color: #fafafa;
-    font-size: 28px;
-    text-transform: capitalize;
-}
-
-.top_left_cont p {
-    font-size: 18px;
-    color: #ffffff;
-    margin: 0 0 30px 0;
-    line-height: 33px;
-    text-align: center;
-    font-weight: normal;
-    font-size: 20px;
-    /* font-weight: 300; */
-    text-align: center;
-    letter-spacing: 1px;
 }
 
 /* ---------------------------
@@ -773,34 +748,19 @@ Media Queries
         width: 99%;
     }
 
-    .read_more2,
-    .img-margin-bot {
+    /* .img-margin-bot, */
+    .read_more2 {
         display: none;
     }
 
     .tap-me {
         display: inline-block;
-        /* color: #3C3A3A !important; */
+        color: #3C3A3A !important;
     }
 
     #img-circle {
         width: 170px;
         height: 170px;
-    }
-
-    .top_left_cont h1 {
-        font-size: 30px;
-        margin: 40px 0 0 0;
-    }
-
-    .top_left_cont h2 {
-        font-size: 20px;
-        line-height: 20px;
-        margin: 0 0 10px 0;
-    }
-
-    .top_left_cont h2 strong {
-        font-size: 16px;
     }
 }
 
@@ -835,8 +795,9 @@ footer {
     bottom: 0;
     width: 100%;
     padding: 10px;
-    color: #0a1525a1;
-    background-color: #fff;
+    color: rgba(255, 255, 255, 0.705);
+    background-color: #0a1525a1;
+    /* background-color: rgba(255, 255, 255, 0.144); */
     text-align: center;
     border-top: 1px solid #A2AAAD;
 }
@@ -847,12 +808,6 @@ footer {
 
 #copyright a:hover {
     color: rgba(75, 147, 219, 0.747);
-}
-
-.img-footer {
-    max-width: 200px;
-    border-radius: 50%;
-    opacity: 0.75;
 }
 
 /* Animation Timers
@@ -929,10 +884,10 @@ _____________________________*/
 /*Style Social Media Buttons*/
 
 .social-icons {
-    padding: 30px;
-    font-size: 60px;
-    width: 120px;
-    height: 120px;
+    padding: 25px;
+    font-size: 40px;
+    width: 95px;
+    height: 95px;
     text-align: center;
     text-decoration: none;
     margin: 30px;
@@ -956,6 +911,7 @@ _____________________________*/
         margin: 5px;
         border-radius: 50%;
         color: #fff;
+        border: rgba(255, 255, 255, 0.9) solid 1px;
     }
 }
 
@@ -963,11 +919,6 @@ _____________________________*/
     .page_section.contact {
         padding: 100px 0 150px;
         width: 100vw;
-    }
-
-    .img-footer {
-        display: none;
-        ;
     }
 
     #findMe {
