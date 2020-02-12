@@ -412,14 +412,6 @@ a.contact_btn:hover {
     justify-content: center;
 }
 
-.exp-card-logo a img {
-    margin: 0;
-}
-
-/* .exp-card-logo a img {
-    width: 100%;
-    height: auto;
-} */
 .exp-card-content span {
     color: rgb(110, 110, 110);
 }
@@ -673,21 +665,6 @@ Media Queries
         font-size: 14px;
     }
 
-    .top_cont_outer {
-        height: 335px;
-    }
-
-    .top_left_cont {
-        padding: 38px 0;
-    }
-
-    .top_left_cont h2 {
-        font-size: 25px;
-        color: #fff;
-        line-height: 39px;
-        margin: 0 0 9px 0;
-    }
-
     .inner_section {
         padding: 20px 0 20px;
     }
@@ -706,27 +683,8 @@ Media Queries
         padding-left: 0px;
     }
 
-    .form {
-        margin: 0 18px;
-    }
-
     .page_section.team {
         padding: 40px 0;
-    }
-
-    #clients {
-        padding: 40px 0;
-    }
-
-    .client_logos ul li {
-        display: inline;
-        margin: 0 25px;
-        padding: 11px 0;
-        display: inline-block;
-    }
-
-    .social_links li {
-        float: left;
     }
 
     .contact_section {
@@ -787,6 +745,7 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
 }
 
 #copyright {
@@ -894,6 +853,11 @@ _____________________________*/
     border-radius: 50%;
     color: #fff;
     border: #fff solid 1px;
+}
+
+.social-icons-container {
+    visibility: visible;
+    animation-name: zoomIn;
 }
 
 @media only screen and (max-width: 992px) {
