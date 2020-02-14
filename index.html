@@ -30,29 +30,6 @@
 <script src="js/html5element.js"></script>
 <![endif]-->
 
-        <!-- <script>
-
-            // Defining event listener function
-            function displayWindowSize() {
-
-                // Get width and height of the window
-                // excluding scrollbars
-                var w = document.documentElement.clientWidth;
-                var h = document.documentElement.clientHeight;
-
-                // Display result inside a div element
-                document.getElementById("result").innerHTML
-                    = "Width: " + w + ", " + "Height: " + h;
-            }
-
-            // Attaching the event listener function
-            // to window's resize event
-            window.addEventListener("resize", displayWindowSize);
-
-            // Calling the function for the first time
-            displayWindowSize();
-        </script> -->
-
     </head>
 
     <body>
@@ -93,7 +70,7 @@
         <!--Header section-->
         <header class="showcase">
             <div class="header-container showcase-inner" id="header">
-                <div class="animated main-page" id="logo">
+                <div class="animation-element bounce-up main-page" id="logo">
                     <!-- <img id="img-circle" src="assets/img/Roly-Chill-900x900.png" alt="Roly's avatar"> -->
                     <h1 class="hola rolando-bernal">Rolando Bernal</h1><br>
                     <h2 class="software-developer">Front-End Web Developer</h2>
@@ -109,7 +86,6 @@
             </div>
         </header>
 
-        <div style="width: 1910px; height: 80px; float: none; display: none;"></div>
         <!--End of Header section-->
 
         <!-- Portfolio -->
@@ -157,9 +133,9 @@
                         <span>(Tap image to view project details)</span>
                     </div><br>
                     <!-- Portfolio Wrapper -->
-                    <ol class="portfolio-wrapper fadeInLeft animated portfolio-item-list posts" id="portfoliolist">
+                    <ol class="portfolio-wrapper animation-element bounce-up portfolio-item-list posts" id="portfoliolist">
                         <!-- Zanie's Project -->
-                        <li class="post portfolio-item animated zoomIn" data-category="UX">
+                        <li class="post portfolio-item animation-element bounce-up" data-category="UX">
                             <div class="portfolio portfolio-item-img-container">
                                 <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                                     <img src="assets/img/projects/zanies.png" alt="Zanie's Project"
@@ -173,7 +149,7 @@
                             </div>
                         </li>
                         <!-- Grocery Calculator Project -->
-                        <li class="post portfolio-item animated zoomIn" data-category="App">
+                        <li class="post portfolio-item animation-element bounce-up" data-category="App">
                             <div class="portfolio portfolio-item-img-container">
                                 <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                                     <img src="assets/img/projects/RE-Grocery-App.jpg" alt="Grocery Calculator"
@@ -187,7 +163,7 @@
                             </div>
                         </li>
                         <!-- The Nighthawks Project -->
-                        <li class="post portfolio-item animated zoomIn" data-category="Site">
+                        <li class="post portfolio-item animation-element bounce-up" data-category="Site">
                             <div class="portfolio portfolio-item-img-container">
                                 <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                                     <div class="portfolio-wrapper">
@@ -203,7 +179,7 @@
                             </div>
                         </li>
                         <!-- iMaintenanceTotal Project -->
-                        <li class="post portfolio-item animated zoomIn" data-category="App">
+                        <li class="post portfolio-item animation-element bounce-up" data-category="App">
                             <div class="portfolio portfolio-item-img-container">
                                 <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
                                     <div class="portfolio-wrapper">
@@ -219,7 +195,7 @@
                             </div>
                         </li>
                         <!-- Book That Lesson! Project -->
-                        <li class="post portfolio-item animated zoomIn" data-category="App">
+                        <li class="post portfolio-item animation-element bounce-up" data-category="App">
                             <div class="portfolio portfolio-item-img-container">
                                 <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                                     <div class="portfolio-wrapper">
@@ -235,7 +211,7 @@
                             </div>
                         </li>
                         <!-- Personal Portfolio Website Project -->
-                        <li class="post portfolio-item animated zoomIn" data-category="Site">
+                        <li class="post portfolio-item animation-element bounce-up" data-category="Site">
                             <div class="portfolio portfolio-item-img-container">
                                 <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
                                     <div class="portfolio-wrapper">
@@ -251,7 +227,7 @@
                             </div>
                         </li>
                         <!-- Other Projects -->
-                        <li class="post portfolio-item animated zoomIn" data-category="Site">
+                        <li class="post portfolio-item animation-element bounce-up" data-category="Site">
                             <div class="portfolio portfolio-item-img-container">
                                 <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
                                     <div class="portfolio-wrapper">
@@ -267,7 +243,7 @@
                             </div>
                         </li>
                         <!-- Nashville International Futbol Club Project -->
-                        <li class="post portfolio-item animated zoomIn" data-category="Site">
+                        <li class="post portfolio-item animation-element bounce-up" data-category="Site">
                             <div class="portfolio portfolio-item-img-container">
                                 <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                                     <div class="portfolio-wrapper">
@@ -896,40 +872,40 @@
                 <div class="service_wrapper">
                     <div class="row">
                         <div class="col-md-3">
-                            <div class="service_icon delay-03s animated wow zoomIn"
+                            <div class="service_icon delay-03s animation-element bounce-up"
                                 style="visibility: visible; animation-name: zoomIn;"> <span><i
                                         class="fas fa-user-cog"></i></span> </div>
                             <div class="service_block">
-                                <h4 class="animated fadeInUp wow"
-                                    style="visibility: visible; animation-name: fadeInUp;">UX/UI Design & Development
+                                <h4 class="animation-element bounce-up" style="visibility: visible; animation-name: zoomIn;">UX/UI
+                                    Design & Development
                                 </h4>
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="service_icon icon2 delay-03s animated wow zoomIn"
+                            <div class="service_icon icon2 delay-03s animation-element bounce-up"
                                 style="visibility: visible; animation-name: zoomIn;"> <span><i
                                         class="fas fa-pen-nib"></i></span> </div>
                             <div class="service_block">
-                                <h4 class="animated fadeInUp wow"
-                                    style="visibility: visible; animation-name: fadeInUp;">Graphic Design</h4>
+                                <h4 class="animation-element bounce-up" style="visibility: visible; animation-name: zoomIn;">Graphic
+                                    Design</h4>
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="service_icon icon3 delay-03s animated wow zoomIn"
+                            <div class="service_icon icon3 delay-03s animation-element bounce-up"
                                 style="visibility: visible; animation-name: zoomIn;"> <span><i
                                         class="fas fa-mobile-alt"></i></span> </div>
                             <div class="service_block">
-                                <h4 class="animated fadeInUp wow"
-                                    style="visibility: visible; animation-name: fadeInUp;">Responsive Design</h4>
+                                <h4 class="animation-element bounce-up" style="visibility: visible; animation-name: zoomIn;">
+                                    Responsive Design</h4>
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="service_icon icon3 delay-03s animated wow zoomIn"
+                            <div class="service_icon icon3 delay-03s animation-element bounce-up"
                                 style="visibility: visible; animation-name: zoomIn;"> <span><i
                                         class="fas fa-laptop-code"></i></span> </div>
                             <div class="service_block">
-                                <h4 class="animated fadeInUp wow"
-                                    style="visibility: visible; animation-name: fadeInUp;">Front-end Development</h4>
+                                <h4 class="animation-element bounce-up" style="visibility: visible; animation-name: zoomIn;">
+                                    Front-end Development</h4>
                             </div>
                         </div>
                     </div>
@@ -1025,7 +1001,7 @@
                     <div class="text-center">
                         <h2 id="findMe">Let's Connect!</h2>
                     </div>
-                    <div class="social-icons-container animated">
+                    <div class="social-icons-container animation-element bounce-up">
                         <a target="_blank" href="https://www.linkedin.com/in/jrolandobernal"
                             class="social-icons fab fa-linkedin-in" id="linkedin"></a>
                         <a target="_blank" href="http://twitter.com/jrolandobernal" class="social-icons fab fa-twitter"
@@ -1035,10 +1011,11 @@
                         <!-- <a href="mailto:jrolandobernal@gmail.com?subject=Hola,%20Rolando.%20Let's%20talk.&body=Hi,%20my%20name%20is...%20"
                             class="social-icons far fa-envelope" id="email"></a> -->
                     </div>
-
                 </div>
-                <div id="copyright"><span>Copyright &copy; <a href="https://rolandobernal.github.io/"
-                            class="text-muted">Rolando Bernal &nbsp;</a><span id="current-year"></span></span>
+                <div id="copyright">
+                    <span id="currentYear"></span></span><span>&nbsp;Copyright &copy; <a
+                            href="http://rolandobernal.github.io/" class="text-muted">Rolando Bernal | UX/UI Front-End
+                            Web Developer</a>
                 </div>
             </section>
         </footer>
@@ -1048,19 +1025,67 @@
         <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="assets/js/jquery-scrolltofixed.js"></script>
         <script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
-        <script type="text/javascript" src="assets/js/wow.js"></script>
         <!-- My JS Scripts -->
         <script type="text/javascript" src="assets/js/toggle-menu.js"></script>
         <script type="text/javascript" src="assets/js/progress-bar.js"></script>
-        <!-- <script type="text/javascript" src="assets/js/portfolio.js"></script> -->
         <!-- To obtain Current Year -->
         <script type="text/javascript">
             let currentDate = new Date();
             let year = currentDate.getFullYear();
             //insert it via jquery
-            $('#current-year').html((currentDate.getFullYear()));
+            $('#currentYear').html((currentDate.getFullYear()));
         </script>
-        <!-- End of To obtain Current Year -->
+        <!-- [End of] To obtain Current Year -->
+
+        <!-- <script>
+            // Defining event listener function
+            function displayWindowSize() {
+                // Get width and height of the window
+                // excluding scrollbars
+                var w = document.documentElement.clientWidth;
+                var h = document.documentElement.clientHeight;
+                // Display result inside a div element
+                document.getElementById("result").innerHTML
+                    = "Width: " + w + ", " + "Height: " + h;
+            }
+            // Attaching the event listener function
+            // to window's resize event
+            window.addEventListener("resize", displayWindowSize);
+            // Calling the function for the first time
+            displayWindowSize();
+        </script> -->
+
+        <!-- To Animate Some Elements when user scrolls down/up -->
+        <script>
+            var $animation_elements = $('.animation-element');
+            var $window = $(window);
+
+            function check_if_in_view() {
+                var window_height = $window.height();
+                var window_top_position = $window.scrollTop();
+                var window_bottom_position = (window_top_position + window_height);
+
+                $.each($animation_elements, function () {
+                    var $element = $(this);
+                    var element_height = $element.outerHeight();
+                    var element_top_position = $element.offset().top;
+                    var element_bottom_position = (element_top_position + element_height);
+
+                    //check to see if this current container is within viewport
+                    if ((element_bottom_position >= window_top_position) &&
+                        (element_top_position <= window_bottom_position)) {
+                        $element.addClass('in-view');
+                    } else {
+                        $element.removeClass('in-view');
+                    }
+                });
+            }
+
+            $window.on('scroll resize', check_if_in_view);
+            $window.trigger('scroll');
+        </script>
+        <!-- [End Of] To Animate Some Elements when user scrolls down/up -->
+
     </body>
 
 </html>

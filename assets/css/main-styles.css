@@ -52,6 +52,10 @@ a:active {
 /* GLOBAL
 ----------------------------------*/
 
+html {
+    scroll-behavior: smooth;
+}
+
 html,
 body {
     width: 100%;
@@ -113,7 +117,7 @@ p {
 
 .main-page {
     visibility: visible;
-    animation-name: zoomIn;
+    animation-name: zommIn;
 }
 
 .rolando-bernal {
@@ -749,24 +753,58 @@ footer {
 }
 
 #copyright {
+    /* font-size: 1rem; */
+    line-height: 1.5;
+    font-family: "Raleway", sans-serif;
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
     padding: 10px;
-    color: rgba(255, 255, 255, 0.705);
-    background-color: #0a1525a1;
+    /* color: rgba(255, 255, 255, 0.705); */
+    color: #9cabb8;
+    /* background-color: #0a1525a1; */
     /* background-color: rgba(255, 255, 255, 0.144); */
     text-align: center;
     border-top: 1px solid #A2AAAD;
 }
 
 #copyright a {
-    color: rgb(75, 147, 219);
+    /* color: rgb(75, 147, 219); */
+    color: #9cabb89c;
 }
 
 #copyright a:hover {
     color: rgba(75, 147, 219, 0.747);
+}
+
+/* Animations Global */
+
+/*bounce up animation for the subject*/
+
+.bounce-up {
+    opacity: 0;
+    -moz-transition: all 1000ms ease-out;
+    -webkit-transition: all 1000ms ease-out;
+    -o-transition: all 1000ms ease-out;
+    transition: all 1000ms ease-out;
+    -moz-transform: translate3d(0px, 250px, 0px);
+    -webkit-transform: translate3d(0px, 250px, 0px);
+    -o-transform: translate(0px, 250px);
+    -ms-transform: translate(0px, 250px);
+    transform: translate3d(0px, 250px, 0px);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.bounce-up.in-view {
+    opacity: 1;
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
 }
 
 /* Animation Timers
@@ -857,7 +895,8 @@ _____________________________*/
 
 .social-icons-container {
     visibility: visible;
-    animation-name: zoomIn;
+    /* animation-name: zoomIn; */
+    animation-name: fadeInUp;
 }
 
 @media only screen and (max-width: 992px) {
