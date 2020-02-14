@@ -133,9 +133,9 @@
                         <span>(Tap image to view project details)</span>
                     </div><br>
                     <!-- Portfolio Wrapper -->
-                    <ol class="portfolio-wrapper animation-element bounce-up portfolio-item-list posts" id="portfoliolist">
+                    <ol class="portfolio-wrapper animation-element slide-left portfolio-item-list posts" id="portfoliolist">
                         <!-- Zanie's Project -->
-                        <li class="post portfolio-item animation-element bounce-up" data-category="UX">
+                        <li class="post portfolio-item animation-element slide-left" data-category="UX">
                             <div class="portfolio portfolio-item-img-container">
                                 <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                                     <img src="assets/img/projects/zanies.png" alt="Zanie's Project"
@@ -149,7 +149,7 @@
                             </div>
                         </li>
                         <!-- Grocery Calculator Project -->
-                        <li class="post portfolio-item animation-element bounce-up" data-category="App">
+                        <li class="post portfolio-item animation-element slide-left" data-category="App">
                             <div class="portfolio portfolio-item-img-container">
                                 <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                                     <img src="assets/img/projects/RE-Grocery-App.jpg" alt="Grocery Calculator"
@@ -163,7 +163,7 @@
                             </div>
                         </li>
                         <!-- The Nighthawks Project -->
-                        <li class="post portfolio-item animation-element bounce-up" data-category="Site">
+                        <li class="post portfolio-item animation-element slide-left" data-category="Site">
                             <div class="portfolio portfolio-item-img-container">
                                 <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                                     <div class="portfolio-wrapper">
@@ -179,7 +179,7 @@
                             </div>
                         </li>
                         <!-- iMaintenanceTotal Project -->
-                        <li class="post portfolio-item animation-element bounce-up" data-category="App">
+                        <li class="post portfolio-item animation-element slide-left" data-category="App">
                             <div class="portfolio portfolio-item-img-container">
                                 <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
                                     <div class="portfolio-wrapper">
@@ -195,7 +195,7 @@
                             </div>
                         </li>
                         <!-- Book That Lesson! Project -->
-                        <li class="post portfolio-item animation-element bounce-up" data-category="App">
+                        <li class="post portfolio-item animation-element slide-left" data-category="App">
                             <div class="portfolio portfolio-item-img-container">
                                 <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                                     <div class="portfolio-wrapper">
@@ -211,7 +211,7 @@
                             </div>
                         </li>
                         <!-- Personal Portfolio Website Project -->
-                        <li class="post portfolio-item animation-element bounce-up" data-category="Site">
+                        <li class="post portfolio-item animation-element slide-left" data-category="Site">
                             <div class="portfolio portfolio-item-img-container">
                                 <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
                                     <div class="portfolio-wrapper">
@@ -227,7 +227,7 @@
                             </div>
                         </li>
                         <!-- Other Projects -->
-                        <li class="post portfolio-item animation-element bounce-up" data-category="Site">
+                        <li class="post portfolio-item animation-element slide-left" data-category="Site">
                             <div class="portfolio portfolio-item-img-container">
                                 <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
                                     <div class="portfolio-wrapper">
@@ -243,7 +243,7 @@
                             </div>
                         </li>
                         <!-- Nashville International Futbol Club Project -->
-                        <li class="post portfolio-item animation-element bounce-up" data-category="Site">
+                        <li class="post portfolio-item animation-element slide-left" data-category="Site">
                             <div class="portfolio portfolio-item-img-container">
                                 <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                                     <div class="portfolio-wrapper">
@@ -1057,32 +1057,44 @@
 
         <!-- To Animate Some Elements when user scrolls down/up -->
         <script>
-            var $animation_elements = $('.animation-element');
-            var $window = $(window);
+            /*Interactivity to determine when an animated element in in view. In view elements trigger our animation*/
+                $(document).ready(function () {
 
-            function check_if_in_view() {
-                var window_height = $window.height();
-                var window_top_position = $window.scrollTop();
-                var window_bottom_position = (window_top_position + window_height);
+                    //window and animation items
+                    var animation_elements = $.find('.animation-element');
+                    var web_window = $(window);
 
-                $.each($animation_elements, function () {
-                    var $element = $(this);
-                    var element_height = $element.outerHeight();
-                    var element_top_position = $element.offset().top;
-                    var element_bottom_position = (element_top_position + element_height);
+                    //check to see if any animation containers are currently in view
+                    function check_if_in_view() {
+                        //get current window information
+                        var window_height = web_window.height();
+                        var window_top_position = web_window.scrollTop();
+                        var window_bottom_position = (window_top_position + window_height);
 
-                    //check to see if this current container is within viewport
-                    if ((element_bottom_position >= window_top_position) &&
-                        (element_top_position <= window_bottom_position)) {
-                        $element.addClass('in-view');
-                    } else {
-                        $element.removeClass('in-view');
+                        //iterate through elements to see if its in view
+                        $.each(animation_elements, function () {
+
+                            //get the element sinformation
+                            var element = $(this);
+                            var element_height = $(element).outerHeight();
+                            var element_top_position = $(element).offset().top;
+                            var element_bottom_position = (element_top_position + element_height);
+
+                            //check to see if this current container is visible (its viewable if it exists between the viewable space of the viewport)
+                            if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
+                                element.addClass('in-view');
+                            } else {
+                                element.removeClass('in-view');
+                            }
+                        });
                     }
+                    //on or scroll, detect elements in view
+                    $(window).on('scroll resize', function () {
+                        check_if_in_view()
+                    })
+                    //trigger our scroll event on initial load
+                    $(window).trigger('scroll');
                 });
-            }
-
-            $window.on('scroll resize', check_if_in_view);
-            $window.trigger('scroll');
         </script>
         <!-- [End Of] To Animate Some Elements when user scrolls down/up -->
 
