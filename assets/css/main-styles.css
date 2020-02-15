@@ -52,6 +52,19 @@ a:active {
 /* GLOBAL
 ----------------------------------*/
 
+/* CORE STYLES */
+:root {
+    --primary-color: #0a1525e7;
+    --action-color: #4b93db;
+    --secondary-color: #C8102E;
+    --titans-navy: rgb(12, 35, 64);
+    --titans-wolf-grey: rgb(162, 170, 173);
+    --default-white: #ffffff;
+    --default-black: #000;
+    --overlay-color: rgba(75, 146, 219, 0.95);
+    --menu-speed: 0.025s;
+}
+
 html {
     scroll-behavior: smooth !important;
 }
@@ -714,6 +727,15 @@ Media Queries
 
 @media (max-width: 768px) {
 
+    .rolando-bernal {
+        font-size: 3em;
+        font-weight: 500;
+    }
+
+    .software-developer {
+        font-size: 2em;
+    }
+
     p {
         font-size: 14px;
     }
@@ -961,4 +983,66 @@ _____________________________*/
 #copyright {
     visibility: visible;
     animation-name: tada;
+}
+
+/* Scroll to Top Button
+---------------------------- */
+
+.scrollto {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    display: block;
+    z-index: 100;
+    margin-bottom: 70px;
+}
+
+.scrollto .mouse {
+    border: 3px solid #FFF;
+    padding: 25px 20px;
+    border-radius: 50px;
+}
+
+.scrollto .mouse span {
+    position: absolute;
+    background: #FFF;
+    padding: 6px 3px;
+    border-radius: 50px;
+    border: 1px solid #FFF;
+    margin-left: -4px;
+    margin-top: -5px;
+    -webkit-animation: fadeInDown 1s linear infinite;
+    -moz-animation: fadeInDown 1s linear infinite;
+    animation: fadeInDown 1s linear infinite;
+}
+
+/*-----------------------
+    Back To Top
+------------------------*/
+.scrollToTop {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 60px;
+    right: 0px;
+    display: none;
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+    border-radius: 4px;
+}
+
+.scrollToTop:hover,
+.scrollToTop:focus {
+    text-decoration: none;
+    border: 2px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.scrollToTop i.fa {
+    width: 35px;
+    height: 35px;
+    line-height: 30px;
 }

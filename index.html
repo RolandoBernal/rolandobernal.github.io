@@ -21,7 +21,7 @@
         <link href="assets/css/portfolio.css" rel="stylesheet" type="text/css">
         <link href="assets/css/portfolio-filters.css" rel="stylesheet" type="text/css">
         <link href="assets/css/scroll-down-icon.css" rel="stylesheet" type="text/css">
-        <link href="assets/css/h-menu.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/menu.css" rel="stylesheet" type="text/css">
         <!-- <link rel="stylesheet" href="assets/css/filter.css" type="text/css"> -->
 
         <!--[if lt IE 9]>
@@ -68,7 +68,7 @@
         <!-- End of Navigation -->
 
         <!--Header section-->
-        <header class="showcase">
+        <header class="showcase the-top">
             <div class="header-container showcase-inner" id="header">
                 <div class="wow animated slow main-page" id="logo">
                     <!-- <img id="img-circle" src="assets/img/Roly-Chill-900x900.png" alt="Roly's avatar"> -->
@@ -884,7 +884,8 @@
                             <div class="service_icon icon2 delay-02s wow animated"> <span><i
                                         class="fas fa-pen-nib"></i></span> </div>
                             <div class="service_block">
-                                <h4 class="wow animated" style="visibility: visible; animation-name: fadeInUpBig;">Graphic
+                                <h4 class="wow animated" style="visibility: visible; animation-name: fadeInUpBig;">
+                                    Graphic
                                     Design</h4>
                             </div>
                         </div>
@@ -1000,21 +1001,24 @@
                     <div class="social-icons-container wow animated">
                         <a target="_blank" href="https://www.linkedin.com/in/jrolandobernal"
                             class="social-icons wow animated fab fa-linkedin-in" id="linkedin"></a>
-                        <a target="_blank" href="http://twitter.com/jrolandobernal" class="social-icons wow animated fab fa-twitter"
-                            id="twitter"></a>
-                        <a target="_blank" href="https://github.com/rolandobernal" class="social-icons wow animated fab fa-github"
-                            id="github"></a>
+                        <a target="_blank" href="http://twitter.com/jrolandobernal"
+                            class="social-icons wow animated fab fa-twitter" id="twitter"></a>
+                        <a target="_blank" href="https://github.com/rolandobernal"
+                            class="social-icons wow animated fab fa-github" id="github"></a>
                         <!-- <a href="mailto:jrolandobernal@gmail.com?subject=Hola,%20Rolando.%20Let's%20talk.&body=Hi,%20my%20name%20is...%20"
                             class="social-icons far fa-envelope" id="email"></a> -->
                     </div>
                 </div>
                 <div id="copyright" class="wow animated">
-                    <span id="currentYear"></span></span><span>&nbsp;Copyright &copy; <a
-                            href="http://rolandobernal.github.io/" class="text-muted">Rolando Bernal | UX/UI Front-End
-                            Web Developer</a>
+                    <span id="currentYear"></span>&nbsp;Copyright &copy; <a href="http://rolandobernal.github.io/"
+                        class="text-muted">Rolando Bernal <br /> UX/UI Front-End
+                        Web Developer</a>
                 </div>
             </section>
         </footer>
+        <!-- Back To Top Button start -->
+        <a href="#" class="scrollToTop"><i class="fa fa-chevron-up"></i></a>
+        <!-- Back To Top Button end -->
 
         <!-- Vendor JS scripts -->
         <script type="text/javascript" src="assets/js/jquery-1.11.0.min.js"></script>
@@ -1056,6 +1060,26 @@
             // Calling the function for the first time
             displayWindowSize();
         </script> -->
+        <script>
+            /*------------------------------------------------------
+                Back To Top
+            -------------------------------------------------------*/
+
+            //Check to see if the window is top if not then display button
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('.scrollToTop').fadeIn();
+                } else {
+                    $('.scrollToTop').fadeOut();
+                }
+            });
+
+            //Click event to scroll to top
+            $('.scrollToTop').click(function () {
+                $('html, body').animate({ scrollTop: 0 }, 800);
+                return false;
+            });
+        </script>
 
     </body>
 

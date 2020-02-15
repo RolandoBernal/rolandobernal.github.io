@@ -77,26 +77,26 @@ body {
 
 .menu-wrap .toggler {
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 12;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 102;
     cursor: pointer;
     width: 60px;
     height: 60px;
-    margin: 1rem;
+    margin: 1rem !important;
     opacity: 0;
 }
 
 /* Hamburger Button */
 .menu-wrap .hamburger {
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 100;
     width: 60px;
     height: 60px;
-    padding: 1rem;
-    margin: 1rem;
+    padding: 1rem !important;
+    margin: 1rem !important;
     background: var(--primary-color);
     display: flex;
     align-items: center;
