@@ -54,6 +54,38 @@ a:active {
 
 /* CORE STYLES */
 :root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xxs: 0;
+    --breakpoint-xs: 480px;
+    --breakpoint-sm: 576px;
+    --breakpoint-sm-600: 600px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --font-family-main: "Lato", sans-serif;
+    --font-family-hx: "Merriweather", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     --primary-color: #0a1525;
     --action-color: #4b93db;
     --secondary-color: #C8102E;
@@ -78,7 +110,7 @@ body {
 }
 
 body {
-    font-family: "Lato", sans-serif;
+    font-family: var(--font-family-main);
     color: #444;
     font-weight: 200;
 }
@@ -88,7 +120,7 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: "Merriweather", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font-family-hx);
     font-weight: 900;
     color: #222;
 }
@@ -180,7 +212,6 @@ p {
     -webkit-transition-duration: 1s;
     -moz-transition-property: -moz-transform;
     -moz-transition-duration: 1s;
-
     -webkit-animation-name: pulse;
     -moz-animation-name: pulse;
     -webkit-animation-duration: 1.5s;
@@ -196,9 +227,7 @@ p {
     width: 200px;
     height: 200px;
     overflow: hidden;
-    /*border: 8px groove rgba(255, 255, 255, 0.23);*/
     margin: 0 auto 20px;
-    /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18); */
     opacity: 0.9;
 }
 
@@ -208,7 +237,6 @@ p {
 .banner {
     position: relative;
     height: 100vh;
-    /* background: #ededed url("../../assets/img/bg3.jpg") no-repeat center/cover; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -571,7 +599,6 @@ a.contact_btn:hover {
 .section-title h6,
 .section-title h5,
 .section-title h4 {
-    /*color: #222222;*/
     font-family: "Lato", sans-serif;
     text-align: center;
     font-weight: 200;
@@ -749,7 +776,6 @@ footer {
 }
 
 #copyright {
-    /* font-size: 1rem; */
     line-height: 1.5;
     font-family: "Raleway", sans-serif;
     position: absolute;
@@ -757,16 +783,12 @@ footer {
     bottom: 0;
     width: 100%;
     padding: 10px;
-    /* color: rgba(255, 255, 255, 0.705); */
     color: #9cabb8;
-    /* background-color: #0a1525a1; */
-    /* background-color: rgba(255, 255, 255, 0.144); */
     text-align: center;
     border-top: 1px solid #A2AAAD;
 }
 
 #copyright a {
-    /* color: rgb(75, 147, 219); */
     color: #9cabb89c;
 }
 
@@ -938,6 +960,18 @@ _____________________________*/
 /* ---------------------------
     Media Queries
 --------------------------- */
+
+/*
+
+--breakpoint-xxs: 0;
+--breakpoint-xs: 480px;
+--breakpoint-sm: 576px;
+--breakpoint-sm-600: 600px;
+--breakpoint-md: 768px;
+--breakpoint-lg: 992px;
+--breakpoint-xl: 1200px;
+
+*/
 
 @media only screen and (max-width: 992px) {
     footer {
