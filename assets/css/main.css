@@ -54,7 +54,7 @@ a:active {
 
 /* CORE STYLES */
 :root {
-    --primary-color: #0a1525e7;
+    --primary-color: #0a1525;
     --action-color: #4b93db;
     --secondary-color: #C8102E;
     --titans-navy: rgb(12, 35, 64);
@@ -147,8 +147,7 @@ p {
 
 .scroll-down {
     font-size: 1.5em;
-    font-family: "Lato", "Nunito", "Helvetica Neue", Helvetica, Arial,
-        sans-serif;
+    font-family: "Lato", "Nunito", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 300;
     color: rgba(75, 146, 219, 0.8);
 }
@@ -721,81 +720,7 @@ a.contact_btn:hover {
 
 /* End of Skill Bars / Ready to Go Section */
 
-/*
-Media Queries
---------------------------- */
 
-@media (max-width: 768px) {
-
-    .rolando-bernal {
-        font-size: 3em;
-        font-weight: 500;
-    }
-
-    .software-developer {
-        font-size: 2em;
-    }
-
-    p {
-        font-size: 14px;
-    }
-
-    .inner_section {
-        padding: 20px 0 20px;
-    }
-
-    .service_block h3 {
-        font-size: 16px;
-    }
-
-    .service_block p {
-        font-size: 14px;
-        margin: 0px;
-        margin-bottom: 20px;
-    }
-
-    #filterscontainer ul {
-        padding-left: 0px;
-    }
-
-    .page_section.team {
-        padding: 40px 0;
-    }
-
-    .contact_section {
-        margin: 0;
-    }
-
-    h2,
-    .contact_section h2 {
-        font-size: 30px;
-    }
-
-    .page_section.contact {
-        padding: 90px 0 100px;
-    }
-}
-
-@media (max-width: 480px) {
-    .team_area {
-        width: 99%;
-    }
-
-    /* .img-margin-bot, */
-    .read_more2 {
-        display: none;
-    }
-
-    .tap-me {
-        display: inline-block;
-        color: #3C3A3A !important;
-    }
-
-    #img-circle {
-        width: 170px;
-        height: 170px;
-    }
-}
 
 /* Footer
 ---------------------------------*/
@@ -870,44 +795,7 @@ _____________________________*/
 
 .social-icons-container {
     visibility: visible;
-    /* animation-name: zoomIn; */
     animation-name: fadeInUp;
-}
-
-@media only screen and (max-width: 992px) {
-    footer {
-        height: auto;
-    }
-
-    .social-icons {
-        padding: 12px;
-        font-size: 30px;
-        width: 60px;
-        height: 60px;
-        text-align: center;
-        text-decoration: none;
-        margin: 5px;
-        border-radius: 50%;
-        color: #fff;
-        border: rgba(255, 255, 255, 0.9) solid 1px;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .page_section.contact {
-        padding: 100px 0 150px;
-        width: 100vw;
-    }
-
-    #findMe {
-        font-size: 30px;
-        margin: 30px;
-    }
-
-    #copyright {
-        padding: 5px 0 15px 0;
-        margin-bottom: 20px;
-    }
 }
 
 
@@ -1045,4 +933,117 @@ _____________________________*/
     width: 35px;
     height: 35px;
     line-height: 30px;
+}
+
+/* ---------------------------
+    Media Queries
+--------------------------- */
+
+@media only screen and (max-width: 992px) {
+    footer {
+        height: 100vh;
+    }
+
+    .social-icons {
+        padding: 12px;
+        font-size: 30px;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px;
+        border-radius: 50%;
+        color: #fff;
+        border: rgba(255, 255, 255, 0.9) solid 1px;
+    }
+
+    .scrollToTop {
+        bottom: 65px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .rolando-bernal {
+        font-size: 3em;
+        font-weight: 500;
+    }
+
+    .software-developer {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .inner_section {
+        padding: 20px 0 20px;
+    }
+
+    .service_block h3 {
+        font-size: 16px;
+    }
+
+    .service_block p {
+        font-size: 14px;
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+
+    #filterscontainer ul {
+        padding-left: 0px;
+    }
+
+    .page_section.team {
+        padding: 40px 0;
+    }
+
+    .contact_section {
+        margin: 0;
+    }
+
+    h2,
+    .contact_section h2 {
+        font-size: 30px;
+    }
+
+    .page_section.contact {
+        padding: 90px 0 100px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .page_section.contact {
+        padding: 100px 0 150px;
+    }
+
+    #findMe {
+        font-size: 30px;
+        margin: 30px;
+    }
+
+    #copyright {
+        padding: 5px 0 15px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .team_area {
+        width: 99%;
+    }
+
+    .read_more2 {
+        display: none;
+    }
+
+    .tap-me {
+        display: inline-block;
+        color: #3C3A3A !important;
+    }
+
+    #img-circle {
+        width: 170px;
+        height: 170px;
+    }
 }
