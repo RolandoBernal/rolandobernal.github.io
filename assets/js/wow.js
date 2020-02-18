@@ -255,6 +255,7 @@
     WOW.prototype.customStyle = function(box, hidden, duration, delay, iteration) {
       if (hidden) {
         this.cacheAnimationName(box);
+        console.log("this.cacheAnimationName(box)", this.cacheAnimationName(box));
       }
       box.style.visibility = hidden ? 'hidden' : 'visible';
       if (duration) {

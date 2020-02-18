@@ -13,16 +13,13 @@
         <meta name="msapplication-TileImage" content="favicon/ms-icon-310x310.png">
         <meta name="theme-color" content="#ffffff">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <!-- Vendor CSS -->
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="assets/css/animate.css" rel="stylesheet" type="text/css">
+        <!-- Main CSS -->
         <link href="assets/css/main.css" rel="stylesheet" type="text/css">
-        <!--load all styles of Font Awesome-->
+        <!--Font Awesome CSS - Load all styles of Font Awesome-->
         <link href="assets/font-awesome/css/all.css" rel="stylesheet">
-        <link href="assets/css/portfolio.css" rel="stylesheet" type="text/css">
-        <link href="assets/css/portfolio-filters.css" rel="stylesheet" type="text/css">
-        <link href="assets/css/scroll-down-icon.css" rel="stylesheet" type="text/css">
-        <link href="assets/css/menu.css" rel="stylesheet" type="text/css">
-        <!-- <link rel="stylesheet" href="assets/css/filter.css" type="text/css"> -->
 
         <!--[if lt IE 9]>
 <script src="js/respond-1.1.0.min.js"></script>
@@ -33,6 +30,12 @@
     </head>
 
     <body>
+        <!-- Website loader start -->
+        <div class="preloader">
+            <div class="loader"></div>
+            <span class="loader-text">Loading...</span>
+        </div>
+        <!-- Website loader end -->
 
         <!-- Navigation -->
         <div class="menu-wrap">
@@ -133,9 +136,9 @@
                         <span>(Tap image to view project details)</span>
                     </div><br>
                     <!-- Portfolio Wrapper -->
-                    <ol class="portfolio-wrapper portfolio-item-list wow animated slow posts" id="portfoliolist">
+                    <ol class="portfolio-wrapper portfolio-item-list posts" id="portfoliolist">
                         <!-- Zanie's Project -->
-                        <li class="post portfolio-item wow animated fast" data-category="UX">
+                        <li class="post portfolio-item wow animated fast delay-1s" data-category="UX">
                             <div class="portfolio portfolio-item-img-container">
                                 <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                                     <img src="assets/img/projects/zanies.png" alt="Zanie's Project"
@@ -149,7 +152,7 @@
                             </div>
                         </li>
                         <!-- Grocery Calculator Project -->
-                        <li class="post portfolio-item wow animated fast" data-category="App">
+                        <li class="post portfolio-item wow animated fast delay-2s" data-category="App">
                             <div class="portfolio portfolio-item-img-container">
                                 <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                                     <img src="assets/img/projects/RE-Grocery-App.jpg" alt="Grocery Calculator"
@@ -163,7 +166,7 @@
                             </div>
                         </li>
                         <!-- The Nighthawks Project -->
-                        <li class="post portfolio-item wow animated fast" data-category="Site">
+                        <li class="post portfolio-item wow animated fast delay-3s" data-category="Site">
                             <div class="portfolio portfolio-item-img-container">
                                 <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                                     <div class="portfolio-wrapper">
@@ -179,7 +182,7 @@
                             </div>
                         </li>
                         <!-- iMaintenanceTotal Project -->
-                        <li class="post portfolio-item wow animated fast" data-category="App">
+                        <li class="post portfolio-item wow animated fast delay-4s" data-category="App">
                             <div class="portfolio portfolio-item-img-container">
                                 <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
                                     <div class="portfolio-wrapper">
@@ -195,7 +198,7 @@
                             </div>
                         </li>
                         <!-- Book That Lesson! Project -->
-                        <li class="post portfolio-item wow animated fast" data-category="App">
+                        <li class="post portfolio-item wow animated fast delay-5s" data-category="App">
                             <div class="portfolio portfolio-item-img-container">
                                 <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                                     <div class="portfolio-wrapper">
@@ -211,7 +214,7 @@
                             </div>
                         </li>
                         <!-- Personal Portfolio Website Project -->
-                        <li class="post portfolio-item wow animated fast" data-category="Site">
+                        <li class="post portfolio-item wow animated fast delay-6s" data-category="Site">
                             <div class="portfolio portfolio-item-img-container">
                                 <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
                                     <div class="portfolio-wrapper">
@@ -227,7 +230,7 @@
                             </div>
                         </li>
                         <!-- Other Projects -->
-                        <li class="post portfolio-item wow animated fast" data-category="Site">
+                        <li class="post portfolio-item wow animated fast delay-7s" data-category="Site">
                             <div class="portfolio portfolio-item-img-container">
                                 <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
                                     <div class="portfolio-wrapper">
@@ -243,7 +246,7 @@
                             </div>
                         </li>
                         <!-- Nashville International Futbol Club Project -->
-                        <li class="post portfolio-item wow animated fast" data-category="Site">
+                        <li class="post portfolio-item wow animated fast delay-8s" data-category="Site">
                             <div class="portfolio portfolio-item-img-container">
                                 <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                                     <div class="portfolio-wrapper">
@@ -992,24 +995,21 @@
             <section class="page_section contact text-center" id="contactsection">
                 <div class="footer-content-container">
                     <div class="text-center img-margin-bot">
-                        <!-- <img src="assets/img/RolandoBernal.png" class="img-footer" alt="Rolando Bernal's picture"> -->
                         <img id="img-circle" src="assets/img/Roly-Chill-900x900.png" alt="Roly's avatar">
                     </div>
                     <div class="text-center">
                         <h2 id="findMe">Let's Connect!</h2>
                     </div>
-                    <div class="social-icons-container wow animated">
+                    <div class="social-icons-container wow animated delay-2s">
                         <a target="_blank" href="https://www.linkedin.com/in/jrolandobernal"
-                            class="social-icons wow animated fab fa-linkedin-in" id="linkedin"></a>
+                            class="social-icons delay-1s fab fa-linkedin-in" id="linkedin"></a>
                         <a target="_blank" href="http://twitter.com/jrolandobernal"
-                            class="social-icons wow animated fab fa-twitter" id="twitter"></a>
+                            class="social-icons delay-2s fab fa-twitter" id="twitter"></a>
                         <a target="_blank" href="https://github.com/rolandobernal"
-                            class="social-icons wow animated fab fa-github" id="github"></a>
-                        <!-- <a href="mailto:jrolandobernal@gmail.com?subject=Hola,%20Rolando.%20Let's%20talk.&body=Hi,%20my%20name%20is...%20"
-                            class="social-icons far fa-envelope" id="email"></a> -->
+                            class="social-icons delay-3s fab fa-github" id="github"></a>
                     </div>
                 </div>
-                <div id="copyright" class="wow animated">
+                <div id="copyright" class="wow animated delay-4s">
                     <span id="currentYear"></span>&nbsp;Copyright &copy; <a href="http://rolandobernal.github.io/"
                         class="text-muted">Rolando Bernal <br /> UX/UI Front-End
                         Web Developer</a>
@@ -1042,29 +1042,18 @@
             $('#currentYear').html((currentDate.getFullYear()));
         </script>
         <!-- [End of] To obtain Current Year -->
-
-        <!-- <script>
-            // Defining event listener function
-            function displayWindowSize() {
-                // Get width and height of the window
-                // excluding scrollbars
-                var w = document.documentElement.clientWidth;
-                var h = document.documentElement.clientHeight;
-                // Display result inside a div element
-                document.getElementById("result").innerHTML
-                    = "Width: " + w + ", " + "Height: " + h;
-            }
-            // Attaching the event listener function
-            // to window's resize event
-            window.addEventListener("resize", displayWindowSize);
-            // Calling the function for the first time
-            displayWindowSize();
-        </script> -->
+        <!-- Website Loader -->
         <script>
-            /*------------------------------------------------------
-                Back To Top
-            -------------------------------------------------------*/
-
+            jQuery(window).load(function() {
+                // will first fade out the loading animation
+                jQuery(".loader").delay(1000).fadeOut();
+                // will fade out the whole DIV that covers the website.
+                jQuery(".preloader").delay(1000).fadeOut("slow");
+            });
+        </script>
+        <!-- [End of] Website Loader -->
+        <!-- Back to Top Button -->
+        <script>
             //Check to see if the window is top if not then display button
             $(window).scroll(function () {
                 if ($(this).scrollTop() > 100) {
@@ -1073,14 +1062,13 @@
                     $('.scrollToTop').fadeOut();
                 }
             });
-
             //Click event to scroll to top
             $('.scrollToTop').click(function () {
                 $('html, body').animate({ scrollTop: 0 }, 800);
                 return false;
             });
         </script>
-
+        <!-- [End of] Back to Top Button -->
     </body>
 
 </html>
