@@ -1276,50 +1276,6 @@ input[type="radio"] {
     animation-name: fadeInUpBig;
 }
 
-/* Animation Delays
--------------------------------------- */
-
-/* .animated.delay-1s {
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
-}
-
-.animated.delay-2s {
-    -webkit-animation-delay: 1.3s;
-    animation-delay: 1.3s;
-}
-
-.animated.delay-3s {
-    -webkit-animation-delay: 1.6s;
-    animation-delay: 1.6s;
-}
-
-.animated.delay-4s {
-    -webkit-animation-delay: 1.9s;
-    animation-delay: 1.9s;
-}
-
-.animated.delay-5s {
-    -webkit-animation-delay: 2.2s;
-    animation-delay: 2.2s;
-}
-
-.animated.delay-6s {
-    -webkit-animation-delay: 2.5s;
-    animation-delay: 2.5s;
-}
-
-.animated.delay-7s {
-    -webkit-animation-delay: 2.8s;
-    animation-delay: 2.8s;
-}
-
-.animated.delay-8s {
-    -webkit-animation-delay: 3.1s;
-    animation-delay: 3.1s;
-} */
-
-
 /* Services
 ---------------------------------*/
 
@@ -1794,7 +1750,6 @@ footer {
     padding: 10px;
     color: #9cabb8;
     text-align: center;
-    border-top: 1px solid #A2AAAD;
 }
 
 #copyright a {
@@ -1803,6 +1758,12 @@ footer {
 
 #copyright a:hover {
     color: rgba(75, 147, 219, 0.747);
+}
+
+hr.small-line {
+    max-width: 250px;
+    border-top: 1px solid #4b93db;
+    margin: 10px 40%;
 }
 
 /*  Social Media Section
@@ -1934,7 +1895,7 @@ _____________________________*/
     margin: 10px;
     text-align: center;
     position: fixed;
-    bottom: 60px;
+    bottom: 0px;
     right: 0px;
     display: none;
     border: 2px solid var(--secondary-color);
