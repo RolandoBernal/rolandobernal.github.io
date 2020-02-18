@@ -985,6 +985,7 @@ Custom Button Styles
 @media only screen and (max-width: 1023px) {
     .tap-me {
         display: block;
+        text-align: center;
     }
 }
 
@@ -1278,7 +1279,7 @@ input[type="radio"] {
 /* Animation Delays
 -------------------------------------- */
 
-.animated.delay-1s {
+/* .animated.delay-1s {
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
 }
@@ -1316,7 +1317,7 @@ input[type="radio"] {
 .animated.delay-8s {
     -webkit-animation-delay: 3.1s;
     animation-delay: 3.1s;
-}
+} */
 
 
 /* Services
@@ -1868,14 +1869,14 @@ _____________________________*/
     animation-name: slideInUp;
 }
 
-.portfolio-item-list {
+/* .portfolio-item-list {
     visibility: visible;
     animation-name: fadeInLeft;
-}
+} */
 
 .portfolio-item {
     visibility: visible;
-    animation-name: zoomIn;
+    animation-name: fadeInUpBig;
 }
 
 .service_icon {
