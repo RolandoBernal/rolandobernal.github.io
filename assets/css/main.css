@@ -898,7 +898,12 @@ Custom Button Styles
 
 .portfolio-item-img-container {
     position: relative;
-    width: 50%;
+    width: 23%;
+    margin: 1%;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
 }
 
 .portfolio-item-image {
@@ -951,6 +956,37 @@ Custom Button Styles
 
 
 /* MEDIA QUERIES. Definition of how the page should display on different screen sizes */
+
+@media (max-width: 767px) {
+    .tap-me {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media (max-width: 991px) {
+    .breakpoints {
+        background-color: pink;
+    }
+
+    #portfoliolist .portfolio {
+        width: 48%;
+        margin: 1%;
+    }
+}
+
+@media (max-width: 1199px) {
+    .breakpoints {
+        background-color: blue;
+        color: white;
+    }
+
+    #portfoliolist .portfolio {
+        width: 23%;
+        margin: 1%;
+    }
+}
+
 /* Extra small devices (phones, 400px and down) */
 /* When the browser's width is 400px and down */
 @media only screen and (max-width: 400px) {
@@ -959,8 +995,7 @@ Custom Button Styles
     }
 
     #portfoliolist .portfolio {
-        width: 96%;
-        /* float: none; */
+        width: 48%;
         margin: 1%;
     }
 
@@ -977,35 +1012,35 @@ Custom Button Styles
     }
 
     #portfoliolist .portfolio {
-        width: 96%;
+        width: 48%;
         margin: 1%;
     }
 }
 
 @media only screen and (max-width: 1023px) {
-    .tap-me {
+    /* .tap-me {
         display: block;
         text-align: center;
-    }
+    } */
 }
 
 /* Medium devices (landscape tablets, 760px and 1023px) */
 /* When the browser's width is between 760 and 1023px */
 @media screen and (max-width: 1023px) and (min-width: 760px) {
-    .breakpoints {
+    /* .breakpoints {
         background-color: pink;
     }
 
     #portfoliolist .portfolio {
         width: 48%;
         margin: 1%;
-    }
+    } */
 }
 
 /* Large devices (laptops/desktops, 768px and 1199px) */
 /* When the browser's width is between 1024 and 1199px */
 @media screen and (max-width: 1199px) and (min-width: 1024px) {
-    .breakpoints {
+    /* .breakpoints {
         background-color: blue;
         color: white;
     }
@@ -1013,13 +1048,13 @@ Custom Button Styles
     #portfoliolist .portfolio {
         width: 23%;
         margin: 1%;
-    }
+    } */
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* When the browser's width is between 1200 and 1259px */
 @media screen and (max-width: 1259px) and (min-width: 1200px) {
-    .breakpoints {
+    /* .breakpoints {
         background-color: purple;
         color: white;
     }
@@ -1027,12 +1062,12 @@ Custom Button Styles
     #portfoliolist .portfolio {
         width: 23%;
         margin: 1%;
-    }
+    } */
 }
 
 /* When the browser's width is between 1260 and 1524px */
 @media screen and (max-width: 1524px) and (min-width: 1260px) {
-    .breakpoints {
+    /* .breakpoints {
         background-color: darkcyan;
         color: white;
     }
@@ -1040,12 +1075,12 @@ Custom Button Styles
     #portfoliolist .portfolio {
         width: 23%;
         margin: 1%;
-    }
+    } */
 }
 
 /* When the browser's width is 1525px and up */
 @media (min-width: 1525px) {
-    .breakpoints {
+    /* .breakpoints {
         background-color: greenyellow;
         color: black;
     }
@@ -1053,7 +1088,7 @@ Custom Button Styles
     #portfoliolist .portfolio {
         width: 23%;
         margin: 1%;
-    }
+    } */
 }
 
 /* /.MEDIA QUERIES */
@@ -1274,6 +1309,43 @@ input[type="radio"] {
     -moz-animation-name: fadeInUpBig;
     -webkit-animation-name: fadeInUpBig;
     animation-name: fadeInUpBig;
+}
+
+/* Portfolio Isotope Transitions */
+
+.isotope,
+.isotope .isotope-item {
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -ms-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    -ms-transition-property: height, width;
+    -o-transition-property: height, width;
+    transition-property: height, width;
+}
+
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    -ms-transition-property: -ms-transform, opacity;
+    -o-transition-property: -o-transform, opacity;
+    transition-property: transform, opacity;
+}
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+    -webkit-transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    -ms-transition-duration: 0s;
+    -o-transition-duration: 0s;
+    transition-duration: 0s;
 }
 
 /* Services
@@ -1743,13 +1815,15 @@ footer {
 #copyright {
     line-height: 1.5;
     font-family: "Raleway", sans-serif;
-    position: absolute;
-    left: 0;
     bottom: 0;
-    width: 100%;
     padding: 10px;
     color: #9cabb8;
     text-align: center;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    margin-left: -25%;
+    border-top: 1px solid #4b93db8c;
 }
 
 #copyright a {
@@ -1758,12 +1832,6 @@ footer {
 
 #copyright a:hover {
     color: rgba(75, 147, 219, 0.747);
-}
-
-hr.small-line {
-    max-width: 250px;
-    border-top: 1px solid #4b93db;
-    margin: 10px 40%;
 }
 
 /*  Social Media Section
@@ -1822,23 +1890,29 @@ _____________________________*/
     cursor: pointer;
 }
 
-/* Animations
+/* Custom Animations
 ---------------------------- */
+
+.wow {
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-delay: 0.3s;
+}
 
 .main-page {
     visibility: visible;
-    animation-name: slideInUp;
+    /* animation-name: slideInUp; */
+    animation-name: zoomIn;
 }
 
-/* .portfolio-item-list {
+.portfolio-item-list {
     visibility: visible;
-    animation-name: fadeInLeft;
-} */
+    animation-name: fadeInLeftBig;
+}
 
-.portfolio-item {
+/* .portfolio-item {
     visibility: visible;
     animation-name: fadeInUpBig;
-}
+} */
 
 .service_icon {
     visibility: visible;
@@ -1847,12 +1921,79 @@ _____________________________*/
 
 .social-icons-container {
     visibility: visible;
-    animation-name: fadeInUpBig;
+    animation-name: bounceInUp;
 }
 
 #copyright {
     visibility: visible;
-    animation-name: tada;
+    animation-name: slideInUp;
+}
+
+/* Custom Animation Timers
+---------------------------------*/
+.delay-02s {
+    animation-delay: 0.2s;
+    -webkit-animation-delay: 0.2s;
+}
+
+.delay-03s {
+    animation-delay: 0.3s;
+    -webkit-animation-delay: 0.3s;
+}
+
+.delay-04s {
+    animation-delay: 0.4s;
+    -webkit-animation-delay: 0.4s;
+}
+
+.delay-05s {
+    animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+}
+
+.delay-06s {
+    animation-delay: 0.6s;
+    -webkit-animation-delay: 0.6s;
+}
+
+.delay-07s {
+    animation-delay: 0.7s;
+    -webkit-animation-delay: 0.7s;
+}
+
+.delay-08s {
+    animation-delay: 0.8s;
+    -webkit-animation-delay: 0.8s;
+}
+
+.delay-09s {
+    animation-delay: 0.9s;
+    -webkit-animation-delay: 0.9s;
+}
+
+.delay-1s {
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+}
+
+.delay-12s {
+    animation-delay: 1.2s;
+    -webkit-animation-delay: 1.2s;
+}
+
+.delay-13s {
+    animation-delay: 1.3s;
+    -webkit-animation-delay: 1.3s;
+}
+
+.delay-14s {
+    animation-delay: 1.4s;
+    -webkit-animation-delay: 1.4s;
+}
+
+.delay-15s {
+    animation-delay: 1.5s;
+    -webkit-animation-delay: 1.5s;
 }
 
 /* Scroll to Top Button
@@ -1949,10 +2090,6 @@ _____________________________*/
         border-radius: 50%;
         color: #fff;
         border: rgba(255, 255, 255, 0.9) solid 1px;
-    }
-
-    .scrollToTop {
-        bottom: 65px;
     }
 }
 
