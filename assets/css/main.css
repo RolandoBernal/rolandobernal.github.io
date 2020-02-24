@@ -6,11 +6,11 @@ Author: Rolando Bernal | Front-End Web Developer
 ----------------------------------*/
 
 @charset "utf-8";
-@import url("https://fonts.googleapis.com/css?family=Merriweather:400,900|Raleway&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Raleway:800, 700, 400");
-@import url("https://fonts.googleapis.com/css?family=Signika:400, 600");
-@import url("https://fonts.googleapis.com/css?family=Reenie+Beanie|Architects+Daughter|Rock+Salt|Special+Elite|Nunito|Inconsolata|Arvo:700|Open+Sans:400italic,400");
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,900|Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:800, 700, 400');
+@import url('https://fonts.googleapis.com/css?family=Signika:400, 600');
+@import url('https://fonts.googleapis.com/css?family=Reenie+Beanie|Architects+Daughter|Rock+Salt|Special+Elite|Nunito|Inconsolata|Arvo:700|Open+Sans:400italic,400');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
 
 /* --------------------------------------------
     CORE COLORS, STYLES, FONTS
@@ -44,11 +44,12 @@ Author: Rolando Bernal | Front-End Web Developer
     --breakpoint-md: 768px;
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
-    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    --font-family-main: "Lato", sans-serif;
-    --font-family-hx: "Merriweather", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+    --font-family-main: 'Lato', sans-serif;
+    --font-family-hx: 'Merriweather', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --primary-color: #0a1525;
+    --primary-color-transparent: #0a1525e7;
     --action-color: #4b93db;
     --secondary-color: #C8102E;
     --titans-navy: rgb(12, 35, 64);
@@ -60,9 +61,14 @@ Author: Rolando Bernal | Front-End Web Developer
 }
 
 
-
 /* Reset
 ---------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 ul {
     list-style: none;
@@ -120,8 +126,6 @@ a:active {
     position: absolute;
     left: 50%;
     top: 50%;
-    /* background-image: url('../../assets/img/loaderImageBlue.gif'); */
-    /* background-image: url('../../assets/img/loading_2.gif'); */
     background-image: url('../../assets/img/loading_small.gif');
     background-repeat: no-repeat;
     background-position: center;
@@ -271,25 +275,6 @@ p {
 /* Menu Toggler.
 ------------------------*/
 
-/* CORE STYLES */
-:root {
-    --primary-color: #0a1525;
-    --primary-color-transparent: #0a1525e7;
-    --action-color: #4b93db;
-    --titans-navy: rgb(12, 35, 64);
-    --titans-wolf-grey: rgb(162, 170, 173);
-    --default-white: #ffffff;
-    --default-black: #000;
-    --overlay-color: rgba(75, 146, 219, 0.95);
-    --menu-speed: 0.025s;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: "Roboto", sans-serif;
     line-height: 1.4;
@@ -329,10 +314,6 @@ body {
     text-align: center;
     height: 100%;
 }
-
-/* .showcase h1 {
-    font-size: 4rem;
-} */
 
 .showcase p {
     font-size: 1.3rem;
@@ -1900,19 +1881,19 @@ _____________________________*/
 
 .main-page {
     visibility: visible;
-    /* animation-name: slideInUp; */
-    animation-name: zoomIn;
+    animation-name: zoomInUp;
+    animation-delay: 1.75s;
 }
 
 .portfolio-item-list {
     visibility: visible;
-    animation-name: fadeInLeftBig;
+    animation-name: fadeInUpBig;
 }
 
-/* .portfolio-item {
+.portfolio-item {
     visibility: visible;
-    animation-name: fadeInUpBig;
-} */
+    animation-name: zoomIn;
+}
 
 .service_icon {
     visibility: visible;
@@ -2156,6 +2137,10 @@ _____________________________*/
 
     #copyright {
         padding: 5px 0 15px 0;
+    }
+
+    #frontEndDev {
+        display: none;
     }
 }
 
