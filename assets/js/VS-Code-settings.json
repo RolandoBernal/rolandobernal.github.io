@@ -82,7 +82,7 @@
             {
                 "scope": "comment",
                 "settings": {
-                    "foreground": "#788d6d", //"#57A64A",
+                    "foreground": "#788d6d",
                     "fontStyle": "italic"
                 }
             },
@@ -104,7 +104,6 @@
                 ],
                 "settings": {
                     "foreground": "#89DDFF"
-                    // "fontStyle": "italic bold"
                 }
             },
             {
@@ -217,7 +216,7 @@
                     "entity.other.attribute-name.localname.xml"
                 ],
                 "settings": {
-                    "foreground": "#C792EA", //"#d7ba7d", //"#BD63C5",
+                    "foreground": "#C792EA",
                     "fontStyle": "italic"
                 }
             },
@@ -289,7 +288,6 @@
                 ],
                 "settings": {
                     "foreground": "#eaf5ff"
-                    // "fontStyle": "italic bold"
                 }
             },
             {
@@ -423,7 +421,6 @@
     "color-highlight.markerType": "underline",
     "workbench.tree.renderIndentGuides": "always",
     "workbench.colorTheme": "Community Material Theme Darker High Contrast",
-    // Defining custom colors instead of default "Rainbow" for dark backgrounds.
     "indentRainbow.colors": [
         "rgba(255,255,64,0.07)",
         "rgba(127,255,127,0.07)",
