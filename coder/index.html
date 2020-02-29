@@ -8,7 +8,8 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="The Lando Beist" content="">
     <meta name="Lando Beist" content="">
-    <title>The Lando Beist</title>
+    <meta name="Rolando Bernal" content="">
+    <title>Rolando Bernal - Front-End Web Developer</title>
     <!-- FavIcon.ico -->
     <link rel="shortcut icon" href="favicon/favicon.ico">
     <link rel="icon" sizes="16x16 64x64" href="favicon/favicon.ico">
@@ -29,6 +30,12 @@
 </head>
 
 <body class="text-center">
+    <!-- Website loader start -->
+    <div class="preloader">
+        <div class="loader"></div>
+        <span class="loader-text">Loading...</span>
+    </div>
+    <!-- Website loader end -->
 
     <nav class="navbar navbar-expand-lg justify-content-md-center" id="myNavbar">
         <!-- brand logo: Roly's avatar on the left top corner -->
@@ -65,7 +72,8 @@
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Portfolio Website I</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="https://rolandobernal.github.io/portfolio/index.html">Portfolio Website II</a>
+                        <a class="dropdown-item" href="https://rolandobernal.github.io/portfolio/index.html">Portfolio
+                            Website II</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Other Projects</a>
                     </div>
@@ -97,7 +105,8 @@
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownExperience" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Experience</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="https://rolandobernal.github.io/coder/portfolio/index.html">Learn More</a>
+                        <a class="dropdown-item" href="https://rolandobernal.github.io/coder/portfolio/index.html">Learn
+                            More</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -113,8 +122,8 @@
                         <a class="dropdown-item" target="_blank"
                             href="https://www.linkedin.com/in/jrolandobernal">LinkedIn</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item"
-                            href="https://rolandobernal.github.io/coder/portfolio/index.html">Learn More</a>
+                        <a class="dropdown-item" href="https://rolandobernal.github.io/coder/portfolio/index.html">Learn
+                            More</a>
                     </div>
                 </li>
             </ul>
@@ -182,8 +191,7 @@
                                 </a>
                             </div>
                             <div class="social-icon-fade contact-icons contact-icons-custom">
-                                <a target="_blank" title="Check my GitHub"
-                                    href="https://github.com/rolandobernal/">
+                                <a target="_blank" title="Check my GitHub" href="https://github.com/rolandobernal/">
                                     <span id="github"><i class="fa fa-github fa-lg"></i></span>
                                 </a>
                             </div>
@@ -200,14 +208,16 @@
             </div>
             <div class="dropdown-divider"></div>
             <div id="copyright">
-                <span id="currentYear"></span></span><span>&nbsp;Copyright &copy; <a
-                        href="#" class="text-muted">Rolando Bernal | UX &amp; UI Front-End
+                <span id="currentYear"></span></span><span>&nbsp;Copyright &copy; <a href="#" class="text-muted">Rolando
+                        Bernal | UX &amp; UI Front-End
                         Web Developer</a>
             </div>
         </div>
     </footer>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="assets/js/jquery.js"></script>
+    <!-- jquery-1.11.0.min -->
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
     <script src="assets/js/popper.js"></script>
     <script src="assets/js/bootstrap.js"></script>
     <!-- Custom JS files -->
@@ -224,7 +234,17 @@
         } getCurrentYear();
     </script>
     <!-- End of To obtain Current Year -->
-
+    <!-- Website Loader -->
+    <script>
+        jQuery(window).load(function () {
+            // will first fade out the loading animation
+            jQuery(".loader-text").delay(500).fadeOut();
+            jQuery(".loader").delay(600).fadeOut();
+            // will fade out the whole DIV that covers the website.
+            jQuery(".preloader").delay(750).fadeOut("slow");
+        });
+    </script>
+    <!-- [End of] Website Loader -->
 </body>
 
 </html>

@@ -38,6 +38,82 @@
         "Liberation Mono", "Courier New", monospace;
 }
 
+/*-----------------------
+    Website Loader
+------------------------*/
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fefefe;
+    z-index: 99999;
+    height: 100%;
+    width: 100%;
+    overflow: hidden !important;
+}
+
+.status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-image: url("../../assets/img/loading_small.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #0c2340;
+    border-right: 16px solid #4b93db;
+    border-bottom: 16px solid #c8102e;
+    border-left: 16px solid #a2aaad;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -100px 0 0 -100px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+.loader-text {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -20px 0 0 -95px;
+    font-size: 2rem;
+    color: #8a8d8f;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 *,
 *::before,
 *::after {
@@ -7775,8 +7851,8 @@ footer .dropdown-divider {
 
 #typewriter:after {
     content: "|";
-    -webkit-animation: blink 500ms linear infinite alternate;
-    animation: blink 500ms linear infinite alternate;
+    -webkit-animation: blink 1500ms linear infinite alternate;
+    animation: blink 1500ms linear infinite alternate;
 }
 
 @-webkit-keyframes blink {
