@@ -1,44 +1,5 @@
 {
-    "workbench.iconTheme": "vscode-great-icons",
-    "editor.renderWhitespace": "all",
     "workbench.sideBar.location": "right",
-    "html-css-class-completion.includeGlobPattern": "**/*.{css,less,sass,scss,html}",
-    "colorHelper.disableTransparent": true,
-    "workbench.startupEditor": "newUntitledFile",
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
-    },
-    "editor.renderControlCharacters": true,
-    "[jsonc]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "prettier.disableLanguages": [],
-    "indentRainbow.updateDelay": 25,
-    "beautify.options": {
-        "indent_size": 4
-    },
-    "[vue]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[css]": {
-        "editor.defaultFormatter": "michelemelluso.code-beautifier"
-    },
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.hover.delay": 500,
-    "editor.wordWrap": "on",
-    "prettier.tabWidth": 4,
-    "bracket-pair-colorizer-2.showBracketsInRuler": true,
-    "bracket-pair-colorizer-2.showBracketsInGutter": true,
-    "html.format.indentHandlebars": true,
-    "html.format.indentInnerHtml": true,
-    "html-css-class-completion.enableEmmetSupport": true,
-    "prettier.vueIndentScriptAndStyle": true,
-    "diffEditor.ignoreTrimWhitespace": false,
-    "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": true,
     "workbench.tree.indent": 12,
     "workbench.colorCustomizations": {
         "window.activeBorder": "#ff0000",
@@ -49,34 +10,19 @@
         "editor.selectionHighlightBorder": "#00ffdd30",
         "editor.wordHighlightBackground": "#1e1e1e00",
         "editor.wordHighlightStrongBackground": "#1e1e1e00",
-        "editor.lineHighlightBorder": "#64646413",
+        "editor.lineHighlightBorder": "#335ed644",
         "editor.findMatchBorder": "#73ff00",
         "editor.findMatchHighlightBackground": "#73ff0036",
         "editor.findMatchHighlightBorder": "#73ff0075",
         "editorWhitespace.foreground": "#ff8b8b56",
         "editorIndentGuide.activeBackground": "#335ed6",
-        "editorIndentGuide.background": "#335ed655",
-        "terminal.background": "#232C31",
-        "terminal.foreground": "#9EA7A6",
-        "terminalCursor.background": "#9EA7A6",
-        "terminalCursor.foreground": "#9EA7A6",
-        "terminal.ansiBlack": "#232C31",
-        "terminal.ansiBlue": "#484D79",
-        "terminal.ansiBrightBlack": "#3F4944",
-        "terminal.ansiBrightBlue": "#484D79",
-        "terminal.ansiBrightCyan": "#B02F30",
-        "terminal.ansiBrightGreen": "#237986",
-        "terminal.ansiBrightMagenta": "#C59820",
-        "terminal.ansiBrightRed": "#2A5491",
-        "terminal.ansiBrightWhite": "#B5D8F6",
-        "terminal.ansiBrightYellow": "#A03B1E",
-        "terminal.ansiCyan": "#B02F30",
-        "terminal.ansiGreen": "#237986",
-        "terminal.ansiMagenta": "#C59820",
-        "terminal.ansiRed": "#2A5491",
-        "terminal.ansiWhite": "#9EA7A6",
-        "terminal.ansiYellow": "#A03B1E"
+        "editorIndentGuide.background": "#335ed655"
     },
+    "workbench.iconTheme": "vscode-icons",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "pigments.enabledExtensions": "css, scss, sass, less, html, js, json, jsx, vue, xml, dwp",
+    "pigments.markerType": "background",
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
@@ -111,7 +57,8 @@
                     "entity.name.function",
                     "entity.name.function.js",
                     "entity.name.class.js",
-                    "support.class.component.open.jsx"
+                    "support.class.component.open.jsx",
+                    "entity.name.type.class.js"
                 ],
                 "settings": {
                     "foreground": "#82AAFF"
@@ -128,7 +75,10 @@
                 }
             },
             {
-                "scope": "string.unquoted.js",
+                "scope": [
+                    "string.unquoted.js",
+                    "meta.object-literal.key.js"
+                ],
                 "settings": {
                     "foreground": "#B5D8F6"
                 }
@@ -171,7 +121,18 @@
                 }
             },
             {
-                "scope": "support.constant.font-name.css",
+                "scope": [
+                    "support.constant.font-name.css"
+                ],
+                "settings": {
+                    "foreground": "#B5CEA8"
+                }
+            },
+            {
+                "scope": [
+                    "support.constant.property-value.css",
+                    "meta.property-value.css"
+                ],
                 "settings": {
                     "foreground": "#B5CEA8"
                 }
@@ -183,7 +144,18 @@
                     "support.function.misc.css"
                 ],
                 "settings": {
-                    "foreground": "#BD63C5"
+                    "foreground": "#BD63C5",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": [
+                    "entity.other.attribute-name.pseudo-class.css",
+                    "entity.other.attribute-name.pseudo-element.css"
+                ],
+                "settings": {
+                    "foreground": "#F78C6C", //"#ef3aff",
+                    "fontStyle": "italic"
                 }
             },
             {
@@ -216,7 +188,6 @@
                     "entity.other.attribute-name.localname.xml"
                 ],
                 "settings": {
-                    "foreground": "#C792EA",
                     "fontStyle": "italic"
                 }
             },
@@ -226,8 +197,6 @@
                     "entity.other.attribute-name.class.mixin.css",
                     "entity.other.attribute-name.id.css",
                     "entity.other.attribute-name.parent-selector.css",
-                    "entity.other.attribute-name.pseudo-class.css",
-                    "entity.other.attribute-name.pseudo-element.css",
                     "source.css.less entity.other.attribute-name.id",
                     "entity.other.attribute-name.attribute.scss",
                     "entity.other.attribute-name.scss"
@@ -244,7 +213,7 @@
                     "variable.language.self.js"
                 ],
                 "settings": {
-                    "foreground": "#4B92DB",
+                    "foreground": "#fcae96",
                     "fontStyle": "italic bold"
                 }
             },
@@ -284,7 +253,9 @@
                 "scope": [
                     "variable.other.object.js",
                     "variable.other.readwrite.js",
-                    "variable.other.class.js"
+                    "variable.other.class.js",
+                    "variable.parameter.js",
+                    "variable.other.constant.js"
                 ],
                 "settings": {
                     "foreground": "#eaf5ff"
@@ -338,7 +309,6 @@
             {
                 "scope": [
                     "support.type.vendored.property-name",
-                    "support.type.property-name",
                     "variable.css",
                     "variable.scss",
                     "variable.other.less",
@@ -350,13 +320,23 @@
             }
         ]
     },
-    "pigments.enabledExtensions": "css, scss, sass, less, html, js, json, jsx, vue, xml, dwp",
-    "pigments.markerType": "underline",
-    "editor.fontSize": 12,
+    "editor.renderControlCharacters": true,
+    "editor.renderWhitespace": "all",
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[less]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "files.trimTrailingWhitespace": true,
     "files.autoSave": "off",
+    "editor.wordWrap": "on",
     "files.associations": {
         "*.tag": "html",
         "*.cshtml": "html",
@@ -395,36 +375,9 @@
         "env-*": true
     },
     "breadcrumbs.enabled": true,
-    "editor.minimap.renderCharacters": false,
-    "editor.minimap.maxColumn": 200,
-    "editor.minimap.showSlider": "always",
-    "files.insertFinalNewline": true,
-    "editor.cursorBlinking": "phase",
-    "window.title": "${dirty} ${activeEditorMedium}${separator}${rootName}",
-    "vetur.format.options.tabSize": 4,
-    "emmet.triggerExpansionOnTab": true,
+    "prettier.tabWidth": 4,
     "prettier.useTabs": false,
-    "editor.suggestSelection": "first",
-    "editor.renderIndentGuides": true,
-    "editor.formatOnPaste": true,
     "editor.tabSize": 4,
     "editor.detectIndentation": false,
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "editor.formatOnType": false,
-    "git.ignoreMissingGitWarning": true,
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    },
-    "[less]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "color-highlight.markerType": "underline",
-    "workbench.tree.renderIndentGuides": "always",
-    "workbench.colorTheme": "Community Material Theme Darker High Contrast",
-    "indentRainbow.colors": [
-        "rgba(255,255,64,0.07)",
-        "rgba(127,255,127,0.07)",
-        "rgba(255,127,255,0.07)",
-        "rgba(79,236,236,0.07)"
-    ]
+    "workbench.colorTheme": "Community Material Theme Darker High Contrast"
 }
