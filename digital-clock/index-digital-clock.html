@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Digital Clock</title>
+
+  <style type="text/css">
+    /* Google font */
+    @import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+    body {
+      background-color: black;
+    }
+
+    #digit_clock_time {
+      font-family: 'Orbitron', 'Work Sans', sans-serif;
+      color: #66ff99;
+      /* font-size: 150px; */
+      font-size: 45px;
+      text-align: center;
+    }
+
+    #digit_clock_time span {
+      display: inline-block;
+      /* width: 250px; */
+      width: 80px;
+    }
+
+    #digit_clock_time .ampm {
+      /* font-size: 140px; */
+      font-size: 42px;
+    }
+
+    #digit_clock_date,
+    #digit_clock_date_short {
+      font-family: 'Orbitron', 'Work Sans', sans-serif;
+      color: #66ff99;
+      /* font-size: 100px; */
+      font-size: 35px;
+      text-align: center;
+      padding-top: 20px;
+    }
+
+    #digit_clock_date_short {
+      /* font-size: 130px; */
+      font-size: 40px;
+    }
+
+    .digital_clock_wrapper {
+      border: 2px solid #222;
+      box-shadow: 0 10px 16px 0 rgb(255 255 255 / 10%),
+        0 6px 20px 0 rgb(255 255 255 / 10%) !important;
+      padding: 25px;
+      max-width: 1500px;
+      text-align: center;
+      border-radius: 15px;
+      margin: auto;
+    }
+
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+      /* .example {
+background: #010101;
+} */
+
+      #digit_clock_time span {
+        width: 50px;
+      }
+
+      #digit_clock_time {
+        font-size: 30px;
+      }
+
+      #digit_clock_time .ampm {
+        font-size: 26px;
+      }
+
+      #digit_clock_date,
+      #digit_clock_date_short {
+        font-size: 20px;
+      }
+
+      #digit_clock_date_short {
+        font-size: 24px;
+      }
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+
+      #digit_clock_time span {
+        width: 60px;
+      }
+
+      #digit_clock_time {
+        font-size: 35px;
+      }
+
+      #digit_clock_time .ampm {
+        font-size: 32px;
+      }
+
+      #digit_clock_date,
+      #digit_clock_date_short {
+        font-size: 25px;
+      }
+
+      #digit_clock_date_short {
+        font-size: 30px;
+      }
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+
+      #digit_clock_time span {
+        width: 80px;
+      }
+
+      #digit_clock_time {
+        font-size: 45px;
+      }
+
+      #digit_clock_time .ampm {
+        font-size: 42px;
+      }
+
+      #digit_clock_date,
+      #digit_clock_date_short {
+        font-size: 35px;
+      }
+
+      #digit_clock_date_short {
+        font-size: 40px;
+      }
+
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    /* @media only screen and (min-width: 992px) {
+
+#digit_clock_time span {
+width: 180px;
+}
+
+#digit_clock_time {
+font-size: 85px;
+}
+
+#digit_clock_time .ampm {
+font-size: 82px;
+}
+
+#digit_clock_date,
+#digit_clock_date_short {
+font-size: 75px;
+}
+
+#digit_clock_date_short {
+font-size: 80px;
+}
+} */
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    /* @media only screen and (min-width: 1340px) {
+
+#digit_clock_time span {
+width: 250px;
+}
+
+#digit_clock_time {
+font-size: 150px;
+}
+
+#digit_clock_time .ampm {
+font-size: 140px;
+}
+
+#digit_clock_date,
+#digit_clock_date_short {
+font-size: 100px;
+}
+
+#digit_clock_date_short {
+font-size: 130px;
+}
+} */
+  </style>
+</head>
+
+
+
+<body>
+  <br /><br /><br /><br />
+  <div class="digital_clock_wrapper example">
+    <div id="digit_clock_time"></div>
+    <div id="digit_clock_date"></div>
+    <div id="digit_clock_date_short"></div>
+  </div>
+
+  <script type="text/javascript">
+    function currentTime() {
+      let date = new Date(); /* creating object of Date class */
+      let hour = date.getHours();
+      let min = date.getMinutes();
+      let sec = date.getSeconds();
+      let midday = 'AM';
+      midday = hour >= 12 ? 'PM' : 'AM'; /* assigning AM/PM */
+      hour =
+        hour == 0
+          ? 12
+          : hour > 12
+            ? hour - 12
+            : hour; /* assigning hour in 12-hour format */
+      hour = changeTime(hour);
+      min = changeTime(min);
+      sec = changeTime(sec);
+      document.getElementById('digit_clock_time').innerHTML = `
+<span class="hour">${hour}</span> :
+<span class="minute">${min}</span> :
+<span class="second">${sec}</span>
+<span class="ampm">${midday}</span>
+`;
+
+      const months = [
+        'January',
+        'February',
+        'March',
+        'April',
+        'May',
+        'June',
+        'July',
+        'August',
+        'September',
+        'October',
+        'November',
+        'December',
+      ];
+      const monthNums = [
+        '01',
+        '02',
+        '03',
+        '04',
+        '05',
+        '06',
+        '07',
+        '08',
+        '09',
+        '10',
+        '11',
+        '12',
+      ];
+      const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+      let curWeekDay = days[date.getDay()]; // get day
+      let curDay = date.getDate(); // get date
+      let curMonth = months[date.getMonth()]; // get month name
+      let curMonthShort = monthNums[date.getMonth()]; // get month number
+      let curYear = date.getFullYear(); // get year
+      let curDate = curWeekDay + ', ' + curMonth + ' ' + curDay + ', ' +
+        curYear; // get full date
+      document.getElementById('digit_clock_date').innerHTML = curDate;
+      let curDateShort = curMonthShort + ' / ' + curDay + ' / ' + curYear;
+      // get full date
+      document.getElementById('digit_clock_date_short').innerHTML = curDateShort;
+
+      let t = setTimeout(currentTime, 1000); /* setting timer */
+    }
+
+    function changeTime(k) {
+      /* appending 0 before time elements if less than 10 */
+      if (k < 10) {
+        return '0' + k;
+      } else {
+        return k;
+      }
+    }
+
+    currentTime();
+  </script>
+</body>
+
+</html>
